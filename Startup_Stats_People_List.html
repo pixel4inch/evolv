@@ -77,22 +77,47 @@
 			<div class="col-12 mx-auto ecosysem-dashboard" id="counters_1">
 				<div class="rounded shadow p-2 bg-white">
 
-                    <ul class="row" id="starupPeopleList">
-
-                       
+                    <div class="row" id="starupPeopleList"> 
 
 
-                    </ul>
-
-                    <script  src="https://code.jquery.com/jquery-3.6.2.js"></script>
+                    </div>
+                    <script
+                    src="https://code.jquery.com/jquery-3.6.2.js"
+                    integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4="
+                    crossorigin="anonymous"></script>
                     <script>
                         $(document).ready(function () {
                             $.getJSON("./data/people.json", function (data) {
-                                console.log(data)
+                                console.log(data);
                                 var output = '';
                                 $.each(data.startuppeople, function (key, value) {
-                                    output += '<li>' + value.OrganizationName + '</li>';
-                                });
+                                    output += `
+                                    
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto mt-2 text-center mb-2 ">
+                                                <div class="col-12 mx-auto border label p-2">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="left-block">
+                                                            <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" class="img-fluid p-1"/>
+                                                        </div>
+                                                        <div class="right-block">
+                                                            <div class="title pl-2">
+                                                                <h2>`+ value.OrganizationName + `</h2>
+                                                                <h3> 
+                                                                    <a href=` + value.Website + `class="text_limit">`+ value.Website +`</a>
+                                                                </h3>
+                                                                <h5> 
+                                                                    <a href=` + value.LinkedIn + `class="text_limit">`+ value.LinkedIn +`</a>
+                                                                </h5>
+                                                            
+                                                                                                    
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         `
+                                   
+                                })
                                 $('#starupPeopleList').html(output);
                             }).fail(function () {
                                 document.write("An error has occurred.");   
@@ -101,53 +126,6 @@
                     </script>
 
 
-
-                    <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto mt-2 text-center mb-2 ">
-                        <div class="col-12 mx-auto border label p-2">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="left-block">
-                                    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" class="img-fluid p-1"/>
-                                </div>
-                                <div class="right-block">
-                                    <div class="title pl-2">
-                                        <h2>A. Sturmer</h2>
-                                         <h3> 
-                                            <a href="javascript:void(0);" class="text_limit" title="President, Chief Executive Officer, and Co-Founder">President, Chief Executive Officer, and </a>
-                                         </h3>
-                                        <h5> 
-                                            <a href="https://www.linkedin.com/in/a-gregory-sturmer-04a7948" target="_New1">LinkedIn</a>
-                                         </h5>
-                                    
-                                                                            
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto mt-2 text-center mb-2 ">
-                        <div class="col-12 mx-auto border label p-2">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="left-block">
-                                    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" class="img-fluid p-1"/>
-                                </div>
-                                <div class="right-block">
-                                    <div class="title pl-2">
-                                        <h2>A. Sturmer</h2>
-                                         <h3> 
-                                            <a href="javascript:void(0);" class="text_limit" title="President, Chief Executive Officer, and Co-Founder">President, Chief Executive Officer, and </a>
-                                         </h3>
-                                        <h5> 
-                                            <a href="https://www.linkedin.com/in/a-gregory-sturmer-04a7948" target="_New1">LinkedIn</a>
-                                         </h5>
-                                    
-                                                                            
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!--div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto mt-2 text-center mb-2 ">
                         <div class="col-12 mx-auto border label p-2">
