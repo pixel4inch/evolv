@@ -1,6 +1,8 @@
+@import url(./color.css);
+@import url(./phoca-flags.css);
 /*=== MEDIA QUERY ===*/
 
-@import url(./color.css);
+
 
 body {
   font-family:  var(--primaryfont);
@@ -1888,4 +1890,3 @@ hr {
     height: 350px;
   }
 }
-/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,9 @@
-
-
-<footer>
+class FooterComponent extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `
+      
+      
+      <footer>
 	<div class="footer-main">
 	  <div class="container">
 		<div class="row">
@@ -51,3 +54,14 @@
 	  <small class="text-secondary">Copyright &copy; <script>document.write(new Date().getFullYear())</script>  Evolv ., All Rights Reserved.</small>
 	</div>
   </footer>
+
+
+      
+      
+      
+      
+      `;
+    }
+  }
+      
+  customElements.define('footer-component', FooterComponent);

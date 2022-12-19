@@ -32,28 +32,26 @@
   <link href="css/style.css" rel="stylesheet"/>
   <link href="css/custome.css" rel="stylesheet"/>
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet"/>
+
+  <script	src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <!---WEB COMPONETNS-->
+  <script src="./webcomponts/headerComponents.js"></script>
+  <script src="./webcomponts/FooterComponent.js"></script>
+  <script src="./webcomponts/ScrollToTop.js"></script>
+
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
 
-
-<script	src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script> 
-	$(function(){
-	$("#header").load("header.html"); 
-	$("#footer").load("footer.html"); 
-	});
-</script> 
-
-
 <!--============================
 =            HEADER           =
 =============================-->
-<div id="header"></div>
-<!--====================================
+<header-component></header-component>
+
+<!---====================================
 =            Hero Section            =
-=====================================-->
+=====================================--->
 <section class="section hero_section">
 	
 	<div class="container">
@@ -168,18 +166,18 @@
 </section>
 
 
-
 <!--============================
-=            Footer            =
+	           Footer            
 =============================-->
-<div id="footer"></div>
+<footer-component></footer-component>
 
+ 
+<!---============================
+           ScrollTop        
+=============================--->
 
-
-  <!-- To Top -->
-  <div class="scroll-top-to">
-    <i class="ti-angle-up"></i>
-  </div>
+  <scrolltop-component></scrolltop-component>
+ 
   
   <!-- JAVASCRIPTS -->
 
@@ -255,12 +253,7 @@ window.addEventListener('resize', () => {
   jvm.updateSize()
 })
 */
-
-  </script>
-
-
-
-
+ </script>
 </body>
 
 </html>

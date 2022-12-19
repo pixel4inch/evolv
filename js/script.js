@@ -160,6 +160,38 @@
     });
 
 
+
+    //------------------------------
+    //        Onclick Navbar
+    //===============================
+
+/*
+    $(document).ready(function () {
+      $(function () {
+          $('.nav-item .nav-link').click(function (e) {
+              e.preventDefault();
+              $('.nav-item').removeClass('active');
+              $('.nav-link').removeClass('active');
+              $('.dropdown-menu li .dropdown-item').removeClass('active');
+              $(this).addClass('active');
+          });
+
+          $('.dropdown-menu li .dropdown-item').click(function (e) {
+            e.preventDefault();
+            $('.nav-item').removeClass('active');
+            $('.nav-link').removeClass('active');
+            $('.dropdown-menu li .dropdown-item').removeClass('active');
+
+            
+            $(this).addClass('active');
+        });
+
+      });
+    });
+ 
+*/
+
+
     // scroll
     // $('.scrollTo').on('click', function (e) {
     //   e.preventDefault();

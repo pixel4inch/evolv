@@ -401,6 +401,14 @@ body{
 
 .ecosysem-dashboard ul  li{
    padding:4px 0px 4px 10px !important;
+   display: flex;
+   font-size: 14px;
+}
+
+.ecosysem-dashboard ul  li .phoca-flag-flags{
+    width: 19px;
+    height: 24px;
+    margin: 0px 7px
 }
 
 
@@ -416,6 +424,56 @@ body{
     margin-top: 2px;
 }
 
+.ecosysem-dashboard ul  li.phoca-box-flags::before {
+    display: none;
+    
+}
+.ecosysem-dashboard ul  li.phoca-box-flags{
+    margin-left: -15px;
+}
+
+
+
+.label .left-block{
+        width: 80px;
+        height: auto;
+        overflow: hidden;
+}
+
+.label .right-block{
+  width: 80%;
+}
+
+.label .right-block .title{
+    text-align: left;
+}
+
+
+.label .right-block .title h2 {
+    font-size: 17px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.label .right-block .title h3,
+.label .right-block .title h5 {
+    font-size: 15px;
+    margin-top: 2px;
+    text-transform:capitalize;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0px;
+
+}
 
 
 
