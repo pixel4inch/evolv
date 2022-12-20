@@ -1,11 +1,10 @@
-
 @import url(./color.css);
 
 /*==============
    Body
-==============*/ 
+==============*/
 
-body{
+body {
     font-family: var(--primaryfont);
 }
 
@@ -17,32 +16,33 @@ body{
 }
 
 @media (max-width: 1200px) {
-    
-.section-title p {
-    width: 95% !important;
-    margin: 0 auto;
+
+    .section-title p {
+        width: 95% !important;
+        margin: 0 auto;
+    }
+
+
 }
 
-   
-}
 /*===============
     HEADER
 =================*/
 
-.brandImg{
+.brandImg {
     width: 199px;
     height: auto;
     margin-top: 5px;
 }
 
-.customeNavBar{
+.customeNavBar {
     height: 80px;
-    padding-top:10px
+    padding-top: 10px
 }
 
 
 @media (max-width: 992px) {
-    .customeNavBar{
+    .customeNavBar {
         height: auto;
     }
 
@@ -55,20 +55,20 @@ body{
         height: auto;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         margin-top: 10px;
     }
 
-    .navbar-nav{
-        border-top:solid 1px var(--thirdcolor);
-        margin-top:5px;
+    .navbar-nav {
+        border-top: solid 1px var(--thirdcolor);
+        margin-top: 5px;
     }
 
-    .navbar-nav li a{
+    .navbar-nav li a {
         text-align: left !important
     }
 
-    .navbar-nav li a span{
+    .navbar-nav li a span {
         float: right;
     }
 }
@@ -88,7 +88,7 @@ body{
         height: auto;
     }
 
-   
+
 }
 
 
@@ -101,16 +101,16 @@ body{
 }
 
 .dropdown-menu li {
-    border-bottom: solid 1px  var(--thirdcolor);
+    border-bottom: solid 1px var(--thirdcolor);
     line-height: 35px;
 }
 
 .dropdown-menu li:last-child {
-    border-bottom:solid 0px  var(--thirdcolor) !important
+    border-bottom: solid 0px var(--thirdcolor) !important
 }
 
 
-.dropdown-menu li a{
+.dropdown-menu li a {
     color: var(--fourthcolor)
 }
 
@@ -119,14 +119,14 @@ body{
 =================*/
 
 
-.hero_section{
+.hero_section {
     background-color: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
     background-image: url('../images/evolv/hero_page/2.jpg');
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height:calc(100vh - 75px);
+    height: calc(100vh - 75px);
     opacity: 1;
     visibility: inherit;
     display: flex;
@@ -135,7 +135,7 @@ body{
     position: relative;
 }
 
-.hero_section h1{
+.hero_section h1 {
     font-weight: bold;
     font-size: 87px;
     font-family: var(--primaryfont);
@@ -144,36 +144,36 @@ body{
     margin: 0px;
 }
 
-.hero_section h1 span{
+.hero_section h1 span {
     color: var(--maincolor) !important
 }
 
-.hero_section h2.bannertagline{
+.hero_section h2.bannertagline {
     font-size: 32px;
     line-height: normal;
     letter-spacing: 2px;
-    margin-top:5px;
+    margin-top: 5px;
     text-transform: uppercase;
 
 }
 
-.hero_section #map{
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   top: 0%;
-   left: 0%;
-   margin-left:auto;
-   margin-right:auto;
-   opacity: 0.4;
-   cursor: none;
-  
+.hero_section #map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.4;
+    cursor: none;
+
 
 }
 
 
 
-.hero_section .jvm-zoom-btn{
+.hero_section .jvm-zoom-btn {
     display: none;
 
 }
@@ -182,18 +182,18 @@ body{
 
 @media (max-width: 991px) {
 
-    .hero_section{
+    .hero_section {
         height: auto;
         padding: 80px !important;
     }
 
     .hero_section h1 {
         font-size: 70px;
-        line-height:40px;
+        line-height: 40px;
 
     }
 
-    .hero_section h2.bannertagline{
+    .hero_section h2.bannertagline {
         font-size: 25.5px;
         margin-top: 14px;
     }
@@ -202,10 +202,11 @@ body{
         height: 100%;
         width: 100%;
         left: 0px;
-        top: 0px;;
+        top: 0px;
+        ;
 
     }
-    
+
 
 }
 
@@ -213,18 +214,18 @@ body{
 
 @media (max-width: 767px) {
 
-    .hero_section{
+    .hero_section {
         height: auto;
         padding: 60px !important;
     }
 
     .hero_section h1 {
         font-size: 44px;
-        line-height:40px;
+        line-height: 40px;
 
     }
 
-    .hero_section h2.bannertagline{
+    .hero_section h2.bannertagline {
         font-size: 15.5px;
         margin-top: 10px;
     }
@@ -233,10 +234,11 @@ body{
         height: 100%;
         width: 100%;
         left: 0px;
-        top: 0px;;
+        top: 0px;
+        ;
 
     }
-    
+
 
 }
 
@@ -245,7 +247,7 @@ body{
 
 @media (max-width: 479px) {
 
-    .hero_section{
+    .hero_section {
         height: auto;
         padding: 40px 20px !important;
     }
@@ -256,20 +258,21 @@ body{
 
     }
 
-    .hero_section h2.bannertagline{
+    .hero_section h2.bannertagline {
         font-size: 18px !important;
         margin-bottom: 10px;
-        
+
     }
 
     .hero_section #map {
         height: 100%;
         width: 100%;
         left: 0px;
-        top: 0px;;
+        top: 0px;
+        ;
 
     }
-    
+
 
 }
 
@@ -278,21 +281,21 @@ body{
   home page speakers
 =====================*/
 
-.spakers  .hover-zoom {
-        overflow: hidden;
-        border-radius: 0px !important
-    }
+.spakers .hover-zoom {
+    overflow: hidden;
+    border-radius: 0px !important
+}
 
-.spakers   h3{
+.spakers h3 {
     font-weight: 600 !important;
-    margin-top:15px;
-    margin-bottom:0px;
-} 
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
 
-.spakers  .block p{
-     font-size: 14px;
-     color: var(--maincolor);
-}   
+.spakers .block p {
+    font-size: 14px;
+    color: var(--maincolor);
+}
 
 
 
@@ -302,47 +305,47 @@ body{
     FOOTER LINKS
 =====================*/
 
-.footer-main{
+.footer-main {
     padding: 20px 5px !important
 }
 
-.footerLinks{
+.footerLinks {
     list-style: none;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding:0px
+    padding: 0px
 }
 
-.footerLinks li{
-    padding:3px;
+.footerLinks li {
+    padding: 3px;
     margin: 4px 6px;
 
 }
 
-.footerLinks li a{
-  color:var(--fourthcolor);
-  font-size:13px;
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-}
-
-.footerLinks li a:hover,
-.footerLinks li a.active{
-    color:var(--maincolor);
+.footerLinks li a {
+    color: var(--fourthcolor);
+    font-size: 13px;
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
 }
 
-.footer-divider{
+.footerLinks li a:hover,
+.footerLinks li a.active {
+    color: var(--maincolor);
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.footer-divider {
     height: 1px;
-    background-color:var(--thirdcolor);
+    background-color: var(--thirdcolor);
     width: 100%;
-    
+
 }
 
 @media (max-width:1200px) {
-    .footerLinks li{
+    .footerLinks li {
         margin: 4px 2px;
     }
 
@@ -350,13 +353,12 @@ body{
 
 
 @media (max-width: 992px) {
-    .footerLinks{
-       
-        justify-content:center
-        
+    .footerLinks {
+
+        justify-content: center
     }
 
-    .footerLinks li{
+    .footerLinks li {
         margin: 2px 6px;
     }
 
@@ -368,7 +370,7 @@ body{
 
 @media (max-width: 767px) {
 
-    .footerLinks{
+    .footerLinks {
         margin: 0px;
     }
 
@@ -385,34 +387,34 @@ body{
        Eco system Dash Board
 ===============================*/
 
-.ecosysem-dashboard h3 span{
-    color:var(--maincolor)
+.ecosysem-dashboard h3 span {
+    color: var(--maincolor)
 }
 
 
-.ecosysem-dashboard hr{
+.ecosysem-dashboard hr {
     border-top: 2px solid var(--fourthcolor);
 }
 
-.ecosysem-dashboard ul  {
-    margin-bottom:30px  !important;
- }
- 
-
-.ecosysem-dashboard ul  li{
-   padding:4px 0px 4px 10px !important;
-   display: flex;
-   font-size: 14px;
+.ecosysem-dashboard ul {
+    margin-bottom: 30px !important;
 }
 
-.ecosysem-dashboard ul  li .phoca-flag-flags{
+
+.ecosysem-dashboard ul li {
+    padding: 4px 0px 4px 10px !important;
+    display: flex;
+    font-size: 14px;
+}
+
+.ecosysem-dashboard ul li .phoca-flag-flags {
     width: 19px;
     height: 24px;
     margin: 0px 7px
 }
 
 
-.ecosysem-dashboard ul  li:before {
+.ecosysem-dashboard ul li:before {
     content: '\f0da';
     position: absolute;
     width: 20px;
@@ -424,27 +426,28 @@ body{
     margin-top: 2px;
 }
 
-.ecosysem-dashboard ul  li.phoca-box-flags::before {
+.ecosysem-dashboard ul li.phoca-box-flags::before {
     display: none;
-    
+
 }
-.ecosysem-dashboard ul  li.phoca-box-flags{
+
+.ecosysem-dashboard ul li.phoca-box-flags {
     margin-left: -15px;
 }
 
 
 
-.label .left-block{
-        width: 80px;
-        height: auto;
-        overflow: hidden;
+.label .left-block {
+    width: 80px;
+    height: auto;
+    overflow: hidden;
 }
 
-.label .right-block{
-  width: 80%;
+.label .right-block {
+    width: 80%;
 }
 
-.label .right-block .title{
+.label .right-block .title {
     text-align: left;
 }
 
@@ -465,7 +468,7 @@ body{
 .label .right-block .title h5 {
     font-size: 15px;
     margin-top: 2px;
-    text-transform:capitalize;
+    text-transform: capitalize;
     line-height: 19px;
     letter-spacing: 0.5px;
     white-space: nowrap;
@@ -484,19 +487,50 @@ body{
 #jvm-markers-group circle {
     animation: loading-spinner 1s linear infinite;
     fill: var(--maincolor)
-    
-  }
-  
-  @keyframes loading-spinner {
+}
 
-    
+@keyframes loading-spinner {
+
+
     from {
-      opacity: 1;
-      stroke-width:10px;
+        opacity: 1;
+        stroke-width: 10px;
     }
+
     to {
         opacity: 1;
-        stroke-width:2px;
+        stroke-width: 2px;
     }
-    
-  }
+
+}
+
+
+/*===========================
+            startup page
+  ===========================*/
+
+.Alp_Display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 16px;
+}
+
+
+
+.Alp_Display a {
+    margin: 1px;
+    color: black;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    display: block;
+    font-size: 12px;
+}
+
+
+.Alp_Display a.active {
+    background: var(--maincolor);
+    color: #fff;
+}
