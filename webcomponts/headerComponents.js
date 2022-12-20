@@ -1,6 +1,6 @@
 class HeaderComponent extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       
       
       <nav class="navbar main-nav navbar-expand-xl px-2 pt-0 pb-2 customeNavBar border-bottom">
@@ -168,13 +168,7 @@ class HeaderComponent extends HTMLElement {
     </li>
     
     
-    <!----Launagae page start -->	 
     
-    <li class="nav-item @@G20 ">
-    
-    <a class="nav-link" href="javascript:valid(0)">LANGUAGE</a>
-    </li>
-    <!----Launagae page ends -->
     
     
     
@@ -216,6 +210,14 @@ class HeaderComponent extends HTMLElement {
             <!--li><a class="dropdown-item @@govt" href="turnkey.html">GOVT </a></li>--->
           </ul>
           </li>
+
+          <!----Launagae page start -->	 
+    
+    <li class="nav-item @@G20 ">
+    
+    <a class="nav-link" href="javascript:valid(0)">LANGUAGE</a>
+    </li>
+    <!----Launagae page ends -->
     
     
     
@@ -226,11 +228,11 @@ class HeaderComponent extends HTMLElement {
       
       `;
 
-      
-    }
-    
+
   }
-      
-  customElements.define('header-component', HeaderComponent);
+
+}
+
+customElements.define('header-component', HeaderComponent);
 
 
