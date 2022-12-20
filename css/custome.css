@@ -114,6 +114,13 @@ body{
     color: var(--fourthcolor)
 }
 
+@media (min-width: 992px){
+.main-nav .dropdown .dropdown-menu {
+width: 100%;
+}
+
+}
+
 /*===============
     Hero Section
 =================*/
