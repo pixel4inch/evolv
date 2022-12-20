@@ -57,8 +57,8 @@ class HeaderComponent extends HTMLElement {
           <!-- Dropdown list -->
           <ul class="dropdown-menu">
             <li><a class="dropdown-item @startups " href="startups.html">STARTUPS</a></li>
-            <li><a class="dropdown-item @@scaleups" href="scale.html">SCALE-UPS</a></li>
-            <li><a class="dropdown-item @@cxo" href="cxo.html">CXO ECO-CONNECT </a></li>
+            <li><a class="dropdown-item @@scaleups" href="scale.html">INVESTOR WORLD</a></li>
+            <li><a class="dropdown-item @@cxo" href="cxo.html">ENTERPRISE CONNECT </a></li>
             <li><a class="dropdown-item @@femaleled" href="femaleled.html"> FEMALE LED </a></li>
             <li><a class="dropdown-item @@dei" href="dei.html">DIVERSITY EQUITY INCLUSION </a></li>
             <li><a class="dropdown-item @@sustainability" href="sustaiability.html">SUSTAINABILITY </a></li>
