@@ -41,7 +41,7 @@ body{
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
     .customeNavBar{
         height: auto;
     }
@@ -49,7 +49,7 @@ body{
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     .brandImg {
         width: 200px;
         height: auto;
@@ -438,10 +438,11 @@ body{
         width: 80px;
         height: auto;
         overflow: hidden;
+        display: none;
 }
 
 .label .right-block{
-  width: 80%;
+  width: 100%;
 }
 
 .label .right-block .title{
