@@ -3,12 +3,9 @@
 /*==============
    Body
 ==============*/
-
 body {
     font-family: var(--primaryfont);
 }
-
-
 
 .section-title p {
     width: 50%;
@@ -21,9 +18,17 @@ body {
         width: 95% !important;
         margin: 0 auto;
     }
-
-
 }
+
+/*===============
+    SNIPTS
+=================*/
+
+.bullets_none{
+    list-style: none;
+}
+
+
 
 /*===============
     HEADER
@@ -41,9 +46,32 @@ body {
 }
 
 
+@media (max-width: 1200px) {
+    .brandImg {
+        width: 135px;
+        height: auto;
+        margin-left:-40px;
+    }
+
+    .navbar-collapse{
+        margin-left: 10px;
+        margin-top: 14px;
+
+    }
+
+
+}
+
+
 @media (max-width: 992px) {
     .customeNavBar {
         height: auto;
+    }
+
+    .brandImg {
+        width: 160px;
+        height: auto;
+        margin-left:0px;
     }
 
 }
@@ -142,10 +170,13 @@ body {
     letter-spacing: 3px;
     line-height: 85px;
     margin: 0px;
+    text-shadow: 0px 0px 12px rgba(255,255,255,0.25);
 }
 
 .hero_section h1 span {
-    color: var(--maincolor) !important
+    color: var(--maincolor) !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .hero_section h2.bannertagline {
@@ -158,11 +189,11 @@ body {
 }
 
 .hero_section #map {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 10%;
+    left: 10%;
     margin-left: auto;
     margin-right: auto;
     opacity: 0.4;
@@ -254,7 +285,7 @@ body {
 
     .hero_section h1 {
         font-size: 50px;
-        line-height: 30px;
+        line-height:50px;
 
     }
 
@@ -436,16 +467,102 @@ body {
 }
 
 
+/*==============================
+       LABELS
+===============================*/
+
+/* THIS IF FOR LEFT IMAGE AND RIGHT INFORMATION */
+.label{
+    position: relative;
+}
 
 .label .left-block {
-    width: 80px;
+    width: 20%;
     height: auto;
     overflow: hidden;
+    padding: 2px;
 }
 
 .label .right-block {
     width: 80%;
 }
+
+/* THIS IF FOR LEFT IMAGE AND RIGHT  WITH TRADE MARK*/
+
+.label.trademark{
+    position: relative;
+}
+
+
+.label.trademark .left-block {
+    width: 15%;
+    height: auto;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.label.trademark .right-block {
+    width: 70%;
+}
+
+.label.trademark::before{
+
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    
+
+}
+
+
+
+/* THIS IF FOR full lable with out image*/
+
+.label.full.trademark,
+.label.full
+{
+    position: relative;
+}
+
+
+.label.full.trademark .left-block,
+.label.full .left-block {
+    width: 0%;
+    height: auto;
+    overflow: hidden;
+    padding: 4px;
+	display:none;
+}
+
+.label.trademark .right-block {
+    width: 85%;
+}
+
+.label.trademark::before{
+
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    
+
+}
+
+
+
+/* THIS IF FOR LEFT IMAGE AND RIGHT  WITH TRADE MARK */
+
+.label.trademark.zing::before{
+    background-image:url('../images/evolv/Zinglogo.svg');
+    width: 35px;
+    height: 35px;
+    right: 3px;
+    bottom: 6px;
+    background-size: cover;
+}
+
+
 
 .label .right-block .title {
     text-align: left;
@@ -453,7 +570,7 @@ body {
 
 
 .label .right-block .title h2 {
-    font-size: 17px;
+    font-size: 15px;
     margin-bottom: 2px;
     font-weight: bold;
     text-transform: uppercase;
@@ -466,7 +583,7 @@ body {
 
 .label .right-block .title h3,
 .label .right-block .title h5 {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 2px;
     text-transform: capitalize;
     line-height: 19px;
@@ -478,6 +595,28 @@ body {
 
 }
 
+
+.lablehreflink{
+    text-transform: lowercase !important;
+}
+
+@media (max-width: 767px){
+
+
+    .label .left-block {
+        padding: 6px;
+    }
+
+    .label .right-block .title h2 {
+        font-size: 16px;
+    }
+
+    .label .right-block .title h3,
+    .label .right-block .title h5 {
+    font-size: 15px;
+}
+
+}
 
 
 /*==============================
@@ -492,14 +631,19 @@ body {
 @keyframes loading-spinner {
 
 
-    from {
+    0% {
         opacity: 1;
-        stroke-width: 10px;
+        stroke-width: 0px;
     }
 
-    to {
+    50% {
         opacity: 1;
-        stroke-width: 2px;
+        stroke-width:5px;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-width:0px;
     }
 
 }

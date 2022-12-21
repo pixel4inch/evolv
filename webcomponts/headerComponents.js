@@ -3,7 +3,7 @@ class HeaderComponent extends HTMLElement {
     this.innerHTML = `
       
       
-      <nav class="navbar main-nav navbar-expand-xl px-2 pt-0 pb-2 customeNavBar border-bottom">
+      <nav class="navbar main-nav navbar-expand-lg px-2 pt-0 pb-2 customeNavBar border-bottom">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="images/evolv/logo.svg" "="" alt="Evolv" class="brandImg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@ class HeaderComponent extends HTMLElement {
          
       <!---- home page start -->	  
     
-       <li class="nav-item  active">	
+       <li class="nav-item ">	
     
         <a class="nav-link" href="index.html">HOME</a>
       </li> 		

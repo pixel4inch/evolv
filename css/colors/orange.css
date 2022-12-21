@@ -3,10 +3,13 @@
 
 :root {
     --maincolor: #fe4614;
-    --secondcolor:#ccc;
+    --secondcolor:#222327;
+    --thirdcolor:#333;
+    --fourthcolor:#ccc;
     --primaryfont:'Poppins', sans-seri;
     --secondaryfont:"Lora", serif;
-    --thirdfont:"themify"
+    --thirdfont:"themify";
+    --sublinkhover:#fff;
   }
 
 

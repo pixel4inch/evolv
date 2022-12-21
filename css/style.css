@@ -524,7 +524,7 @@ button:focus,
 .main-nav .dropdown .dropdown-menu .dropdown-item:focus,
 .main-nav .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: var(--maincolor);
-  color: #000;
+  color: var(--sublinkhover);
 }
 
 .main-nav .dropdown .dropdown-menu li:first-child {
