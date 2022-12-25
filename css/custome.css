@@ -18,13 +18,15 @@ body {
         width: 95% !important;
         margin: 0 auto;
     }
+
+
 }
 
 /*===============
     SNIPTS
 =================*/
 
-.bullets_none{
+.bullets_none {
     list-style: none;
 }
 
@@ -50,10 +52,10 @@ body {
     .brandImg {
         width: 135px;
         height: auto;
-        margin-left:-40px;
+        margin-left: -40px;
     }
 
-    .navbar-collapse{
+    .navbar-collapse {
         margin-left: 10px;
         margin-top: 14px;
 
@@ -71,7 +73,7 @@ body {
     .brandImg {
         width: 160px;
         height: auto;
-        margin-left:0px;
+        margin-left: 0px;
     }
 
 }
@@ -170,7 +172,7 @@ body {
     letter-spacing: 3px;
     line-height: 85px;
     margin: 0px;
-    text-shadow: 0px 0px 12px rgba(255,255,255,0.25);
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.25);
 }
 
 .hero_section h1 span {
@@ -285,7 +287,7 @@ body {
 
     .hero_section h1 {
         font-size: 50px;
-        line-height:50px;
+        line-height: 50px;
 
     }
 
@@ -467,12 +469,57 @@ body {
 }
 
 
+.ecosysem-dashboard .collapse_click {
+    display: block;
+    margin-bottom: 18px !important;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 5px 11px 1px 11px;
+}
+
+
+
+
+.ecosysem-dashboard .collapse_click.collapsed::before {
+    content: '\f053' !important;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-family: FontAwesome;
+    color: var(--maincolor);
+    font-weight: 100;
+    right: 0px;
+    font-size: 10px;
+    margin-top: 2px;
+
+}
+
+
+.ecosysem-dashboard .collapse_click::before {
+    content: ' \f078' !important;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-family: FontAwesome;
+    color: var(--maincolor);
+    font-weight: 100;
+    right: 0px;
+    font-size: 10px;
+    margin-top: 2px;
+
+}
+
+.ecosysem-dashboard .collapse {
+    padding-left: 15px;
+}
+
+
 /*==============================
        LABELS
 ===============================*/
 
 /* THIS IF FOR LEFT IMAGE AND RIGHT INFORMATION */
-.label{
+.label {
     position: relative;
 }
 
@@ -489,7 +536,7 @@ body {
 
 /* THIS IF FOR LEFT IMAGE AND RIGHT  WITH TRADE MARK*/
 
-.label.trademark{
+.label.trademark {
     position: relative;
 }
 
@@ -505,13 +552,13 @@ body {
     width: 70%;
 }
 
-.label.trademark::before{
+.label.trademark::before {
 
     content: '';
     position: absolute;
     width: 20%;
     height: 10%;
-    
+
 
 }
 
@@ -520,8 +567,7 @@ body {
 /* THIS IF FOR full lable with out image*/
 
 .label.full.trademark,
-.label.full
-{
+.label.full {
     position: relative;
 }
 
@@ -532,20 +578,20 @@ body {
     height: auto;
     overflow: hidden;
     padding: 4px;
-	display:none;
+    display: none;
 }
 
 .label.trademark .right-block {
     width: 85%;
 }
 
-.label.trademark::before{
+.label.trademark::before {
 
     content: '';
     position: absolute;
     width: 20%;
     height: 10%;
-    
+
 
 }
 
@@ -553,8 +599,8 @@ body {
 
 /* THIS IF FOR LEFT IMAGE AND RIGHT  WITH TRADE MARK */
 
-.label.trademark.zing::before{
-    background-image:url('../images/evolv/Zinglogo.svg');
+.label.trademark.zing::before {
+    background-image: url('../images/evolv/Zinglogo.svg');
     width: 35px;
     height: 35px;
     right: 3px;
@@ -596,11 +642,11 @@ body {
 }
 
 
-.lablehreflink{
+.lablehreflink {
     text-transform: lowercase !important;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
 
 
     .label .left-block {
@@ -613,8 +659,8 @@ body {
 
     .label .right-block .title h3,
     .label .right-block .title h5 {
-    font-size: 15px;
-}
+        font-size: 15px;
+    }
 
 }
 
@@ -638,12 +684,12 @@ body {
 
     50% {
         opacity: 1;
-        stroke-width:5px;
+        stroke-width: 5px;
     }
 
     100% {
         opacity: 1;
-        stroke-width:0px;
+        stroke-width: 0px;
     }
 
 }
