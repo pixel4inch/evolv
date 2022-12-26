@@ -14,7 +14,7 @@ class FooterComponent extends HTMLElement {
 						
 						<li><a href="trends.html">TRENDS</a></li>
 						<li><a href="exhibitors.html">EXHIBITORS</a></li>
-						<li><a href="media.html">MEDIA PARTNERS</a></li>
+						<li><a href="media.html">MEDIA</a></li>
 						<li><a href="sponssors.html">SPONSORS</a></li>	
 						<li><a href="privacy.html">PRIVACY POLICY</a></li>	
 					  </ul>

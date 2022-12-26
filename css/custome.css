@@ -420,67 +420,98 @@ body {
        Eco system Dash Board
 ===============================*/
 
-.ecosysem-dashboard h3 span {
-    color: var(--maincolor)
+#ecosysem-dashboard h3{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#ecosysem-dashboard h3 span {
+    color: var(--maincolor);
+    font-weight:500 !important;
 }
 
 
-.ecosysem-dashboard hr {
+#ecosysem-dashboard h5{
+    font-size: 15px;
+    font-weight:bold;
+}
+
+
+#ecosysem-dashboard hr {
     border-top: 2px solid var(--fourthcolor);
 }
 
-.ecosysem-dashboard ul {
-    margin-bottom: 30px !important;
+#ecosysem-dashboard ul {
+    margin-bottom: 10px !important;
+    margin-left: 5px;
+}
+
+@media (max-width: 1400px) {
+    #ecosysem-dashboard  .row{
+      justify-content:space-evenly !important
+    }
+    
+    }
+
+
+@media (max-width: 1199px) {
+#ecosysem-dashboard  .row{
+  justify-content: start !important;
+}
+
 }
 
 
-.ecosysem-dashboard ul li {
+#ecosysem-dashboard ul li {
     padding: 4px 0px 4px 10px !important;
     display: flex;
     font-size: 14px;
 }
 
-.ecosysem-dashboard ul li .phoca-flag-flags {
+#ecosysem-dashboard ul li .phoca-flag-flags {
     width: 19px;
     height: 24px;
     margin: 0px 7px
 }
 
 
-.ecosysem-dashboard ul li:before {
+#ecosysem-dashboard ul li:before {
     content: '\f0da';
     position: absolute;
     width: 20px;
     height: 20px;
     font-family: FontAwesome;
     color: var(--maincolor);
-    margin-left: -11px;
+    margin-left: -14px;
     font-size: 15px;
     margin-top: 2px;
 }
+li.list-group-item.list-group-sub {
+    padding-left: 25px !important;
+}
 
-.ecosysem-dashboard ul li.phoca-box-flags::before {
+#ecosysem-dashboard ul li.phoca-box-flags::before {
     display: none;
 
 }
 
-.ecosysem-dashboard ul li.phoca-box-flags {
+#ecosysem-dashboard ul li.phoca-box-flags {
     margin-left: -15px;
 }
 
 
-.ecosysem-dashboard .collapse_click {
+#ecosysem-dashboard .collapse_click {
     display: block;
-    margin-bottom: 18px !important;
+    margin-bottom: 2px !important;
     position: relative;
-    padding: 5px 11px 1px 11px;
+    padding: 5px 11px 1px 0px;
 }
 
 
 
 
-.ecosysem-dashboard .collapse_click.collapsed::before {
-    content: '\f053' !important;
+#ecosysem-dashboard .collapse_click.collapsed::before {
+    content: '\f078' !important;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -489,13 +520,13 @@ body {
     font-weight: 100;
     right: 0px;
     font-size: 10px;
-    margin-top: 2px;
+    margin-top: 6px;
 
 }
 
 
-.ecosysem-dashboard .collapse_click::before {
-    content: ' \f078' !important;
+#ecosysem-dashboard .collapse_click::before {
+    content: ' \f077' !important;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -503,14 +534,12 @@ body {
     color: var(--maincolor);
     font-weight: 100;
     right: 0px;
-    font-size: 10px;
-    margin-top: 2px;
+    font-size: 13px;
+    margin-top: 4px;
 
 }
 
-.ecosysem-dashboard .collapse {
-    padding-left: 15px;
-}
+
 
 
 /*==============================
