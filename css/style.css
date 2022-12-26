@@ -593,7 +593,8 @@ button:focus,
 
 .footer-main {
   padding: 10px 0;
-  background: #1a1b1f;
+  background: #fff;
+  border-top: #242424 solid 1px;
 }
 
 @media (max-width: 768px) {

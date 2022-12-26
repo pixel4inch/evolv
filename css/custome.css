@@ -145,6 +145,86 @@ body {
 }
 
 /*===============
+image placekeeper
+=================*/
+
+
+.placekeeper_section {
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-image: url('../images/evolv/hero_page/2.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: calc(100vh - 75px);
+    opacity: 1;
+    visibility: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.placekeeper_section::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    left: 0px;
+    top: 0px;
+    z-index: 99;
+}
+
+.placekeeper_section.theme-1{
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
+}
+
+.placekeeper_section.theme-2{
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
+}
+
+
+.placekeeper_section.theme-3{
+    background-image: url('../images/evolv/placekeeper/03.jpg');
+}
+
+
+.placekeeper_section.theme-4{
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
+}
+
+
+.placekeeper_section.theme-5{
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
+}
+
+
+.placekeeper_section.theme-6{
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
+}
+
+.placekeeper_section.theme-7{
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
+}
+
+.placekeeper_section.theme-8{
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
+}
+
+.placekeeper_section.theme-9{
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
+}
+
+.placekeeper_section.theme-10{
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
+}
+
+
+
+
+/*===============
     Hero Section
 =================*/
 
@@ -357,10 +437,11 @@ body {
 }
 
 .footerLinks li a {
-    color: var(--fourthcolor);
+    color: var(--thirdcolor);
     font-size: 13px;
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
+    font-weight: 600;
 }
 
 .footerLinks li a:hover,
@@ -374,7 +455,14 @@ body {
     height: 1px;
     background-color: var(--thirdcolor);
     width: 100%;
+    display: none;
+    
 
+}
+
+.footer-copyright{
+   border-top: var(--thirdcolor) solid 1px;
+   padding-top:15px !important;
 }
 
 @media (max-width:1200px) {

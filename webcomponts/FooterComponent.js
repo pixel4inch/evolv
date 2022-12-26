@@ -48,8 +48,8 @@ class FooterComponent extends HTMLElement {
 		  </div>
 		</div>
 	  </div>
-	  <div class="text-center bg-dark py-1">
-		<small class="text-secondary">Copyright © <script>document.write(new Date().getFullYear())</script>2022  Evolv ., All Rights Reserved.</small>
+	  <div class="text-center py-1 footer-copyright">
+		<small class="text-secondary text-dark ">Copyright © <script>document.write(new Date().getFullYear())</script>2022  Evolv ., All Rights Reserved.</small>
 	  </div>
 	</footer>
 
