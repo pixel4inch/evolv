@@ -594,7 +594,7 @@ button:focus,
 .footer-main {
   padding: 10px 0;
   background: #fff;
-  border-top: #242424 solid 1px;
+  border-top: rgba(0,0,0,0.2) solid 1px;
 }
 
 @media (max-width: 768px) {
