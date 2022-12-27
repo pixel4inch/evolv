@@ -5,7 +5,7 @@ class HeaderComponent extends HTMLElement {
       
       <nav class="navbar main-nav navbar-expand-lg px-2 pt-0 pb-2 customeNavBar border-bottom">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="images/evolv/logo.svg" "="" alt="Evolv" class="brandImg"></a>
+        <a class="navbar-brand" href="home.html"><img src="images/evolv/logo.svg" "="" alt="Evolv" class="brandImg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="ti-menu"></span>
         </button>
@@ -18,13 +18,13 @@ class HeaderComponent extends HTMLElement {
     
        <li class="nav-item ">	
     
-        <a class="nav-link" href="index.html">HOME</a>
+        <a class="nav-link" href="home.html">HOME</a>
       </li> -->			
       <!---- home page end -->
     
       <!---- ABOUT page start -->	 
     
-      <li class="nav-item dropdown @@about ">
+      <li class="nav-item dropdown @@about  ">
         
               <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">ABOUT
                 <span><i class="ti-angle-down"></i></span>
@@ -57,8 +57,8 @@ class HeaderComponent extends HTMLElement {
           <!-- Dropdown list -->
           <ul class="dropdown-menu">
             <li><a class="dropdown-item @startups " href="startups.html">STARTUPS</a></li>
-            <li><a class="dropdown-item @@scaleups" href="scale.html">INVESTOR WORLD</a></li>
-            <li><a class="dropdown-item @@cxo" href="cxo.html">ENTERPRISE CONNECT </a></li>
+            <li><a class="dropdown-item @@scaleups" href="investorworld.html">INVESTOR WORLD</a></li>
+            <li><a class="dropdown-item @@cxo" href="enterpriseconnect.html">ENTERPRISE CONNECT </a></li>
             <li><a class="dropdown-item @@dei" href="dei.html">DIVERSITY EQUITY INCLUSION </a></li>
             <li><a class="dropdown-item @@sustainability" href="sustaiability.html">SUSTAINABILITY </a></li>
             <li><a class="dropdown-item @@genz" href="gen.html">GEN Z </a></li>
@@ -116,8 +116,8 @@ class HeaderComponent extends HTMLElement {
                 <li><a class="dropdown-item @@appliedai" href="applied.html">APPLIED AI</a></li>
                 <li><a class="dropdown-item @@crazyscience" href="crazy.html">CRAZY SCIENCE  </a></li>
                 <li><a class="dropdown-item @@femaleunicorn" href="femaleunicon.html">FEMALE UNICORN FOUNDERS </a></li>
-                <li><a class="dropdown-item @@crypto" href="Marketing.html">CRYPTO 2025+</a></li>
-                <li><a class="dropdown-item @@edtech" href="edtech.html">EDTECH </a></li>
+                <li><a class="dropdown-item @@crypto" href="crypto2025.html">CRYPTO 2025+</a></li>
+                <li><a class="dropdown-item @@edtech" href="edtech2.html">EDTECH </a></li>
           <li><a class="dropdown-item @@agritech" href="agritech.html">AGRI TECH </a></li>
           <li><a class="dropdown-item @@drones" href="gaming.html"> GAMING   </a></li>
           <li><a class="dropdown-item @@drones" href="drones.html"> DRONES  </a></li>
@@ -129,11 +129,11 @@ class HeaderComponent extends HTMLElement {
           <li><a class="dropdown-item @@smartcities" href="smartcities.html">SMART CITIES  </a></li>
           <li><a class="dropdown-item @@impactinvesting" href="productmanagement.html">PRODUCT MANAGEMENT   </a></li>
           <li><a class="dropdown-item @@impactinvesting" href="cx2.html">CX 360   </a></li>
-          <li><a class="dropdown-item @@impactinvesting" href="impactinvesting.html">HYDROGEN INNOVATIONS  </a></li>
-          <li><a class="dropdown-item @@impactinvesting" href="impactinvesting.html">3D PRINTING   </a></li>
-          <li><a class="dropdown-item @@impactinvesting" href="impactinvesting.html">5G  </a></li>
-          <li><a class="dropdown-item @@impactinvesting" href="impactinvesting.html">RETOOLING TO THE RECESSION </a></li>
-          <li><a class="dropdown-item @@impactinvesting" href="impactinvesting.html">EVENT XXX </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="hydrogen.html">HYDROGEN INNOVATIONS  </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="3dprinting.html">3D PRINTING   </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="5g.html">5G  </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="retooling.html">RETOOLING TO THE RECESSION </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="eventxxx.html">EVENT XXX </a></li>
     
               </ul>
             </li>
