@@ -110,7 +110,7 @@ class HeaderComponent extends HTMLElement {
                 <span><i class="ti-angle-down"></i></span>
               </a>
               <!-- Dropdown list -->
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu large">
                 <li><a class="dropdown-item @@impact" href="techtrend.html">TECH TRENDS  </a></li>
                 <li><a class="dropdown-item @@impact" href="impact.html">IMPACT INVESTING </a></li>
                 <li><a class="dropdown-item @@appliedai" href="applied.html">APPLIED AI</a></li>
@@ -234,6 +234,17 @@ class HeaderComponent extends HTMLElement {
         </div>
       </div>
     </nav>
+    <!--============================
+    PLACEKEEPTER BANNER
+=============================-->    
+
+    <section class="section placekeeper_section">
+    <div class="container">
+      <div class="row align-items-center">
+
+      </div>
+    </div>
+  </section>
       
       `;
 

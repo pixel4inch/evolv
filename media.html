@@ -36,10 +36,22 @@
   <link href="css/custome.css" rel="stylesheet" />
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
 
+
   <!---WEB COMPONETNS-->
   <script src="./webcomponts/headerComponents.js"></script>
   <script src="./webcomponts/FooterComponent.js"></script>
   <script src="./webcomponts/ScrollToTop.js"></script>
+  <script src="./webcomponts/dummytext.js"></script>
+
+  <style>
+    .placekeeper_section{
+      display: none;
+    }
+  
+    .placekeeper_section.theme-11{
+      display: block;
+    }
+  </style>
 
 </head>
 
@@ -71,16 +83,11 @@
   <section class="section page-title">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 m-auto">
+        <div class="col-sm-12 m-auto">
           <!-- Page Title -->
           <h1>MEDIA PARTNERS</h1>
           <!-- Page Description -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <dummy-text></dummy-text>
         </div>
       </div>
     </div>

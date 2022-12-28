@@ -143,14 +143,34 @@ body {
 .dropdown-menu li a {
     color: var(--fourthcolor)
 }
+@media (min-width: 992px) {
+    .dropdown-menu.large{
+        display:flex !important;
+        width: 500px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+
+    
+.dropdown-menu.large li{
+    width: 200px;
+    padding-left: 10px;
+}
+
+
+}
+
+
+
+
 
 /*===============
 image placekeeper
 =================*/
 
-
 .placekeeper_section {
-    background-color: #fff;
+    background-color:#fff;  
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -176,7 +196,7 @@ image placekeeper
 
 .placekeeper_section.theme-1
  {
-    background-image: url('../images/evolv/placekeeper/04.jpeg');
+    background-image: url('../images/evolv/placekeeper/01.jpeg');
     background-position: 0px -20px;
     height:400px;
 }
@@ -235,31 +255,35 @@ image placekeeper
 
 /*----THEME-2-----*/
 
-.placekeeper_section.theme-2
+.placekeeper_section.theme-2,
+.placekeeper_section.theme-10
  {
-    background-image: url('../images/evolv/placekeeper/03.jpg');
-    background-position: 0px -150px;
-    height: 520px;
+    background-image: url('../images/evolv/placekeeper/02.jpeg');
+    background-position: 0px -190px;
+    height:400px;
 }
 
 
 
 @media (max-width:1199px) {
 
-    .placekeeper_section.theme-2
+    .placekeeper_section.theme-2,
+    .placekeeper_section.theme-10
     {
-        background-position: 0px -70px;
-        height: 520px;
+        background-position: 0 -150px;
+        height: 300px;
+
     }
 
 }
 
 @media (max-width:991px) {
 
-    .placekeeper_section.theme-2
+    .placekeeper_section.theme-2,
+    .placekeeper_section.theme-10
     {
-         background-position: 0px -130px;
-        height: 300px;
+         background-position: 0px -120px;
+        height: 260px;
 
     }
 
@@ -268,9 +292,10 @@ image placekeeper
 
 @media (max-width:769px) {
 
-    .placekeeper_section.theme-2
+    .placekeeper_section.theme-2,
+    .placekeeper_section.theme-10
      {
-        background-position: 0px -120px;
+        background-position: 0px -50px;
         height: 200px
 
     }
@@ -280,23 +305,403 @@ image placekeeper
 
 @media (max-width: 479px) {
 
-    .placekeeper_section.theme-2
+    .placekeeper_section.theme-2,
+    .placekeeper_section.theme-10
     {
 
         background-position: 0px;
 
-        height: 280px;
+        height: 140px;
 
     }
 
 }
 
 
+/*----THEME-3-----*/
+
+.placekeeper_section.theme-3,
+.placekeeper_section.theme-11
+ {
+    background-image: url('../images/evolv/placekeeper/03.jpg');
+    background-position: 0px -90px;
+    height:400px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-3,
+    .placekeeper_section.theme-11
+    {
+        background-position: 0 -150px;
+        height: 300px;
+
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-3,
+    .placekeeper_section.theme-11
+    {
+         background-position: 0px -120px;
+        height: 260px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-3,
+    .placekeeper_section.theme-11
+     {
+        background-position: 0px -80px;
+        height: 180px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-3,
+    .placekeeper_section.theme-11
+    {
+
+        background-position: 0px;
+
+        height: 140px;
+
+    }
+
+}
+
+
+
+
+/*----THEME-4-----*/
+
+.placekeeper_section.theme-4
+ {
+    background-image: url('../images/evolv/placekeeper/04.jpg');
+    background-position: 0px -90px;
+    height:400px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-4
+    {
+        background-position: 0 -70px;
+        height: 300px;
+
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-4
+    {
+         background-position: 0px -20px;
+        height: 260px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-4
+     {
+        background-position: 0px -40px;
+        height: 180px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-4
+    {
+
+        background-position: 0px;
+
+        height: 140px;
+
+    }
+
+}
+
+
+
+/*----THEME-5-----*/
+
+.placekeeper_section.theme-5
+ {
+    background-image: url('../images/evolv/placekeeper/05.jpg');
+    background-position: 0px -90px;
+    height:400px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-5
+    {
+        background-position: 0 -70px;
+        height: 300px;
+
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-5
+    {
+         background-position: 0px -20px;
+        height: 260px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-5
+     {
+        background-position: 0px -40px;
+        height: 180px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-5
+    {
+
+        background-position: 0px;
+
+        height: 140px;
+
+    }
+
+}
+
+
+/*----THEME-6-----*/
+
+.placekeeper_section.theme-6
+ {
+    background-image: url('../images/evolv/placekeeper/06.jpg');
+    background-position: 0px -50px;
+    height:400px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-6
+    {
+        background-position: 0 -70px;
+        height: 410px;
+
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-6
+    {
+         background-position: 0px -20px;
+        height: 380px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-6
+     {
+        background-position: 0px -40px;
+        height: 270px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-6
+    {
+
+        background-position: 0px;
+
+        height: 180px;
+
+    }
+
+}
+
+
+/*----THEME-7-----*/
+
+.placekeeper_section.theme-7,
+.placekeeper_section.theme-12
+ {
+    background-image: url('../images/evolv/placekeeper/07.jpg');
+    background-position: 0px -50px;
+    height:400px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-7,
+    .placekeeper_section.theme-12
+    {
+        background-position: 0 -70px;
+        height: 410px;
+
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-7,
+    .placekeeper_section.theme-12
+    {
+         background-position: 0px -20px;
+        height: 380px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-7,
+    .placekeeper_section.theme-12
+     {
+        background-position: 0px -40px;
+        height: 270px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-7,
+    .placekeeper_section.theme-12
+    {
+
+        background-position: 0px;
+
+        height: 180px;
+
+    }
+
+}
+
+
+/*----THEME-8-----*/
+
+.placekeeper_section.theme-8
+ {
+    background-image: url('../images/evolv/placekeeper/08.jpg');
+    background-position: 0px -50px;
+    height:400px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-8
+    {
+        background-position: 0 -70px;
+        height: 410px;
+
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-8
+    {
+         background-position: 0px -20px;
+        height: 380px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-8
+     {
+        background-position: 0px -40px;
+        height: 270px
+
+    }
+
+}
+
+
+    @media (max-width: 479px) {
+
+        .placekeeper_section.theme-8
+        {
+
+            background-position: 0px;
+
+            height: 180px;
+
+        }
+
+    }
+
+
+
+
+
+
+
+
 /*----THEME-9-----*/
 
 .placekeeper_section.theme-9
  {
-    background-image: url('../images/evolv/placekeeper/19.jpg');
+    background-image: url('../images/evolv/placekeeper/09.jpg');
     background-position: 0px -230px;
     height: 400px;
 }
@@ -351,188 +756,6 @@ image placekeeper
 }
 
 
-
-/*----THEME-10-----*/
-
-.placekeeper_section.theme-10
- {
-    background-image: url('../images/evolv/placekeeper/02.jpeg');
-    background-position: 0px -230px;
-    height: 640px;
-}
-
-
-
-@media (max-width:1199px) {
-
-    .placekeeper_section.theme-10
-    {
-        background-position: 0px -200px;
-        height: 520px;
-    }
-
-}
-
-@media (max-width:991px) {
-
-    .placekeeper_section.theme-10
-    {
-         background-position: 0px -199px;
-        height: 400px;
-
-    }
-
-}
-
-
-@media (max-width:769px) {
-
-    .placekeeper_section.theme-10
-     {
-        background-position: 0px -100px;
-        height: 300px
-
-    }
-
-}
-
-
-@media (max-width: 479px) {
-
-    .placekeeper_section.theme-10
-    {
-
-        background-position: 0px;
-
-        height: 280px;
-
-    }
-
-}
-
-
-
-
-
-
-/*----THEME-11-----*/
-
-.placekeeper_section.theme-11
- {
-    background-image: url('../images/evolv/placekeeper/18.jpg');
-    background-position: 0px -150px;
-    height: 520px;
-}
-
-
-
-@media (max-width:1199px) {
-
-    .placekeeper_section.theme-11
-    {
-        background-position: 0px -110px;
-        height: 520px;
-    }
-
-}
-
-@media (max-width:991px) {
-
-    .placekeeper_section.theme-11
-    {
-         background-position: 0px -109px;
-        height: 300px;
-
-    }
-
-}
-
-
-@media (max-width:769px) {
-
-    .placekeeper_section.theme-11
-     {
-        background-position: 0px -90px;
-        height: 200px
-
-    }
-
-}
-
-
-@media (max-width: 479px) {
-
-    .placekeeper_section.theme-11
-    {
-
-        background-position: 0px;
-
-        height: 280px;
-
-    }
-
-}
-
-
-
-
-/*----THEME-12-----*/
-
-.placekeeper_section.theme-12
- {
-    background-image: url('../images/evolv/placekeeper/17.jpg');
-    background-position: 0px -150px;
-    height: 520px;
-}
-
-
-
-@media (max-width:1199px) {
-
-    .placekeeper_section.theme-12
-    {
-        background-position: 0px -110px;
-        height: 520px;
-    }
-
-}
-
-@media (max-width:991px) {
-
-    .placekeeper_section.theme-12
-    {
-         background-position: 0px -109px;
-        height: 300px;
-
-    }
-
-}
-
-
-@media (max-width:769px) {
-
-    .placekeeper_section.theme-12
-     {
-        background-position: 0px -90px;
-        height: 200px
-
-    }
-
-}
-
-
-@media (max-width: 479px) {
-
-    .placekeeper_section.theme-12
-    {
-
-        background-position: 0px;
-
-        height: 280px;
-
-    }
-
-}
 
 
 
