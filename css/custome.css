@@ -150,7 +150,7 @@ image placekeeper
 
 
 .placekeeper_section {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -161,10 +161,7 @@ image placekeeper
     align-items: center;
     position: relative;
 }
-
-
-
-.placekeeper_section::before {
+/*.placekeeper_section::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -173,22 +170,24 @@ image placekeeper
     left: 0px;
     top: 0px;
     z-index: ;
+}*/
+
+/*----THEME-1-----*/
+
+.placekeeper_section.theme-1
+ {
+    background-image: url('../images/evolv/placekeeper/04.jpeg');
+    background-position: 0px -20px;
+    height:400px;
 }
 
 
-
-.placekeeper_section.theme-1,
-.placekeeper_section.theme-6 {
-    background-image: url('../images/evolv/placekeeper/01.jpeg');
-    background-position: 0px -280px;
-    height: 315px;
-}
 
 @media (max-width:1199px) {
 
-    .placekeeper_section.theme-1,
-    .placekeeper_section.theme-6 {
-        background-position: 0px -250px;
+    .placekeeper_section.theme-1
+    {
+        background-position: 0 -10px;
         height: 300px;
 
     }
@@ -197,10 +196,10 @@ image placekeeper
 
 @media (max-width:991px) {
 
-    .placekeeper_section.theme-1,
-    .placekeeper_section.theme-6 {
-        background-position: 0px -200px;
-        height: 280px;
+    .placekeeper_section.theme-1
+    {
+         background-position: 0px -10px;
+        height: 300px;
 
     }
 
@@ -209,10 +208,10 @@ image placekeeper
 
 @media (max-width:769px) {
 
-    .placekeeper_section.theme-1,
-    .placekeeper_section.theme-6 {
-        background-position: 0px;
-        height: 280px;
+    .placekeeper_section.theme-1
+     {
+        background-position: 0px -10px;
+        height: 200px
 
     }
 
@@ -221,8 +220,8 @@ image placekeeper
 
 @media (max-width: 479px) {
 
-    .placekeeper_section.theme-1,
-    .placekeeper_section.theme-6 {
+    .placekeeper_section.theme-1
+    {
 
         background-position: 0px;
 
@@ -234,74 +233,33 @@ image placekeeper
 
 
 
+/*----THEME-2-----*/
 
-.placekeeper_section.theme-2,
-.placekeeper_section.theme-7 {
-    background-image: url('../images/evolv/placekeeper/02.jpeg');
-    height: 615px;
-}
-
-
-.placekeeper_section.theme-3,
-.placekeeper_section.theme-8 {
+.placekeeper_section.theme-2
+ {
     background-image: url('../images/evolv/placekeeper/03.jpg');
+    background-position: 0px -150px;
+    height: 520px;
 }
 
 
-.placekeeper_section.theme-4,
-.placekeeper_section.theme-9 {
-    background-image: url('../images/evolv/placekeeper/04.jpeg');
-    background-position: 0px -50px;
-    height: 300px;
-}
 
+@media (max-width:1199px) {
 
-@media (max-width:769px) {
-
-    .placekeeper_section.theme-4,
-    .placekeeper_section.theme-9 {
-        background-position: 0px;
-        height: 280px;
-
+    .placekeeper_section.theme-2
+    {
+        background-position: 0px -70px;
+        height: 520px;
     }
 
 }
-
-
-@media (max-width: 479px) {
-
-    .placekeeper_section.theme-4,
-    .placekeeper_section.theme-9 {
-
-        background-position: 0px;
-
-        height: 280px;
-
-    }
-
-}
-
-
-
-
-
-
-
-.placekeeper_section.theme-5,
-.placekeeper_section.theme-10 {
-    background-image: url('../images/evolv/placekeeper/05.jpeg');
-    background-position: 0px -180px;
-    height: 300px;
-
-}
-
 
 @media (max-width:991px) {
 
-    .placekeeper_section.theme-5,
-    .placekeeper_section.theme-10 {
-        background-position: 0px;
-        height: 330px;
+    .placekeeper_section.theme-2
+    {
+         background-position: 0px -130px;
+        height: 300px;
 
     }
 
@@ -310,10 +268,10 @@ image placekeeper
 
 @media (max-width:769px) {
 
-    .placekeeper_section.theme-5,
-    .placekeeper_section.theme-10 {
-        background-position: 0px;
-        height: 280px;
+    .placekeeper_section.theme-2
+     {
+        background-position: 0px -120px;
+        height: 200px
 
     }
 
@@ -322,8 +280,8 @@ image placekeeper
 
 @media (max-width: 479px) {
 
-    .placekeeper_section.theme-5,
-    .placekeeper_section.theme-10 {
+    .placekeeper_section.theme-2
+    {
 
         background-position: 0px;
 
@@ -332,6 +290,250 @@ image placekeeper
     }
 
 }
+
+
+/*----THEME-9-----*/
+
+.placekeeper_section.theme-9
+ {
+    background-image: url('../images/evolv/placekeeper/19.jpg');
+    background-position: 0px -230px;
+    height: 400px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-9
+    {
+        background-position: 0px -200px;
+        height: 350px;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-9
+    {
+         background-position: 0px 0px;
+        height: 400px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-9
+     {
+        background-position: 0px -0px;
+        height: 300px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-9
+    {
+
+        background-position: 0px;
+
+        height: 280px;
+
+    }
+
+}
+
+
+
+/*----THEME-10-----*/
+
+.placekeeper_section.theme-10
+ {
+    background-image: url('../images/evolv/placekeeper/02.jpeg');
+    background-position: 0px -230px;
+    height: 640px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-10
+    {
+        background-position: 0px -200px;
+        height: 520px;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-10
+    {
+         background-position: 0px -199px;
+        height: 400px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-10
+     {
+        background-position: 0px -100px;
+        height: 300px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-10
+    {
+
+        background-position: 0px;
+
+        height: 280px;
+
+    }
+
+}
+
+
+
+
+
+
+/*----THEME-11-----*/
+
+.placekeeper_section.theme-11
+ {
+    background-image: url('../images/evolv/placekeeper/18.jpg');
+    background-position: 0px -150px;
+    height: 520px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-11
+    {
+        background-position: 0px -110px;
+        height: 520px;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-11
+    {
+         background-position: 0px -109px;
+        height: 300px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-11
+     {
+        background-position: 0px -90px;
+        height: 200px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-11
+    {
+
+        background-position: 0px;
+
+        height: 280px;
+
+    }
+
+}
+
+
+
+
+/*----THEME-12-----*/
+
+.placekeeper_section.theme-12
+ {
+    background-image: url('../images/evolv/placekeeper/17.jpg');
+    background-position: 0px -150px;
+    height: 520px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-12
+    {
+        background-position: 0px -110px;
+        height: 520px;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-12
+    {
+         background-position: 0px -109px;
+        height: 300px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-12
+     {
+        background-position: 0px -90px;
+        height: 200px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-12
+    {
+
+        background-position: 0px;
+
+        height: 280px;
+
+    }
+
+}
+
 
 
 
@@ -349,977 +551,7 @@ image placekeeper
 .hero_section {
     background-color: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
-    background-image: url("../images/evolv/hero_page/");
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: calc(100vh - 75px);
-    opacity: 1;
-    visibility: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.hero_section h1 {
-    font-weight: bold;
-    font-size: 87px;
-    font-family: var(--primaryfont);
-    letter-spacing: 3px;
-    line-height: 85px;
-    margin: 0px;
-    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.25);
-}
-
-.hero_section h1 span {
-    color: var(--maincolor) !important;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-}
-
-.hero_section h2.bannertagline {
-    font-size: 32px;
-    line-height: normal;
-    letter-spacing: 2px;
-    margin-top: 5px;
-    text-transform: uppercase;
-
-}
-
-.hero_section #map {
-    height: 80%;
-    width: 80%;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.4;
-    cursor: none;
-
-
-}
-
-
-
-.hero_section .jvm-zoom-btn {
-    display: none;
-
-}
-
-
-
-@media (max-width: 991px) {
-
-    .hero_section {
-        height: auto;
-        padding: 80px !important;
-    }
-
-    .hero_section h1 {
-        font-size: 70px;
-        line-height: 40px;
-
-    }
-
-    .hero_section h2.bannertagline {
-        font-size: 25.5px;
-        margin-top: 14px;
-    }
-
-    .hero_section #map {
-        height: 100%;
-        width: 100%;
-        left: 0px;
-        top: 0px;
-        ;
-
-    }
-
-
-}
-
-
-
-@media (max-width: 767px) {
-
-    .hero_section {
-        height: auto;
-        padding: 60px !important;
-    }
-
-    .hero_section h1 {
-        font-size: 44px;
-        line-height: 40px;
-
-    }
-
-    .hero_section h2.bannertagline {
-        font-size: 15.5px;
-        margin-top: 10px;
-    }
-
-    .hero_section #map {
-        height: 100%;
-        width: 100%;
-        left: 0px;
-        top: 0px;
-        ;
-
-    }
-
-
-}
-
-
-
-
-@media (max-width: 479px) {
-
-    .hero_section {
-        height: auto;
-        padding: 40px 20px !important;
-    }
-
-    .hero_section h1 {
-        font-size: 50px;
-        line-height: 50px;
-
-    }
-
-    .hero_section h2.bannertagline {
-        font-size: 18px !important;
-        margin-bottom: 10px;
-
-    }
-
-    .hero_section #map {
-        height: 100%;
-        width: 100%;
-        left: 0px;
-        top: 0px;
-        ;
-
-    }
-
-
-}
-
-
-/*===================
-  home page speakers
-=====================*/
-
-.spakers .hover-zoom {
-    overflow: hidden;
-    border-radius: 0px !important
-}
-
-.spakers h3 {
-    font-weight: 600 !important;
-    margin-top: 15px;
-    margin-bottom: 0px;
-}
-
-.spakers .block p {
-    font-size: 14px;
-    color: var(--maincolor);
-}
-
-
-
-
-
-/*===================
-    FOOTER LINKS
-=====================*/
-
-.footer-main {
-    padding: 20px 5px !important
-}
-
-.footerLinks {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0px
-}
-
-.footerLinks li {
-    padding: 3px;
-    margin: 4px 6px;
-
-}
-
-.footerLinks li a {
-    color: var(--thirdcolor);
-    font-size: 13px;
-    transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-    font-weight: 600;
-}
-
-.footerLinks li a:hover,
-.footerLinks li a.active {
-    color: var(--maincolor);
-    transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-}
-
-.footer-divider {
-    height: 1px;
-    background-color: var(--thirdcolor);
-    width: 100%;
-    display: none;
-
-
-}
-
-.footer-copyright {
-    border-top: rgba(0, 0, 0, 0.2) solid 1px;
-    padding-top: 15px !important;
-}
-
-@media (max-width:1200px) {
-    .footerLinks li {
-        margin: 4px 2px;
-    }
-
-}
-
-
-@media (max-width: 992px) {
-    .footerLinks {
-
-        justify-content: center
-    }
-
-    .footerLinks li {
-        margin: 2px 6px;
-    }
-
-}
-
-
-
-
-
-@media (max-width: 767px) {
-
-    .footerLinks {
-        margin: 0px;
-    }
-
-
-
-    .footer-main .block {
-        margin-bottom: 10px;
-    }
-
-}
-
-
-/*==============================
-       Eco system Dash Board
-===============================*/
-
-#ecosysem-dashboard h3 {
-    font-size: 19px;
-    font-weight: bold;
-}
-
-#ecosysem-dashboard h3 span {
-    color: var(--maincolor);
-    font-weight: 500 !important;
-}
-
-
-#ecosysem-dashboard h5 {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-
-#ecosysem-dashboard hr {
-    border-top: 2px solid var(--fourthcolor);
-}
-
-#ecosysem-dashboard ul {
-    margin-bottom: 10px !important;
-    margin-left: 5px;
-}
-
-@media (max-width: 1400px) {
-    #ecosysem-dashboard .row {
-        justify-content: space-evenly !important
-    }
-
-}
-
-
-@media (max-width: 1199px) {
-    #ecosysem-dashboard .row {
-        justify-content: start !important;
-    }
-
-}
-
-
-#ecosysem-dashboard ul li {
-    padding: 4px 0px 4px 10px !important;
-    display: flex;
-    font-size: 14px;
-}
-
-#ecosysem-dashboard ul li .phoca-flag-flags {
-    width: 19px;
-    height: 24px;
-    margin: 0px 7px
-}
-
-
-#ecosysem-dashboard ul li:before {
-    content: '\f0da';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    font-family: FontAwesome;
-    color: var(--maincolor);
-    margin-left: -14px;
-    font-size: 15px;
-    margin-top: 2px;
-}
-
-#INFLUENCERS_byTier ul li.list-group-item.list-group-sub {
-    padding-left: 25px !important;
-}
-
-#ecosysem-dashboard ul li.phoca-box-flags::before {
-    display: none;
-
-}
-
-#ecosysem-dashboard ul li.phoca-box-flags {
-    margin-left: -15px;
-}
-
-
-#ecosysem-dashboard .collapse_click {
-    display: block;
-    margin-bottom: 2px !important;
-    position: relative;
-    padding: 5px 11px 1px 0px;
-}
-
-
-
-
-#ecosysem-dashboard .collapse_click.collapsed::before {
-    content: '\f078' !important;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    font-family: FontAwesome;
-    color: var(--maincolor);
-    font-weight: 100;
-    right: 0px;
-    font-size: 10px;
-    margin-top: 1px;
-
-}
-
-
-#ecosysem-dashboard .collapse_click::before {
-    content: ' \f077' !important;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    font-family: FontAwesome;
-    color: var(--maincolor);
-    font-weight: 100;
-    right: 0px;
-    font-size: 13px;
-    margin-top: 4px;
-
-}
-
-
-
-
-/*==============================
-       LABELS
-===============================*/
-
-/* THIS IF FOR LEFT IMAGE AND RIGHT INFORMATION */
-.label {
-    position: relative;
-}
-
-.label .left-block {
-    width: 20%;
-    height: auto;
-    overflow: hidden;
-    padding: 2px;
-}
-
-.label .right-block {
-    width: 80%;
-}
-
-/* THIS IF FOR LEFT IMAGE AND RIGHT  WITH TRADE MARK*/
-
-.label.trademark {
-    position: relative;
-}
-
-
-.label.trademark .left-block {
-    width: 15%;
-    height: auto;
-    overflow: hidden;
-    padding: 4px;
-}
-
-.label.trademark .right-block {
-    width: 70%;
-}
-
-.label.trademark::before {
-
-    content: '';
-    position: absolute;
-    width: 20%;
-    height: 10%;
-
-
-}
-
-
-
-/* THIS IF FOR full lable with out image*/
-
-.label.full.trademark,
-.label.full {
-    position: relative;
-}
-
-
-.label.full.trademark .left-block,
-.label.full .left-block {
-    width: 0%;
-    height: auto;
-    overflow: hidden;
-    padding: 4px;
-    display: none;
-}
-
-.label.trademark .right-block {
-    width: 85%;
-}
-
-.label.trademark::before {
-
-    content: '';
-    position: absolute;
-    width: 20%;
-    height: 10%;
-
-
-}
-
-
-
-/* THIS IF FOR LEFT IMAGE AND RIGHT  WITH TRADE MARK */
-
-.label.trademark.zing::before {
-    background-image: url('../images/evolv/Zinglogo.svg');
-    width: 35px;
-    height: 35px;
-    right: 3px;
-    bottom: 6px;
-    background-size: cover;
-}
-
-
-
-.label .right-block .title {
-    text-align: left;
-}
-
-
-.label .right-block .title h2 {
-    font-size: 15px;
-    margin-bottom: 2px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.label .right-block .title h3,
-.label .right-block .title h5 {
-    font-size: 14px;
-    margin-top: 2px;
-    text-transform: capitalize;
-    line-height: 19px;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 0px;
-
-}
-
-
-.lablehreflink {
-    text-transform: lowercase !important;
-}
-
-@media (max-width: 767px) {
-
-
-    .label .left-block {
-        padding: 6px;
-    }
-
-    .label .right-block .title h2 {
-        font-size: 16px;
-    }
-
-    .label .right-block .title h3,
-    .label .right-block .title h5 {
-        font-size: 15px;
-    }
-
-}
-
-
-/*==============================
-        map animation
-===============================*/
-
-#jvm-markers-group circle {
-    animation: loading-spinner 1s linear infinite;
-    fill: var(--maincolor)
-}
-
-@keyframes loading-spinner {
-
-
-    0% {
-        opacity: 1;
-        stroke-width: 0px;
-    }
-
-    50% {
-        opacity: 1;
-        stroke-width: 5px;
-    }
-
-    100% {
-        opacity: 1;
-        stroke-width: 0px;
-    }
-
-}
-
-/*===========================
-            startup page
-  ===========================*/
-
-
-.event_speaker_list li span {
-    text-align: left;
-    padding-left: 5px !important;
-}
-
-/*===========================
-            startup page
-  ===========================*/
-
-.Alp_Display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px 16px;
-}
-
-
-
-.Alp_Display a {
-    margin: 1px;
-    color: black;
-    width: 22px;
-    height: 22px;
-    background: #fff;
-    display: block;
-    font-size: 12px;
-}
-
-
-.Alp_Display a.active {
-    background: var(--maincolor);
-    color: #fff;
-}
-
-@import url(./color.css);
-
-/*==============
-   Body
-==============*/
-body {
-    font-family: var(--primaryfont);
-}
-
-.section-title p {
-    width: 50%;
-    margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-
-    .section-title p {
-        width: 95% !important;
-        margin: 0 auto;
-    }
-
-
-}
-
-/*===============
-    SNIPTS
-=================*/
-
-.bullets_none {
-    list-style: none;
-}
-
-
-
-/*===============
-    HEADER
-=================*/
-
-.brandImg {
-    width: 175px;
-    height: auto;
-    margin-top: 5px;
-}
-
-.customeNavBar {
-    height: 80px;
-    padding-top: 10px z-index:99999
-}
-
-
-@media (max-width: 1200px) {
-    .brandImg {
-        width: 135px;
-        height: auto;
-        margin-left: -40px;
-    }
-
-    .navbar-collapse {
-        margin-left: 10px;
-        margin-top: 14px;
-
-    }
-
-
-}
-
-
-@media (max-width: 992px) {
-    .customeNavBar {
-        height: auto;
-    }
-
-    .brandImg {
-        width: 160px;
-        height: auto;
-        margin-left: 0px;
-    }
-
-}
-
-
-@media (max-width: 991px) {
-    .brandImg {
-        width: 200px;
-        height: auto;
-    }
-
-    .navbar-toggler {
-        margin-top: 10px;
-    }
-
-    .navbar-nav {
-        border-top: solid 1px var(--thirdcolor);
-        margin-top: 5px;
-    }
-
-    .navbar-nav li a {
-        text-align: left !important
-    }
-
-    .navbar-nav li a span {
-        float: right;
-    }
-}
-
-
-@media (max-width: 991px) {
-    .brandImg {
-        width: 175px;
-        height: auto;
-    }
-
-}
-
-@media (max-width: 479px) {
-    .brandImg {
-        width: 150px;
-        height: auto;
-    }
-
-
-}
-
-
-
-
-
-
-.dropdown-menu {
-    background-color: var(--secondcolor)
-}
-
-.dropdown-menu li {
-    border-bottom: solid 1px var(--thirdcolor);
-    line-height: 35px;
-}
-
-.dropdown-menu li:last-child {
-    border-bottom: solid 0px var(--thirdcolor) !important
-}
-
-
-.dropdown-menu li a {
-    color: var(--fourthcolor)
-}
-
-/*===============
-image placekeeper
-=================*/
-
-
-.placekeeper_section {
-    background-color: rgba(0, 0, 0, 0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    opacity: 1;
-    visibility: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-
-
-.placekeeper_section::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    left: 0px;
-    top: 0px;
-    z-index: ;
-}
-
-
-
-.placekeeper_section.theme-1,
-.placekeeper_section.theme-6 {
-    background-image: url('../images/evolv/placekeeper/01.jpeg');
-    background-position: 0px -280px;
-    height: 315px;
-}
-
-@media (max-width:1199px) {
-
-    .placekeeper_section.theme-1,
-    .placekeeper_section.theme-6 {
-        background-position: 0px -250px;
-        height: 300px;
-
-    }
-
-}
-
-@media (max-width:991px) {
-
-    .placekeeper_section.theme-1,
-    .placekeeper_section.theme-6 {
-        background-position: 0px -200px;
-        height: 280px;
-
-    }
-
-}
-
-
-@media (max-width:769px) {
-
-    .placekeeper_section.theme-1,
-    .placekeeper_section.theme-6 {
-        background-position: 0px;
-        height: 280px;
-
-    }
-
-}
-
-
-@media (max-width: 479px) {
-
-    .placekeeper_section.theme-1,
-    .placekeeper_section.theme-6 {
-
-        background-position: 0px;
-
-        height: 280px;
-
-    }
-
-}
-
-
-
-
-.placekeeper_section.theme-2,
-.placekeeper_section.theme-7 {
-    background-image: url('../images/evolv/placekeeper/02.jpeg');
-    height: 615px;
-}
-
-
-.placekeeper_section.theme-3,
-.placekeeper_section.theme-8 {
-    background-image: url('../images/evolv/placekeeper/03.jpg');
-}
-
-
-.placekeeper_section.theme-4,
-.placekeeper_section.theme-9 {
-    background-image: url('../images/evolv/placekeeper/04.jpeg');
-    background-position: 0px -50px;
-    height: 300px;
-}
-
-
-@media (max-width:769px) {
-
-    .placekeeper_section.theme-4,
-    .placekeeper_section.theme-9 {
-        background-position: 0px;
-        height: 280px;
-
-    }
-
-}
-
-
-@media (max-width: 479px) {
-
-    .placekeeper_section.theme-4,
-    .placekeeper_section.theme-9 {
-
-        background-position: 0px;
-
-        height: 280px;
-
-    }
-
-}
-
-
-
-
-
-
-
-.placekeeper_section.theme-5,
-.placekeeper_section.theme-10 {
-    background-image: url('../images/evolv/placekeeper/05.jpeg');
-    background-position: 0px -180px;
-    height: 300px;
-
-}
-
-
-@media (max-width:991px) {
-
-    .placekeeper_section.theme-5,
-    .placekeeper_section.theme-10 {
-        background-position: 0px;
-        height: 330px;
-
-    }
-
-}
-
-
-@media (max-width:769px) {
-
-    .placekeeper_section.theme-5,
-    .placekeeper_section.theme-10 {
-        background-position: 0px;
-        height: 280px;
-
-    }
-
-}
-
-
-@media (max-width: 479px) {
-
-    .placekeeper_section.theme-5,
-    .placekeeper_section.theme-10 {
-
-        background-position: 0px;
-
-        height: 280px;
-
-    }
-
-}
-
-
-
-
-
-
-
-
-
-/*===============
-    Hero Section
-=================*/
-
-
-.hero_section {
-    background-color: rgba(0, 0, 0, 0);
-    background-repeat: no-repeat;
-    background-image: url('../images/evolv/hero_page/2.jpg');
+    background-image: url("../images/evolv/hero_page/2.jpg");
     background-size: cover;
     background-position: center center;
     width: 100%;

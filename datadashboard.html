@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -15,58 +16,290 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Evolv ">
   <meta name="generator" content="Evolv">
-  
+
   <!-- theme meta -->
   <meta name="theme-name" content="Evolv" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.strategyr.com/zing/evolv/images/favicon.ico" />
   <!-- PLUGINS CSS STYLE -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css"/>
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css"/>
-  <link rel="stylesheet" href="plugins/slick/slick.css"/>
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css"/>
-  <link rel="stylesheet" href="plugins/aos/aos.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
-
+  <link rel="stylesheet" href="https://www.strategyr.com/zing/evolv/plugins/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://www.strategyr.com/zing/evolv/plugins/themify-icons/themify-icons.css" />
+  <link rel="stylesheet" href="https://www.strategyr.com/zing/evolv/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://www.strategyr.com/zing/evolv/plugins/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://www.strategyr.com/zing/evolv/plugins/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://www.strategyr.com/zing/evolv/plugins/aos/aos.css" />
 
 
   <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet"/>
-  <link href="css/custome.css" rel="stylesheet"/>
-  <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet"/>
+  <link href="https://www.strategyr.com/zing/evolv/css/style.css" rel="stylesheet" />
+  <link href="https://www.strategyr.com/zing/evolv/css/custome.css" rel="stylesheet" />
+  <link href="https://www.strategyr.com/zing/evolv/./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
 
+  <!---WEB COMPONETNS-->
+  <script src="./webcomponts/headerComponents.js"></script>
+  <script src="./webcomponts/FooterComponent.js"></script>
+  <script src="./webcomponts/ScrollToTop.js"></script>
 
-    <!---WEB COMPONETNS-->
-	<script src="./webcomponts/headerComponents.js"></script>
-	<script src="./webcomponts/FooterComponent.js"></script>
-	<script src="./webcomponts/ScrollToTop.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
-	<!--============================
+
+  <!--============================
 =            HEADER           =
 =============================-->
-<header-component></header-component>
+<nav class="navbar main-nav navbar-expand-lg px-2 pt-0 pb-2 customeNavBar border-bottom">
+	<div class="container">
+	  <a class="navbar-brand" href="home.html"><img src="images/evolv/logo.svg" "="" alt="Evolv" class="brandImg"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="ti-menu"></span>
+	  </button>
+  
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ml-auto">
+  
+	   
+	<!---- home page start   
+  
+	 <li class="nav-item ">	
+  
+	  <a class="nav-link" href="home.html">HOME</a>
+	</li> -->			
+	<!---- home page end -->
+  
+	<!---- ABOUT page start -->	 
+  
+	<li class="nav-item dropdown @@about  ">
+	  
+			<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">ABOUT
+			  <span><i class="ti-angle-down"></i></span>
+			</a>
+			<!-- Dropdown list -->
+			<ul class="dropdown-menu">
+			  <li>			
+		  
+			<a class="dropdown-item @profile " href="profile.html">
+		  
+		  PROFILE</a>
+		</li>
+		
+		
+		<li>
+		  
+			<a class="dropdown-item @@mission" href="mission.html">	 
+						
+		  MISSION</a>
+		</li>
+		<li><a class="dropdown-item @@leadership" href="leadership.html">LEADERSHIP </a></li>
+			</ul>
+		  </li>
+  
+	<!---- ABOUT page end -->	 
+	  <li class="nav-item dropdown @@about  ">
+		<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">PROGRAMS
+		  <span><i class="ti-angle-down"></i></span>
+		</a>
+		<!-- Dropdown list -->
+		<ul class="dropdown-menu">
+		  <li><a class="dropdown-item @startups " href="startups.html">STARTUPS</a></li>
+		  <li><a class="dropdown-item @@scaleups" href="investorworld.html">INVESTOR WORLD</a></li>
+		  <li><a class="dropdown-item @@cxo" href="enterpriseconnect.html">ENTERPRISE CONNECT </a></li>
+		  <li><a class="dropdown-item @@dei" href="dei.html">DIVERSITY EQUITY INCLUSION </a></li>
+		  <li><a class="dropdown-item @@sustainability" href="sustaiability.html">SUSTAINABILITY </a></li>
+		  <li><a class="dropdown-item @@genz" href="gen.html">GEN Z </a></li>
+		  <li><a class="dropdown-item @@impactinvesting" href="impactcsr.html">IMPACT INVESTING &amp; CSR </a></li>
+		  <li><a class="dropdown-item @@govt" href="govt.html">GOVT</a></li>
+		</ul>
+		</li>
+  
+		
+	<!---- AWARDS page start -->	 
+	  
+		  
+	  
+		  <li class="nav-item dropdown @@awards ">	
+	  
+		  <a class="nav-link dropdown-toggle" href="javascript:void(0)">AWARDS
+  
+			<span><i class="ti-angle-down"></i></span>
+  
+		  </a>
+  
+		  <!-- Dropdown list -->
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item @topstartups " href="topstartups.html">TOP STARTUPS </a></li>
+			<li><a class="dropdown-item @@earlystate" href="earlystate.html"> EVOLV EARLY STAGE 1000 </a></li>
+			<li><a class="dropdown-item @@fasttrack" href="fasttrack.html">EVOLV FAST-TRACK 1000 </a></li>
+			<li><a class="dropdown-item @@ai" href="ai.html"> EVOLV AI 100 </a></li>
+			<li><a class="dropdown-item @@digitalhealth" href="digitalhealth.html"> EVOLV 100 DIGITAL HEALTH </a></li>
+			<li><a class="dropdown-item @@evolvgaming" href="evolvgaming.html">EVOLV 100 GAMING</a></li>
+			<li><a class="dropdown-item @@cloudsecurity" href="cloudsecurity.html">EVOLV 100 CLOUD SECURITY  </a></li>
+			<li><a class="dropdown-item @@evolvagritech" href="evolvagritech.html">EVOLV 100 AGRI TECH </a></li>
+			<li><a class="dropdown-item @@edtech" href="edtech.html">EVOLV 100 ED TECH</a></li>
+			<li><a class="dropdown-item @@evolvedrones" href="evolvedrones.html"> EVOLV 100 DRONES</a></li>
+			<li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
+			<li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
+			<li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
+			<li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
+			<li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
+			
+		  </ul>
+  
+  
+		</li>
+	<!---- AWARDS page ends -->
+  
+  
+		  <li class="nav-item dropdown @@calender">
+			<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">CALENDAR
+			  <span><i class="ti-angle-down"></i></span>
+			</a>
+			<!-- Dropdown list -->
+			<ul class="dropdown-menu">
+			  <li><a class="dropdown-item @@impact" href="techtrend.html">TECH TRENDS  </a></li>
+			  <li><a class="dropdown-item @@impact" href="impact.html">IMPACT INVESTING </a></li>
+			  <li><a class="dropdown-item @@appliedai" href="applied.html">APPLIED AI</a></li>
+			  <li><a class="dropdown-item @@crazyscience" href="crazy.html">CRAZY SCIENCE  </a></li>
+			  <li><a class="dropdown-item @@femaleunicorn" href="femaleunicon.html">FEMALE UNICORN FOUNDERS </a></li>
+			  <li><a class="dropdown-item @@crypto" href="crypto2025.html">CRYPTO 2025+</a></li>
+			  <li><a class="dropdown-item @@edtech" href="edtech2.html">EDTECH </a></li>
+		<li><a class="dropdown-item @@agritech" href="agritech.html">AGRI TECH </a></li>
+		<li><a class="dropdown-item @@drones" href="gaming.html"> GAMING   </a></li>
+		<li><a class="dropdown-item @@drones" href="drones.html"> DRONES  </a></li>
+		
+		<li><a class="dropdown-item @@marketing" href="marketingin.html">MARKETING INNOVATIONS  </a></li>
+		<li><a class="dropdown-item @@hydrogen" href="hydrogen.html">HYDROGEN  </a></li>
+		<li><a class="dropdown-item @@impactinvesting" href="impactinvesting.html">IMPACT INVESTING  </a></li>
+		<li><a class="dropdown-item @@sellingtogovts" href="sellingtogovts.html">SELLING TO GOVTS  </a></li>
+		<li><a class="dropdown-item @@smartcities" href="smartcities.html">SMART CITIES  </a></li>
+		<li><a class="dropdown-item @@impactinvesting" href="productmanagement.html">PRODUCT MANAGEMENT   </a></li>
+		<li><a class="dropdown-item @@impactinvesting" href="cx2.html">CX 360   </a></li>
+		<li><a class="dropdown-item @@impactinvesting" href="hydrogen.html">HYDROGEN INNOVATIONS  </a></li>
+		<li><a class="dropdown-item @@impactinvesting" href="3dprinting.html">3D PRINTING   </a></li>
+		<li><a class="dropdown-item @@impactinvesting" href="5g.html">5G  </a></li>
+		<li><a class="dropdown-item @@impactinvesting" href="retooling.html">RETOOLING TO THE RECESSION </a></li>
+		<li><a class="dropdown-item @@impactinvesting" href="eventxxx.html">EVENT XXX </a></li>
+  
+			</ul>
+		  </li>
+  
+  
+		<!---- EcoSystem page start -->	 
+		
+		<li class="nav-item @@G20 ">
+		
+		<a class="nav-link" href="ecosystems.html">ECOSYSTEMS</a>
+		</li>
+		<!---- EcoSystem page ends -->
+  
+  
+  
+	<!---- gtwenty page start -->	 
+		
+		   <li class="nav-item @@G20 ">
+		
+		  <a class="nav-link" href="gtwenty.html">G20</a>
+		</li>
+	<!---- gtwenty page ends -->
+	
+		 
+  
+	  <li class="nav-item dropdown @@membership">
+	  
+		<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">MEMBERSHIP
+		  <span><i class="ti-angle-down"></i></span>
+		</a>
+		<!-- Dropdown list -->
+		<ul class="dropdown-menu">
+		  <li>
+		  
+		  <a class="dropdown-item @@worldpremier" href="world.html">
+		  
+		  WORLD PREMIER</a></li>
+		   <li>
+		  
+		  <a class="dropdown-item @@ecocircle" href="eco.html">
+				   
+		   ECO CIRCLE</a></li>	
+		</ul>
+  </li>
+  
+  
+  
+  
+  
+  
+  
+	<li class="nav-item dropdown @@influencer">
+   
+   
+	   
+		<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">INFLUENCERS
+		  <span><i class="ti-angle-down"></i></span>
+		</a>
+		
+		<ul class="dropdown-menu">
+		 
+		 <li>
+		  
+				<a class="dropdown-item @@enterprise" href="enterprise.html">
+		   
+		  ENTERPRISE</a></li>
+		
+		<li>
+		   
+			 <a class="dropdown-item @@entrepreneur" href="entrepreneur.html">
+		  
+			 ENTREPRENEUR </a></li>
+			 
+			 
+		  <li>
+			
+			 <a class="dropdown-item @@academia" href="academic.html">
+				   
+		   ACADEMIA </a></li>
+		   
+		   <li>
+			
+			 <a class="dropdown-item @@venturecapital" href="venture.html">
+		   
+		  VENTURE CAPITAL</a></li>
+		  <!--li><a class="dropdown-item @@govt" href="turnkey.html">GOVT </a></li>--->
+		</ul>
+		</li>
+		<!----Launagae page start -->	 
+  <li class="nav-item @@G20 ">
+  <a class="nav-link" href="javascript:valid(0)">LANGUAGE</a>
+  </li>
+  <!----Launagae page ends -->
+  
+  
+  
+		</ul>
+	  </div>
+	</div>
+  </nav>
 
-<!--================================
+
+
+
+  <!--================================
 =            Page Title            =
 =================================-->
 
-<section class="section page-title">
-	<div class="container">
+  <section class="section page-title">
+    <div class="container">
 		<div class="row">
+
+			
 			<div class="col-sm-12 col-md-12 col-lg-8  m-auto">
+				<img src="https://www.strategyr.com/images/zing__new2.JPG" width="20%" border="0">
 				<!-- Page Title -->
 				<div class="section-title mb-3">
-				<h2>
-					INNOVATOR
-					ECOSYSTEMS<br>
-					<span>DATA DASHBOARD</span></h2>
+					<h2>DATA <span style="color:#2974d6;"> DASHBOARD</span></h2>
 				</div>
 				<!-- Page Description -->
 				
@@ -74,355 +307,197 @@
 
 			</div>
 
-			<div class="col-12 mx-auto ecosysem-dashboard" id="counters_1">
-				<div class="rounded shadow p-2 bg-white">
+			<div class="col-12 mx-auto ecosysem-dashboard" id="ecosysem-dashboard">
+				<div class="rounded  p-2 bg-white">
 					<div class="row">
-						<div class="col-xl-3 col-lg-6 col-md-10 col-sm-12 mx-auto   mt-2 text-center mb-2">
+						<div class="col-xl-2 col-lg-4 col-md-4 col-sm-12    mt-2 text-center mb-2 px-1">
 							
 							<h3 class="mt-4 text-capitalize  h3 ">STARTUPS</h3>
-							<h3 class="mt-2 text-capitalize   h2  counter"><span class=" counter d-block" data-targetnum="715294" data-speed="2500">715,294</span></h3>
+							<h3 class="mt-2 text-capitalize   h2  counter"><span class=" counter d-block">715,294</span></h3>
 							<hr>
 							<div class="col-xl-12 col-12 mx-auto  text-left px-2">
 							<h5 class="font-weight-bold text-left">By Region</h5>
 							<ul class="list-group list-group-flush mb-3">
 							
-							 	<li class="list-group-item phoca-box-flags"> <div class="phoca-flag-flags cf"></div>Africa (80)</li>
+							 
+								<li class="list-group-item"><span>Africa (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Countries_Companies.asp?GTregion=Africa&amp;ShowType=STARTUPS&amp;SRCWord=[A]" target="_new" style="color:blue;">80</a>)</span></li>
+								<!--<li class="list-group-item">Africa (80)</li>-->
 							
 							 
-								<li class="list-group-item">Asia-Pacific (34583)</li>
+								<li class="list-group-item"><span>Asia-Pacific (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Countries_Companies.asp?GTregion=Asia-Pacific&amp;ShowType=STARTUPS&amp;SRCWord=[A]" target="_new" style="color:blue;">34583</a>)</span></li>
+								<!--<li class="list-group-item">Asia-Pacific (34583)</li>-->
 							
 							 
-								<li class="list-group-item">Europe (81301)</li>
+								<li class="list-group-item"><span>Europe (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Countries_Companies.asp?GTregion=Europe&amp;ShowType=STARTUPS&amp;SRCWord=[A]" target="_new" style="color:blue;">81301</a>)</span></li>
+								<!--<li class="list-group-item">Europe (81301)</li>-->
 							
 							 
-								<li class="list-group-item">Latin America (6503)</li>
+								<li class="list-group-item"><span>Latin America (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Countries_Companies.asp?GTregion=Latin America&amp;ShowType=STARTUPS&amp;SRCWord=[A]" target="_new" style="color:blue;">6503</a>)</span></li>
+								<!--<li class="list-group-item">Latin America (6503)</li>-->
 							
 							 
-								<li class="list-group-item">Middle East (2427)</li>
+								<li class="list-group-item"><span>Middle East (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Countries_Companies.asp?GTregion=Middle East&amp;ShowType=STARTUPS&amp;SRCWord=[A]" target="_new" style="color:blue;">2427</a>)</span></li>
+								<!--<li class="list-group-item">Middle East (2427)</li>-->
 							
 							 
-								<li class="list-group-item">North America (469651)</li>
+								<li class="list-group-item"><span>North America (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Countries_Companies.asp?GTregion=North America&amp;ShowType=STARTUPS&amp;SRCWord=[A]" target="_new" style="color:blue;">469651</a>)</span></li>
+								<!--<li class="list-group-item">North America (469651)</li>-->
 								
 							  </ul>
 
-
-							<h5 class="font-weight-bold text-left">By Country</h5>
+							<a class="collapse_click collapsed" data-toggle="collapse" href="#startups_bycountry" role="button" aria-expanded="false" aria-controls="collapseExample">
+							<h5 class="font-weight-bold text-left">By Country</h5></a>
+							<div class="collapse" id="startups_bycountry"> 
 							<ul class="list-group list-group-flush mb-3">
 							
 							
-								<li class="list-group-item">Argentina (892)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags au"></div><span>Australia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Australia&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">16941</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Australia&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">16941</a>-->
 							
 							
-								<li class="list-group-item">Australasia (1372)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags at"></div><span>Austria (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Austria&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">645</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Austria&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">645</a>-->
 							
 							
-								<li class="list-group-item">Bangladesh (383)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags be"></div><span>Belgium (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Belgium&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">3552</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Belgium&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">3552</a>-->
 							
 							
-								<li class="list-group-item">Bulgaria (194)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags br"></div><span>Brazil (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Brazil&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">4980</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Brazil&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">4980</a>-->
 							
 							
-								<li class="list-group-item">Chile (625)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ca"></div><span>Canada (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Canada&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">32098</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Canada&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">32098</a>-->
 							
 							
-								<li class="list-group-item">Colombia (625)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags cn"></div><span>China (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=China&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">2094</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=China&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">2094</a>-->
 							
 							
-								<li class="list-group-item">Costa Rica (166)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags dk"></div><span>Denmark (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Denmark&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">2551</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Denmark&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">2551</a>-->
 							
 							
-								<li class="list-group-item">Croatia (105)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags fr"></div><span>France (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=France&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">5383</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=France&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">5383</a>-->
 							
 							
-								<li class="list-group-item">Cyprus (152)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags de"></div><span>Germany (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Germany&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">6330</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Germany&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">6330</a>-->
 							
 							
-								<li class="list-group-item">Czech Republic (390)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags in"></div><span>India (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=India&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">11646</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=India&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">11646</a>-->
 							
 							
-								<li class="list-group-item">Ecuador (122)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags il"></div><span>Israel (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Israel&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">2427</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Israel&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">2427</a>-->
 							
 							
-								<li class="list-group-item">Egypt (424)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags it"></div><span>Italy (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Italy&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">2122</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Italy&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">2122</a>-->
 							
 							
-								<li class="list-group-item">Estonia (212)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags mx"></div><span>Mexico (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Mexico&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">1523</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Mexico&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">1523</a>-->
 							
 							
-								<li class="list-group-item">Finland (1996)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags sg"></div><span>Singapore (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Singapore&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">2314</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Singapore&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">2314</a>-->
 							
 							
-								<li class="list-group-item">Ghana (123)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags kr"></div><span>South Korea (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=South Korea&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">1138</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=South Korea&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">1138</a>-->
 							
 							
-								<li class="list-group-item">Greece (272)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags es"></div><span>Spain (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Spain&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">2603</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Spain&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">2603</a>-->
 							
 							
-								<li class="list-group-item">Hong Kong (1632)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags se"></div><span>Sweden (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Sweden&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">5935</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Sweden&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">5935</a>-->
 							
 							
-								<li class="list-group-item">Hungary (224)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ch"></div><span>Switzerland (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Switzerland&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">1925</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Switzerland&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">1925</a>-->
 							
 							
-								<li class="list-group-item">Indonesia (838)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags tw"></div><span>Taiwan (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Taiwan&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">450</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Taiwan&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">450</a>-->
 							
 							
-								<li class="list-group-item">Iran (101)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags gb"></div><span>United Kingdom (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=United Kingdom&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">50255</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=United Kingdom&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">50255</a>-->
 							
 							
-								<li class="list-group-item">Ireland (2665)</li>
-							
-							
-								<li class="list-group-item">Japan (1247)</li>
-							
-							
-								<li class="list-group-item">Jordan (180)</li>
-							
-							
-								<li class="list-group-item">Kenya (284)</li>
-							
-							
-								<li class="list-group-item">Kuwait (106)</li>
-							
-							
-								<li class="list-group-item">Lebanon (139)</li>
-							
-							
-								<li class="list-group-item">Lithuania (122)</li>
-							
-							
-								<li class="list-group-item">Luxembourg (453)</li>
-							
-							
-								<li class="list-group-item">Malaysia (657)</li>
-							
-							
-								<li class="list-group-item">Midwestern US (4221)</li>
-							
-							
-								<li class="list-group-item">New England (1796)</li>
-							
-							
-								<li class="list-group-item">New Zealand (2932)</li>
-							
-							
-								<li class="list-group-item">Nigeria (468)</li>
-							
-							
-								<li class="list-group-item">Northeastern US (6736)</li>
-							
-							
-								<li class="list-group-item">Norway (2445)</li>
-							
-							
-								<li class="list-group-item">Pakistan (525)</li>
-							
-							
-								<li class="list-group-item">Panama (114)</li>
-							
-							
-								<li class="list-group-item">Peru (321)</li>
-							
-							
-								<li class="list-group-item">Philippines (787)</li>
-							
-							
-								<li class="list-group-item">Poland (664)</li>
-							
-							
-								<li class="list-group-item">Portugal (426)</li>
-							
-							
-								<li class="list-group-item">Puerto Rico (206)</li>
-							
-							
-								<li class="list-group-item">Qatar (115)</li>
-							
-							
-								<li class="list-group-item">Romania (275)</li>
-							
-							
-								<li class="list-group-item">Russian Federation (878)</li>
-							
-							
-								<li class="list-group-item">Saudi Arabia (511)</li>
-							
-							
-								<li class="list-group-item">Scandinavia (1335)</li>
-							
-							
-								<li class="list-group-item">Serbia (123)</li>
-							
-							
-								<li class="list-group-item">Slovakia (Slovak Republic) (122)</li>
-							
-							
-								<li class="list-group-item">South Africa (1587)</li>
-							
-							
-								<li class="list-group-item">Southeast Asia (866)</li>
-							
-							
-								<li class="list-group-item">Southern US (6887)</li>
-							
-							
-								<li class="list-group-item">Sri Lanka (117)</li>
-							
-							
-								<li class="list-group-item">Thailand (390)</li>
-							
-							
-								<li class="list-group-item">Trinidad and Tobago (253)</li>
-							
-							
-								<li class="list-group-item">Turkey (1111)</li>
-							
-							
-								<li class="list-group-item">Ukraine (382)</li>
-							
-							
-								<li class="list-group-item">United Arab Emirates (1831)</li>
-							
-							
-								<li class="list-group-item">Uruguay (126)</li>
-							
-							
-								<li class="list-group-item">Vietnam (418)</li>
-							
-							
-								<li class="list-group-item">West Coast (2292)</li>
-							
-							
-								<li class="list-group-item">Western US (10299)</li>
-							
-							
-								<li class="list-group-item">Australia (16941)</li>
-							
-							
-								<li class="list-group-item">Austria (645)</li>
-							
-							
-								<li class="list-group-item">Belgium (3552)</li>
-							
-							
-								<li class="list-group-item">Brazil (4980)</li>
-							
-							
-								<li class="list-group-item">Canada (32098)</li>
-							
-							
-								<li class="list-group-item">China (2094)</li>
-							
-							
-								<li class="list-group-item">Denmark (2551)</li>
-							
-							
-								<li class="list-group-item">France (5383)</li>
-							
-							
-								<li class="list-group-item">Germany (6330)</li>
-							
-							
-								<li class="list-group-item">India (11646)</li>
-							
-							
-								<li class="list-group-item">Israel (2427)</li>
-							
-							
-								<li class="list-group-item">Italy (2122)</li>
-							
-							
-								<li class="list-group-item">Mexico (1523)</li>
-							
-							
-								<li class="list-group-item">Singapore (2314)</li>
-							
-							
-								<li class="list-group-item">South Korea (1138)</li>
-							
-							
-								<li class="list-group-item">Spain (2603)</li>
-							
-							
-								<li class="list-group-item">Sweden (5935)</li>
-							
-							
-								<li class="list-group-item">Switzerland (1925)</li>
-							
-							
-								<li class="list-group-item">Taiwan (450)</li>
-							
-							
-								<li class="list-group-item">The Netherlands (10914)</li>
-							
-							
-								<li class="list-group-item">United Kingdom (50255)</li>
-							
-							
-								<li class="list-group-item">United States (437553)</li>
+							<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags us"></div><span>United States (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=United States&amp;SRCWord=[A]&amp;ShowType=Startups" target="_new" style="color:blue;">437553</a>)</span></li>
+							<!--<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=United States&SRCWord=[A]&ShowType=Startups" target="_new" style="color:blue;">437553</a>-->
 								
 							  </ul>
-
-							<h5 class="font-weight-bold text-left">By Domain</h5>
+								</div>
+							
+							<a class="collapse_click collapsed" data-toggle="collapse" href="#EVOLV_byDomain" role="button" aria-expanded="false" aria-controls="collapseExample">
+							<h5 class="font-weight-bold text-left">EVOLV By Domain</h5></a>
+							<div class="collapse" id="EVOLV_byDomain">
 							<ul class="list-group list-group-flush mb-3">
 							
 							
-								<li class="list-group-item">AgTech (3408)</li>
+							
+								<li class="list-group-item"><span>AgTech (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=AgTech&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">3408</a>)</span></li>
 							
 							
-								<li class="list-group-item">AI, Artificial Intelligence (31995)</li>
+								<li class="list-group-item"><span>AI, Artificial Intelligence (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=AI, Artificial Intelligence&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">31995</a>)</span></li>
 							
 							
-								<li class="list-group-item">Augmented Reality (4331)</li>
+								<li class="list-group-item"><span>Augmented Reality (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=Augmented Reality&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">4331</a>)</span></li>
 							
 							
-								<li class="list-group-item">BioPharma (1408)</li>
+								<li class="list-group-item"><span>BioPharma (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=BioPharma&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">1408</a>)</span></li>
 							
 							
-								<li class="list-group-item">Cleantech (3782)</li>
+								<li class="list-group-item"><span>Cleantech (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=Cleantech&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">3782</a>)</span></li>
 							
 							
-								<li class="list-group-item">Digital Health (1482)</li>
+								<li class="list-group-item"><span>Digital Health (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=Digital Health&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">1482</a>)</span></li>
 							
 							
-								<li class="list-group-item">EduTech (8299)</li>
+								<li class="list-group-item"><span>EduTech (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=EduTech&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">8299</a>)</span></li>
 							
 							
-								<li class="list-group-item">Electric Vehicles (994)</li>
+								<li class="list-group-item"><span>Electric Vehicles (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=Electric Vehicles&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">994</a>)</span></li>
 							
 							
-								<li class="list-group-item">Enterprise Security, Cloud Security (2899)</li>
+								<li class="list-group-item"><span>Enterprise Security, Cloud Security (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=Enterprise Security, Cloud Security&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">2899</a>)</span></li>
 							
 							
-								<li class="list-group-item">Gaming (24123)</li>
+								<li class="list-group-item"><span>Gaming (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=Gaming&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">24123</a>)</span></li>
 							
 							
-								<li class="list-group-item">Medical Devices (2243)</li>
+								<li class="list-group-item"><span>Medical Devices (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=Medical Devices&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">2243</a>)</span></li>
 							
 							
-								<li class="list-group-item">Metaverse (1059)</li>
+								<li class="list-group-item"><span>Metaverse (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=Metaverse&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">1059</a>)</span></li>
 							
 							
-								<li class="list-group-item">Robotics (12551)</li>
+								<li class="list-group-item"><span>Robotics (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=Robotics&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">12551</a>)</span></li>
 							
 							
-								<li class="list-group-item">SCM, Supply Chain Management (17520)</li>
+								<li class="list-group-item"><span>SCM, Supply Chain Management (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=SCM, Supply Chain Management&amp;StupType=DOMAIN&amp;ShowType=DOMAIN&amp;SRCWord=[A]" target="_new" style="color:blue;">17520</a>)</span></li>
 								
 								  </ul>
-							<h5 class="font-weight-bold text-left">By Stage</h5>
+								  </div>
+							<h5 class="font-weight-bold text-left">EVOLV By Stage</h5>
 							<ul class="list-group list-group-flush mb-3">
 							
 							
-								<li class="list-group-item">Early  Stage (13473)</li>
+								<li class="list-group-item"><span>SEED STAGE (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=SEED STAGE&amp;StupType=SEED STAGE&amp;ShowType=STARTUPS" target="_new" style="color:blue;">13473</a>)</span></li>
 							
 							
-								<li class="list-group-item">Middle Stage (18847)</li>
+								<li class="list-group-item"><span>GROWTH STAGE (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=GROWTH STAGE&amp;StupType=GROWTH STAGE&amp;ShowType=STARTUPS" target="_new" style="color:blue;">18847</a>)</span></li>
 							
 							
-								<li class="list-group-item">Late Stage (3605)</li>
-							
-							
-								<li class="list-group-item">Very Early Stage (23)</li>
+								<li class="list-group-item"><span>LATE STAGE (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTCountry=LATE STAGE&amp;StupType=LATE STAGE&amp;ShowType=STARTUPS" target="_new" style="color:blue;">3542</a>)</span></li>
 							
 								</ul>
 							
@@ -430,186 +505,234 @@
 
 
 						</div>
-						<div class="col-xl-3 col-lg-6 col-md-10 col-sm-12 mx-auto   mt-2 text-center mb-2">
+						<div class="col-xl-2 col-lg-4 col-md-4 col-sm-12    mt-2 text-center mb-2 px-1">
 							
-							<h3 class="mt-4 text-capitalize  h3 ">INVESTOR WORLD</h3>
-							<h3 class="mt-2 text-capitalize  h2 "><span class=" counter d-block" data-targetnum="25478" data-speed="2500">114,870</span></h3>
+							<h3 class="mt-4 text-capitalize  h3 ">INVESTORS</h3>
+							<h3 class="mt-2 text-capitalize  h2 "><span class=" counter d-block">114,870</span></h3>
 							<hr>
-							<div class="col-lg-12 col-12 mx-auto  text-left px-3">
+							<div class="col-lg-12 col-12 mx-auto  text-left px-2">
 							<h5 class="font-weight-bold text-left">By Region</h5>
 							
 							<ul class="list-group list-group-flush mb-3">
 								
 							 
-								<li class="list-group-item">Africa (779)</li>
+								<li class="list-group-item"><span>Africa (<a href="https://www.strategyr.com/zing/evolv/Show_InvestorRegion_Countries.asp?GTregion=Africa&amp;ShowType=INVESTOR WORLD" target="_new" style="color:blue;">779</a>)</span></li>
+								<!--<li class="list-group-item">Africa (779)</li>-->
 							
 							 
-								<li class="list-group-item">Asia-Pacific (24766)</li>
+								<li class="list-group-item"><span>Asia-Pacific (<a href="https://www.strategyr.com/zing/evolv/Show_InvestorRegion_Countries.asp?GTregion=Asia-Pacific&amp;ShowType=INVESTOR WORLD" target="_new" style="color:blue;">24766</a>)</span></li>
+								<!--<li class="list-group-item">Asia-Pacific (24766)</li>-->
 							
 							 
-								<li class="list-group-item">Europe (16464)</li>
+								<li class="list-group-item"><span>Europe (<a href="https://www.strategyr.com/zing/evolv/Show_InvestorRegion_Countries.asp?GTregion=Europe&amp;ShowType=INVESTOR WORLD" target="_new" style="color:blue;">16464</a>)</span></li>
+								<!--<li class="list-group-item">Europe (16464)</li>-->
 							
 							 
-								<li class="list-group-item">Latin America (1374)</li>
+								<li class="list-group-item"><span>Latin America (<a href="https://www.strategyr.com/zing/evolv/Show_InvestorRegion_Countries.asp?GTregion=Latin America&amp;ShowType=INVESTOR WORLD" target="_new" style="color:blue;">1374</a>)</span></li>
+								<!--<li class="list-group-item">Latin America (1374)</li>-->
 							
 							 
-								<li class="list-group-item">Middle East (1574)</li>
+								<li class="list-group-item"><span>Middle East (<a href="https://www.strategyr.com/zing/evolv/Show_InvestorRegion_Countries.asp?GTregion=Middle East&amp;ShowType=INVESTOR WORLD" target="_new" style="color:blue;">1574</a>)</span></li>
+								<!--<li class="list-group-item">Middle East (1574)</li>-->
 							
 							 
-								<li class="list-group-item">North America (36651)</li>
+								<li class="list-group-item"><span>North America (<a href="https://www.strategyr.com/zing/evolv/Show_InvestorRegion_Countries.asp?GTregion=North America&amp;ShowType=INVESTOR WORLD" target="_new" style="color:blue;">36651</a>)</span></li>
+								<!--<li class="list-group-item">North America (36651)</li>-->
 								
 							  </ul>
-							<h5 class="font-weight-bold text-left">By Country</h5>
+							  
+							  <a class="collapse_click collapsed" data-toggle="collapse" href="#INVESTORS_bytype" role="button" aria-expanded="false" aria-controls="collapseExample">
+							  <h5 class="font-weight-bold text-left">By Type</h5></a>
+							  <div class="collapse" id="INVESTORS_bytype">
+								<ul class="list-group list-group-flush mb-3">
+								
+								<li class="list-group-item "><span>Venture Capital (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Venture Capital&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=INVESTOR" target="_new" style="color:blue;">19922</a>)</span></li>
+								<li class="list-group-item "><span>Angel Group (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Angel Group&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=INVESTOR" target="_new" style="color:blue;">1516</a>)</span></li>
+								<li class="list-group-item "><span>Accelerator (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Accelerator&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=INVESTOR" target="_new" style="color:blue;">1815</a>)</span></li>
+								<li class="list-group-item "><span>Incubator (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Incubator&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=INVESTOR" target="_new" style="color:blue;">1040</a>)</span></li>
+							  <li class="list-group-item "><span>Family Investment Office (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Family Investment Office&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=INVESTOR" target="_new" style="color:blue;">918</a>)</span></li>
+							  <li class="list-group-item "><span>Private Equity Firm (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Private Equity Firm&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=INVESTOR" target="_new" style="color:blue;">7864</a>)</span></li>
+							  <li class="list-group-item "><span>Corporate Venture Capital (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Corporate Venture Capital&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=INVESTOR" target="_new" style="color:blue;">1110</a>)</span></li>
+							  </ul>
+							  </div>
+							 
+							
+							<a class="collapse_click collapsed" data-toggle="collapse" href="#INVESTORS_bycountry" role="button" aria-expanded="false" aria-controls="collapseExample">
+							<h5 class="font-weight-bold text-left">By Country</h5></a>
+							<div class="collapse" id="INVESTORS_bycountry"> 
+							
 							<ul class="list-group list-group-flush mb-3">
 							
 							
-								<li class="list-group-item">Argentina (111)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ar"></div><span>Argentina (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Argentina&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">111</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Argentina&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">111</a>-->
 							
 							
-								<li class="list-group-item">Asia (1447)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags au"></div><span>Australia (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Australia&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">1247</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Australia&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">1247</a>-->
 							
 							
-								<li class="list-group-item">Australia (1247)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags at"></div><span>Austria (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Austria&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">220</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Austria&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">220</a>-->
 							
 							
-								<li class="list-group-item">Austria (220)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags be"></div><span>Belgium (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Belgium&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">367</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Belgium&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">367</a>-->
 							
 							
-								<li class="list-group-item">Belgium (367)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags br"></div><span>Brazil (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Brazil&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">722</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Brazil&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">722</a>-->
 							
 							
-								<li class="list-group-item">Brazil (722)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ca"></div><span>Canada (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Canada&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">2474</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Canada&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">2474</a>-->
 							
 							
-								<li class="list-group-item">Canada (2474)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags cn"></div><span>China (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=China&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">12516</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=China&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">12516</a>-->
 							
 							
-								<li class="list-group-item">China (12516)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags co"></div><span>Colombia (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Colombia&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">103</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Colombia&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">103</a>-->
 							
 							
-								<li class="list-group-item">Colombia (103)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags cz"></div><span>Czech Republic (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Czech Republic&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">112</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Czech Republic&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">112</a>-->
 							
 							
-								<li class="list-group-item">Czech Republic (112)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags dk"></div><span>Denmark (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Denmark&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">361</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Denmark&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">361</a>-->
 							
 							
-								<li class="list-group-item">Denmark (361)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags eu"></div><span>Europe (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Europe&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">968</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Europe&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">968</a>-->
 							
 							
-								<li class="list-group-item">Estonia (113)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags fi"></div><span>Finland (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Finland&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">335</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Finland&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">335</a>-->
 							
 							
-								<li class="list-group-item">Europe (968)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags fr"></div><span>France (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=France&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">1674</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=France&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">1674</a>-->
 							
 							
-								<li class="list-group-item">Finland (335)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags de"></div><span>Germany (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Germany&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">2323</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Germany&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">2323</a>-->
 							
 							
-								<li class="list-group-item">France (1674)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags hk"></div><span>Hong Kong (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Hong Kong&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">791</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Hong Kong&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">791</a>-->
 							
 							
-								<li class="list-group-item">Germany (2323)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags in"></div><span>India (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=India&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">3853</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=India&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">3853</a>-->
 							
 							
-								<li class="list-group-item">Hong Kong (791)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags id"></div><span>Indonesia (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Indonesia&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">261</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Indonesia&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">261</a>-->
 							
 							
-								<li class="list-group-item">India (3853)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ie"></div><span>Ireland (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Ireland&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">257</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Ireland&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">257</a>-->
 							
 							
-								<li class="list-group-item">Indonesia (261)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags il"></div><span>Israel (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Israel&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">776</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Israel&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">776</a>-->
 							
 							
-								<li class="list-group-item">Ireland (257)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags it"></div><span>Italy (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Italy&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">604</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Italy&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">604</a>-->
 							
 							
-								<li class="list-group-item">Israel (776)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags jp"></div><span>Japan (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Japan&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">3371</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Japan&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">3371</a>-->
 							
 							
-								<li class="list-group-item">Italy (604)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags my"></div><span>Malaysia (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Malaysia&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">201</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Malaysia&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">201</a>-->
 							
 							
-								<li class="list-group-item">Japan (3371)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags mx"></div><span>Mexico (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Mexico&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">274</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Mexico&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">274</a>-->
 							
 							
-								<li class="list-group-item">Luxembourg (199)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags nz"></div><span>New Zealand (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=New Zealand&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">154</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=New Zealand&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">154</a>-->
 							
 							
-								<li class="list-group-item">Malaysia (201)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ng"></div><span>Nigeria (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Nigeria&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">158</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Nigeria&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">158</a>-->
 							
 							
-								<li class="list-group-item">Mexico (274)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags no"></div><span>Norway (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Norway&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">325</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Norway&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">325</a>-->
 							
 							
-								<li class="list-group-item">New Zealand (154)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ph"></div><span>Philippines (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Philippines&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">110</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Philippines&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">110</a>-->
 							
 							
-								<li class="list-group-item">Nigeria (158)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pl"></div><span>Poland (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Poland&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">227</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Poland&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">227</a>-->
 							
 							
-								<li class="list-group-item">North America (766)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pt"></div><span>Portugal (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Portugal&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">137</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Portugal&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">137</a>-->
 							
 							
-								<li class="list-group-item">Norway (325)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags sa"></div><span>Saudi Arabia (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Saudi Arabia&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">167</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Saudi Arabia&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">167</a>-->
 							
 							
-								<li class="list-group-item">Philippines (110)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags sg"></div><span>Singapore (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Singapore&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">1087</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Singapore&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">1087</a>-->
 							
 							
-								<li class="list-group-item">Poland (227)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags za"></div><span>South Africa (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=South Africa&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">306</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=South Africa&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">306</a>-->
 							
 							
-								<li class="list-group-item">Portugal (137)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags kr"></div><span>South Korea (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=South Korea&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">570</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=South Korea&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">570</a>-->
 							
 							
-								<li class="list-group-item">Russian Federation (403)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags es"></div><span>Spain (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Spain&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">1058</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Spain&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">1058</a>-->
 							
 							
-								<li class="list-group-item">Saudi Arabia (167)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags se"></div><span>Sweden (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Sweden&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">915</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Sweden&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">915</a>-->
 							
 							
-								<li class="list-group-item">Singapore (1087)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ch"></div><span>Switzerland (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Switzerland&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">977</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Switzerland&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">977</a>-->
 							
 							
-								<li class="list-group-item">South Africa (306)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags tw"></div><span>Taiwan (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Taiwan&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">219</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Taiwan&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">219</a>-->
 							
 							
-								<li class="list-group-item">South America (121)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags th"></div><span>Thailand (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Thailand&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">142</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Thailand&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">142</a>-->
 							
 							
-								<li class="list-group-item">South Korea (570)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags tr"></div><span>Turkey (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Turkey&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">338</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=Turkey&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">338</a>-->
 							
 							
-								<li class="list-group-item">Spain (1058)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ae"></div><span>United Arab Emirates (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=United Arab Emirates&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">467</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=United Arab Emirates&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">467</a>-->
 							
 							
-								<li class="list-group-item">Sweden (915)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags gb"></div><span>United Kingdom (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=United Kingdom&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">4918</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=United Kingdom&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">4918</a>-->
 							
 							
-								<li class="list-group-item">Switzerland (977)</li>
-							
-							
-								<li class="list-group-item">Taiwan (219)</li>
-							
-							
-								<li class="list-group-item">Thailand (142)</li>
-							
-							
-								<li class="list-group-item">The Netherlands (817)</li>
-							
-							
-								<li class="list-group-item">Turkey (338)</li>
-							
-							
-								<li class="list-group-item">United Arab Emirates (467)</li>
-							
-							
-								<li class="list-group-item">United Kingdom (4918)</li>
-							
-							
-								<li class="list-group-item">United States (34177)</li>
+								<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags us"></div><span>United States (<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=United States&amp;SRCWord=[A]&amp;ShowType=INVESTOR WORLD&amp;InvType=COUNTRY" target="_new" style="color:blue;">34177</a>)</span></li>
+								<!--<a href="https://www.strategyr.com/zing/evolv/Show_Investor_country_Companies.asp?GTcountry=United States&SRCWord=[A]&ShowType=INVESTOR WORLD" target="_new" style="color:blue;">34177</a>-->
 								
 							  </ul>
+							  </div>
 							
 						<!--	  <h5 class="font-weight-bold text-left">By Type</h5>
 							
@@ -637,197 +760,597 @@
 							
 							</div>
 						</div>
-						<div class="col-xl-3 col-lg-6 col-md-10 col-sm-12 mx-auto   mt-2 text-center mb-2">
-							
-							<h3 class="mt-4 text-capitalize  h3 ">BIG ENTERPRISE</h3>
-							<h3 class="mt-2 text-capitalize  h2 "><span class=" counter d-block" data-targetnum="41,590" data-speed="2500">41,590</span></h3>
-							
+						<div class="col-xl-2 col-lg-4 col-md-4 col-sm-12    mt-2 text-center mb-2 px-1">							
+							<h3 class="mt-4 text-capitalize  h3 ">ENTERPRISES</h3>
+							<h3 class="mt-2 text-capitalize  h2 "><span class=" counter d-block">813,544</span></h3>							
 							<hr>
-							<div class="col-lg-12 col-12 mx-auto  text-left px-3">
-							<h5 class="font-weight-bold text-left">By Region</h5>
-							
-							<ul class="list-group list-group-flush">
-							
+							<div class="col-lg-12 col-12 mx-auto  text-left px-2">
+							<h5 class="font-weight-bold text-left">By Region</h5>							
+							<ul class="list-group list-group-flush">							
 							
 							 
-								<li class="list-group-item">Africa (491)</li>
+								<li class="list-group-item"><span>Africa (<a href="https://www.strategyr.com/zing/evolv/Show_enterprise_country_Companies.asp?GTregion=Africa&amp;ShowType=ENTERPRISE&amp;SRCWord=[A]" target="_new" style="color:blue;">6890</a>)</span></li>
+								<!--li class="list-group-item">Africa (6890)</li-->
+								
 							
 							 
-								<li class="list-group-item">Asia-Pacific (23491)</li>
+								<li class="list-group-item"><span>Asia-Pacific (<a href="https://www.strategyr.com/zing/evolv/Show_enterprise_country_Companies.asp?GTregion=Asia-Pacific&amp;ShowType=ENTERPRISE&amp;SRCWord=[A]" target="_new" style="color:blue;">149993</a>)</span></li>
+								<!--li class="list-group-item">Asia-Pacific (149993)</li-->
+								
 							
 							 
-								<li class="list-group-item">Europe (5569)</li>
+								<li class="list-group-item"><span>Europe (<a href="https://www.strategyr.com/zing/evolv/Show_enterprise_country_Companies.asp?GTregion=Europe&amp;ShowType=ENTERPRISE&amp;SRCWord=[A]" target="_new" style="color:blue;">193348</a>)</span></li>
+								<!--li class="list-group-item">Europe (193348)</li-->
+								
 							
 							 
-								<li class="list-group-item">Latin America (501)</li>
+								<li class="list-group-item"><span>Latin America (<a href="https://www.strategyr.com/zing/evolv/Show_enterprise_country_Companies.asp?GTregion=Latin America&amp;ShowType=ENTERPRISE&amp;SRCWord=[A]" target="_new" style="color:blue;">12822</a>)</span></li>
+								<!--li class="list-group-item">Latin America (12822)</li-->
+								
 							
 							 
-								<li class="list-group-item">Middle East (961)</li>
+								<li class="list-group-item"><span>Middle East (<a href="https://www.strategyr.com/zing/evolv/Show_enterprise_country_Companies.asp?GTregion=Middle East&amp;ShowType=ENTERPRISE&amp;SRCWord=[A]" target="_new" style="color:blue;">11798</a>)</span></li>
+								<!--li class="list-group-item">Middle East (11798)</li-->
+								
 							
 							 
-								<li class="list-group-item">North America (9328)</li>
+								<li class="list-group-item"><span>North America (<a href="https://www.strategyr.com/zing/evolv/Show_enterprise_country_Companies.asp?GTregion=North America&amp;ShowType=ENTERPRISE&amp;SRCWord=[A]" target="_new" style="color:blue;">325938</a>)</span></li>
+								<!--li class="list-group-item">North America (325938)</li-->
+								
 								
 								
 							  </ul>
+							<a class="collapse_click collapsed" data-toggle="collapse" href="#ENTERPRISES_bycountry" role="button" aria-expanded="false" aria-controls="collapseExample">
+							<h5 class="font-weight-bold text-left">By Country</h5></a>
+							<div class="collapse" id="ENTERPRISES_bycountry"> 
 							
-							<h5 class="font-weight-bold text-left">By Country</h5>
 							<ul class="list-group list-group-flush mb-3">
-							
-							
-								<li class="list-group-item">Australia (1536)</li>
-							
-							
-								<li class="list-group-item">Bangladesh (154)</li>
-							
-							
-								<li class="list-group-item">Belgium (114)</li>
-							
-							
-								<li class="list-group-item">Brazil (281)</li>
-							
-							
-								<li class="list-group-item">Bulgaria (189)</li>
-							
-							
-								<li class="list-group-item">Canada (2575)</li>
-							
-							
-								<li class="list-group-item">China (7573)</li>
-							
-							
-								<li class="list-group-item">Denmark (114)</li>
-							
-							
-								<li class="list-group-item">Egypt (144)</li>
-							
-							
-								<li class="list-group-item">France (665)</li>
-							
-							
-								<li class="list-group-item">Germany (445)</li>
-							
-							
-								<li class="list-group-item">Greece (113)</li>
-							
-							
-								<li class="list-group-item">Hong Kong (1380)</li>
-							
-							
-								<li class="list-group-item">India (3863)</li>
-							
-							
-								<li class="list-group-item">Indonesia (674)</li>
-							
-							
-								<li class="list-group-item">Israel (474)</li>
-							
-							
-								<li class="list-group-item">Italy (239)</li>
-							
-							
-								<li class="list-group-item">Japan (3451)</li>
-							
-							
-								<li class="list-group-item">Kuwait (118)</li>
-							
-							
-								<li class="list-group-item">Malaysia (917)</li>
-							
-							
-								<li class="list-group-item">Mexico (111)</li>
-							
-							
-								<li class="list-group-item">New Zealand (105)</li>
-							
-							
-								<li class="list-group-item">Norway (175)</li>
-							
-							
-								<li class="list-group-item">Philippines (174)</li>
-							
-							
-								<li class="list-group-item">Poland (332)</li>
-							
-							
-								<li class="list-group-item">Romania (205)</li>
-							
-							
-								<li class="list-group-item">Russian Federation (177)</li>
-							
-							
-								<li class="list-group-item">Saudi Arabia (157)</li>
-							
-							
-								<li class="list-group-item">Serbia (150)</li>
-							
-							
-								<li class="list-group-item">Singapore (482)</li>
-							
-							
-								<li class="list-group-item">South Africa (173)</li>
-							
-							
-								<li class="list-group-item">South Korea (491)</li>
-							
-							
-								<li class="list-group-item">Spain (193)</li>
-							
-							
-								<li class="list-group-item">Sri Lanka (174)</li>
-							
-							
-								<li class="list-group-item">Sweden (398)</li>
-							
-							
-								<li class="list-group-item">Switzerland (213)</li>
-							
-							
-								<li class="list-group-item">Taiwan (1069)</li>
-							
-							
-								<li class="list-group-item">Thailand (688)</li>
-							
-							
-								<li class="list-group-item">The Netherlands (142)</li>
-							
-							
-								<li class="list-group-item">Turkey (347)</li>
-							
-							
-								<li class="list-group-item">United Kingdom (1365)</li>
-							
-							
-								<li class="list-group-item">United States (6753)</li>
-							
-							
-								<li class="list-group-item">Vietnam (695)</li>
+														
+									<li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ar"></div><span>Argentina (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Argentina&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">352)</a></span>
 								
-							  </ul>
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags au"></div><span>Australia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Australia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2731)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags at"></div><span>Austria (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Austria&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">481)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags bd"></div><span>Bangladesh (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Bangladesh&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">336)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags by"></div><span>Belarus (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Belarus&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">59)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags be"></div><span>Belgium (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Belgium&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1094)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags br"></div><span>Brazil (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Brazil&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2453)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags bg"></div><span>Bulgaria (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Bulgaria&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">189)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ca"></div><span>Canada (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Canada&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">5927)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags cl"></div><span>Chile (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Chile&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">293)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags cn"></div><span>China (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=China&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">6763)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags co"></div><span>Colombia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Colombia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">241)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags hr"></div><span>Croatia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Croatia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">179)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags cz"></div><span>Czech Republic (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Czech Republic&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">503)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags dk"></div><span>Denmark (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Denmark&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1126)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags eg"></div><span>Egypt (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Egypt&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">235)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags fi"></div><span>Finland (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Finland&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">721)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags fr"></div><span>France (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=France&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">3921)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags de"></div><span>Germany (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Germany&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">6253)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags gh"></div><span>Ghana (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Ghana&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">58)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags gr"></div><span>Greece (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Greece&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">284)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags hk"></div><span>Hong Kong (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Hong Kong&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">924)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags hu"></div><span>Hungary (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Hungary&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">342)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags in"></div><span>India (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=India&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">9165)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags id"></div><span>Indonesia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Indonesia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">764)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ir"></div><span>Iran (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Iran&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">67)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ie"></div><span>Ireland (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Ireland&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">935)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags il"></div><span>Israel (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Israel&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2405)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags it"></div><span>Italy (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Italy&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1772)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags jp"></div><span>Japan (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Japan&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">4636)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags jo"></div><span>Jordan (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Jordan&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">94)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ke"></div><span>Kenya (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Kenya&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">154)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags lb"></div><span>Lebanon (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Lebanon&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">63)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags my"></div><span>Malaysia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Malaysia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">502)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags mx"></div><span>Mexico (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Mexico&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">533)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags nz"></div><span>New Zealand (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=New Zealand&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">517)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ng"></div><span>Nigeria (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Nigeria&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">373)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags no"></div><span>Norway (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Norway&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">754)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pk"></div><span>Pakistan (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Pakistan&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">385)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pe"></div><span>Peru (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Peru&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">84)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ph"></div><span>Philippines (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Philippines&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">347)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pl"></div><span>Poland (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Poland&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">879)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pt"></div><span>Portugal (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Portugal&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">690)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags qa"></div><span>Qatar (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Qatar&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">63)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ro"></div><span>Romania (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Romania&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">482)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags sa"></div><span>Saudi Arabia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Saudi Arabia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">172)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags sg"></div><span>Singapore (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Singapore&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1544)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags za"></div><span>South Africa (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=South Africa&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">499)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags kr"></div><span>South Korea (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=South Korea&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1620)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags es"></div><span>Spain (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Spain&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">3385)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags lk"></div><span>Sri Lanka (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Sri Lanka&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">57)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags se"></div><span>Sweden (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Sweden&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1574)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ch"></div><span>Switzerland (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Switzerland&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2109)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags tw"></div><span>Taiwan (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Taiwan&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">385)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags th"></div><span>Thailand (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Thailand&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">238)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags tr"></div><span>Turkey (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Turkey&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">826)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ua"></div><span>Ukraine (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Ukraine&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">781)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ae"></div><span>United Arab Emirates (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=United Arab Emirates&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">812)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags vn"></div><span>Vietnam (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Vietnam&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">316)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ar"></div><span>Argentina (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Argentina&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">827)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags au"></div><span>Australia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Australia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">23745)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags at"></div><span>Austria (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Austria&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1555)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags bd"></div><span>Bangladesh (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Bangladesh&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">551)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags by"></div><span>Belarus (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Belarus&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">185)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags be"></div><span>Belgium (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Belgium&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2893)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags br"></div><span>Brazil (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Brazil&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">4620)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags bg"></div><span>Bulgaria (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Bulgaria&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">618)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags kh"></div><span>Cambodia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Cambodia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">165)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ca"></div><span>Canada (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Canada&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">27235)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags cl"></div><span>Chile (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Chile&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">682)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags cn"></div><span>China (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=China&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">23461)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags co"></div><span>Colombia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Colombia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">618)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags hr"></div><span>Croatia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Croatia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">423)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags cz"></div><span>Czech Republic (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Czech Republic&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2200)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags dk"></div><span>Denmark (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Denmark&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2756)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags do"></div><span>Dominican Republic (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Dominican Republic&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">75)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ec"></div><span>Ecuador (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Ecuador&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">97)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags eg"></div><span>Egypt (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Egypt&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">568)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags et"></div><span>Ethiopia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Ethiopia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">63)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags fi"></div><span>Finland (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Finland&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2446)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags fr"></div><span>France (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=France&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">12473)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags de"></div><span>Germany (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Germany&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">22453)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags gh"></div><span>Ghana (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Ghana&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">177)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags gr"></div><span>Greece (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Greece&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1024)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags hk"></div><span>Hong Kong (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Hong Kong&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">4064)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags hu"></div><span>Hungary (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Hungary&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1033)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags in"></div><span>India (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=India&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">27231)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags id"></div><span>Indonesia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Indonesia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1547)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ir"></div><span>Iran (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Iran&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">297)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ie"></div><span>Ireland (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Ireland&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">3235)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags il"></div><span>Israel (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Israel&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">4646)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags it"></div><span>Italy (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Italy&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">17571)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags jp"></div><span>Japan (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Japan&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">12455)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags jo"></div><span>Jordan (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Jordan&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">177)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ke"></div><span>Kenya (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Kenya&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">615)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags kw"></div><span>Kuwait (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Kuwait&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">102)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags lb"></div><span>Lebanon (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Lebanon&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">216)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags my"></div><span>Malaysia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Malaysia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">3617)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags mx"></div><span>Mexico (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Mexico&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1279)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ma"></div><span>Morocco (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Morocco&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">150)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags mm"></div><span>Myanmar (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Myanmar&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">77)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags nl"></div><span>Netherlands (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Netherlands&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2986)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags nz"></div><span>New Zealand (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=New Zealand&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2897)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ng"></div><span>Nigeria (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Nigeria&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">773)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags no"></div><span>Norway (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Norway&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2331)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags om"></div><span>Oman (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Oman&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">65)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pk"></div><span>Pakistan (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Pakistan&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">832)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pa"></div><span>Panama (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Panama&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">125)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pe"></div><span>Peru (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Peru&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">224)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ph"></div><span>Philippines (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Philippines&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2162)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pl"></div><span>Poland (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Poland&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">3366)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags pt"></div><span>Portugal (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Portugal&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1514)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags qa"></div><span>Qatar (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Qatar&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">123)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ro"></div><span>Romania (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Romania&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1431)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ru"></div><span>Russia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Russia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1217)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags sa"></div><span>Saudi Arabia (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Saudi Arabia&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">597)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags sg"></div><span>Singapore (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Singapore&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">6464)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags za"></div><span>South Africa (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=South Africa&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2554)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags kr"></div><span>South Korea (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=South Korea&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">3516)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags es"></div><span>Spain (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Spain&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">9602)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags lk"></div><span>Sri Lanka (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Sri Lanka&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">243)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags se"></div><span>Sweden (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Sweden&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">4992)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ch"></div><span>Switzerland (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Switzerland&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">5997)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags tw"></div><span>Taiwan (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Taiwan&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">3160)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags tz"></div><span>Tanzania (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Tanzania&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">103)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags th"></div><span>Thailand (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Thailand&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1471)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags tr"></div><span>Turkey (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Turkey&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">2566)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ug"></div><span>Uganda (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Uganda&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">136)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ua"></div><span>Ukraine (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Ukraine&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1712)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ae"></div><span>United Arab Emirates (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=United Arab Emirates&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1843)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags gb"></div><span>United Kingdom (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=United Kingdom&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">55428)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags us"></div><span>United States (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=United States&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">292776)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags ve"></div><span>Venezuela (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Venezuela&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">55)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags vn"></div><span>Vietnam (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Vietnam&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">1069)</a></span>
+								
+														
+									</li><li class="list-group-item phoca-box-flags"><div class="phoca-flag-flags zw"></div><span>Zimbabwe (<a href="https://www.strategyr.com/zing/evolv/Show_Country_Companies.asp?GTcountry=Zimbabwe&amp;SRCWord=[A]&amp;ShowType=Enterprises" target="_new" style="color:blue;">95)</a></span>
+								
+								
+							  </li></ul>
+							  </div>
+							  
+							
 							
 							</div>
 						</div>
-
-
-						<!--div class="col-xl-3 col-lg-6 col-md-10 col-sm-12 mx-auto   mt-2 text-center mb-2">
+						
+						
+						<div class="col-xl-2 col-lg-4 col-md-4 col-sm-12    mt-2 text-center mb-2 px-1">
 							
 							<h3 class="mt-4 text-capitalize  h3 ">INFLUENCERS</h3>
-							<h3 class="mt-2 text-capitalize  h2 "><span class=" counter d-block" data-TargetNum="1524" data-Speed="2500">7321</span></h3>
+							<h3 class="mt-2 text-capitalize  h2 "><span class=" counter d-block">3,743,472</span></h3>
 							
-							<hr/>
-							<div  class="col-lg-11 col-12 mx-auto  text-left px-3">
-							<h5 class="font-weight-bold text-left">Enterprise Level</h5>
+							<hr>
+							<div class="col-lg-12 col-12 mx-auto  text-left px-2">
+							<!--h5 class="font-weight-bold text-left d-block"><span class="mr-2">Indian 862467</span></h5> 
 							
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Enterprise Level-1</li>
-								<li class="list-group-item">Enterprise Level-2</li>
-								<li class="list-group-item">Enterprise Level-3</li>
-								<li class="list-group-item">Enterprise Level-4</li>
-								<li class="list-group-item">Enterprise Level-5</li>
+							
+							
+							 
+								<li class="list-group-item"><span>CXO (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=CXO&SRCWord=[A]" target="_new" style="color:blue;">68586</a>)</span></li>
+							
+							 
+								<li class="list-group-item"><span>VP (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=VP&SRCWord=[A]" target="_new" style="color:blue;">39844</a>)</span></li>
+							
+							 
+								<li class="list-group-item"><span>DIR (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=DIR&SRCWord=[A]" target="_new" style="color:blue;">59384</a>)</span></li>
+							
+							 
+								<li class="list-group-item"><span>MGR (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=MGR&SRCWord=[A]" target="_new" style="color:blue;">47712</a>)</span></li>
+							
+							 
+								<li class="list-group-item"><span>REST (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=REST&SRCWord=[A]" target="_new" style="color:blue;">639941</a>)</span></li>
+								
+								
+							  </ul-->
+							
+							<h5 class="font-weight-bold text-left">By Region</h5>
+							<ul class="list-group list-group-flush mb-3">
+							
+							
+								<li class="list-group-item "><span>Africa (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Country_People.asp?GTRegion=Africa" target="_new" style="color:blue;">13989</a>)</span></li>
+							
+							
+								<li class="list-group-item "><span>Asia-Pacific (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Country_People.asp?GTRegion=Asia-Pacific" target="_new" style="color:blue;">385482</a>)</span></li>
+							
+							
+								<li class="list-group-item "><span>Europe (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Country_People.asp?GTRegion=Europe" target="_new" style="color:blue;">579665</a>)</span></li>
+							
+							
+								<li class="list-group-item "><span>Latin America (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Country_People.asp?GTRegion=Latin America" target="_new" style="color:blue;">19132</a>)</span></li>
+							
+							
+								<li class="list-group-item "><span>Middle East (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Country_People.asp?GTRegion=Middle East" target="_new" style="color:blue;">30727</a>)</span></li>
+							
+							
+								<li class="list-group-item "><span>North America (<a href="https://www.strategyr.com/zing/evolv/Show_Region_Country_People.asp?GTRegion=North America" target="_new" style="color:blue;">2285852</a>)</span></li>
+								
 							  </ul>
+							 
+							<a class="collapse_click collapsed" data-toggle="collapse" href="#INFLUENCERS_byTier" role="button" aria-expanded="false" aria-controls="collapseExample"> 
+							<h5 class="font-weight-bold text-left">By Tier</h5></a>
+							<div class="collapse" id="INFLUENCERS_byTier"> 
+							<ul class="list-group list-group-flush mb-3">
 							
-							
+							<li class="list-group-item "><span>CXO (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=CXO&amp;SRCWord=[A]" target="_new" style="color:blue;">678349</a>)</span></li>
+							<li class="list-group-item list-group-sub"><span>CEO (65378)</span></li>
+							<li class="list-group-item list-group-sub"><span>CMO (8421)</span></li>
+							<li class="list-group-item list-group-sub"><span>CIO (17378)</span></li>
+							<li class="list-group-item list-group-sub"><span>CTO (25603)</span></li>
+							<li class="list-group-item list-group-sub"><span>CFO (26924)</span></li>
+							<li class="list-group-item "><span>VP (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=VP&amp;SRCWord=[A]" target="_new" style="color:blue;">322201</a>)</span></li>
+							<li class="list-group-item "><span>DIRECTOR (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=DIR&amp;SRCWord=[A]" target="_new" style="color:blue;">610439</a>)</span></li>
+							<li class="list-group-item "><span>MANAGER (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=MGR&amp;SRCWord=[A]" target="_new" style="color:blue;">1055188</a>)</span></li>
+							<li class="list-group-item "><span>OTHERS (<a href="https://www.strategyr.com/zing/evolv/Show_Country_People.asp?SrcType=REST&amp;SRCWord=[A]" target="_new" style="color:blue;">995419</a>)</span></li>
+							</ul>
 							</div>
-						</div-->
+							
+							
+						</div>
+						</div>
+						<div class="col-xl-2 col-lg-4 col-md-4 col-sm-12    mt-2 text-center mb-2 px-1">
+	
+							<h3 class="mt-4 text-capitalize  h3 ">EVOLV EVENTS</h3>
+							<h3 class="mt-2 text-capitalize  h2 "><span class=" counter d-block">&nbsp;</span></h3>
+							<hr>
+							<a class="collapse_click collapsed" data-toggle="collapse" href="#EVOLV_Speakers" role="button" aria-expanded="false" aria-controls="collapseExample"> 
+							<h5 class="font-weight-bold text-left">EVOLV Speakers</h5></a>
+							<div class="collapse" id="EVOLV_Speakers"> 
+							<ul class="list-group list-group-flush mb-3 event_speaker_list">
+							
+							<li class="list-group-item"><span>Supply Chain Management (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=Supply Chain Management&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=202" target="_new" style="color:blue;">3050</a>)</span></li>
+							<li class="list-group-item"><span>Artificial Intelligence/Machine Learning (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=Artificial Intelligence/Machine Learning&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=26" target="_new" style="color:blue;">25347</a>)</span></li>
+							<li class="list-group-item"><span>Robotics (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=Robotics&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=36" target="_new" style="color:blue;">3398</a>)</span></li>
+							<li class="list-group-item"><span>Enterprise &amp; Cloud Security (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=Enterprise and Cloud Security&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=7" target="_new" style="color:blue;">34343</a>)</span></li>
+							<li class="list-group-item"><span>AutoTech (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=AutoTech&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=203" target="_new" style="color:blue;">5579</a>)</span></li>
+							<li class="list-group-item"><span>Gaming (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=Gaming&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=19,90" target="_new" style="color:blue;">14189</a>)</span></li>
+							<li class="list-group-item"><span>HealthTech (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=HealthTech&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=10,195" target="_new" style="color:blue;">31141</a>)</span></li>
+							<li class="list-group-item"><span>AgTech (Food Tech) (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=AgTech (Food Tech)&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=581" target="_new" style="color:blue;">4607</a>)</span></li>
+							<li class="list-group-item"><span>Education/Online Learning (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=Education/Online Learning&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=13,197" target="_new" style="color:blue;">11767</a>)</span></li>
+							<li class="list-group-item"><span>Augmented Reality (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=Augmented Reality&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=42,51" target="_new" style="color:blue;">12497</a>)</span></li>
+							<li class="list-group-item"><span>Big Data (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=Supply Chain Management&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=4" target="_new" style="color:blue;">5219</a>)</span></li>
+							<li class="list-group-item"><span>CleanTech (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=CleanTech&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=6,183,201" target="_new" style="color:blue;">5292</a>)</span></li>
+							<li class="list-group-item"><span>Cloud Technologies/Services (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Speakers.asp?SrcType=Cloud Technologies/Services&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=50,184" target="_new" style="color:blue;">20271</a>)</span></li>
+							</ul></div>
+							
+							<a class="collapse_click collapsed" data-toggle="collapse" href="#EVOLV_Sponsors" role="button" aria-expanded="false" aria-controls="collapseExample"> 
+							<h5 class="font-weight-bold text-left">EVOLV Sponsors</h5></a>
+							<div class="collapse" id="EVOLV_Sponsors">
+							<ul class="list-group list-group-flush mb-3">
+							<li class="list-group-item"><span>Supply Chain Management (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=Supply Chain Management&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=202" target="_new" style="color:blue;">542</a>)</span></li>
+							<li class="list-group-item"><span>Artificial Intelligence/Machine Learning (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=Artificial Intelligence/Machine Learning&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=26" target="_new" style="color:blue;">2425</a>)</span></li>
+							<li class="list-group-item"><span>Robotics (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=Robotics&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=36" target="_new" style="color:blue;">588</a>)</span></li>
+							<li class="list-group-item"><span>Enterprise &amp; Cloud Security (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=Enterprise and Cloud Security&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=7" target="_new" style="color:blue;">5258</a>)</span></li>
+							<li class="list-group-item"><span>AutoTech (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=AutoTech&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=203" target="_new" style="color:blue;">621</a>)</span></li>
+							<li class="list-group-item"><span>Gaming (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=Gaming&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=19,90" target="_new" style="color:blue;">1175</a>)</span></li>
+							<li class="list-group-item"><span>HealthTech (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=HealthTech&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=10,195" target="_new" style="color:blue;">3513</a>)</span></li>
+							<li class="list-group-item"><span>AgTech (Food Tech) (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=AgTech (Food Tech)&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=581" target="_new" style="color:blue;">581</a>)</span></li>
+							<li class="list-group-item"><span>Education/Online Learning (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=Education/Online Learning&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=13,197" target="_new" style="color:blue;">1420</a>)</span></li>
+							<li class="list-group-item"><span>Augmented Reality (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=Augmented Reality&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=42,51" target="_new" style="color:blue;">1096</a>)</span></li>
+							<li class="list-group-item"><span>Big Data (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=Supply Chain Management&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=4" target="_new" style="color:blue;">675</a>)</span></li>
+							<li class="list-group-item"><span>CleanTech (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=CleanTech&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=6,183,201" target="_new" style="color:blue;">914</a>)</span></li>
+							<li class="list-group-item"><span>Cloud Technologies/Services (<a href="https://www.strategyr.com/zing/evolv/Show_Event_Sponsors.asp?SrcType=Cloud Technologies/Services&amp;SRCWord=[A]&amp;ShowType=Speakers&amp;EID=50,184" target="_new" style="color:blue;">3668</a>)</span></li>
+							</ul></div>							
+							
+							<h3 class="mt-4 text-capitalize text-left h3 ">MEDIA</h3>							
+							<ul class="list-group list-group-flush mb-3">							
+							<li class="list-group-item"><span>Companies (<a href="https://www.strategyr.com/zing/evolv/Show_Media_Companies.asp?GTcountry=World&amp;SRCWord=[A]&amp;ShowType=Media" target="_new" style="color:blue;">24149</a>)</span></li>
+							<li class="list-group-item"><span>People (<a href="https://www.strategyr.com/zing/evolv/Show_Media_People.asp?GTcountry=World&amp;SRCWord=[A]&amp;ShowType=Media" target="_new" style="color:blue;">67002</a>)</span></li>
+							<li class="list-group-item list-group-sub"><span>Writer (<a href="https://www.strategyr.com/zing/evolv/Show_Media_People.asp?GTcountry=World&amp;SRCWord=[A]&amp;ShowType=Media&amp;actType=Writer" target="_new" style="color:blue;">5012</a>)</span></li>
+							<li class="list-group-item list-group-sub"><span>Journalist (<a href="https://www.strategyr.com/zing/evolv/Show_Media_People.asp?GTcountry=World&amp;SRCWord=[A]&amp;ShowType=Media&amp;actType=Journalist" target="_new" style="color:blue;">2007</a>)</span></li>
+							<li class="list-group-item list-group-sub"><span>Editor (<a href="https://www.strategyr.com/zing/evolv/Show_Media_People.asp?GTcountry=World&amp;SRCWord=[A]&amp;ShowType=Media&amp;actType=Editor" target="_new" style="color:blue;">13823</a>)</span></li>
+							<li class="list-group-item list-group-sub"><span>Reporter (<a href="https://www.strategyr.com/zing/evolv/Show_Media_People.asp?GTcountry=World&amp;SRCWord=[A]&amp;ShowType=Media&amp;actType=Reporter" target="_new" style="color:blue;">1845</a>)</span></li>
+							<li class="list-group-item list-group-sub"><span>Blogger (<a href="https://www.strategyr.com/zing/evolv/Show_Media_People.asp?GTcountry=World&amp;SRCWord=[A]&amp;ShowType=Media&amp;actType=Blogger" target="_new" style="color:blue;">3351</a>)</span></li>
+							<li class="list-group-item list-group-sub"><span>Publisher (<a href="https://www.strategyr.com/zing/evolv/Show_Media_People.asp?GTcountry=World&amp;SRCWord=[A]&amp;ShowType=Media&amp;actType=Publisher" target="_new" style="color:blue;">1601</a>)</span></li>
+							</ul>
+							</div>
+							
 					</div>
 				</div>
 
@@ -840,25 +1363,70 @@
 
 		</div>
 	</div>
-</section>
+  </section>
 
-<!--====  End of Page Title  ====-->
+  <!--====  End of Page Title  ====-->
 
-<!--============================
+  <!--============================
 	           Footer            
 =============================-->
-<footer-component></footer-component>
+<footer>
+	<div class="footer-main">
+	  <div class="container">
+		<div class="row">
+		 
+		  <div class="col-xl-8 col-1g-10 col-md-12 col-12 mx-auto align-self-center">
+			  <div class="block">
+				  <ul class="footerLinks">
+					  
+					  <li><a href="trends.html">TRENDS</a></li>
+					  <li><a href="exhibitors.html">EXHIBITORS</a></li>
+					  <li><a href="media.html">MEDIA</a></li>
+					  <li><a href="sponssors.html">SPONSORS</a></li>	
+					  <li><a href="privacy.html">PRIVACY POLICY</a></li>	
+					</ul>
+			  </div>
+		  </div>
+		  <div class="col-xl-11 col-1g-12 col-md-12 col-12 mx-auto footer-divider"></div>
+		  
 
- 
-<!---============================
+		  <div class="col-xl-11 col-1g-12 col-md-12 col-12 mx-auto align-self-center mt-4">
+			<div class="block text-center">
+			  <!-- Social Site Icons -->
+			  <ul class="social-icon list-inline">
+
+				  
+				  <li class="list-inline-item">
+					  <a href="javascript:void(0)"><i class="ti-linkedin"></i></a>
+					</li>
+				<li class="list-inline-item">
+				  <a href="javascript:void(0)"><i class="ti-facebook"></i></a>
+				</li>
+				<li class="list-inline-item">
+				  <a href="javascript:void(0)"><i class="ti-twitter"></i></a>
+				</li>
+				<li class="list-inline-item">
+				  <a href="javascript:void(0)"><i class="ti-instagram"></i></a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		
+		</div>
+	  </div>
+	</div>
+	<div class="text-center py-1 footer-copyright">
+	  <small class="text-secondary text-dark ">Copyright © <script>document.write(new Date().getFullYear())</script>2022  Evolv ., All Rights Reserved.</small>
+	</div>
+  </footer>
+
+
+  <!---============================
            ScrollTop        
 =============================--->
 
   <scrolltop-component></scrolltop-component>
 
-
-
-  
   <!-- JAVASCRIPTS -->
   <script src="plugins/jquery/jquery.min.js"></script>
   <script src="plugins/bootstrap/bootstrap.min.js"></script>
@@ -869,11 +1437,8 @@
   <!-- google map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
   <script src="plugins/google-map/gmap.js"></script>
-  
+
   <script src="js/script.js"></script>
 </body>
-
-
-
 
 </html>
