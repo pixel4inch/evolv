@@ -234,17 +234,6 @@ class HeaderComponent extends HTMLElement {
         </div>
       </div>
     </nav>
-    <!--============================
-    PLACEKEEPTER BANNER
-=============================-->    
-
-    <section class="section placekeeper_section">
-    <div class="container">
-      <div class="row align-items-center">
-
-      </div>
-    </div>
-  </section>
       
       `;
 
