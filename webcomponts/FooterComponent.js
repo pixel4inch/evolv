@@ -12,11 +12,11 @@ class FooterComponent extends HTMLElement {
 				<div class="block">
 					<ul class="footerLinks">
 						
-						<li><a href="trends.html">TRENDS</a></li>
-						<li><a href="exhibitors.html">EXHIBITORS</a></li>
-						<li><a href="media.html">MEDIA</a></li>
-						<li><a href="sponssors.html">SPONSORS</a></li>	
-						<li><a href="privacy.html">PRIVACY POLICY</a></li>	
+						<li class="nav-item"><a href="trends.html" class="nav-link">TRENDS</a></li>
+						<li class="nav-item"><a href="exhibitors.html" class="nav-link">EXHIBITORS</a></li>
+						<li class="nav-item"><a href="media.html" class="nav-link">MEDIA</a></li>
+						<li class="nav-item"><a href="sponssors.html" class="nav-link">SPONSORS</a></li>	
+						<li class="nav-item"><a href="privacy.html" class="nav-link">PRIVACY POLICY</a></li>	
 					  </ul>
 				</div>
 			</div>
@@ -52,7 +52,6 @@ class FooterComponent extends HTMLElement {
 		<small class="text-secondary text-dark ">Copyright © <script>document.write(new Date().getFullYear())</script>2022  Evolv ., All Rights Reserved.</small>
 	  </div>
 	</footer>
-
 
       
       
