@@ -28,8 +28,8 @@ body {
 =================*/
 
 .subheading{
-    margin-top: 25px;
-    margin-bottom: 22px;
+    margin-top: 18px;
+    margin-bottom: 13px;
     text-align: left;
     font-weight: bold;
 }
@@ -52,7 +52,7 @@ body {
 
 
 hr.divider{
-    margin: 40px 0px 10px 0px;
+    margin: 40px 0px 10px 0px !important;
     border-top:rgba(0,0,0,0.1) solid 1px;
 }
 
@@ -72,6 +72,39 @@ hr.divider{
 }
 
 
+.page-title h1{
+    font-size: 27px;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-top:20px
+}
+
+@media (max-width: 768px) {
+    .page-title h1{
+        font-size: 24px;
+        font-weight: bold;
+        line-height: normal;
+    }
+}
+
+
+@media (max-width: 577px) {
+    .page-title h1{
+        font-size: 22px;
+        font-weight: bold;
+        line-height: normal;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .page-title h1{
+        font-size: 18px;
+        font-weight: bold;
+        line-height: normal;
+    }
+}
 /*===============
     SNIPTS
 =================*/
