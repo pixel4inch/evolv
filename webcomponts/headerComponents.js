@@ -92,11 +92,11 @@ class HeaderComponent extends HTMLElement {
               <li><a class="dropdown-item @@evolvagritech" href="evolvagritech.html">EVOLV 100 AGRI TECH </a></li>
               <li><a class="dropdown-item @@edtech" href="edtech.html">EVOLV 100 ED TECH</a></li>
               <li><a class="dropdown-item @@evolvedrones" href="evolvedrones.html"> EVOLV 100 DRONES</a></li>
+              <!--li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
               <li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
               <li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
               <li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
-              <li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
-              <li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
+              <li--><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li-->
               
             </ul>
     
@@ -121,6 +121,7 @@ class HeaderComponent extends HTMLElement {
           <li><a class="dropdown-item @@agritech" href="agritech.html">AGRI TECH </a></li>
           <li><a class="dropdown-item @@drones" href="gaming.html"> GAMING   </a></li>
           <li><a class="dropdown-item @@drones" href="drones.html"> DRONES  </a></li>
+          <li><a class="dropdown-item @@drones" href="supplychain.html"> SUPPLY CHAIN & LOGISTICS  </a></li>
           
           <li><a class="dropdown-item @@marketing" href="marketingin.html">MARKETING INNOVATIONS  </a></li>
           <li><a class="dropdown-item @@hydrogen" href="hydrogen.html">HYDROGEN  </a></li>
@@ -131,9 +132,20 @@ class HeaderComponent extends HTMLElement {
           <li><a class="dropdown-item @@impactinvesting" href="cx2.html">CX 360   </a></li>
           <li><a class="dropdown-item @@impactinvesting" href="hydrogen.html">HYDROGEN INNOVATIONS  </a></li>
           <li><a class="dropdown-item @@impactinvesting" href="3dprinting.html">3D PRINTING   </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="web.html">WEB 3.0  </a></li>
           <li><a class="dropdown-item @@impactinvesting" href="5g.html">5G  </a></li>
           <li><a class="dropdown-item @@impactinvesting" href="retooling.html">RETOOLING TO THE RECESSION </a></li>
-          <li><a class="dropdown-item @@impactinvesting" href="eventxxx.html">EVENT XXX </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="failedstarttup.html">FAILED STARTUP LEARNINGS </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="carboncapture.html">CARBON CAPTURE </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="spacetech.html">SPACETECH </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="robotics.html">ROBOTICS</a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="alternateproteins.html">ALTERNATE PROTEINS</a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="insurtech.html">INSURTECH</a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="biotech.html">BIOTECH</a></li>
+          
+          
+          
+          <!--li><a class="dropdown-item @@impactinvesting" href="eventxxx.html">EVENT XXX </a></li-->
     
               </ul>
             </li>

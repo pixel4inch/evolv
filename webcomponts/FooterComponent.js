@@ -8,15 +8,16 @@ class FooterComponent extends HTMLElement {
 		<div class="container">
 		  <div class="row">
 		   
-			<div class="col-xl-8 col-1g-10 col-md-12 col-12 mx-auto align-self-center">
+			<div class="col-xl-12 col-1g-12 col-md-12 col-12 mx-auto align-self-center">
 				<div class="block">
 					<ul class="footerLinks">
-						
+					<li class="nav-item"><a href="datadashboard.html" class="nav-link">DATA DASHBOARD</a></li>
 						<li class="nav-item"><a href="trends.html" class="nav-link">TRENDS</a></li>
 						<li class="nav-item"><a href="exhibitors.html" class="nav-link">EXHIBITORS</a></li>
 						<li class="nav-item"><a href="media.html" class="nav-link">MEDIA</a></li>
 						<li class="nav-item"><a href="sponssors.html" class="nav-link">SPONSORS</a></li>	
-						<li class="nav-item"><a href="privacy.html" class="nav-link">PRIVACY POLICY</a></li>	
+						<li class="nav-item"><a href="privacy.html" class="nav-link">PRIVACY POLICY</a></li>
+						<li class="nav-item"><a href="serviceagreements.html" class="nav-link">SERVICE AGREEMENT</a></li>		
 					  </ul>
 				</div>
 			</div>

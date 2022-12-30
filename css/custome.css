@@ -22,6 +22,56 @@ body {
 
 }
 
+
+/*===============
+    PARAGARPHIS
+=================*/
+
+.subheading{
+    margin-top: 25px;
+    margin-bottom: 22px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.textless p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.textless ul{
+    margin: 0px;
+    padding: 0px 0px 0px 22px ;
+}
+
+.textless ul li{
+    margin-bottom: 15px;
+    text-align: justify;
+
+}
+
+
+hr.divider{
+    margin: 40px 0px 10px 0px;
+    border-top:rgba(0,0,0,0.1) solid 1px;
+}
+
+/*===============
+    PARAGARPHIS
+=================*/
+
+.data_table_block {
+     width: 100%;
+}
+
+.data_table_block tbody tr td{
+    text-align: left;
+    word-break: break-all;
+    font-size: 14px;
+    
+}
+
+
 /*===============
     SNIPTS
 =================*/
