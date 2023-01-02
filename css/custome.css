@@ -73,8 +73,8 @@ hr.divider{
 
 
 .page-title h1{
-    font-size: 27px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 400;
     line-height: normal;
     margin-bottom: 20px;
     margin-top:20px
@@ -82,27 +82,26 @@ hr.divider{
 
 @media (max-width: 768px) {
     .page-title h1{
-        font-size: 24px;
-        font-weight: bold;
-        line-height: normal;
+        font-size: 35px;
+     
+       
     }
 }
 
 
 @media (max-width: 577px) {
     .page-title h1{
-        font-size: 22px;
-        font-weight: bold;
-        line-height: normal;
+        font-size: 30px;
+     
+       
     }
 }
 
 
 @media (max-width: 479px) {
     .page-title h1{
-        font-size: 18px;
-        font-weight: bold;
-        line-height: normal;
+        font-size: 24px;
+      
     }
 }
 /*===============
