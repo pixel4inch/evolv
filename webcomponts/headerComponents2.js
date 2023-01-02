@@ -106,13 +106,50 @@ class HeaderComponent extends HTMLElement {
       <!---- AWARDS page ends -->
     
     
-      <!---- EcoSystem page start -->	 
+            <li class="nav-item dropdown @@calender">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">CALENDAR
+                <span><i class="ti-angle-down"></i></span>
+              </a>
+              <!-- Dropdown list -->
+              <ul class="dropdown-menu large">
+                <li><a class="dropdown-item @@impact" href="techtrend.html">TECH TRENDS  </a></li>
+                <li><a class="dropdown-item @@impact" href="impact.html">IMPACT INVESTING </a></li>
+                <li><a class="dropdown-item @@appliedai" href="applied.html">APPLIED AI</a></li>
+                <li><a class="dropdown-item @@crazyscience" href="crazy.html">CRAZY SCIENCE  </a></li>
+                <li><a class="dropdown-item @@femaleunicorn" href="femaleunicon.html">FEMALE UNICORN FOUNDERS </a></li>
+                <li><a class="dropdown-item @@crypto" href="crypto2025.html">CRYPTO 2025+</a></li>
+                <li><a class="dropdown-item @@edtech" href="edtech2.html">EDTECH </a></li>
+          <li><a class="dropdown-item @@agritech" href="agritech.html">AGRI TECH </a></li>
+          <li><a class="dropdown-item @@drones" href="gaming.html"> GAMING   </a></li>
+          <li><a class="dropdown-item @@drones" href="drones.html"> DRONES  </a></li>
+          <li><a class="dropdown-item @@drones" href="supplychain.html"> SUPPLY CHAIN & LOGISTICS  </a></li>
           
-      <li class="nav-item @@CALENDAR ">
-      
-      <a class="nav-link" href="calender.html">CALENDAR</a>
-      </li>
-      <!---- EcoSystem page ends -->
+          <li><a class="dropdown-item @@marketing" href="marketingin.html">MARKETING INNOVATIONS  </a></li>
+          <li><a class="dropdown-item @@hydrogen" href="hydrogen.html">HYDROGEN  </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="impactinvesting.html">IMPACT INVESTING  </a></li>
+          <li><a class="dropdown-item @@sellingtogovts" href="sellingtogovts.html">SELLING TO GOVTS  </a></li>
+          <li><a class="dropdown-item @@smartcities" href="smartcities.html">SMART CITIES  </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="productmanagement.html">PRODUCT MANAGEMENT   </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="cx2.html">CX 360   </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="hydrogen.html">HYDROGEN INNOVATIONS  </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="3dprinting.html">3D PRINTING   </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="web.html">WEB 3.0  </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="5g.html">5G  </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="retooling.html">RETOOLING TO THE RECESSION </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="failedstarttup.html">FAILED STARTUP LEARNINGS </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="carboncapture.html">CARBON CAPTURE </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="spacetech.html">SPACETECH </a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="robotics.html">ROBOTICS</a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="alternateproteins.html">ALTERNATE PROTEINS</a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="insurtech.html">INSURTECH</a></li>
+          <li><a class="dropdown-item @@impactinvesting" href="biotech.html">BIOTECH</a></li>
+          
+          
+          
+          <!--li><a class="dropdown-item @@impactinvesting" href="eventxxx.html">EVENT XXX </a></li-->
+    
+              </ul>
+            </li>
     
     
           <!---- EcoSystem page start -->	 
@@ -216,7 +253,7 @@ class HeaderComponent extends HTMLElement {
     <div class="ct-topbar">
     
     <ul class="list-unstyled list-inline ct-topbar__list">
-      <li class="ct-language">Language 
+      <li class="ct-language">Language <i class="fa fa-arrow-down"></i>
       <ul class="list-unstyled ct-language__dropdown">
       <li><a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es">
       <img class="flag-img" src="https://www.worldometers.info/img/flags/ar-flag.gif" alt="Argentina"> Argentina</a> </li>

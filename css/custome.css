@@ -1,9 +1,10 @@
 @import url(./color.css);
+@import url(./timeline.css);
 
 /*==============
    Body
 ==============*/
-body {
+body {  
     font-family: var(--primaryfont);
 }
 
@@ -126,7 +127,8 @@ hr.divider{
 
 .customeNavBar {
     height: 80px;
-    padding-top: 10px z-index:99999
+    padding-top: 10px;
+     z-index:99999
 }
 
 
@@ -1360,6 +1362,12 @@ image placekeeper
 }
 
 
+#ecosysem-dashboard  a.collapse_click {
+    background: #ededed;
+    padding: 5px 12px !important;
+    margin-bottom: 10px !important;
+}
+
 #ecosysem-dashboard ul li:before {
     content: '\f0da';
     position: absolute;
@@ -1647,3 +1655,120 @@ image placekeeper
     background: var(--maincolor);
     color: #fff;
 }
+
+
+/*=============================
+        LAUNGAGE SETTING
+===============================*/
+
+
+  .ct-language__dropdown{
+      width: 150px !important;
+      max-height:500;
+      padding-top: 8px;
+      overflow: hidden;
+      position: absolute;
+      background-color:var(--thirdcolor);
+      border-bottom: solid 1px var(--thirdcolor);
+      top: 130%;
+      left: 0px;
+      -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+       background-color:var(--thirdcolor);
+        border-bottom: solid 1px var(--thirdcolor);
+        line-height: 35px;
+        visibility: hidden;
+  }
+  .ct-language__dropdown li{
+      
+      padding: 5px;
+  }
+  .ct-language__dropdown li a{
+      display:flex; 
+       justify-content: start;
+       align-items: center;
+  }
+  .ct-language__dropdown li:first-child{
+      padding-top: 10px;
+      border-radius: 3px 3px 0 0;
+  }
+  .ct-language__dropdown li:last-child{
+      padding-bottom: 10px;
+      border-radius: 0 0 3px 3px;
+  }
+  .ct-language__dropdown li:hover{
+      background: #444;
+  }
+  .ct-language__dropdown:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 8px;
+      height: 0;
+      border: 0 solid transparent;
+      border-right-width: 8px;
+      border-left-width: 8px;
+      border-bottom: 8px solid #222;
+
+  }
+  .ct-language{
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    padding-top: 20px;
+    margin-left: 10px;
+  }
+
+  .ct-language:hover .ct-language__dropdown{
+      max-height: 1000px;
+      padding-top: 8px;
+      visibility: visible;
+      top: 110%;
+  }
+  .list-unstyled {
+      padding-left: 0;
+      list-style: none;
+  }
+  
+
+  .flag-img{
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+  }
+
+  
+  .ct-language__dropdown li a{
+    font-size: 12px;
+    color: var(--fourthcolor);
+    font-weight: 500;
+  }
+
+  @media (max-width: 991px) {
+
+    .ct-language{
+        text-align: left;
+        margin-top: 0px;
+        padding-top: 6px;
+        margin-left: 8px;
+        width: 100% !important;
+        display: flex;
+    }
+
+    .ct-language__dropdown{
+            display: flex;
+            width: 100% !important;
+            flex-wrap: wrap;
+    }
+
+    .ct-language__dropdown li{
+        width: 200px;
+    }
+
+  }

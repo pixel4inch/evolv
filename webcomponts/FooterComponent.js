@@ -54,6 +54,8 @@ class FooterComponent extends HTMLElement {
 	  </div>
 	</footer>
 
+	
+
       
       
       
