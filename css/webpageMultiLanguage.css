@@ -145,7 +145,6 @@ a.es:before {
 }
 
 .section p {
-    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -175,14 +174,3 @@ a.es:before {
     text-decoration: underline;
 }
 
-/* Footer */
-footer {
-    padding: 32px;
-    background-color: #000;
-    text-align: center;
-}
-
-footer span {
-    color: #8b8b8b;
-    font-style: italic;
-}

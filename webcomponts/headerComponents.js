@@ -51,11 +51,11 @@ class HeaderComponent extends HTMLElement {
             </li>
     
       <!---- ABOUT page end -->	 
-        <li class="nav-item dropdown @@about  ">
+        <!---li class="nav-item dropdown @@about  ">
           <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">PROGRAMS
             <span><i class="ti-angle-down"></i></span>
           </a>
-          <!-- Dropdown list -->
+        
           <ul class="dropdown-menu">
             <li><a class="dropdown-item @startups " href="startups.html">STARTUPS</a></li>
             <li><a class="dropdown-item @@scaleups" href="investorworld.html">INVESTOR WORLD</a></li>
@@ -66,8 +66,7 @@ class HeaderComponent extends HTMLElement {
             <li><a class="dropdown-item @@impactinvesting" href="impactcsr.html">IMPACT INVESTING &amp; CSR </a></li>
             <li><a class="dropdown-item @@govt" href="govt.html">GOVT</a></li>
           </ul>
-          </li>
-    
+          </li--->
           
       <!---- AWARDS page start -->	 
         
@@ -82,7 +81,7 @@ class HeaderComponent extends HTMLElement {
             </a>
     
             <!-- Dropdown list -->
-            <ul class="dropdown-menu">
+            <!---ul class="dropdown-menu">
               <li><a class="dropdown-item @topstartups " href="topstartups.html">TOP STARTUPS </a></li>
               <li><a class="dropdown-item @@earlystate" href="earlystate.html"> EVOLV EARLY STAGE 1000 </a></li>
               <li><a class="dropdown-item @@fasttrack" href="fasttrack.html">EVOLV FAST-TRACK 1000 </a></li>
@@ -93,13 +92,13 @@ class HeaderComponent extends HTMLElement {
               <li><a class="dropdown-item @@evolvagritech" href="evolvagritech.html">EVOLV 100 AGRI TECH </a></li>
               <li><a class="dropdown-item @@edtech" href="edtech.html">EVOLV 100 ED TECH</a></li>
               <li><a class="dropdown-item @@evolvedrones" href="evolvedrones.html"> EVOLV 100 DRONES</a></li>
-              <!--li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
+          
               <li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
               <li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
               <li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
-              <li--><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li-->
+             
               
-            </ul>
+            </ul--->
     
     
           </li>
@@ -195,12 +194,21 @@ class HeaderComponent extends HTMLElement {
                <a class="dropdown-item @@venturecapital" href="venture.html">
              
             VENTURE CAPITAL</a></li>
-            <!--li><a class="dropdown-item @@govt" href="turnkey.html">GOVT </a></li>--->
+            <li><a class="dropdown-item @@govt" href="govt.html">GOVT </a></li>
           </ul>
           </li>
           <!----Launagae page start -->	 
 
 
+              
+      <!---- gtwenty page start -->	 
+          
+      <li class="nav-item @@G20 ">
+      <a class="nav-link" href="signin.html">LOGIN</a>
+    </li>
+<!---- gtwenty page ends -->
+
+
     
 
 
@@ -209,14 +217,12 @@ class HeaderComponent extends HTMLElement {
 
 
 
-    <li class="nav-item @@language ">
-    <!--a class="nav-link" href="javascript:valid(0)">LANGUAGE</!--a-->
-    <!--div id="google_translate_element"></!--div-->
+    <!--li class="nav-item @@language ">
 
     <div class="ct-topbar">
     
     <ul class="list-unstyled list-inline ct-topbar__list">
-      <li class="ct-language">Language 
+      <li--- class="ct-language">Language 
       <ul class="list-unstyled ct-language__dropdown">
       <li><a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es">
       <img class="flag-img" src="https://www.worldometers.info/img/flags/ar-flag.gif" alt="Argentina"> Argentina</a> </li>
@@ -284,14 +290,14 @@ class HeaderComponent extends HTMLElement {
       <li><a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr">
       <img class="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/European_flag%2C_incorrect_star_rotation.svg/225px-European_flag%2C_incorrect_star_rotation.svg.png" alt="European Union">  European Union</a> </li>
       </ul>
-      </li>
+      </li--->
     </ul>
 
   </div>
  
 </div>
 
-    </li>
+    </li--->
     <!----Launagae page ends -->
     
 

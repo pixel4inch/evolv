@@ -190,7 +190,7 @@ a:hover {
 }
 
 .section-title h2 span {
-  color: var(--maincolor) !important
+  /*color: var(--maincolor) !important*/
 }
 
 .section-title p {
@@ -206,6 +206,10 @@ a:hover {
 
 .page-title {
   text-align: center;
+}
+
+.page-title h1 {
+  text-transform: uppercase;
 }
 
 .video {

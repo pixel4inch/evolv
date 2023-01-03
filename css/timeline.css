@@ -64,7 +64,7 @@
 .single-timeline-area .timeline-date p {
     margin-bottom: 0;
     color: #020710;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight:bold
 }
@@ -138,6 +138,17 @@
       top: 33px;
    }
 
+
+
+   .apland-timeline-area .single-timeline-area:nth-child(6) .timeline-date p
+   {
+       padding-top: 20px;
+    }
+   
+    .apland-timeline-area .single-timeline-area:nth-child(6) .timeline-date::before{
+       top: 33px;
+    }
+ 
 @media only screen and (max-width: 575px) {
     .single-timeline-area .single-timeline-content {
         padding: 20px;

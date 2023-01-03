@@ -50,7 +50,7 @@ class FooterComponent extends HTMLElement {
 		</div>
 	  </div>
 	  <div class="text-center py-1 footer-copyright">
-		<small class="text-secondary text-dark ">Copyright © <script>document.write(new Date().getFullYear())</script>2022  Evolv ., All Rights Reserved.</small>
+		<small class="text-secondary text-dark ">Copyright © <script>document.write(new Date().getFullYear())</script>2023  Evolv ., All Rights Reserved.</small>
 	  </div>
 	</footer>
 

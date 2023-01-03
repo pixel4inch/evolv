@@ -37,11 +37,17 @@
     <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
 
     <!---WEB COMPONETNS-->
+
     <script src="./webcomponts/headerComponents.js"></script>
     <script src="./webcomponts/FooterComponent.js"></script>
     <script src="./webcomponts/ScrollToTop.js"></script>
     <script src="./webcomponts/dummytext.js"></script>
 
+
+    <script     src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+                         
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
@@ -88,284 +94,105 @@
                         <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
                             <p>MARCH 2023</p>
                         </div>
-                        <div class="row pb-4">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>AI & ML</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>AR & VR & XR & Metaverse</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Autonomous Vehicles</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="row pb-4" id="march">
+                            
+                          
+                            <script>
+                                $(document).ready(function () {
+                                    $.getJSON("./data/calender.json", function (data) {
+                                        var output = '';
+                                        console.log(data)
+                                        $.each(data.MARCH, function (key, value) {
+                                            output += `
+                                            
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                    </div>
+                                                </div>
+                                            </div> `;
+                                        });
+                                        $('#march').html(output);
+                                    }).fail(function () {
+                                        document.write("An error has occurred.");
+                                    });
+                                });
+                            </script>
 
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Cleantech (GreenTech)</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
 
-                           
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Digital Health</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Diversity & Inclusion</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>EdTech</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Electric Vehicles</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Fundraising in 2023</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Supply Chain Management</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-      
 
                         </div>
+
+       
+
                     </div>
                     <!-- Single Timeline Content-->
                     <div class="single-timeline-area">
                         <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
                             <p>APRIL 2023</p>
                         </div>
-                        <div class="row pb-4">
+                        <div class="row pb-4" id="april">
 
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Cloud Technologies</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Hydrogen</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Medical Device Innovations</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Quantum Computing</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Robotics</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Web 3.0</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
+                            <script>
+                                $(document).ready(function () {
+                                    $.getJSON("./data/calender.json", function (data) {
+                                        var output = '';
+                                        console.log(data)
+                                        $.each(data.APRIL, function (key, value) {
+                                            output += `
+                                            
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                    </div>
+                                                </div>
+                                            </div> `;
+                                        });
+                                        $('#april').html(output);
+                                    }).fail(function () {
+                                        document.write("An error has occurred.");
+                                    });
+                                });
+                            </script>
 
                         </div>
+
+                       
                     </div>
                     <!-- Single Timeline Content-->
                     <div class="single-timeline-area">
                         <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
                             <p>MAY 2023</p>
                         </div>
-                        <div class="row pb-4">
+                        <div class="row pb-4" id="may">
                             
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>AgriTech</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Biotech</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Blockchain</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Cybersecurity</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Drones</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Gaming</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Impact Investment</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6 class="text-left">Music & Digital Entertainment</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>SaaS</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Wellbeing</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
+                            <script>
+                                $(document).ready(function () {
+                                    $.getJSON("./data/calender.json", function (data) {
+                                        var output = '';
+                                        console.log(data)
+                                        $.each(data.MAY, function (key, value) {
+                                            output += `
+                                            
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                    </div>
+                                                </div>
+                                            </div> `;
+                                        });
+                                        $('#may').html(output);
+                                    }).fail(function () {
+                                        document.write("An error has occurred.");
+                                    });
+                                });
+                            </script>
 
 
 
@@ -376,17 +203,32 @@
                         <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
                             <p>JUNE 2023</p>
                         </div>
-                        <div class="row pb-4">
+                        <div class="row pb-4" id="june">
                             
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Battery Technologies</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            <script>
+                                $(document).ready(function () {
+                                    $.getJSON("./data/calender.json", function (data) {
+                                        var output = '';
+                                        console.log(data)
+                                        $.each(data.JUNE, function (key, value) {
+                                            output += `
+                                            
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                    </div>
+                                                </div>
+                                            </div> `;
+                                        });
+                                        $('#june').html(output);
+                                    }).fail(function () {
+                                        document.write("An error has occurred.");
+                                    });
+                                });
+                            </script>
 
 
                            
@@ -399,254 +241,84 @@
 
                     <div class="single-timeline-area">
                         <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                            <p>TBA</p>
+                            <p>AUGUST 2023</p>
                         </div>
-                        <div class="row pb-4">
-                            
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Charity & NGO</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Climate Tech</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Cryptocurrency</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Digital Banks</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>e-Commerce</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Fashion & Design</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>FoodTech</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Future of Work</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>GovTech</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Hiring & Workforce</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Industry 4.0</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>InsurTech</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Internet of Things</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>MarTech</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Micromobility</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Nanotechnology</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Pharmaceuticals</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>  
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Privacy & Compliance</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>  
-                            
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Smart Cities</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>  
+                        <div class="row pb-4" id="august">
                             
                             
+                            <script>
+                                $(document).ready(function () {
+                                    $.getJSON("./data/calender.json", function (data) {
+                                        var output = '';
+                                        console.log(data)
+                                        $.each(data.AUGUST, function (key, value) {
+                                            output += `
+                                            
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                    </div>
+                                                </div>
+                                            </div> `;
+                                        });
+                                        $('#august').html(output);
+                                    }).fail(function () {
+                                        document.write("An error has occurred.");
+                                    });
+                                });
+                            </script>
 
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Software & SaaS</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>  
-                            
-                            
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Space Tech</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>  
-                            
-                            
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                    <div class="timeline-text">
-                                        <h6>Telecom & 5G</h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>  
-                            
-                            
 
                            
 
+
+
                         </div>
                     </div>
+
+
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>TBA 2023</p>
+                        </div>
+                        <div class="row pb-4" id="tba">
+                            
+                            
+                            <script>
+                                $(document).ready(function () {
+                                    $.getJSON("./data/calender.json", function (data) {
+                                        var output = '';
+                                        console.log(data)
+                                        $.each(data.TBA, function (key, value) {
+                                            output += `
+                                            
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                    </div>
+                                                </div>
+                                            </div> `;
+                                        });
+                                        $('#tba').html(output);
+                                    }).fail(function () {
+                                        document.write("An error has occurred.");
+                                    });
+                                });
+                            </script>
+
+
+                           
+
+
+
+                        </div>
+                    </div>
+
+                  
                 </div>
             </div>
         </div>
