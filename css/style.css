@@ -39,10 +39,11 @@ p,
 li,
 blockquote,
 label {
-  font-size: 16px;
+  font-size: 16.5px;
   letter-spacing: 0;
   line-height: 25px;
-  color: #808080;
+  color: #000000; 
+  letter-spacing: 0.5px !important;
   margin-bottom: 0;
 }
 
