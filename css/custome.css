@@ -278,28 +278,6 @@ pagebanners
     background-image: url(../images/evolv/banner_background/effect-latest-news.svg);
 }
 
-.pagebanners h4{
-    font-size:30px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-
-.pagebanners .title h1 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.pagebanners h5{
-    font-size:20px;
-    font-weight: 200;
-    margin-bottom: 5px;
-    color: #fff;
-    text-transform: capitalize;
-   
-}
 
 
 
@@ -1416,8 +1394,12 @@ image placekeeper
     margin: 0px 7px
 }
 
-
-
+/*
+#ecosysem-dashboard  a.collapse_click {
+    background: #ededed;
+    padding: 5px 12px !important;
+    margin-bottom: 10px !important;
+}*/
 
 #ecosysem-dashboard ul li:before {
     content: '\f0da';
@@ -1867,4 +1849,88 @@ image placekeeper
 .collapsible-link[aria-expanded='true']::before {
     content: '\f107';
     color:var(--maincolor);
+}
+
+/*============================
+GOOGLE TRANSALTOR STYLING
+==============================*/
+
+
+
+
+.skiptranslate {
+    position: relative;
+    color:#fff !important
+}
+
+.goog-te-combo{
+   position: absolute;
+   margin:2px 0px !important;
+  
+    border: none;
+    top: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 7px;
+    padding-right: 7px;
+    line-height: 50px;
+    font-weight: 600 !important;
+    font-family:var(--primaryfont) !important;
+}
+
+.goog-te-combo option{
+    font-size: 13px !important;
+   
+    
+    color: #000;
+
+}
+
+.goog-te-gadget-icon {
+    display:none;
+  }
+  
+  
+  .goog-te-gadget-simple {
+      background-color: #ecebf0 !important;
+      border:0 !important;
+      font-size: 10pt;
+      font-weight:600;
+      display: inline-block;
+      padding: 7.5px 0px !important;
+      cursor: pointer;
+      zoom: 1;
+  }
+  
+  .goog-te-gadget-simple  span {
+     color:#000 !important;
+  
+  }
+
+  
+.goog-te-gadget-simple{
+    background-color: #fff !important
+}
+
+.goog-te-menu-value{
+
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    padding-left: 7px;
+    padding-right: 7px;
+    line-height: 50px;
+    font-family: var(--primaryfont);
+
+}
+
+.goog-te-menu-value img,
+
+.goog-te-menu-value span:nth-child(3),
+.goog-te-menu-value span[aria-hidden="true"]
+{
+    display: none !important;
 }

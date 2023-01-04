@@ -6,7 +6,7 @@ class HeaderComponent extends HTMLElement {
 
       <nav class="navbar main-nav navbar-expand-lg px-2 pt-0 pb-2 customeNavBar border-bottom">
       <div class="container">
-        <a class="navbar-brand" href="home.html"><img src="images/evolv/logo.svg" "="" alt="Evolv" class="brandImg"></a>
+        <a class="navbar-brand" href="home.htm"><img src="images/evolv/logo.svg" "="" alt="Evolv" class="brandImg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="ti-menu"></span>
         </button>
@@ -18,8 +18,7 @@ class HeaderComponent extends HTMLElement {
       <!---- home page start   
     
        <li class="nav-item ">	
-    
-        <a class="nav-link" href="home.html">HOME</a>
+    l">HOME</a>
       </li> -->			
       <!---- home page end -->
     
@@ -40,12 +39,12 @@ class HeaderComponent extends HTMLElement {
           </li>
           
           
-          <li>
+         <!-- <li>
             
               <a class="dropdown-item @@mission" href="mission.html">	 
                           
             MISSION</a>
-          </li>
+          </li>-->
           <li><a class="dropdown-item @@leadership" href="leadership.html">LEADERSHIP </a></li>
               </ul>
             </li>
@@ -160,48 +159,17 @@ class HeaderComponent extends HTMLElement {
     
     
     
-      <li class="nav-item dropdown @@influencer">
-     
-     
-         
-          <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">INFLUENCERS
-            <span><i class="ti-angle-down"></i></span>
-          </a>
-          
-          <ul class="dropdown-menu">
-           
-           <li>
-            
-                  <a class="dropdown-item @@enterprise" href="enterprise.html">
-             
-            ENTERPRISE</a></li>
-          
-          <li>
-             
-               <a class="dropdown-item @@entrepreneur" href="entrepreneur.html">
-            
-               ENTREPRENEUR </a></li>
-               
-               
-            <li>
-              
-               <a class="dropdown-item @@academia" href="academic.html">
-                     
-             ACADEMIA </a></li>
-             
-             <li>
-              
-               <a class="dropdown-item @@venturecapital" href="venture.html">
-             
-            VENTURE CAPITAL</a></li>
-            <li><a class="dropdown-item @@govt" href="govt.html">GOVT </a></li>
-          </ul>
-          </li>
+      
           <!----Launagae page start -->	 
 
 
               
       <!---- gtwenty page start -->	 
+	  
+	  
+	 <li class="nav-item @@G20 ">
+      <a class="nav-link" href="#">INSIDER</a>
+    </li>
           
       <li class="nav-item @@G20 ">
       <a class="nav-link" href="signin.html">LOGIN</a>
@@ -217,9 +185,13 @@ class HeaderComponent extends HTMLElement {
 
 
 
-    <!--li class="nav-item @@language ">
+    <li class="nav-item @@language ">
 
-    <div class="ct-topbar">
+    <div id="google_translate_element"></div>
+
+
+
+    <!--div class="ct-topbar">
     
     <ul class="list-unstyled list-inline ct-topbar__list">
       <li--- class="ct-language">Language 
@@ -293,11 +265,11 @@ class HeaderComponent extends HTMLElement {
       </li--->
     </ul>
 
-  </div>
+  </div--->
  
 </div>
 
-    </li--->
+    </li>
     <!----Launagae page ends -->
     
 
@@ -318,6 +290,13 @@ class HeaderComponent extends HTMLElement {
 
 }
 
+
+
 customElements.define('header-component', HeaderComponent);
+
+
+
+
+  
 
 

@@ -39,7 +39,7 @@
 
 </head>
 
-<body class="body-wrapper d-flex align-items-center" data-spy="scroll" data-target=".privacy-nav">
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
 
 <section class="user-login section">
@@ -66,7 +66,7 @@
 						</form>
 						<div class="new-acount">
 							<a href="contact.html">Forget your password?</a>
-							<p>Don't Have an account? <a href="signup.html"> SIGN UP</a></p>
+							<p>Don't Have an account? <a href="sign-up.html"> SIGN UP</a></p>
 						</div>
 					</div>
 				</div>
@@ -94,36 +94,27 @@
   
   <script src="js/script.js"></script>
   <script src="./js/submenu_select.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-    }
+<script type="text/javascript">
+    $(document).ready(function(){
+$('#google_translate_element').bind('DOMNodeInserted', function(event) {
+$('.goog-te-menu-value span:first').html('LANGUAGE');
+$('.goog-te-menu-frame.skiptranslate').load(function(){
+    setTimeout(function(){
+    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
+    }, 100);
+});
+});
+});
+</script>
 
-	function triggerHtmlEvent(element, eventName) {
-	  var event;
-	  if (document.createEvent) {
-		event = document.createEvent('HTMLEvents');
-		event.initEvent(eventName, true, true);
-		element.dispatchEvent(event);
-	  } else {
-		event = document.createEventObject();
-		event.eventType = eventName;
-		element.fireEvent('on' + event.eventType, event);
-	  }
-	}
 
-	jQuery('.lang-select').click(function() {
-	  var theLang = jQuery(this).attr('data-lang');
-	  jQuery('.goog-te-combo').val(theLang);
-
-	  //alert(jQuery(this).attr('href'));
-	  window.location = jQuery(this).attr('href');
-	  location.reload();
-
-	});
-  </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
 </body>
 
 </html>

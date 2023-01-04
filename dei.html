@@ -38,11 +38,7 @@
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  <!---WEB COMPONETNS-->
-  <script src="./webcomponts/headerComponents.js"></script>
-  <script src="./webcomponts/FooterComponent.js"></script>
-  <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
+  
 
 </head>
 
@@ -56,31 +52,35 @@
 
   <header-component></header-component>
 
-
+  
   <!--============================
     PAGE BANNERS
 =============================-->
+<section class="pagebanners">
+  <div class="container">
+          <div class="row mx-0" id="pagebanner-block" >
 
-  <section class="pagebanners">
-		<div class="container">
-      
-			<div class="row">
+            <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+    <script>
+      $(document).ready(function () {
+              $.getJSON("./data/events.json", function (data) {
+                  var output = '';
+                  console.log(data)
+                  $.each(data.eventslist, function (key, value) {
+                    if(value.Event == "dei"){
+                      output += `<employee-card  title=" `+ value.eventtitle +  '"  date= " ' + value.eventdate + ` "> </employee-card>`;  
+                    }
+                   });
+                  $('#pagebanner-block').html(output);d
+              }).fail(function () {
+                  document.write("An error has occurred.");
+              }); 
+          });
+    </script>
 
-        <div class="col-12">
-          <h4>26TH ANNUAL</h4>
-          <div class=" title">
-           <h1> DIVERSITY, EQUITY & INCLUSION </h1>
-          </div>
-
-          <h5>March 13th 2023</h5>
-         
-        </div>
-
-
-        </div>
-    </div>
-   </section>
-
+         </div>
+      </div>
+      </section>
 
   <!--============================
     PLACEKEEPTER BANNER
@@ -92,9 +92,12 @@
         <div class="datagraphic-block">
           <img src="./images/evolv/data/dei_web.jpg" class="img-fluid border shadow-sm"  />
         </div>
+
       </div>
     </div>
   </section>
+
+
 
 
   
@@ -284,6 +287,14 @@
   <script src="./js/submenu_select.js"></script>
   <script src="./js/jquery.readall.js"></script>
 
+
+  <!---WEB COMPONETNS-->
+  <script src="./webcomponts/headerComponents.js"></script>
+  <script src="./webcomponts/FooterComponent.js"></script>
+  <script src="./webcomponts/ScrollToTop.js"></script>
+  <script src="./webcomponts/dummytext.js"></script>
+  <script src="./webcomponts/banner.js"></script>
+
   <script>
     $('.textless').readall({
       showheight: null,
@@ -293,37 +304,27 @@
 
   </script>
 
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
-    }
+<script type="text/javascript">
+    $(document).ready(function(){
+$('#google_translate_element').bind('DOMNodeInserted', function(event) {
+$('.goog-te-menu-value span:first').html('LANGUAGE');
+$('.goog-te-menu-frame.skiptranslate').load(function(){
+    setTimeout(function(){
+    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
+    }, 100);
+});
+});
+});
+</script>
 
-    function triggerHtmlEvent(element, eventName) {
-      var event;
-      if (document.createEvent) {
-        event = document.createEvent('HTMLEvents');
-        event.initEvent(eventName, true, true);
-        element.dispatchEvent(event);
-      } else {
-        event = document.createEventObject();
-        event.eventType = eventName;
-        element.fireEvent('on' + event.eventType, event);
-      }
-    }
 
-    jQuery('.lang-select').click(function () {
-      var theLang = jQuery(this).attr('data-lang');
-      jQuery('.goog-te-combo').val(theLang);
-
-      //alert(jQuery(this).attr('href'));
-      window.location = jQuery(this).attr('href');
-      location.reload();
-
-    });
-  </script>
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
 </body>
 
 </html>

@@ -1,12 +1,16 @@
 {
 "Ai":[
  {
-  "EventYear": "26TH ANNUAL",
-  "EventTitle": "AI & ML",
-  "EventDate": "March 13th 2023",
-  "DataGraphicPath": "\/images\/evolv\/data\/datagraphicplacekeeper.jpg"
+  "eventmonth":"March",
+  "eventyear":"2023",
+  "eventtitle": "AI & ML",
+  "eventsubtitle": "gia",
+  "eventdate": "March 13th 2023",
+  "eventtime": "2.30pm",
+  "eventlocation": "xxxxxx"
  }
 ],
-"Sheet2":null,
-"Sheet3":null
+
+
+   
 }

@@ -39,11 +39,10 @@ p,
 li,
 blockquote,
 label {
-  font-size: 16.5px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 25px;
   color: #000000; 
-  letter-spacing: 0.5px !important;
   margin-bottom: 0;
 }
 
@@ -175,7 +174,7 @@ a:hover {
 }
 
 .section {
-  padding: 30px 0;
+  padding: 45px 0;
 }
 
 .section-title {

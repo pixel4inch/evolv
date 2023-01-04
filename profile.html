@@ -75,11 +75,15 @@
       <div class="row">
         <div class="col-sm-12 m-auto">
           <!-- Page Title -->
-          <h1>PROFILE</h1>
+          <h1></h1>
           <!-- Page Description -->
-          <p class="text-left">Evolv™ is a global program of the Confederation of Indian Industry (CII), the non-profit powerhouse with 62 offices worldwide, 10 centers of excellence, 9000 corporate members and 300,000+ affiliated entities worldwide. Evolv™ aspires to be the global facilitator for innovators and their startups by connecting them to investors, big enterprise, and government through a myriad of collaborative engagements. Evolv™ provides the right framework for multidimensional business & technology partnerships, presenting the perfect nexus and global playbook. CII’s strategic objective is to build a strong nexus between the world’s most innovative startups that will become drivers for technological leadership, economic growth, and long-term nation building.</p>
+          <p class="text-left">Evolv™ is a global program of the Confederation of Indian Industry (CII), the non-profit powerhouse with 62 offices worldwide, 10 centers of excellence, 
+		  9000 corporate members and 300,000+ affiliated entities worldwide. Evolv™ aspires to be the global facilitator for innovators and their startups by connecting them to investors, 
+		  big enterprise, and government through a myriad of collaborative engagements. Evolv™ provides the right framework for multidimensional business & technology partnerships, 
+		  presenting the perfect global playbook. CII’s strategic objective is to build a strong nexus for the world’s most innovative startups that will become tomorrow's drivers 
+		  for technological leadership, economic growth, and long-term nation building.</p>
           <br/>
-          <p class="text-left">As the official Secretariat for 2023 B20 Summit (<a href="https://www.b20india2023.org/" style="color: blue" target="_blank">https://www.b20india2023.org/</a>) and multiple programs it offers, this is a perfect opportunity for innovators, investors, big enterprises, and governments to get involved. </p>
+          <p class="text-left">As the official Secretariat for 2023 <a href="https://www.b20india2023.org/" style="color: blue" target="_blank">B20 Summit</a> and multiple programs it offers, this is a perfect opportunity for innovators, investors, big enterprises, and governments to get involved. </p>
        
         </div>
       </div>
@@ -117,35 +121,27 @@
   <script src="js/script.js"></script>
   <script src="./js/submenu_select.js"></script>
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-    }
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-	function triggerHtmlEvent(element, eventName) {
-	  var event;
-	  if (document.createEvent) {
-		event = document.createEvent('HTMLEvents');
-		event.initEvent(eventName, true, true);
-		element.dispatchEvent(event);
-	  } else {
-		event = document.createEventObject();
-		event.eventType = eventName;
-		element.fireEvent('on' + event.eventType, event);
-	  }
-	}
+<script type="text/javascript">
+    $(document).ready(function(){
+$('#google_translate_element').bind('DOMNodeInserted', function(event) {
+$('.goog-te-menu-value span:first').html('LANGUAGE');
+$('.goog-te-menu-frame.skiptranslate').load(function(){
+    setTimeout(function(){
+    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
+    }, 100);
+});
+});
+});
+</script>
 
-	jQuery('.lang-select').click(function() {
-	  var theLang = jQuery(this).attr('data-lang');
-	  jQuery('.goog-te-combo').val(theLang);
 
-	  //alert(jQuery(this).attr('href'));
-	  window.location = jQuery(this).attr('href');
-	  location.reload();
-
-	});
-  </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
 </body>
 
 </html>

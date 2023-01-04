@@ -5,7 +5,7 @@
   "Links": "./ai.html"
  },
  {
-  "Title": "AR & VR & XR & Metaverse",
+  "Title": "AR & VR & XR",
   "Links": "./metaverse.html"
  },
  {
@@ -21,7 +21,7 @@
   "Links": "./digitalhealth.html"
  },
  {
-  "Title": "Diversity & Inclusion",
+  "Title": "Diversity, Equity & Inclusion (DEI)",
   "Links": "./dei.html"
  },
  {
@@ -43,7 +43,11 @@
  {
   "Title": "Female Unicorn Founders",
   "Links": "./femaleunicon.html"
- }
+ },
+ {
+    "Title": "Metaverse",
+    "Links": "./metaverse.html"
+   }
 ],
 
 
@@ -82,7 +86,7 @@
  },
  {
   "Title": "Power Women Of Tech",
-  "Links": "./powerwomentech.html"
+  "Links": "./powerwomentechApril.html"
  }
 ],
 
@@ -141,14 +145,14 @@
  },
  {
   "Title": "Power Women Of Tech",
-  "Links": "./powerwomentech.html"
+  "Links": "./powerwomentechjune.html"
  }
 ],
 
 "AUGUST":[
  {
   "Title": "Power Women Of Tech",
-  "Links": "./powerwomentech.html"
+  "Links": "./powerwomentechaug.html"
  }
 ],
 
