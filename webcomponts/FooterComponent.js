@@ -11,7 +11,7 @@ class FooterComponent extends HTMLElement {
 			<div class="col-xl-12 col-1g-12 col-md-12 col-12 mx-auto align-self-center">
 				<div class="block">
 					<ul class="footerLinks">
-					<li class="nav-item"><a href="DataDashBoard.asp" target="_blank" class="nav-link">DATA DASHBOARD</a></li>
+					<li class="nav-item"><a href="datadashboard.html" target="_blank" class="nav-link">DATA DASHBOARD</a></li>
 						<li class="nav-item"><a href="trends.html" class="nav-link">TRENDS</a></li>
 						<li class="nav-item"><a href="exhibitors.html" class="nav-link">EXHIBITORS</a></li>
 						<li class="nav-item"><a href="media.html" class="nav-link">MEDIA</a></li>

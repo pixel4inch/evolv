@@ -130,6 +130,15 @@ class HeaderComponent extends HTMLElement {
             <a class="nav-link" href="gtwenty.html">G20</a>
           </li>
       <!---- gtwenty page ends -->
+
+
+      <!---- gtwenty page start -->	 
+          
+      <li class="nav-item @@G20 ">
+   
+     <a class="nav-link" href="#">BUZZ</a>
+   </li>
+<!---- gtwenty page ends -->
       
            
     
