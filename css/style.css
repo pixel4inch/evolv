@@ -39,9 +39,9 @@ p,
 li,
 blockquote,
 label {
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 0;
-  line-height: 25px;
+  line-height: 30px;
   color: #000000; 
   margin-bottom: 0;
 }
@@ -621,10 +621,13 @@ button:focus,
   width: 38px;
   height: 38px;
   border-radius: 100%;
-  background: #3f3f43;
+  background: #fff;
   color: #fff;
   text-align: center;
   line-height: 38px;
+  padding:5px;
+  margin-left:3px;
+  margin-right: 3px;
 }
 
 @media (max-width: 768px) {
@@ -1915,7 +1918,7 @@ hr {
 }
 
 .faq .block {
-  padding: 50px;
+  padding: 5px;
 }
 
 @media (max-width: 480px) {
@@ -1948,8 +1951,9 @@ hr {
 }
 
 .faq .block .faq-item .item .item-link a {
-  font-size: 20px;
+  font-size: 17px;
   color: #000;
+  font-weight: bold;
 }
 
 .faq .block .faq-item .item .item-link a span {

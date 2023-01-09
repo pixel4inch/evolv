@@ -24,7 +24,25 @@ body {
 }
 
 
-/*===============
+
+/*==================
+    STYLED LIST
+==================*/
+
+.styled_list  li:before {
+    content: '\f0da';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-family: FontAwesome;
+    color: var(--maincolor);
+    margin-left: -14px;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+
+*===============
     PARAGARPHIS
 =================*/
 
@@ -1691,121 +1709,6 @@ image placekeeper
 }
 
 
-/*=============================
-        LAUNGAGE SETTING
-===============================*/
-
-
-  .ct-language__dropdown{
-      width: 150px !important;
-      max-height:500;
-      padding-top: 8px;
-      overflow: hidden;
-      position: absolute;
-      background-color:var(--thirdcolor);
-      border-bottom: solid 1px var(--thirdcolor);
-      top: 130%;
-      left: 0px;
-      -webkit-transition: all 0.25s ease-in-out;
-      transition: all 0.25s ease-in-out;
-       background-color:var(--thirdcolor);
-        border-bottom: solid 1px var(--thirdcolor);
-        line-height: 35px;
-        visibility: hidden;
-  }
-  .ct-language__dropdown li{
-      
-      padding: 5px;
-  }
-  .ct-language__dropdown li a{
-      display:flex; 
-       justify-content: start;
-       align-items: center;
-  }
-  .ct-language__dropdown li:first-child{
-      padding-top: 10px;
-      border-radius: 3px 3px 0 0;
-  }
-  .ct-language__dropdown li:last-child{
-      padding-bottom: 10px;
-      border-radius: 0 0 3px 3px;
-  }
-  .ct-language__dropdown li:hover{
-      background: #444;
-  }
-  .ct-language__dropdown:before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 8px;
-      height: 0;
-      border: 0 solid transparent;
-      border-right-width: 8px;
-      border-left-width: 8px;
-      border-bottom: 8px solid #222;
-
-  }
-  .ct-language{
-    position: relative;
-    text-align: center;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #000;
-    padding-top: 20px;
-    margin-left: 10px;
-  }
-
-  .ct-language:hover .ct-language__dropdown{
-      max-height: 1000px;
-      padding-top: 8px;
-      visibility: visible;
-      top: 110%;
-  }
-  .list-unstyled {
-      padding-left: 0;
-      list-style: none;
-  }
-  
-
-  .flag-img{
-    width: 20px;
-    height: auto;
-    margin-left: 5px;
-  }
-
-  
-  .ct-language__dropdown li a{
-    font-size: 12px;
-    color: var(--fourthcolor);
-    font-weight: 500;
-  }
-
-  @media (max-width: 991px) {
-
-    .ct-language{
-        text-align: left;
-        margin-top: 0px;
-        padding-top: 6px;
-        margin-left: 8px;
-        width: 100% !important;
-        display: flex;
-    }
-
-    .ct-language__dropdown{
-            display: flex;
-            width: 100% !important;
-            flex-wrap: wrap;
-    }
-
-    .ct-language__dropdown li{
-        width: 200px;
-    }
-
-  }
 
 
   /*=================================
@@ -1933,4 +1836,18 @@ GOOGLE TRANSALTOR STYLING
 .goog-te-menu-value span[aria-hidden="true"]
 {
     display: none !important;
+}
+
+/*=============================
+        LAUNGAGE SETTING
+===============================*/
+
+
+
+
+.goog-te-menu2, .goog-te-menu2 table, .goog-te-menu2 table tr, .goog-te-menu2 table tr td, .goog-te-menu2-item-selected{
+
+    background-color:red;
+    font-size:50px !important;
+
 }

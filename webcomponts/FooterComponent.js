@@ -31,16 +31,19 @@ class FooterComponent extends HTMLElement {
   
 					
 					<li class="list-inline-item">
-						<a href="javascript:void(0)"><i class="ti-linkedin"></i></a>
+						<a href="javascript:void(0)"><img src="./images/evolv/Social_Icons/LinkedIn.svg" class="img-fluid social-icons"/></a>
 					  </li>
 				  <li class="list-inline-item">
-					<a href="javascript:void(0)"><i class="ti-facebook"></i></a>
+					<a href="javascript:void(0)"><img src="./images/evolv/Social_Icons/Facbook.svg" class="img-fluid social-icons"/></a>
 				  </li>
 				  <li class="list-inline-item">
-					<a href="javascript:void(0)"><i class="ti-twitter"></i></a>
+					<a href="javascript:void(0)"><img src="./images/evolv/Social_Icons/Twitter.svg" class="img-fluid social-icons"/></a>
 				  </li>
 				  <li class="list-inline-item">
-					<a href="javascript:void(0)"><i class="ti-instagram"></i></a>
+					<a href="javascript:void(0)"><img src="./images/evolv/Social_Icons/Instagarm.svg" class="img-fluid social-icons"/></a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="javascript:void(0)"><img src="./images/evolv/Social_Icons/Youtube.svg " class="img-fluid social-icons"/></a>
 				  </li>
 				</ul>
 			  </div>
