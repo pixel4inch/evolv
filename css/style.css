@@ -39,9 +39,9 @@ p,
 li,
 blockquote,
 label {
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 0;
-  line-height: 30px;
+  line-height: 25px;
   color: #000000; 
   margin-bottom: 0;
 }
@@ -618,16 +618,13 @@ button:focus,
 .footer-main .block ul.social-icon li a {
   text-decoration: none;
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 25px;
+  height: 25px;
   border-radius: 100%;
-  background: #fff;
   color: #fff;
   text-align: center;
   line-height: 38px;
-  padding:5px;
-  margin-left:3px;
-  margin-right: 3px;
+  margin: 0px 2px;
 }
 
 @media (max-width: 768px) {
@@ -1606,11 +1603,22 @@ hr {
 }
 
 .blog-single .about-author .media .image img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
 }
 
+.blog-single .about-author .media h3{
+  font-size: 30px;
+  font-weight:600;
+}
+
+
+.blog-single .about-author .media h4{
+  font-size: 24px;
+  font-weight:400;
+  color: var(--maincolor);
+}
 .blog-single .about-author .media .media-body {
   margin-left: 40px;
 }
@@ -1918,7 +1926,7 @@ hr {
 }
 
 .faq .block {
-  padding: 5px;
+  padding: 50px;
 }
 
 @media (max-width: 480px) {
@@ -1951,9 +1959,8 @@ hr {
 }
 
 .faq .block .faq-item .item .item-link a {
-  font-size: 17px;
+  font-size: 20px;
   color: #000;
-  font-weight: bold;
 }
 
 .faq .block .faq-item .item .item-link a span {

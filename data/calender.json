@@ -1,250 +1,355 @@
 {
-"MARCH":[
- {
-  "Title": "AI & ML",
-  "Links": "./ai.html"
- },
- {
-  "Title": "AR & VR & XR",
-  "Links": "./ar.html"
- },
- {
-  "Title": "Autonomous Vehicles",
-  "Links": "./autonomous.html"
- },
- {
-  "Title": "Cleantech (GreenTech)",
-  "Links": "./cleantech.html"
- },
- {
-  "Title": "Digital Health",
-  "Links": "./digitalhealth.html"
- },
- {
-  "Title": "Diversity, Equity & Inclusion (DEI)",
-  "Links": "./dei.html"
- },
- {
-  "Title": "EdTech",
-  "Links": "./edtech.html"
- },
- {
-  "Title": "Electric Vehicles",
-  "Links": "./electricvehicles.html"
- },
- {
-  "Title": "Fundraising in 2023",
-  "Links": "./fundraising.html"
- },
- {
-  "Title": "Supply Chain Management",
-  "Links": "./supplychain.html"
- },
- {
-  "Title": "Female Unicorn Founders",
-  "Links": "./femaleunicon.html"
- },
- {
-    "Title": "Metaverse",
-    "Links": "./metaverse.html"
-   }
-],
-
-
-"APRIL":[
- {
-  "Title": "Cloud Technologies",
-  "Links": "./cloudtec.html"
- },
- {
-  "Title": "Hydrogen",
-  "Links": "./hydrogen.html"
- },
- {
-  "Title": "Medical Device Innovations",
-  "Links": "./medicaldevice.html"
- },
- {
-  "Title": "Quantum Computing",
-  "Links": "./quantumcomputing.html"
- },
- {
-  "Title": "Robotics",
-  "Links": "./robotics.html"
- },
- {
-  "Title": "Web 3.0",
-  "Links": "./web.html"
- },
- {
-  "Title": "Sustainability",
-  "Links": "./sustaiability.html"
- },
- {
-  "Title": "GEN Z",
-  "Links": "./gen.html"
- },
- {
-  "Title": "Power Women Of Tech",
-  "Links": "./powerwomentechApril.html"
- }
-],
-
-
-
-"MAY":[
- {
-  "Title": "AgriTech",
-  "Links": "./agritech.html"
- },
- {
-  "Title": "Biotech",
-  "Links": "./biotech.html"
- },
- {
-  "Title": "Blockchain",
-  "Links": "./blockchain.html"
- },
- {
-  "Title": "Cybersecurity",
-  "Links": "./cybersecurity.html"
- },
- {
-  "Title": "Drones",
-  "Links": "./drones.html"
- },
- {
-  "Title": "Gaming",
-  "Links": "./gaming.html"
- },
- {
-  "Title": "Impact Investment",
-  "Links": "./impact.html"
- },
-
-
- {
-  "Title": "Music & Digital Entertainment",
-  "Links": "./entertainment.html"
- },
- {
-  "Title": "SaaS",
-  "Links": "./saas.html"
- },
- {
-  "Title": "Wellbeing",
-  "Links": "./wellbeing.html"
- }
-],
-
-
-"JUNE":[
- {
-  "Title": "Battery Technologies",
-  "Links": "./betteryTech.html"
- },
- {
-  "Title": "Power Women Of Tech",
-  "Links": "./powerwomentechjune.html"
- }
-],
-
-"AUGUST":[
- {
-  "Title": "Power Women Of Tech",
-  "Links": "./powerwomentechaug.html"
- }
-],
-
-
-"TBA":[
- {
-  "Title": "Charity & NGO",
-  "Links": "./charityNGO.html"
- },
- {
-  "Title": "Climate Tech",
-  "Links": "./climatetech.html"
- },
- {
-  "Title": "Cryptocurrency",
-  "Links": "./cryptocurrency.html"
- },
- {
-  "Title": "Digital Banks",
-  "Links": "./digitalbanks.html"
- },
- {
-  "Title": "e-Commerce",
-  "Links": "./ecommerce.html"
- },
- {
-  "Title": "Fashion & Design",
-  "Links": "./fashiondesign.html"
- },
- {
-  "Title": "FoodTech",
-  "Links": "./FoodTech.html"
- },
- {
-  "Title": "Future of Work",
-  "Links": "./FutureWork.html"
- },
- {
-  "Title": "GovTech",
-  "Links": "./govt.html"
- },
- {
-  "Title": "Hiring & Workforce",
-  "Links": "./HiringWorkforce.html"
- },
- {
-  "Title": "Industry 4.0",
-  "Links": "./Industry.html"
- },
- {
-  "Title": "InsurTech",
-  "Links": "./insurtech.html"
- },
- {
-  "Title": "Internet of Things",
-  "Links": "./InternetThings.html"
- },
- {
-  "Title": "MarTech",
-  "Links": "./MarTech.html"
- },
- {
-  "Title": "Micromobility",
-  "Links": "./micromobility.html"
- },
- {
-  "Title": "Nanotechnology",
-  "Links": "./nanotechnology.html"
- },
- {
-  "Title": "Pharmaceuticals",
-  "Links": "./Pharmaceuticals.html"
- },
- {
-  "Title": "Privacy & Compliance",
-  "Links": "./PrivacyCompliance.html"
- },
- {
-  "Title": "Smart Cities",
-  "Links": "./smartcities.html"
- },
- {
-  "Title": "Software & SaaS",
-  "Links": "./sass.html"
- },
- {
-  "Title": "Space Tech",
-  "Links": "./spacetech.html"
- },
- {
-  "Title": "Telecom & 5G",
-  "Links": "./5g.html"
- }
-]
+  "APRIL": [
+    {
+      "Title": "AI & ML",
+      "Links": "./ai.html",
+      "Multi": "Multi",
+      "dg": "dg-active",
+      "date": "13"
+    },
+    {
+      "Title": "AR & VR & XR",
+      "Links": "./ar.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Autonomous Vehicles",
+      "Links": "./autonomous.html",
+      "Multi": "dg-active",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Cleantech (GreenTech)",
+      "Links": "./cleantech.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Digital Health",
+      "Links": "./digitalhealth.html",
+      "Multi": "Multi",
+      "dg": "dg-active",
+      "date": "13"
+    },
+    {
+      "Title": "Diversity, Equity & Inclusion (DEI)",
+      "Links": "./dei.html",
+      "Multi": "Multi",
+      "dg": "dg-active",
+      "date": "13"
+    },
+    {
+      "Title": "EdTech",
+      "Links": "./edtech.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Electric Vehicles",
+      "Links": "./electricvehicles.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Fundraising in 2023",
+      "Links": "./fundraising.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Supply Chain Management",
+      "Links": "./supplychain.html",
+      "Multi": "",
+      "dg": "dg-active",
+      "date": "13"
+    }
+  ],
+  "MAY": [
+    {
+      "Title": "Cloud Technologies",
+      "Links": "./cloudtec.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Hydrogen",
+      "Links": "./hydrogen.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Medical Device Innovations",
+      "Links": "./medicaldevice.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Quantum Computing",
+      "Links": "./quantumcomputing.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Robotics",
+      "Links": "./robotics.html",
+      "Multi": "",
+      "dg": "dg-active",
+      "date": "13"
+    },
+    {
+      "Title": "Web 3.0",
+      "Links": "./web.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Power Women Of Tech",
+      "Links": "./powerwomentechApril.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "GEN Z",
+      "Links": "./gen.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Female Unicorn Founders",
+      "Links": "./femaleunicon.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Metaverse",
+      "Links": "./metaverse.html",
+      "Multi": "",
+      "dg": "dg-active",
+      "date": "13"
+    }
+  ],
+  "JUNE": [
+    {
+      "Title": "AgriTech",
+      "Links": "./agritech.html",
+      "Multi": "",
+      "dg": "dg-active",
+      "date": "13"
+    },
+    {
+      "Title": "Biotech",
+      "Links": "./biotech.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Blockchain",
+      "Links": "./blockchain.html",
+      "Multi": "",
+      "dg": "dg-active",
+      "date": "13"
+    },
+    {
+      "Title": "Cybersecurity",
+      "Links": "./cybersecurity.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Drones",
+      "Links": "./drones.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Gaming",
+      "Links": "./gaming.html",
+      "Multi": "",
+      "dg": "dg-active",
+      "date": "13"
+    },
+    {
+      "Title": "Impact Investment",
+      "Links": "./impact.html",
+      "Multi": "",
+      "dg": "dg-active",
+      "date": "13"
+    },
+    {
+      "Title": "Sustainability",
+      "Links": "./sustaiability.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Startup Ecosystem ",
+      "Links": "./startup.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Female Led",
+      "Links": "./femaleled.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "13"
+    }
+  ],
+  "JULY": [
+    {
+      "Title": "Battery Technologies",
+      "Links": "./betteryTech.html",
+      "Multi": "",
+      "dg": "dg-active",
+      "date": "13"
+    },
+    {
+      "Title": "Charity & NGO",
+      "Links": "./charityNGO.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Cryptocurrency",
+      "Links": "./cryptocurrency.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Digital Banks",
+      "Links": "./digitalbanks.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Fashion & Design",
+      "Links": "./fashiondesign.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "FoodTech",
+      "Links": "./FoodTech.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Future of Work",
+      "Links": "./FutureWork.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Music & Digital Entertainment",
+      "Links": "./entertainment.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Software & SaaS",
+      "Links": "./sass.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Wellbeing",
+      "Links": "./wellbeing.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    }
+  ],
+  "AUGUST": [
+    {
+      "Title": "GovTech",
+      "Links": "./govt.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Hiring & Workforce",
+      "Links": "./HiringWorkforce.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "InsurTech",
+      "Links": "./insurtech.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Internet of Things",
+      "Links": "./InternetThings.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "MarTech",
+      "Links": "./MarTech.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Nanotechnology",
+      "Links": "./nanotechnology.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Smart Cities",
+      "Links": "./smartcities.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Space Tech",
+      "Links": "./spacetech.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    },
+    {
+      "Title": "Telecom & 5G",
+      "Links": "./5g.html",
+      "Multi": "",
+      "dg": "",
+      "date": "13"
+    }
+  ]
 }

@@ -1,0 +1,59 @@
+@import url(./color.css);
+
+/*============
+    TABS
+=============*/
+
+
+#tabs ul.nav-tabs{
+    width: 100%;
+    margin: 0 auto;
+    background: var(--fourthcolor);
+    border-radius: 40px !important;
+    border: rgba(0,0,0,0.2) solid 1px;
+}
+
+#tabs ul.nav-tabs li a.active   {
+    border-radius: 40px;
+    background-color: var(--maincolor) !important;
+    position: relative;
+
+}
+
+#tabs ul.nav-tabs li a.active::after {
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--maincolor) !important;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+  }
+
+
+  @media (max-width: 767px) {
+    #tabs ul.nav-tabs li {
+      border-radius: 0rem !important;
+    }
+  }
+  
+
+  @media (max-width: 767px) {
+    #tabs ul.nav-tabs li .nav-link {
+      border-radius: 0rem !important;
+    }
+
+    #tabs ul.nav-tabs{
+        width: 100%;
+        margin: 0 auto;
+        background: var(--fourthcolor);
+        border-radius: 0px !important;
+        border: rgba(0,0,0,0.2) solid 1px;
+        box-shadow: none !important;
+    }
+  }
+  
+
+  

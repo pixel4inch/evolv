@@ -89,45 +89,7 @@
             <div class="col-12">
                 <!-- Timeline Area-->
                 <div class="apland-timeline-area">
-                    <!-- Single Timeline Content-->
-                    <div class="single-timeline-area">
-                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                            <p>MARCH 2023</p>
-                        </div>
-                        <div class="row pb-4" id="march">
-                            
-                          
-                            <script>
-                                $(document).ready(function () {
-                                    $.getJSON("./data/calender.json", function (data) {
-                                        var output = '';
-                                        console.log(data)
-                                        $.each(data.MARCH, function (key, value) {
-                                            output += `
-                                            
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                                    <div class="timeline-text">
-                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
-                                                    </div>
-                                                </div>
-                                            </div> `;
-                                        });
-                                        $('#march').html(output);
-                                    }).fail(function () {
-                                        document.write("An error has occurred.");
-                                    });
-                                });
-                            </script>
-
-
-
-                        </div>
-
-       
-
-                    </div>
+                   
                     <!-- Single Timeline Content-->
                     <div class="single-timeline-area">
                         <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
@@ -143,7 +105,7 @@
                                         $.each(data.APRIL, function (key, value) {
                                             output += `
                                             
-                                            <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
                                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                     <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
                                                     <div class="timeline-text">
@@ -178,7 +140,7 @@
                                         $.each(data.MAY, function (key, value) {
                                             output += `
                                             
-                                            <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
                                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                     <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
                                                     <div class="timeline-text">
@@ -214,7 +176,7 @@
                                         $.each(data.JUNE, function (key, value) {
                                             output += `
                                             
-                                            <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
                                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                     <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
                                                     <div class="timeline-text">
@@ -239,11 +201,13 @@
                     </div>
 
 
+             
+
                     <div class="single-timeline-area">
                         <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                            <p>AUGUST 2023</p>
+                            <p>JULY 2023</p>
                         </div>
-                        <div class="row pb-4" id="august">
+                        <div class="row pb-4" id="July">
                             
                             
                             <script>
@@ -251,10 +215,10 @@
                                     $.getJSON("./data/calender.json", function (data) {
                                         var output = '';
                                         console.log(data)
-                                        $.each(data.AUGUST, function (key, value) {
+                                        $.each(data.JULY, function (key, value) {
                                             output += `
                                             
-                                            <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
                                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                     <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
                                                     <div class="timeline-text">
@@ -263,7 +227,7 @@
                                                 </div>
                                             </div> `;
                                         });
-                                        $('#august').html(output);
+                                        $('#July').html(output);
                                     }).fail(function () {
                                         document.write("An error has occurred.");
                                     });
@@ -281,9 +245,9 @@
 
                     <div class="single-timeline-area">
                         <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                            <p>TBA 2023</p>
+                            <p>AUGUST 2023</p>
                         </div>
-                        <div class="row pb-4" id="tba">
+                        <div class="row pb-4" id="Aug">
                             
                             
                             <script>
@@ -291,10 +255,10 @@
                                     $.getJSON("./data/calender.json", function (data) {
                                         var output = '';
                                         console.log(data)
-                                        $.each(data.TBA, function (key, value) {
+                                        $.each(data.AUGUST, function (key, value) {
                                             output += `
                                             
-                                            <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
                                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                     <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
                                                     <div class="timeline-text">
@@ -303,7 +267,7 @@
                                                 </div>
                                             </div> `;
                                         });
-                                        $('#tba').html(output);
+                                        $('#Aug').html(output);
                                     }).fail(function () {
                                         document.write("An error has occurred.");
                                     });
