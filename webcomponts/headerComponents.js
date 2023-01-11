@@ -115,10 +115,10 @@ class HeaderComponent extends HTMLElement {
     
           <!---- EcoSystem page start -->	 
           
-          <li class="nav-item @@G20 ">
+          <!--li class="nav-item @@G20 ">
           
           <a class="nav-link" href="ecosystems.html">ECOSYSTEMS</a>
-          </li>
+          </li-->
           <!---- EcoSystem page ends -->
     
     
@@ -134,10 +134,10 @@ class HeaderComponent extends HTMLElement {
 
       <!---- gtwenty page start -->	 
           
-      <li class="nav-item @@G20 ">
+      <!---li class="nav-item @@G20 ">
    
      <a class="nav-link" href="#">BUZZ</a>
-   </li>
+   </li-->
 <!---- gtwenty page ends -->
       
            
@@ -151,12 +151,12 @@ class HeaderComponent extends HTMLElement {
           <ul class="dropdown-menu">
             <li>
             
-            <a class="dropdown-item @@worldpremier" href="world.html">
+            <a class="dropdown-item @@worldpremier" href="javascript:void(0)">
             
             WORLD PREMIER</a></li>
              <li>
             
-            <a class="dropdown-item @@ecocircle" href="eco.html">
+            <a class="dropdown-item @@ecocircle" href="javascript:void(0)">
                      
              ECO CIRCLE</a></li>	
           </ul>
@@ -177,7 +177,7 @@ class HeaderComponent extends HTMLElement {
 	  
 	  
 	 <li class="nav-item @@G20 ">
-      <a class="nav-link" href="#">INSIDER</a>
+      <a class="nav-link" href="insider.html">INSIDER</a>
     </li>
           
       <li class="nav-item @@G20 ">

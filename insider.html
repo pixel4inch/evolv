@@ -29,18 +29,16 @@
   <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="plugins/aos/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/custome.css" rel="stylesheet" />
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
+  <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  <!---WEB COMPONETNS-->
-  <script src="./webcomponts/headerComponents.js"></script>
-  <script src="./webcomponts/FooterComponent.js"></script>
-  <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
+  
 
 </head>
 
@@ -51,51 +49,56 @@
   <!--============================
 =            HEADER           =
 =============================-->
+
   <header-component></header-component>
 
-<!--============================
+ 
+
+  
+
+
+  <!--============================
     PLACEKEEPTER BANNER
-=============================-->    
+=============================-->
 
-<section class="section placekeeper_section theme-6">
-  <div class="container">
-    <div class="row align-items-center">
-
-    </div>
-  </div>
-</section>
-
-  <!--================================
-=            Page Title            =
-=================================-->
-
-  <section class="section page-title">
+  <section class="section placekeeper_section page-title insider py-5   ">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-left">
-          
-          <p >The Group of Twenty (G20) comprises 19 countries (Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, Japan, Republic of Korea, Mexico, Russia, Saudi Arabia, South Africa, Türkiye, United Kingdom and United States) and the European Union. The G20 members represent around 85% of the global GDP, over 75% of the global trade, and about two-thirds of the world population.</p>
-          <br/>
-          <p >The Business 20 (B20) is the official G20 dialogue forum with the global business community. Established in 2010, B20 is among the most prominent Engagement Groups in G20, with companies and business organizations as participants. The B20 leads the process of galvanizing global business leaders for their views on issues of global economic and trade governance and speaks in a single voice for the entire G20 business community.</p>
-          <br/>
-          <p>Each year, the G20 Presidency appoints a B20 Chair (an eminent business leader from the G20 host country), who is supported by a B20 Sherpa and the B20 secretariat.
-            The B20 aims to deliver concrete actionable policy recommendations on priorities by each rotating presidency to spur economic growth and development. The B20 bases its work on Task Forces (TFs) and Action Councils (ACs) entrusted to develop consensus-based policy recommendations to the G20 and to international organizations and institutions.
-            The B20 officially conveys its final recommendations to the G20 Presidency on the occasion of the <a href="https://www.b20india2023.org/AboutB20" target="_blank" style="color:blue">B20 Summit.</a> 
-            
-            
-        
+      <div class="row tex-center ">
+        <div class="col-sm-12 m-auto text-center">
+            <!-- Page Title -->
+            <h1>PRIVILEGED INVITEE GATEWAY</h1>
         </div>
+
+        <div class="col-lg-5 col-md-9 col-sm-11 col-12 p-3  m-auto ">
+
+            <div class="shadow  w-100  p-4 border border-radius-2">
+                <form class="form-inline w-100">
+                    <div class="form-group w-100 d-flex flex-wrap justify-content-evenly align-items-center">
+                        <label for="inputPassword" class="col-sm-2 col-3 col-form-label"><span class="text-danger">*</span> CODE:</label>
+                        <div class="col-sm-8 col-7 px-0">
+                          <input type="password" class="form-control w-100" id="inputPassword">
+                        </div>
+                        <div class="col-sm-2 col-2">
+                        <button type="submit" class="btn"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                  </form>
+            </div>
+            <!-- Page Title -->
+          
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!--====  End of Page Title  ====-->
-
+ 
 
 
   <!--============================
 	           Footer            
 =============================-->
+
   <footer-component></footer-component>
 
 
@@ -117,9 +120,30 @@
   <script src="plugins/google-map/gmap.js"></script>
 
   <script src="js/script.js"></script>
-  <script src="./js/submenu_select.js"></script>  
+  <script src="./js/submenu_select.js"></script>
+  <script src="./js/jquery.readall.js"></script>
 
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!---WEB COMPONETNS-->
+  <script src="./webcomponts/headerComponents.js"></script>
+  <script src="./webcomponts/FooterComponent.js"></script>
+  <script src="./webcomponts/ScrollToTop.js"></script>
+  <script src="./webcomponts/dummytext.js"></script>
+  <script src="./webcomponts/banner.js"></script>
+
+  <script>
+    $('.textless').readall({
+      showheight: null,
+      showrows: 8
+    });
+
+
+  </script>
+
+
+
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -141,7 +165,5 @@ function googleTranslateElementInit() {
 }
 </script>
 </body>
-
-
 
 </html>

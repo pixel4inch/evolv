@@ -38,7 +38,7 @@ h4{
             <h4>Global Virtual Summits</h4>
         </div>
         <i class="fa fa-calendar" aria-hidden="true"></i>
-        <h5></h5>
+        
        
         </div>
   `;
@@ -49,20 +49,20 @@ class EmployeeCard extends HTMLElement{
         this.attachShadow({ mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.querySelector('h1').innerText = this.getAttribute('title');
-        this.shadowRoot.querySelector('h5').innerText = this.getAttribute('date');
+       
         //this.shadowRoot.querySelector('img').src = this.getAttribute('avatar');   
     }
 
  connectedCallback(){
     this.h1 = this.getAttribute("title")
-    this.h5 = this.getAttribute("date")
+ 
    
     this.render();
   }
  
   render(){
     this.h1;
-    this.h5;
+
   }
 }
 window.customElements.define('employee-card', EmployeeCard);
