@@ -135,7 +135,7 @@
   "Event": "hydrogen",
   "eventmonth": "April",
   "eventyear": 2023,
-  "eventtitle": "Hydrogen",
+  "eventtitle": "Green Hydrogen",
   "eventsubtitle": "Global Virtual Summits",
 
   "eventtime": "Not Specified",
@@ -556,6 +556,66 @@
   "eventmonth": "TBA",
   "eventyear": 2023,
   "eventtitle": "Telecom & 5G",
+  "eventsubtitle": "Global Virtual Summits",
+
+  "eventtime": "Not Specified",
+  "eventlocation": "Not Specified"
+ },
+ {
+  "Event": "madscience",
+  "eventmonth": "TBA",
+  "eventyear": 2023,
+  "eventtitle": "Mad Science",
+  "eventsubtitle": "Global Virtual Summits",
+
+  "eventtime": "Not Specified",
+  "eventlocation": "Not Specified"
+ },
+ {
+  "Event": "deeptech",
+  "eventmonth": "TBA",
+  "eventyear": 2023,
+  "eventtitle": "DeepTech Wizards",
+  "eventsubtitle": "Global Virtual Summits",
+
+  "eventtime": "Not Specified",
+  "eventlocation": "Not Specified"
+ },
+ {
+  "Event": "ese",
+  "eventmonth": "TBA",
+  "eventyear": 2023,
+  "eventtitle": "European Startup Ecosystems",
+  "eventsubtitle": "Global Virtual Summits",
+
+  "eventtime": "Not Specified",
+  "eventlocation": "Not Specified"
+ },
+ {
+  "Event": "cx360",
+  "eventmonth": "TBA",
+  "eventyear": 2023,
+  "eventtitle": "CX360",
+  "eventsubtitle": "Global Virtual Summits",
+
+  "eventtime": "Not Specified",
+  "eventlocation": "Not Specified"
+ },
+ {
+  "Event": "failure",
+  "eventmonth": "TBA",
+  "eventyear": 2023,
+  "eventtitle": "Failure Analysis",
+  "eventsubtitle": "Global Virtual Summits",
+
+  "eventtime": "Not Specified",
+  "eventlocation": "Not Specified"
+ },
+ {
+  "Event": "ism",
+  "eventmonth": "TBA",
+  "eventyear": 2023,
+  "eventtitle": "Israeli Startup Magic",
   "eventsubtitle": "Global Virtual Summits",
 
   "eventtime": "Not Specified",

@@ -12,10 +12,10 @@ class FooterComponent extends HTMLElement {
 				<div class="block">
 					<ul class="footerLinks">
 					<li class="nav-item"><a href="datadashboard.asp" target="_blank" class="nav-link">DATA DASHBOARD</a></li>
-						<!--li class="nav-item"><a href="javascript:void(0)" class="nav-link">TRENDS</a></li-->
+						<li class="nav-item"><a href="volunteer.html" class="nav-link">VOLUNTEER</a></li>
 						<li class="nav-item"><a href="javascript:void(0)" class="nav-link">EXHIBITORS</a></li>
+						<li class="nav-item"><a href="javascript:void(0)" class="nav-link">SPONSORS</a></li>
 						<li class="nav-item"><a href="javascript:void(0)" class="nav-link">MEDIA</a></li>
-						<li class="nav-item"><a href="javascript:void(0)" class="nav-link">SPONSORS</a></li>	
 						<li class="nav-item"><a href="privacy.html" class="nav-link">PRIVACY POLICY</a></li>
 						<li class="nav-item"><a href="serviceagreements.html" class="nav-link">SERVICE AGREEMENT</a></li>	
 						<li class="nav-item"><a href="CONTACTUS.html" class="nav-link">CONTACT</a></li>			

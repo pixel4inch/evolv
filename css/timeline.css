@@ -8,16 +8,24 @@
 .single-timeline-area {
     position: relative;
     z-index: 1;
-    padding-left: 180px;
+    padding-left:30px;
 }
+
+
+.single-timeline-area {
+    position: relative;
+    z-index: 1;
+    padding-left:30px;
+}
+
 @media only screen and (max-width: 575px) {
     .single-timeline-area {
         padding-left: 100px;
     }
 }
 .single-timeline-area .timeline-date {
-    position: absolute;
-    width: 180px;
+    position: relative;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
@@ -31,22 +39,22 @@
     align-items: start;
     -webkit-box-pack:start;
     -ms-flex-pack: start;
-    justify-content: flex-end;
-    padding-right: 60px;
+    justify-content:start;
+    padding-right: 0px;
 }
 @media only screen and (max-width: 575px) {
     .single-timeline-area .timeline-date {
         width: 100px;
     }
 }
-.single-timeline-area .timeline-date::after {
+.single-timeline-area::before {
     position: absolute;
     width: 3px;
     height: 100%;
     content: "";
     background-color: #ebebeb;
     top: 0;
-    right: 30px;
+    left: 0px;
     z-index: 1; 
 }
 .single-timeline-area .timeline-date::before {
@@ -57,16 +65,17 @@
     background-color: var(--maincolor);
     content: "";
     top: 5%;
-    right: 26px;
+    left: -34px;
     z-index: 5;
     margin-top: -5.5px;
 }
 .single-timeline-area .timeline-date p {
     margin-bottom: 0;
     color: #020710;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
-    font-weight:bold
+    font-weight:bold;
+    margin-bottom:12px;
 }
 .single-timeline-area .single-timeline-content {
     position: relative;
@@ -148,6 +157,15 @@
     .apland-timeline-area .single-timeline-area:nth-child(6) .timeline-date::before{
        top: 33px;
     }
+
+    .apland-timeline-area .single-timeline-area:nth-child(7) .timeline-date p
+    {
+        padding-top: 20px;
+     }
+    
+     .apland-timeline-area .single-timeline-area:nth-child(7) .timeline-date::before{
+        top: 33px;
+     }
  
 @media only screen and (max-width: 575px) {
     .single-timeline-area .single-timeline-content {
@@ -159,14 +177,14 @@
     transition-duration: 500ms;
     width: 30px;
     height:30px;
-    background-color: #fff;
+    background-color:var(--maincolor)
     -webkit-box-flex: 0;
     -ms-flex: 0 0 30px;
     flex: 0 0 30px;
     text-align: center;
     max-width: 30px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right:12px;
 }
 .single-timeline-area .single-timeline-content .timeline-icon i {
     color: #000;
@@ -176,6 +194,19 @@
 .single-timeline-area .single-timeline-content .timeline-text h6 {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.single-timeline-area .single-timeline-content .timeline-text h6 span {
+    color:red
+}
+
+.single-timeline-area .single-timeline-content .timeline-text h5 {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 0px;
 }
 .single-timeline-area .single-timeline-content .timeline-text p {
     font-size: 13px;

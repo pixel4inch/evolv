@@ -63,234 +63,324 @@
 =            Page Title            =
 =================================-->
 
-    <section class="section page-title">
+    <section class="section pb-2 page-title">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 m-auto">
                     <!-- Page Title -->
-                    <h1>GLOBAL VIRTUAL SUMMITS</h1>
+                    <h1>GLOBAL SUMMITS</h1>
                     <!-- Page Description -->
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-<section class="timeline_area section_padding_130">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-8 col-lg-6">
-                <!-- Section Heading-->
-                <div class="section_heading text-center">
-                   
-                   
-                    <br/>
-                    <div class="line"></div>
+
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <!-- Timeline Area-->
-                <div class="apland-timeline-area">
-                   
-                    <!-- Single Timeline Content-->
-                    <div class="single-timeline-area">
-                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                            <p>APRIL 2023</p>
-                        </div>
-                        <div class="row pb-4" id="april">
+    </section>
+    <section class="timeline_area section_padding_130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6">
+                    <!-- Section Heading-->
+                    <div class="section_heading text-center">
+                    
+                    
+                        <br/>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Timeline Area-->
+                    <div class="apland-timeline-area">
 
-                            <script>
-                                $(document).ready(function () {
-                                    $.getJSON("./data/calender.json", function (data) {
-                                        var output = '';
-                                        console.log(data)
-                                        $.each(data.APRIL, function (key, value) {
-                                            output += `
-                                            
-                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
-                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                                    <div class="timeline-text">
-                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+
+                        <!-- Single Timeline Content-->
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>MARCH 2023</p>
+                            </div>
+                            <div class="row pb-4" id="mar">
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $.getJSON("./data/calender.json", function (data) {
+                                            var output = '';
+                                            console.log(data)
+                                            $.each(data.MAR, function (key, value) {
+                                                output += `
+                                                
+                                                <div class="col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
+                                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                        <div class="timeline-text">
+                                                            <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                            <h5>` + value.date + `</h5>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div> `;
+                                                </div> `;
+                                            });
+                                            $('#mar').html(output);
+                                        }).fail(function () {
+                                            document.write("An error has occurred.");
                                         });
-                                        $('#april').html(output);
-                                    }).fail(function () {
-                                        document.write("An error has occurred.");
                                     });
-                                });
-                            </script>
+                                </script>
 
+                            </div>
+
+                        
+                        </div>
+                    
+                        <!-- Single Timeline Content-->
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>APRIL 2023</p>
+                            </div>
+                            <div class="row pb-4" id="april">
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $.getJSON("./data/calender.json", function (data) {
+                                            var output = '';
+                                            console.log(data)
+                                            $.each(data.APRIL, function (key, value) {
+                                                output += `
+                                                
+                                                <div class="col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
+                                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                        <div class="timeline-text">
+                                                            <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                            <h5>` + value.date + `</h5>
+                                                        </div>
+                                                    </div>
+                                                </div> `;
+                                            });
+                                            $('#april').html(output);
+                                        }).fail(function () {
+                                            document.write("An error has occurred.");
+                                        });
+                                    });
+                                </script>
+
+                            </div>
+
+                        
+                        </div>
+                        <!-- Single Timeline Content-->
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>MAY 2023</p>
+                            </div>
+                            <div class="row pb-4" id="may">
+                                
+                                <script>
+                                    $(document).ready(function () {
+                                        $.getJSON("./data/calender.json", function (data) {
+                                            var output = '';
+                                            console.log(data)
+                                            $.each(data.MAY, function (key, value) {
+                                                output += `
+                                                
+                                                <div class="col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
+                                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                        <div class="timeline-text">
+                                                            <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                            <h5>` + value.date + `</h5>
+                                                            </div>
+                                                    </div>
+                                                </div> `;
+                                            });
+                                            $('#may').html(output);
+                                        }).fail(function () {
+                                            document.write("An error has occurred.");
+                                        });
+                                    });
+                                </script>
+
+
+
+                            </div>
                         </div>
 
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>JUNE 2023</p>
+                            </div>
+                            <div class="row pb-4" id="june">
+                                
+                                
+                                <script>
+                                    $(document).ready(function () {
+                                        $.getJSON("./data/calender.json", function (data) {
+                                            var output = '';
+                                            console.log(data)
+                                            $.each(data.JUNE, function (key, value) {
+                                                output += `
+                                                
+                                                <div class="col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
+                                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                        <div class="timeline-text">
+                                                            <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                            <h5>` + value.date + `</h5>
+                                                            </div>
+                                                    </div>
+                                                </div> `;
+                                            });
+                                            $('#june').html(output);
+                                        }).fail(function () {
+                                            document.write("An error has occurred.");
+                                        });
+                                    });
+                                </script>
+
+
+                            
+
+
+
+                            </div>
+                        </div>
+
+
+                
+
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>JULY 2023</p>
+                            </div>
+                            <div class="row pb-4" id="July">
+                                
+                                
+                                <script>
+                                    $(document).ready(function () {
+                                        $.getJSON("./data/calender.json", function (data) {
+                                            var output = '';
+                                            console.log(data)
+                                            $.each(data.JULY, function (key, value) {
+                                                output += `
+                                                
+                                                <div class="col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
+                                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                        <div class="timeline-text">
+                                                            <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                            <h5>` + value.date + `</h5>
+                                                            </div>
+                                                    </div>
+                                                </div> `;
+                                            });
+                                            $('#July').html(output);
+                                        }).fail(function () {
+                                            document.write("An error has occurred.");
+                                        });
+                                    });
+                                </script>
+
+
+                            
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>AUGUST 2023</p>
+                            </div>
+                            <div class="row pb-4" id="Aug">
+                                
+                                
+                                <script>
+                                    $(document).ready(function () {
+                                        $.getJSON("./data/calender.json", function (data) {
+                                            var output = '';
+                                            console.log(data)
+                                            $.each(data.AUGUST, function (key, value) {
+                                                output += `
+                                                
+                                                <div class="col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
+                                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                        <div class="timeline-text">
+                                                            <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                            <h5>` + value.date + `</h5>
+                                                            </div>
+                                                    </div>
+                                                </div> `;
+                                            });
+                                            $('#Aug').html(output);
+                                        }).fail(function () {
+                                            document.write("An error has occurred.");
+                                        });
+                                    });
+                                </script>
+
+
+                            
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>SEPTEMBER 2023</p>
+                            </div>
+                            <div class="row pb-4" id="sep">
+                                
+                                
+                                <script>
+                                    $(document).ready(function () {
+                                        $.getJSON("./data/calender.json", function (data) {
+                                            var output = '';
+                                            console.log(data)
+                                            $.each(data.SEP, function (key, value) {
+                                                output += `
+                                                
+                                                <div class="col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
+                                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                        <div class="timeline-text">
+                                                            
+                                                            <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
+                                                            <h5>` + value.date + `</h5>
+                                                            </div>
+                                                    </div>
+                                                </div> `;
+                                            });
+                                            $('#sep').html(output);
+                                        }).fail(function () {
+                                            document.write("An error has occurred.");
+                                        });
+                                    });
+                                </script>
+  
+
+
+                            </div>
+                        </div>
+
+                     
+
+                        
                        
+                    
                     </div>
-                    <!-- Single Timeline Content-->
-                    <div class="single-timeline-area">
-                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                            <p>MAY 2023</p>
-                        </div>
-                        <div class="row pb-4" id="may">
-                            
-                            <script>
-                                $(document).ready(function () {
-                                    $.getJSON("./data/calender.json", function (data) {
-                                        var output = '';
-                                        console.log(data)
-                                        $.each(data.MAY, function (key, value) {
-                                            output += `
-                                            
-                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
-                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                                    <div class="timeline-text">
-                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
-                                                    </div>
-                                                </div>
-                                            </div> `;
-                                        });
-                                        $('#may').html(output);
-                                    }).fail(function () {
-                                        document.write("An error has occurred.");
-                                    });
-                                });
-                            </script>
-
-
-
-                        </div>
-                    </div>
-
-                    <div class="single-timeline-area">
-                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                            <p>JUNE 2023</p>
-                        </div>
-                        <div class="row pb-4" id="june">
-                            
-                            
-                            <script>
-                                $(document).ready(function () {
-                                    $.getJSON("./data/calender.json", function (data) {
-                                        var output = '';
-                                        console.log(data)
-                                        $.each(data.JUNE, function (key, value) {
-                                            output += `
-                                            
-                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
-                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                                    <div class="timeline-text">
-                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
-                                                    </div>
-                                                </div>
-                                            </div> `;
-                                        });
-                                        $('#june').html(output);
-                                    }).fail(function () {
-                                        document.write("An error has occurred.");
-                                    });
-                                });
-                            </script>
-
-
-                           
-
-
-
-                        </div>
-                    </div>
-
-
-             
-
-                    <div class="single-timeline-area">
-                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                            <p>JULY 2023</p>
-                        </div>
-                        <div class="row pb-4" id="July">
-                            
-                            
-                            <script>
-                                $(document).ready(function () {
-                                    $.getJSON("./data/calender.json", function (data) {
-                                        var output = '';
-                                        console.log(data)
-                                        $.each(data.JULY, function (key, value) {
-                                            output += `
-                                            
-                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
-                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                                    <div class="timeline-text">
-                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
-                                                    </div>
-                                                </div>
-                                            </div> `;
-                                        });
-                                        $('#July').html(output);
-                                    }).fail(function () {
-                                        document.write("An error has occurred.");
-                                    });
-                                });
-                            </script>
-
-
-                           
-
-
-
-                        </div>
-                    </div>
-
-
-                    <div class="single-timeline-area">
-                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                            <p>AUGUST 2023</p>
-                        </div>
-                        <div class="row pb-4" id="Aug">
-                            
-                            
-                            <script>
-                                $(document).ready(function () {
-                                    $.getJSON("./data/calender.json", function (data) {
-                                        var output = '';
-                                        console.log(data)
-                                        $.each(data.AUGUST, function (key, value) {
-                                            output += `
-                                            
-                                            <div class="col-12 col-md-6 col-lg-4 calender-lables`+ ` ` + value.Multi + ` ` + value.dg +`">
-                                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                    <div class="timeline-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                                    <div class="timeline-text">
-                                                        <h6><a href="` +value.Links + `" target="_blank" >` + value.Title + `</a></h6>
-                                                    </div>
-                                                </div>
-                                            </div> `;
-                                        });
-                                        $('#Aug').html(output);
-                                    }).fail(function () {
-                                        document.write("An error has occurred.");
-                                    });
-                                });
-                            </script>
-
-
-                           
-
-
-
-                        </div>
-                    </div>
-
-                  
                 </div>
             </div>
         </div>
-    </div>
-</section>
-                </div>
-            </div>
-        </div>
+
+
+   
     </section>
 
     <!--====  End of Page Title  ====-->

@@ -9,6 +9,14 @@ body {
     font-family: var(--primaryfont);
 }
 
+.main-color_font{
+    color:var(--maincolor)
+}
+
+.main-color_bg{
+    color:var(--maincolor)
+}
+
 .section-title p {
     width: 50%;
     margin: 0 auto;
@@ -26,6 +34,13 @@ body {
 
 ul.lower-roman{
     list-style: lower-roman;
+}
+
+.big-font{
+    font-size: 29px;
+    font-weight: bold;
+    color: #000
+    margin-top: 20px;
 }
 
 
@@ -137,7 +152,13 @@ hr.divider{
 =================*/
 
 .brandImg {
-    width: 175px;
+    width: 150px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.b20-logo{
+    width: 174px;
     height: auto;
     margin-top: 5px;
 }
@@ -155,6 +176,11 @@ hr.divider{
         height: auto;
         margin-left: -40px;
     }
+
+    .b20-logo{
+        width: 135px;
+        margin-right: -40px;
+    }    
 
     .navbar-collapse {
         margin-left: 10px;
@@ -207,7 +233,7 @@ hr.divider{
 
 @media (max-width: 991px) {
     .brandImg {
-        width: 175px;
+        width: 150px;
         height: auto;
     }
 
@@ -218,9 +244,21 @@ hr.divider{
         width: 150px;
         height: auto;
     }
+    
 
 
 }
+
+@media (max-width: 400px) {
+    .brandImg {
+        width: 130px;
+        height: auto;
+    }
+    
+
+
+}
+
 
 
 
@@ -1068,6 +1106,64 @@ image placekeeper
 
 }
 
+/*----THEME-14-----*/
+
+.placekeeper_section.theme-14
+ {
+    background-image: url('../images/evolv/placekeeper/14.jpg');
+    background-position: 0px 0px;
+    height: 570px;
+}
+
+
+
+@media (max-width:1199px) {
+
+    .placekeeper_section.theme-14
+    {
+        background-position: 0px 0px;
+        height: 460px;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .placekeeper_section.theme-14
+    {
+         background-position: 0px 0px;
+        height: 460px;
+
+    }
+
+}
+
+
+@media (max-width:769px) {
+
+    .placekeeper_section.theme-14
+     {
+        background-position: 0px -20px;
+        height: 310px
+
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+    .placekeeper_section.theme-14
+    {
+
+        background-position: 0 10px;
+        height: 220px;
+
+    }
+
+}
+
+
 
 
 
@@ -1113,11 +1209,12 @@ image placekeeper
 }
 
 .hero_section h2.bannertagline {
-    font-size: 32px;
+    font-size: 23.2px;
     line-height: normal;
     letter-spacing: 2px;
     margin-top: 5px;
     text-transform: uppercase;
+    font-weight: 500;
 
 }
 
@@ -1146,10 +1243,10 @@ image placekeeper
 
 @media (max-width: 991px) {
 
-    .hero_section {
+    /*.hero_section {
         height: auto;
         padding: 80px !important;
-    }
+    }*/
 
     .hero_section h1 {
         font-size: 70px;
@@ -1158,7 +1255,7 @@ image placekeeper
     }
 
     .hero_section h2.bannertagline {
-        font-size: 25.5px;
+        font-size: 18.2px;
         margin-top: 14px;
     }
 
@@ -1178,10 +1275,10 @@ image placekeeper
 
 @media (max-width: 767px) {
 
-    .hero_section {
+    /*.hero_section {
         height: auto;
         padding: 60px !important;
-    }
+    }*/
 
     .hero_section h1 {
         font-size: 44px;
@@ -1190,8 +1287,8 @@ image placekeeper
     }
 
     .hero_section h2.bannertagline {
-        font-size: 15.5px;
-        margin-top: 10px;
+        font-size: 11px;
+        margin-top: 4px;
     }
 
     .hero_section #map {
@@ -1211,10 +1308,10 @@ image placekeeper
 
 @media (max-width: 479px) {
 
-    .hero_section {
+   /* .hero_section {
         height: auto;
         padding: 40px 20px !important;
-    }
+    }*/
 
     .hero_section h1 {
         font-size: 50px;
@@ -1223,7 +1320,7 @@ image placekeeper
     }
 
     .hero_section h2.bannertagline {
-        font-size: 18px !important;
+        font-size: 13px !important;
         margin-bottom: 10px;
 
     }
@@ -1295,6 +1392,11 @@ image placekeeper
     font-weight: 600;
 }
 
+.footerLink li  .nav-link {
+    display: block;
+    padding: 0.5rem 0rem !important;
+}
+
 .footerLinks li a:hover,
 .footerLinks li a.active {
     color: var(--maincolor);
@@ -1311,14 +1413,21 @@ image placekeeper
 
 }
 
+
 .footer-copyright {
     border-top: rgba(0, 0, 0, 0.2) solid 1px;
     padding-top: 15px !important;
 }
 
+
 @media (max-width:1200px) {
     .footerLinks li {
-        margin: 4px 2px;
+        margin: 4px 0px;
+    }
+    
+    .footerLink li  a.nav-link {
+        display: block;
+        padding:0 !important;
     }
 
 }
@@ -1331,8 +1440,22 @@ image placekeeper
     }
 
     .footerLinks li {
-        margin: 2px 6px;
+        margin: 2px 0px;
     }
+
+    .footerLink li  .nav-link {
+       
+        padding: 0.5rem 0px !important;
+    }
+
+    .footerLinks li {
+        line-height: normal;
+    }
+
+    .footerLinks .nav-item{
+        padding:2px 0px
+    }
+
 
 }
 
@@ -1975,6 +2098,17 @@ GOOGLE TRANSALTOR STYLING
 }
 
 
+@media (max-width: 991px) {
+    .goog-te-menu-value{
+        margin-left: -12px !important;
+        margin-top: -15px !important    ;
+    }
+
+    .goog-te-gadget-simple{
+        padding-top:0px
+    }
+}
+
 /*======================
     calender 
 ========================*/
@@ -1987,7 +2121,7 @@ GOOGLE TRANSALTOR STYLING
 .calender-lables.Multi::before{
     content: 'M';
     position: absolute;
-    right: 22px;
+    right: 7px;
     top: calc(100% - 69%);
     font-size: 12px;
     background: #e7e7e7;
@@ -2002,9 +2136,18 @@ GOOGLE TRANSALTOR STYLING
 }
 
 .calender-lables.dg-active .single-timeline-content{
-    border-bottom:green solid 3px;
+    border:#82ade1 solid 3px;
 }
 
+
+.calender-lables.live .single-timeline-content{
+    border:#e19b56 solid 3px;
+}
+
+
+.calender-lables img{
+    width: 35px;
+}
 
 /*========================
         Notifyme
@@ -2036,13 +2179,20 @@ GOOGLE TRANSALTOR STYLING
 
 
 .insider h1{
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     letter-spacing: 0.6px;
+    color: var(--maincolor);
+    margin-bottom: 0px;
 }
 .insider .shadow {
     border-radius: 5px  !important;
     border-top: solid 5px var(--maincolor) !important
+}
+
+.insider input{
+    border-radius: 0px !important;
+    height: 36px !important;
 }
 
 .insider label{
@@ -2050,15 +2200,19 @@ GOOGLE TRANSALTOR STYLING
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 0px !important;
 }
 
 .insider button{
-    padding: 2px 5px;
+    padding: 4.5px 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:transparent;
+    background:var(--maincolor);
     border: none;
+    border-radius: 0px !important;
+    font-size: 18px;
+
 
 }
 
@@ -2075,19 +2229,29 @@ GOOGLE TRANSALTOR STYLING
 /*===================
  Service AGREEMNET
 =====================*/
-#serviceagrement_tab #accordionExample  .card .card-header{
-    padding:0px 10px !important;
+
+#serviceagrement_tab  ul li{
+    margin-bottom: 2px;
 }
 
-#serviceagrement_tab #accordionExample  .card:nth-child(even) .card-header{
+#serviceagrement_tab  h2{
+    font-size: 16px !important;
+    margin-top:20px;
+    color:#000 !important;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+
+#serviceagrement_tab  p, #privacy_tab ul li {
+    font-size: 15px !important;
+}
+
+
+#privacy_tab #accordionExample  .card:nth-child(even) .card-header{
    background:#f5f5f5    !important;
 
 }
-
-#serviceagrement_tab #accordionExample  .card .card-header h2 button{
- font-weight: 600  !important;
-}
-
 /*===================
  Service AGREEMNET
 =====================*/
@@ -2095,9 +2259,21 @@ GOOGLE TRANSALTOR STYLING
     margin-bottom: 2px;
 }
 
-#privacy_tab #accordionExample  .card .card-header{
-    padding:0px 10px !important;
+#privacy_tab h2{
+    font-size: 16px !important;
+    margin-top:30px !important;
+    margin-bottom:15px !important;
+    color:#000 !important;
+    font-weight: 600;
+    line-height: normal;
+    
 }
+
+#privacy_tab p, #privacy_tab ul li {
+    font-size: 15px !important;
+    margin-bottom: 7px;
+}
+
 
 #privacy_tab #accordionExample  .card:nth-child(even) .card-header{
    background:#f5f5f5    !important;
@@ -2107,3 +2283,60 @@ GOOGLE TRANSALTOR STYLING
 #privacy_tab #accordionExample  .card .card-header h2 button{
  font-weight: 600  !important;
 }
+
+
+/*===============================
+        DOMAIN EXPERTS
+================================*/
+
+#domain-experts iframe {
+
+    border: none; 
+    width: 100%; 
+    height: 1250px;
+}
+
+
+/*==============================
+        PROGARAM BUTTON
+=============================*/
+.progaram-btn{
+
+    font-size: 30px;
+    background: var(--maincolor);
+    color: #fff;
+    font-weight: 400;
+    padding: 15px
+
+}
+
+.progaram-btn:hover{
+
+   color:#fff;
+   background:#053978;
+
+}
+
+.clsmandatory{
+    position: absolute !important;
+    left: 10px;
+    top: 5px;
+    font-weight: bold;
+    color:red !important;
+}
+
+
+/*==============================
+       VOLUNTEER
+=============================*/
+
+#volunteer .styled_list li{
+    margin-bottom: 10px;
+}
+
+#volunteer .styled_list li::before{
+    margin-top: 0px !important  ;
+}
+
+
+
