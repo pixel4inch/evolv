@@ -38,7 +38,7 @@
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  
+
 
 </head>
 
@@ -52,25 +52,25 @@
 
   <header-component></header-component>
 
- 
+
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
     $(document).ready(function () {
       $.getJSON("./data/events.json", function (data) {
         var banner = '';
         var datagrapic = '';
-        var domain='';
-        var gialink="";
+        var domain = '';
+        var gialink = "";
         console.log(data)
         $.each(data.eventslist, function (key, value) {
           if (value.Event == "charity") {
             banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-              if( value.eventdomainlink !== undefined ){
-                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-              }
-     
+            datagrapic += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink += `<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+            if (value.eventdomainlink !== undefined) {
+              domain += `  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+            }
+
           }
         });
         $('#pagebanner-block').html(banner);
@@ -80,7 +80,7 @@
 
       }).fail(function () {
         document.write("An error has occurred.");
-      }); 
+      });
     }); 
   </script>
 
@@ -102,157 +102,306 @@
     <div class="container">
       <div class="row align-items-center m-0 ">
         <div class="datagraphic-block" id="datagraphic-block">
-         
+
         </div>
 
         <div class="w-100   text-center" id="gialinkblock">
-         
-       </div>
+
+        </div>
 
       </div>
     </div>
   </section>
-  
+
   <!--================================
 =            Page Title            =
 =================================-->
 
-  <!--section class="section">
+  <section class="section">
     <div class="container">
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
-      
+
           <div id="accordionExample" class="accordion custome-accordion border-0">
 
-          
+
             <div class="card">
               <div id="headingOne" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Diversity, Equity &
-                    Inclusion (DEI). Why You Need a Shift in Mindset & Not Just in Policy</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">There is a
+                    Need to Make Societies More Secure, Sustainable, and Healthier</button>
                 </h2>
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0">We live in an increasingly complex and interconnected world where
-                    shaped by globalization and technological advancements diversity has become the fabric of modern
-                    society. Companies eager to establish a strong presence in a variety of emerging new markets have
-                    initiated the global gold rush for multicultural markets, diverse employees, and untapped consumer
-                    bases. Success in global markets requires multicultural initiatives and a sustained effort to
-                    integrate distinct demographic and cultural diversity into an inclusive environment that fits into
-                    the broader vision of the company’s growth and advancement. This is opening up rich opportunities
-                    for companies to spearhead growth by leveraging their access to a diverse talent pool. While global
-                    diversity of the labor force is good and beneficial for companies to enhance creativity and drive
-                    innovation, the same also challenges long held traditional business ideas and assumptions. Companies
-                    are being forced to effect major structural reorganizations spanning all key areas of business
-                    operations, marketing, talent recruitment and retention functions.</p>
-
-                  <p class=" m-0">Interestingly, despite the growing levels of diversity and
-                    interconnectedness, there is also growing polarization fueled by identity politics and resurgence of
-                    nationalist ideals. Workplaces tend to mirror the sociocultural dynamics at play in our lives
-                    outside work. At a time like the present, the importance, value and positive impact of DEI in modern
-                    enterprises can no longer be debated or undermined. Even amid rapid globalization and changing
-                    perceptions about diversity, ethnic minorities continue to face discrimination in the labor market
-                    and as the global fight towards a fair and just society heats up, companies are feeling the urgency
-                    to renew their sense of responsibility to offer DEI in the workplace. Major social and political
-                    changes as evidenced by the “Black Lives Matter” protest rallies which erupted around the world,
-                    means companies need to reevaluate how diverse and inclusive their workforce really is. Employers
-                    now have a responsibility to protect employees from harassment and discrimination in the workplace
-                    based on race, gender or color. Diversity in the business environment today goes beyond just gender,
-                    race and ethnicity. It includes employees with diverse religious and political beliefs, education,
-                    socioeconomic backgrounds, sexual orientation, cultures and even disabilities.</p>
-                  <br />
-
-                  <p class=" m-0">Even from a business standpoint, the case for diversity in workplace
-                    is overwhelming given its ability to foster innovation, creativity and empathy in ways that
-                    homogeneous environments can never do. As markets evolve to become more competitive than ever before
-                    and the business environment gets tougher amid the crisis, companies need to remain alert, aware,
-                    agile and responsive to remain afloat, profitable and successful. To be successful in a world that
-                    is constantly changing, companies need to be leading the change rather than responding to it.
-                    Companies with more diverse teams and inclusive are better able to lead change than those with a
-                    more homogeneous workforce. A strong organizational culture and robust structural foundation are
-                    critical for achieving agility that comes from internal strength. Diverse companies earn 2.5 times
-                    higher cash flow per employee and inclusive teams are productive by over 35%. High-diversity
-                    environments and all-inclusive culture has clear benefits and advantages. Yet, global DEI
-                    initiatives are particularly challenging to successfully implement and measure. Achieving real
-                    equality and inclusion is a challenging task and over 65% of employees are of the opinion that their
-                    managers do not foster an inclusive environment. Achieving greater diversity in the workplace is
-                    relatively easier as it represents the mix or the make-up of an entity. However, the inclusion piece
-                    of the puzzle is more complex and ensuring the same is immensely tough as it involves integration of
-                    the contributions, presence and perspectives of different groups of people into the environment.
-                    Inclusion is all about making the mix work together as a cohesive whole by respecting, welcoming and
-                    valuing the diversity of every individual’s unique background, experiences, race, ethnicity, sexual
-                    orientation, gender identity, faith, tradition, and most importantly perspectives. Diversity without
-                    inclusion can create a toxic culture and similarly inclusion without diversity can create an
-                    uncreative and infertile environment where a company can stagnant.</p>
-
-
+                  <p class=" m-0"> All businesses, both large and small, impact the society in different ways. It is
+                    important for the businesses to wield a positive effect on the society. Philanthropic social
+                    responsibilities aim at bettering the society through active involvement and go beyond the ethical
+                    operations. Charity plays a key role in this as it helps relieve problems by directing conscious and
+                    subconscious energies towards the deserving. The efforts of NGOs, non-profits, and charitable
+                    organizations go a long way in providing food, shelter, clothing, and education for poor children,
+                    the homeless, and the abandoned. While the morale good in charitable giving is well known, the
+                    competitive advantage of the same for companies needs more awareness and this is highlighted by the
+                    fact that corporate philanthropy is on the decline. Charitable contributions by U.S. companies over
+                    the last 15 years declined as a percentage of profits by over 50%. </p>
                     <br/>
 
-                    <p class=" m-0">In line with the rapidly diversifying nature of the labor force, companies and their top level executives are feeling both a moral imperative and an urgent business need to pursue their diversity and inclusion strategies with an aim to deliver tangible results. There is an urgent need for better understanding people, a more nuanced understanding of individual needs. Easier said than done! “Birds of a feather flock together”. This old adage truly captures enduring human reflex to seek out others who look and sound like us. This impulse at the organizational level is the single most important and potent barrier to successful D&I outcomes. D&I training along with structured and unstructured measures is the need of the hour to educate and help people gain a broader understanding of “diversity.” Companies with high score have exhibited strong push for women in technology; have promoted cultural empathy; extended support for LGBTQ communities; have unique and diversified employees including deaf and blind; have pushed a liberal mindset; and have empowered women cross all hierarchy.</p>
+                  <p class=" m-0">The pressure to maximize short-term profits for investors has overshadowed charitable
+                    giving’s real impact on bottom-line benefits. Regulatory demands for higher levels of “corporate
+                    social responsibility” is also resulting in “strategic philanthropy”, which far from being real
+                    philanthropy is just a form of advertising promoting a company’s social image through high-profile
+                    sponsorships. What fails to be seen here is that the combined social and economic benefits of pure
+                    philanthropy can benefit a company in more ways than one. Pure corporate philanthropy helps in
+                    boosting morale; create goodwill among the community;
+                    Builds camaraderie among employees, brings out real social change in local communities, offers tax
+                    benefits; helps attract and retaining good employees and indirectly helps build strong brand equity
+                    in the market. Philanthropy is a cost-effective way and also the only certain way to improve
+                    competitiveness in an ecosystem as it allows companies to leverage not only their own resources but
+                    also the resources of the community and infrastructure of nonprofits and other institutions.
+                    Donations to a university, for example, is a less expensive way to strengthen a local skill
+                    development which can help alleviate the skill shortage and the expenses for the company associated
+                    with the need for developing and training skills in-house.
+                  </p>
+                  <br />
+
+
                 </div>
               </div>
             </div>
 
-          
+
             <div class="card">
               <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Are You Doing Right by Your DEI Strategies</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Benefits
+                    of NGOs to the Community</button>
                 </h2>
               </div>
               <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">Despite best efforts made with the right intention, companies are unable to achieve DEI and fail to attract top talent owing to inclusivity-related issues in workplaces. Organizations are required to follow certain best practices and initiatives to make people feel safe, valuable and included in the workplace. The following are few of the actionable tactics to achieve DEI.</p>
-                  <br/>
-                  <ul>
-                    <li>Building the Sense of Belonging - Employees in an organization need a sense of belonging for thriving and contributing their best to the company. The sense of belonging represents a psychological requirement that needs to be effectively met to help employees feel connected with the organization, leading to high level of creativity and engagement in workplaces. Moreover, companies can also achieve the sense of belonging by creating an inclusive culture and striving for diversity</li>
-                    <li>Top-Down & Bottom-Up Approach - While the top-down approach is known to improve compliance, it fails to drive commitment. In order to achieve the desirable change, organizations are required to combine top-down and bottom up approaches. Leaders are required to define the company’s vision, seek accountability, and provide a safe working environment for people. Leadership needs to assess the diversity and inclusion policy for defining the purpose. On the other hand, employees must share individual perspectives through dialogue, get connected and contribute to D&I initiatives for creating the desirable culture. From leaders through to frontline workers, all individuals are required to understand their respective roles in the organizational culture and D&I initiatives.</li>
-<li>	Minimizing Fear - Workplace settings that challenge people’s beliefs make them respond with distrust and fear. While fear is perceived as a strong motivator and productivity enhancer, it leads to narrow perspectives and hinder efforts to make workplaces inclusive. By connecting people through storytelling and shared experiences, organizations can move towards desirable positive changes. In addition to identifying areas for improvement, employers need to spotlight success as well as cerebrate it. These approaches help companies in reducing fear and driving worker commitment to desired diversity and inclusion.</li>
-                
-<li>	Helping Employees Contribute Full Potential - Like the society, the organizational culture is also optimized for training and rewarding people who are fit and align with its specific goal. However, the exclusive focus on a specific set of employees promotes exclusion rather than inclusion. Unfair benefits and salaries to people from specific backgrounds led to unhealthy culture and affect diversity. Organizations need to strive for a culture that helps people in contributing their full potential. The approach requires re-imagination of the corporate culture and beliefs as well as efforts to ensure fairness for workers to make them feel valued and accepted. In addition, equal and fair career advancement and growth opportunities allow organizations to attract and retain the talent.</li>
-<li>	Going Beyond Traditional Hiring Process - While the hiring process helps companies achieve diversity numbers, it doesn’t guarantee the inclusive culture and the worker experience goes beyond the offer letter. In order to nurture and retain the talent, companies need to focus on end-to-end worker experience and create conditions to promote inclusion. As D&I initiatives go beyond the hiring process and cover diverse aspects in routine operations, organizations need to adapt the entire process for scaling inclusive and diverse behaviors. The focus of traditional hiring process on academic background and the job experience hinders diversity. The integration of reliable and valid personality assessments is an effective option to measure motivations, personality traits and skills of a candidate. Companies considering personality tests for the hiring process are more likely to achieve diverse workforces.</li>
-<li>	Inclusive Leadership -The continuous shift of organizations towards diversity and inclusion is creating the need for leaders who can identify exclusionary behaviors and practices for prompt actions. Inclusive leadership represents a crucial skill for organizations that are coordinating diverse teams and enabling employees to achieve peak performance. Inclusive leaders touch different aspects of the diversity and inclusion policy to help companies in attaining their objectives. These leaders set standards and norms for business practices as well as create environments that encourage people to contribute to their full potential. Inclusive leadership optimizes unique and individual views, perspectives and experiences for benefitting all stakeholders.</li>
-<li>	Inclusion Should be a Continuous Process - Inclusion is not limited to a typical training session and represents an ongoing process, requiring people to identify moments that can be used for building new habits depicting inclusion. Putting these habits into action along with providing a supportive environment for healthy conversations can allow companies to achieve real change. Using employees as cohorts for prompting and driving inclusion is a more effective approach in comparison to conventional training sessions. In addition, companies need to encourage inclusive language that addresses both male and female employees to help them feel included and connected. Organizations are also required to focus on regular feedback for listening to employees and their concerns for desirable actions.</li>
 
-</ul>
+                  <ul>
+                    <li>Efforts of NGOs can address the basic needs of sanitation, clean drinking water, basic medical
+                      care, and toilets. </li>
+                    <li>NGOs provide assistance and shelter to victims of f natural disasters. They provide relief and
+                      rehabilitation. </li>
+                    <li>NGO data can help improve governmental assistance. </li>
+                    <li>Ecosystem maintenance and ensuring that natural resources are not exploited are often addressed
+                      by specific NGOs. NGOs take up environmental issues so that the limited natural resources are
+                      conserved and the effects of climate change are reduced. </li>
+                    <li>NGOs address women empowerment issues by making women aware of their legal property rights,
+                      providing skill development, and safeguarding them from domestic violence. These initiatives can
+                      help uplift their social and economic status. Women are then empowered to make their own
+                      decisions.</li>
+                    <li>Some NGOs focus on healthcare and medical services. Their initiatives are targeted at vulnerable
+                      groups and even those suffering from addictions and alcoholism. Medical workshops and health camps
+                      are organized to educate people about health issues.</li>
+
+                  </ul>
 
                 </div>
               </div>
             </div>
 
-       
+
             <div class="card">
               <div id="headingThree" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                     aria-controls="collapseThree"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Trending DEI Trends & Strategies for 2023</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Prominent
+                    Fundraising Trends</button>
                 </h2>
               </div>
               <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">How things would play out in 2023 and beyond will be largely driven by certain key trends in the area of corporate diversity, in addition to the actions that leaders would take around these trends.</p>
-                  <br/>
-                  
-                  <ul>
+                  <p class=" m-0">The recent years proved to be resilient and versatile for the charity sector,
+                    demonstrating the capability to adopt imaginative and creative solutions, adapt to prevailing
+                    demands, and improve daily operations using digital means, besides smoothening over processes,
+                    bringing favorable working conditions for charities on a day-to-day basis, establishing the fact
+                    that charities can respond and rise as per the occasion. The pandemic radically transformed the ways
+                    of fundraising, ending long-standing traditions, undermining old assumptions, and paving the road
+                    for a more digital and brighter fundraising future. </p>
 
-<li>	Managing the Evolving Remote Workforce - Even as the pandemic recedes to the endemic stage and businesses are resuming operations with office space open as usual, the remote work model is continuing to co-exist with the in-office set-up. With a certain number employees in the workforce still working remotely, businesses face an uphill task. Considering each of the WFH employee works under a different living condition, the challenges are unique with no single solution. As in case of women employees, they need to balance work and home, and might lack a dedicated space for work from where they can focus on work alone. Businesses need to brainstorm means to bridge such gaps and overcome challenges of this distributed model.</li>
-<li>	Managing the Multigenerational Workforce - The current businesses work with a workforce that is the most diverse of all times. The characteristic feature of this workforce is the co-existence of employees that belong to five different generations. In companies working with all these five generations of people, a typical workforce mix would comprise the silent generation (people born between 1928 and 1945), the baby boomers (born between 1946 and 1964), the generation X (born between 1965 and 1980), the generation Y or millennials (born between 1981 and 96) and the newest of all generation Z (from 1997 and continuing). Individually, people from each of these generations have unique expectations from their work lives, and bring with them different voices, skills and life experiences to their workplace that ultimately shapes a company’s work culture. Such a diverse workforce spanning five generations requires employers, business leaders and human resource managers to be well acquainted with the capabilities and characteristics of each of the generation, and have well framed strategies to make employees of all generations feel inclusive and celebrated for who they are.</li>
-<li>	Purging Unconscious Bias at Workplaces - Unconscious bias, the tendency to form opinions, process information and arrive at decisions on the basis of inherent or unconscious prejudices and biases towards certain groups of people or individuals, impacts the type of relationship an employer or business leader develops with each of its employee. Since this relationship influences the decisions that are made at workplaces, where a truly inclusive workforce comprises of people with varied ethnicity, backgrounds and experiences, it is important that businesses and their leaders have strategies in place that ensure such biases and prejudices are purged or controlled regularly.</li>
-<li>	Embracing Diverse Gender Identity & Expression - The recent years have seen awareness increase about the diverse gender identities and various gender expressions. As organizations the world have on their payroll people with such diverse gender identities, they need to adopt inclusive practices that may include providing gender-neutral restrooms, employee health benefits that support transitioning individuals, and creating a mindful atmosphere where use of inclusive language is encouraged to communicate with transgender or non-binary employees, among others.</li>
-<li>	Preparing for Systemic Change - Over the previous couple of years, there has been a rise in instances of systemic injustices reflective of the flaws that exist globally on institutional level. Appalling crimes against innocent people of color have brought to fore the unjust and racist nature of society that continues to exists even in the most developed nations. Businesses need to incorporate some critical systemic changes that would positively influence both the workplaces and societies at large. They can ensure racial discrimination is kept at bay by introducing policies that stress on safety of people of all races and create positive experiences at workplaces</li>
-<li>	Improved Transparency in Goal - A business with a diverse workforce need not imply a higher level of inclusion and equity. Even when organizations step up efforts to increase their diversity, the same might not translate into greater efforts at inclusivity. In order to become a truly diverse and inclusive organization, businesses would need to set transparent goals and targets and introduce relevant D&I initiatives. These measures would make those leading the organization more accountable, promote honest interactions between employees and their superiors, and foster an environment where employees feel encouraged to share their viewpoint, solutions and/or ideas.</li>
-<li>	The Time to Hire Diversity Professionals Has Come - With workplaces becoming more diverse, companies might require professional help. Diversity professionals are one of the newest categories of experts that organizations are hiring to address their D&I requirements. Diversity professionals come with the vision and mission to create a diverse and inclusive workplace, and handle multiple roles involving human resource and recruitment, as well as leadership responsibilities. They might need to multitask to organize and conduct D&I related educational sessions, introduce novel ideas for improved D&I atmosphere at a workplace, create an inclusive workplace culture, encourage all to use inclusive language, manage workplace discrimination or harassment related complaints, among others. The need for and role of diversity professionals is only expected to grow in the coming years.</li>
-<li>	Supporting Mental Health of Employees - Supporting mental health of employees has emerged as a priority for most organizations in order to ensure that their diverse talent pool continues to perform efficiently for optimal operational performance of a business. Businesses are aware of the toll the global pandemic and its repercussions have taken on the mental wellbeing of employees, and the difficulties their employees are facing in adjusting to the new normal. While some lost their jobs as businesses closed down, others had to adjust to the new work-from-home model, all while living in the fear of contracting coronavirus, which created a stressful environment for most people. By creating a supportive environment, businesses can ensure that metal health of their employees does not get compromised. They may achieve this through simpler means such as by encouraging managers, supervisors and peers to converse and empathize with each other.</li>
-<li>	Avoiding Gestures of Tokenism - Prioritizing diversity and inclusion means much more that simply hiring a woman in a boardroom or team full of men, or making way for one people of color in the workplace. Such a move could simply reflect an attitude of tokenism. Organizations need to be mindful in their approach towards D&I, and incorporate strategies and policies that truly promote diversity and inclusion.</li>
-</ul>
-                
+                  <br />
+                  <p class="m-0">The recent years proved to be resilient and versatile for the charity sector,
+                    demonstrating the capability to adopt imaginative and creative solutions, adapt to prevailing
+                    demands, and improve daily operations using digital means, besides smoothening over processes,
+                    bringing favorable working conditions for charities on a day-to-day basis, establishing the fact
+                    that charities can respond and rise as per the occasion. The pandemic radically transformed the ways
+                    of fundraising, ending long-standing traditions, undermining old assumptions, and paving the road
+                    for a more digital and brighter fundraising future. </p>
+                  <br />
+                  <p class="m-0">The high watermark in 2022 is the return of strategic thinking in charities by
+                    leveraging the knowledge base accumulated over the previous years and digital ways to gain maximum
+                    usage. Compared to earlier years, in 2022, charities experienced a certain degree of stability.
+                    However, with new challenges cropping up, charities must explore new solutions to overcome all such
+                    challenges.</p>
+                  <br />
+                  <p class="m-0">Based on past lessons, in 2023, the fundraising trends consider the in-person events
+                    again, meeting the present challenges, such as the cost-of-living crisis, thus accommodating the
+                    need for considering income diversity. Furthermore, many of the recent fundraising trends are
+                    forward-looking, with a continued prevalence of gaming yielding good results and the rising
+                    necessity for flexible output. A few trends are crucial in 2023 that can define the future success
+                    of fundraising.</p>
+<br/>
+
+                  <ul>
+                    <li><strong>Income-Stream Significance: </strong>The crisis concerning the cost of living refers to the decrease in
+                      real disposable income, driven by the energy crisis, labor shortage, the trailing effects of the
+                      COVID-19 pandemic, the Ukraine war, and many other factors. Such a crisis for cost-of-living will
+                      likely remain for some time, with inflation reaching a high very soon. The increased prices of
+                      energy, fuel, and many more things are expected to adversely affect the charity sector. In 2023,
+                      income diversity is expected to remain a prominent trend, which mandates charities to explore
+                      newer means of raising funds without relying on tested and tried channels. Besides, charities must
+                      increase the sources of income, as adequacy in income streams implies that even with the primary
+                      income source vanishing or diminishing, the charity can perform its operations and meet the
+                      service demanded by users. The crisis related to the cost of giving demonstrates the significance
+                      of income diversity since one income source can start waning for several charities. Thus,
+                      charities must assess their prevailing income sources, consider the risk concerning each stream,
+                      and broadly identify the diversity need. If the requirement is for urgent diversification, the
+                      availability of several income sources can prove helpful to fundraising. Examples of a few
+                      fundraising sources are micro-financing and crowdfunding, CSR and corporate partnerships, selling
+                      merchandise or many more products, tribute and legacy fundraising, and sponsorship models, among
+                      others. Based on the resources and expertise the charities have, every possible income source is
+                      essential to consider, and the most lucrative one is preferable to pick up.</li>
+                    <li><strong>In-Person Events Becoming Popular Again:</strong> Despite the possibility of COVID-19 hanging at the
+                      start of the year, with several charities practicing caution and playing safe, preferring video
+                      streaming to hybrid or physical, the physical events are again gaining prominence in 2023. Myriad
+                      benefits remain associated with in-person events, allowing improved socializing and networking.
+                      Being able to read the body language concerning a person vastly enhances the social connection,
+                      particularly compared with the virtual. Additionally, the in-person event builds transparency and
+                      trust since in-person communication tries to foster a long-lasting relationship. Besides, such
+                      events allow audiences to engage better with content. All such benefits remain crucial and
+                      demonstrate why charities embrace in-person events again.
+
+                    </li>
+                    <li><strong>Hybrid Events Continue to Prevail:</strong> Learning from their experience, successful charities can
+                      embrace digital to leverage the most of the prevailing situation and move forward to the future
+                      seamlessly. In-person events with few hybrid options continue to find preference. In 2022, the
+                      physical events again started gaining normalcy, allowing occasional handshakes, including
+                      in-person talks. Besides, the prevalence of digital media continues, indicating that several
+                      future charity operations, post-COVID-19, would continue to embrace hybrid events. Before the
+                      occurrence of COVID-19, virtual events picked popularity. However, charities remained relatively
+                      sluggish in embracing such events during such a period but became a popular choice for charities
+                      since the arrival of the outbreak, resulting in immediate benefits.
+
+                      <br /><br />
+
+                      Such benefits concerning virtual events are overcoming geographical barriers, effortless access
+                      leading to easy reach, restricting travel and other costs, and amplifying more comfortable voices
+                      over screens. However, virtual events also have drawbacks, specifically concerning building
+                      relationships and authenticity. However, after the return of physical events in 2022, charities
+                      are witnessing benefits from hybrid events combining both virtual and physical forms. Besides,
+                      such events are relatively cost-effective and uncomplicated. All charities can telecast physical
+                      events, allowing people to enjoy them remotely, including all other positive happenings,
+                      supporting effortless interactions. Hybrid charities offer the best combination concerning
+                      physical and virtual forms, ensuring authenticity and promoting additional reach, overcoming
+                      geographical barriers while extending an earmarked geographical area, enhancing ROI, and many
+                      more.
+                    </li>
+
+                    <li><strong>Gaming Gains Strength:</strong> Even though gaming started gaining popularity in 2021, yielding good
+                      results, it flourished in 2022 and is growing further. Gaming for Good is excellent for
+                      fundraising and is yet to get embraced by several charities, and it has the potential to raise
+                      necessary funds while the situation is tough. As a new fundraising avenue, charities hope to add
+                      it to diversify their fundraising sources. Gaming for good remains a simple and fun way to raise
+                      money. Charities must review their consoles, identify the best platforms, and begin a fruitful
+                      gaming journey.</li>
+                    <li><strong>More Donations Possibilities with Flexible Giving:</strong> Flexible giving allows people to choose
+                      their donation amount freely based on individual circumstances. In present-day uncertainty,
+                      flexible giving remains essential. The crisis concerning the cost of giving can demotivate several
+                      people from donating. It is due to the need for prioritization of essentials needed every day.
+                      Moreover, after the economy starts picking up, such people can choose against donating again, as
+                      they can forget. Space freed up by flexible giving can minimize donations in hard times and
+                      maximize the same while such a period gets better. With the fluctuating disposable income, the
+                      ability of people to donate also vacillates. Thus, facilitating people with pragmatic digital
+                      solutions can help to alter the monthly donation amount effortlessly concerning charities and
+                      allow more donations in the forthcoming period. Charities must allow donors options for flexible
+                      donations. Individual charities come with several ways for flexible giving, including permitting
+                      the donors to revise the repeated donation rate regularly, usage of digital payment methods for
+                      effortless changes, or working with many applications. Thus, flexible giving is turning out as a
+                      crucial mode for the future, and it is essential to embrace it early.</li>
+                    <li><strong>Crucial Role of Social Media to Increase Reach:</strong> Since the pandemic outbreak, social media
+                      experiencing significant importance and is continuing its domination in marketing activities. For
+                      charities in recent years, prioritizing socials, irrespective of structures and sizes, remain
+                      essential to meet followers effortlessly in their locations. All charities can improve their
+                      protocols for social media, enhance social output, gain experience in the appropriate meme time,
+                      and preferably create a strategy concerning social media.
+
+                      <br />
+                      <br />
+                      Prioritizing the social media platforms and suiting the needs of a charity is crucial, rather than
+                      adopting any model and making efforts to post on every media platform having inadequate
+                      personalization, appreciating and targeting changing demography. Irrespective of their size and
+                      shape, it is crucial for charities to participate in a social media platform. However, it is
+                      essential to choose an appropriate social media for which consideration of the preferred group for
+                      engagement is critical. Besides, a charity must also consider the relevant demographics they want
+                      to access and the people they need to turn into donors.
+                    </li>
+
+                    <li><strong>Keeping Up with Changing Trends in Classic Platforms:</strong> Classic Platforms, including Instagram,
+                      Facebook, Twitter, and more, predominantly remained preferable to most charities, proving
+                      effective and making sense. However, several charities find difficulties adapting to frequent
+                      changes concerning the platform functionalities. Successful charities can keep abreast of trends,
+                      leverage the power of the newly introduced functionalities, and learn ways to stream live events
+                      on Instagram. Fundraising utilizing Stories on Facebook and leveraging Spaces on Twitter while
+                      using all new functionalities immediately on arrival can be an excellent way to become successful
+                      for charities. For engaging with younger demographics, TikTok offers an ideal opportunity.
+                      Besides, TikTok provides a space for increased user-generated content, allowing charities to
+                      propose their audience for sharing content, avoiding hierarchy, and embracing a community sense.
+                      The British Red Cross used TikTok successfully, taking advantage of sticker donations and
+                      involving young supporters while the pandemic prevailed. The TikTok profile of the charity grew to
+                      several thousand followers, establishing that community-focused, user-generated content can boost
+                      fundraising prolifically.</li>
+                    <li><strong>The Power of E-Mail Marketing:</strong> Email marketing contributes significantly towards fundraising
+                      revenue online and organizations remain more assured of more click-through rates in an email
+                      campaign than Twitter. Several marketers consider that email can produce substantial ROI. Thus,
+                      emails remain essential for charities to create excellent opportunities, specifically concerning
+                      fundraising. Charities can use robust email marketing campaigns to optimally appeal to several
+                      potential donors very quickly and without adequate preparation. Email marketing has immense
+                      potential. To leverage its considerable potential, charities must utilize powerful email marketing
+                      software. Appropriate email marketing software has several benefits, such as improved performance,
+                      better campaign management, accurate targeting, and more. Besides, email marketing software is
+                      affordable. As email marketing remains a preferable marketing strategy in 2023, charities must
+                      invest in such an effective tool.</li>
+                    <li><strong>Prioritization of Emerging Platforms:</strong> Extensive efforts can help to discover emerging
+                      platforms. Among the emerging social media platforms, only a few find consideration as serious
+                      contenders. It is not uncommon to see the emergence of a new platform and its quick rise to
+                      enormous popularity and ultimately waning its coveted place. A charity can seek a platform
+                      matching its vision, needs, and mission, working best for the charity, allowing it to reach its
+                      preferred audience, and helping in effective fundraising. Intensive efforts to explore the
+                      platform that will be the best fit for charity are essential. Besides, experimenting on such a
+                      platform, observing whether the content introduced on it is working, noting its traction,
+                      monitoring crucial metrics, and continuous exploration of success are essential to define the
+                      effectiveness of a platform. The gathered data can help to decide the appropriateness of the
+                      social media platform for the charity.</li>
+                    <li><strong>Keeping Watch on Clubhouse: </strong>The recently founded Clubhouse remains an audio-only social media
+                      application, gaining strong popularity within the charity sector. The charities engaged in such a
+                      platform during the initial years experienced phenomenal success in engagement and growth, using
+                      it to raise awareness and funds. The platform contains no photos, videos, or graphics and is
+                      concerned with social interaction only. The clubhouse remains structured into rooms with a feed
+                      called corridor or hallway. Even though it is popular, charities must use platforms suiting their
+                      mission and needs. Charities can also consider a similar venture, such as Twitter Spaces, the
+                      initiative followed by the clubhouse success. </li>
+                    <li><strong>Donation through Text Drive: </strong>Another conventional and tech-friendly charity fundraising event
+                      idea remains donation involving a text-to-donate drive. In such events, participants can donate
+                      funds using their mobile devices. Besides containing information related to the charity event, a
+                      direct link often appears in the text messages to allow donations, indicating the purpose and
+                      location of money under transfer. A text-to-donate drive is an excellent way to add to a charity
+                      event. A simple way of conducting such an event is to collect the audience's phone numbers and add
+                      them to the marketing list of the charitable brand after receiving their consent. Offering value
+                      such as future discounts, free swag, and other bonuses can help to persuade more people. Using
+                      reliable and efficient software, improving the loading speeds, removing faulty links, and avoiding
+                      repeated texts are vital for the success of such a drive.</li>
+
+                  </ul>
+
                 </div>
               </div>
             </div>
@@ -261,7 +410,7 @@
         </div>
       </div>
     </div>
-  </section-->
+  </section>
 
   <!--====  End of Page Title  ====-->
 
@@ -270,21 +419,21 @@
    PROGARAM DETAILS
 =================================-->
 
-<section class="section bg-light">
-  <div class="container">
-   <eventcolapse-component></eventcolapse-component>
-  </div>
+  <section class="section bg-light">
+    <div class="container">
+      <eventcolapse-component></eventcolapse-component>
+    </div>
 
-</section>
+  </section>
 
 
-<!--================================
+  <!--================================
 =    DOMAIN EXPERTS
 =================================-->
 
-<section class="section pt-4 " id="domain-experts">
-  
-</section>
+  <section class="section pt-4 " id="domain-experts">
+
+  </section>
 
   <!--============================
 	           Footer            
@@ -334,27 +483,28 @@
 
 
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-$('#google_translate_element').bind('DOMNodeInserted', function(event) {
-$('.goog-te-menu-value span:first').html('LANGUAGE');
-$('.goog-te-menu-frame.skiptranslate').load(function(){
-    setTimeout(function(){
-    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
-    }, 100);
-});
-});
-});
-</script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+        $('.goog-te-menu-value span:first').html('LANGUAGE');
+        $('.goog-te-menu-frame.skiptranslate').load(function () {
+          setTimeout(function () {
+            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+          }, 100);
+        });
+      });
+    });
+  </script>
 
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
 </body>
 
 </html>
