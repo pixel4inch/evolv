@@ -1,98 +1,144 @@
 <!DOCTYPE html>
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Evolve Signin</title>
+  <title>Evolv</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="description" content="Evolv">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+  <meta name="author" content="Evolv ">
+  <meta name="generator" content="Evolv">
+
+  <!-- theme meta -->
+  <meta name="theme-name" content="Evolv" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-  
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
   <!-- PLUGINS CSS STYLE -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
+  <link rel="stylesheet" href="plugins/slick/slick.css" />
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="plugins/aos/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
 
   <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/custome.css" rel="stylesheet" />
+  <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
+  <link href="css/jquery.readall.css" rel="stylesheet" />
+
+  
 
 </head>
 
-<body class="body-wrapper d-flex align-items-center" data-spy="scroll" data-target=".privacy-nav">
-
-
-<section class="user-login section">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
 
 
+  <!--============================
+=            HEADER           =
+=============================-->
 
-            
+  <header-component></header-component>
 
+ 
 
-
-
-
-				<div class="block ">
-				
-					<!-- Content -->
-					<div class="content text-center col-12 col-md-12 col-lg-6 col-xl-5 mx-auto">
-						<div class="logo"  style="margin-bottom:20px">
-							<a href="#"><img src="./images/evolv/Evolv_log.png  " style="width:225px;  alt=""></a>
-						</div>
-                        <div class="title-text">
-                            <h3  style="font-size:13px;">Sign Up for New Account</h3>
-                        </div>
-                        <form action="#">
-                            <!-- Username -->
-                            <input class="form-control main" type="text" placeholder="Your Name" required="">
-                            <!-- Email -->
-                            <input class="form-control main" type="email" placeholder="Email Address" required="">
-                            <!-- Password -->
-                            <input class="form-control main" type="password" placeholder="Password" required="">
-                            <!-- Submit Button -->
-                            <button class="btn btn-main-md">sign up</button>
-                        </form>
-                        <div class="new-acount">
-                            <p>By clicking “Sign Up” I agree to <a href="privacy.html">Terms of Conditions.</a></p>
-                            <p>Anready have an account? <a href="signin.html">SIGN IN</a></p>
-                        </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-  <!-- To Top -->
-  <div class="scroll-top-to">
-    <i class="ti-angle-up"></i>
-  </div>
   
+
+
+  <!--============================
+    PLACEKEEPTER BANNER
+=============================-->
+
+  <section class="section page-title insider py-5   ">
+    <div class="container">
+      <div class="row tex-center ">
+        <div class="col-sm-12 m-auto text-center">
+            <!-- Page Title -->
+            <h1>NEW SIGN-UP</h1>
+        </div>
+
+        <div class="col-lg-7 col-md-10 col-sm-12 col-12 p-3  m-auto mt-3 ">
+
+          <div class="w-100 mt-2">
+            <form action="#" method="POST">
+              <div class="row mx-0">
+                <!-- First Name -->
+                <div class="col-sm-6 mb-1 p-1">
+                  <span class="formmandatory">* </span>
+                  <input class="form-control main mb-1 " type="text" placeholder="First Name" id="frist_name" name="frist_name" required="">
+                </div>
+                <!-- Last Name -->
+                <div class="col-sm-6 mb-1 p-1">
+                  <span class="formmandatory">* </span>
+                  <input class="form-control main mb-1" type="text" placeholder="Last Name" id="last_name" name="last_name" required="">
+                </div>
+                <!-- Email -->
+                <div class="col-sm-6 mb-1 p-1">
+                  <span class="formmandatory">* </span>
+                  <input class="form-control main mb-1" type="text" placeholder=" Designation " id="email" name="Designation" required="">
+                </div>
+                <!-- Mobile Phone -->
+                <div class="col-sm-6 mb-1 p-1">
+                  <span class="formmandatory">* </span>
+                  <input class="form-control main mb-1" type="text" placeholder="Company" id="Company" name="Company" required="">
+                </div>
+                  <!-- Email -->
+                  <div class="col-sm-6 mb-1 p-1">
+                    <span class="formmandatory">* </span>
+                    <input class="form-control main mb-1" type="email" placeholder=" Work Email " id="email" name="Work Email" required="">
+                  </div>
+                  <!-- Mobile Phone -->
+                  <div class="col-sm-6 mb-1 p-1">
+                    <span class="formmandatory">* </span>
+                    <input class="form-control main mb-1" type="password" placeholder="Password" id="Company" name="Company" required="">
+                  </div>
+               
+      					
+                
+                <!-- Submit Button -->
+                <div class="col-12 text-center">
+                  <button class="btn btn-main-md mx-auto py-2 px-2 my-4" onclick="SaveData()">Register</button>
+                </div>
+                <p class="text-left mr-2" style="font-size:13px;font-style:italic;">Fields marked with <span style="color:red">*</span> are mandatory</p>
+              </div>
+            </form>
+          </div>
+            <!-- Page Title -->
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+  <!--============================
+	           Footer            
+=============================-->
+
+  <footer-component></footer-component>
+
+
+  <!---============================
+           ScrollTop        
+=============================--->
+
+  <scrolltop-component></scrolltop-component>
+
   <!-- JAVASCRIPTS -->
   <script src="plugins/jquery/jquery.min.js"></script>
   <script src="plugins/bootstrap/bootstrap.min.js"></script>
@@ -103,39 +149,52 @@
   <!-- google map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
   <script src="plugins/google-map/gmap.js"></script>
-  
+
   <script src="js/script.js"></script>
   <script src="./js/submenu_select.js"></script>
+  <script src="./js/jquery.readall.js"></script>
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-    }
 
-	function triggerHtmlEvent(element, eventName) {
-	  var event;
-	  if (document.createEvent) {
-		event = document.createEvent('HTMLEvents');
-		event.initEvent(eventName, true, true);
-		element.dispatchEvent(event);
-	  } else {
-		event = document.createEventObject();
-		event.eventType = eventName;
-		element.fireEvent('on' + event.eventType, event);
-	  }
-	}
+  <!---WEB COMPONETNS-->
+  <script src="./webcomponts/headerComponents.js"></script>
+  <script src="./webcomponts/FooterComponent.js"></script>
+  <script src="./webcomponts/ScrollToTop.js"></script>
+  <script src="./webcomponts/dummytext.js"></script>
+  <script src="./webcomponts/banner.js"></script>
 
-	jQuery('.lang-select').click(function() {
-	  var theLang = jQuery(this).attr('data-lang');
-	  jQuery('.goog-te-combo').val(theLang);
+  <script>
+    $('.textless').readall({
+      showheight: null,
+      showrows: 8
+    });
 
-	  //alert(jQuery(this).attr('href'));
-	  window.location = jQuery(this).attr('href');
-	  location.reload();
 
-	});
   </script>
+
+
+
+
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+$('#google_translate_element').bind('DOMNodeInserted', function(event) {
+$('.goog-te-menu-value span:first').html('LANGUAGE');
+$('.goog-te-menu-frame.skiptranslate').load(function(){
+    setTimeout(function(){
+    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
+    }, 100);
+});
+});
+});
+</script>
+
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
 </body>
 
 </html>

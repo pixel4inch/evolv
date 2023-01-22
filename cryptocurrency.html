@@ -38,7 +38,7 @@
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  
+
 
 </head>
 
@@ -52,195 +52,281 @@
 
   <header-component></header-component>
 
- 
+
+  <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.getJSON("./data/events.json", function (data) {
+        var banner = '';
+        var datagrapic = '';
+        var domain='';
+        var gialink="";
+        console.log(data)
+        $.each(data.eventslist, function (key, value) {
+          if (value.Event == "cryptocurrency") {
+            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
+            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+              if( value.eventdomainlink !== undefined ){
+                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+              }
+     
+          }
+        });
+        $('#pagebanner-block').html(banner);
+        $('#datagraphic-block').html(datagrapic);
+        $('#domain-experts').html(domain);
+        $('#gialinkblock').html(gialink);
+
+      }).fail(function () {
+        document.write("An error has occurred.");
+      }); 
+    }); 
+  </script>
+
   <!--============================
     PAGE BANNERS
 =============================-->
-<section class="pagebanners">
-  <div class="container">
-          <div class="row mx-0" id="pagebanner-block" >
-
-            <script src="https://releases.jquery.com/git/jquery-git.js"></script>
-    <script>
-      $(document).ready(function () {
-              $.getJSON("./data/events.json", function (data) {
-                  var output = '';
-                  console.log(data)
-                  $.each(data.eventslist, function (key, value) {
-                    if(value.Event == "cryptocurrency"){
-                      output += `<employee-card  title=" `+ value.eventtitle +  '"  date= " ' + value.eventdate + ` "> </employee-card>`;  
-                    }
-                   });
-                  $('#pagebanner-block').html(output);
-              }).fail(function () {
-                  document.write("An error has occurred.");
-              }); 
-          });
-    </script>
-
-         </div>
-      </div>
-</section>
-
-
-
-
-  <!--============================
-    PLACEKEEPTER BANNER
-=============================-->
-
-  <section class="section placekeeper_section page-title">
+  <section class="pagebanners">
     <div class="container">
-      <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block">
-          <img src="./images/evolv/data/Cryptocurrency.jpg" class="img-fluid border shadow-sm"  />
-        </div>
+      <div class="row mx-0" id="pagebanner-block">
 
       </div>
     </div>
   </section>
 
-  
+  <!--============================
+   DATA GRAPHIC
+=============================-->
+  <section class="section placekeeper_section page-title">
+    <div class="container">
+      <div class="row align-items-center m-0 ">
+        <div class="datagraphic-block" id="datagraphic-block">
+         
+        </div>
+
+        <div class="w-100   text-center" id="gialinkblock">
+         
+       </div>
+
+      </div>
+    </div>
+  </section>
+
   <!--================================
-=            Page Title            =
+         WHATS TRENDING
 =================================-->
 
-  <!--section class="section">
+  <section class="section">
     <div class="container">
+      <div class="row pb-4 page-title">
+        <div class="col-sm-12 m-auto text-center -3">
+          <!-- Page Title -->
+          <h1>WHAT'S TRENDING</h1>
+
+
+        </div>
+      </div>
+
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
-      
+
           <div id="accordionExample" class="accordion custome-accordion border-0">
 
-          
             <div class="card">
               <div id="headingOne" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Diversity, Equity &
-                    Inclusion (DEI). Why You Need a Shift in Mindset & Not Just in Policy</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">What Does
+                    the Future Hold for Cryptocurrency?</button>
                 </h2>
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0">We live in an increasingly complex and interconnected world where
-                    shaped by globalization and technological advancements diversity has become the fabric of modern
-                    society. Companies eager to establish a strong presence in a variety of emerging new markets have
-                    initiated the global gold rush for multicultural markets, diverse employees, and untapped consumer
-                    bases. Success in global markets requires multicultural initiatives and a sustained effort to
-                    integrate distinct demographic and cultural diversity into an inclusive environment that fits into
-                    the broader vision of the company’s growth and advancement. This is opening up rich opportunities
-                    for companies to spearhead growth by leveraging their access to a diverse talent pool. While global
-                    diversity of the labor force is good and beneficial for companies to enhance creativity and drive
-                    innovation, the same also challenges long held traditional business ideas and assumptions. Companies
-                    are being forced to effect major structural reorganizations spanning all key areas of business
-                    operations, marketing, talent recruitment and retention functions.</p>
+                  <p class=" m-0">Cryptocurrencies are virtual or digital currencies, secured through cryptography,
+                    making it almost impossible to double-spend or counterfeit. Such currencies are basically blockchain
+                    technology-based, decentralized networks or distributed ledgers that are enforced by a disparate
+                    computer network. Cryptocurrency is a word derived from encryption techniques used for securing
+                    networks. A defining cryptocurrency feature is that no central or government authority issues them,
+                    which theoretically renders them immune from any government manipulation or interference.
+                    Blockchains, which actually are organizational methods to ensure transactional data integrity, are a
+                    critical component of multiple cryptocurrencies. The word ‘Crypto’ refers to the multiple
+                    cryptographic techniques and encryption algorithms safeguarding such entries like encryption of the
+                    elliptical curve, hashing functions, and private-public key pairs. Though criticized for their use
+                    in illegal activities, volatility of exchange rates, and underlying infrastructural vulnerabilities,
+                    cryptocurrencies are often lauded for their divisibility, portability, resistance to inflation, and
+                    overall transparency. Alternate cryptocurrencies encompass tokens, cryptocurrencies, and other
+                    digital assets that are not bitcoin. Such alternate cryptocurrencies are different from bitcoins in
+                    that they are processed faster, like in the case of Litecoin. Ethereum is a popularly used
+                    blockchain that allows decentralized applications to be run. The COVID-19 outbreak contributed to
+                    increased adoption of digital currencies such as Bitcoin along with underlying blockchain
+                    technologies. Despite the continued volatility in Bitcoin, investors are elucidating optimism about
+                    the future of digital currencies. </p>
 
-                  <p class=" m-0">Interestingly, despite the growing levels of diversity and
-                    interconnectedness, there is also growing polarization fueled by identity politics and resurgence of
-                    nationalist ideals. Workplaces tend to mirror the sociocultural dynamics at play in our lives
-                    outside work. At a time like the present, the importance, value and positive impact of DEI in modern
-                    enterprises can no longer be debated or undermined. Even amid rapid globalization and changing
-                    perceptions about diversity, ethnic minorities continue to face discrimination in the labor market
-                    and as the global fight towards a fair and just society heats up, companies are feeling the urgency
-                    to renew their sense of responsibility to offer DEI in the workplace. Major social and political
-                    changes as evidenced by the “Black Lives Matter” protest rallies which erupted around the world,
-                    means companies need to reevaluate how diverse and inclusive their workforce really is. Employers
-                    now have a responsibility to protect employees from harassment and discrimination in the workplace
-                    based on race, gender or color. Diversity in the business environment today goes beyond just gender,
-                    race and ethnicity. It includes employees with diverse religious and political beliefs, education,
-                    socioeconomic backgrounds, sexual orientation, cultures and even disabilities.</p>
                   <br />
 
-                  <p class=" m-0">Even from a business standpoint, the case for diversity in workplace
-                    is overwhelming given its ability to foster innovation, creativity and empathy in ways that
-                    homogeneous environments can never do. As markets evolve to become more competitive than ever before
-                    and the business environment gets tougher amid the crisis, companies need to remain alert, aware,
-                    agile and responsive to remain afloat, profitable and successful. To be successful in a world that
-                    is constantly changing, companies need to be leading the change rather than responding to it.
-                    Companies with more diverse teams and inclusive are better able to lead change than those with a
-                    more homogeneous workforce. A strong organizational culture and robust structural foundation are
-                    critical for achieving agility that comes from internal strength. Diverse companies earn 2.5 times
-                    higher cash flow per employee and inclusive teams are productive by over 35%. High-diversity
-                    environments and all-inclusive culture has clear benefits and advantages. Yet, global DEI
-                    initiatives are particularly challenging to successfully implement and measure. Achieving real
-                    equality and inclusion is a challenging task and over 65% of employees are of the opinion that their
-                    managers do not foster an inclusive environment. Achieving greater diversity in the workplace is
-                    relatively easier as it represents the mix or the make-up of an entity. However, the inclusion piece
-                    of the puzzle is more complex and ensuring the same is immensely tough as it involves integration of
-                    the contributions, presence and perspectives of different groups of people into the environment.
-                    Inclusion is all about making the mix work together as a cohesive whole by respecting, welcoming and
-                    valuing the diversity of every individual’s unique background, experiences, race, ethnicity, sexual
-                    orientation, gender identity, faith, tradition, and most importantly perspectives. Diversity without
-                    inclusion can create a toxic culture and similarly inclusion without diversity can create an
-                    uncreative and infertile environment where a company can stagnant.</p>
+                  <p class=" m-0">Cryptocurrency startups worldwide are making active efforts to develop easy ways of
+                    using, buying and trading digital currencies, which will be vital for enhancing customer awareness
+                    and hence drive wider adoption. Most of the adoption is attributed to less important applications
+                    such as meme coins, which are assets based on jokes but do not have any real value other than
+                    offered by social indicators. These applications however are detrimental since they reinforce the
+                    view that cryptocurrencies are not legitimate. The adoption of NFTs (non-fungible tokens) is one
+                    among the factors that is driving considerable growth in the cryptocurrencies market over the past
+                    year. NFTs are becoming accessible to retail investors, with involvement of sports entities in sale
+                    of digital clips and cards also presenting opportunities for the market. At present, retail
+                    investors are generally the most common cryptocurrency investor base, while leading financial
+                    institutions are still in discovery stages. However, new companies are emerging with plans for
+                    cryptocurrencies, while banks are also facing pressure from crypto investors to get involved in the
+                    industry. This is mainly because of the growing importance of crypto funds as an asset class. Though
+                    at present there is no use case, the advent of large institutional investors will ensure price
+                    stability, improve cryptocurrency legitimacy and hence drive mainstream adoption. </p>
+                  <br />
 
+                  <p class=" m-0">Considering that the cryptocurrency technology was introduced just a decade ago, its
+                    rapid growth rate is astounding. With a whole system already in place, industries worldwide are
+                    building around cryptocurrencies. Many industrial investors are preferring cryptocurrencies as a
+                    safe haven against inflation that the traditional economy might pose. Even banks that previously
+                    refused to consider cryptocurrencies are now establishing outlets providing their clients with
+                    cryptocurrency services. In today’s world, many of the regions lack basic infrastructure required
+                    for banking services essential to allow people to build savings or get loans. This could lead to
+                    perilous lending practices charging high rates of interest. In such places, finances could become
+                    more stable with the use of cryptocurrency. The high volatility and ease-of-use of cryptocurrency
+                    presents the less privileged communities with many opportunities to build wealth. Platforms and apps
+                    such as CoinSwitch Kuber make crypto transactions very simple, especially for the people in rural
+                    areas, bringing them on par with transactions on a broader level. In addition, the cryptocurrency’s
+                    decentralized nature allows low-cost transactions across borders. This type of revolution in a
+                    country’s financial system could leave the citizens more connected and empowered. Cryptocurrency
+                    proved its resilience during what could be termed the worst crisis of the century. As the COVID-19
+                    crisis starts fading, crypto, as a new payment system and an asset class, could bring a
+                    transformation in the global financial landscape.</p>
+                  <br />
+                  <p class="m-0">Since 2021, the regulatory landscape for the cryptocurrency market has been witness to
+                    considerable changes. One of the notable regulations in the year has been the U.S. Department of the
+                    Treasury announced in May 2021, whereby transfers exceeding $10,000 will need to be reported to IRS,
+                    in order to curb tax evasion. The regulations will also reduce instances of scams or malicious use
+                    cases, presenting a favorable opportunity for mainstream adoption. In several emerging markets,
+                    there are ongoing efforts to integrate Bitcoin and other cryptocurrencies into economies. Costa
+                    Rica, for example, announced legalization of paying employees in cryptocurrencies. This resulted in
+                    high adoption of cryptocurrencies in the country. The Philippines is another country supporting the
+                    cause of cryptocurrencies. </p>
+                  <br />
+                  <p class="m-0">The mainstream adoption of cryptocurrency is facing its biggest challenge from the
+                    price volatility. Bitcoin in particularly has been volatile over the recent years. Given the
+                    expensive transaction fees involved, use of Bitcoin for processing transactions is not considered
+                    sustainable for the long term. In comparison other cryptocurrencies are not volatile since community
+                    that invests in these currencies have reached a consensus on the pricing. Regulations are expected
+                    to address price volatility issue with time. Given the nascent stage of the industry, the prices
+                    remain volatile. Further, bitcoin and other cryptocurrencies are yet to gain acceptance as payment
+                    mode, and are not viable for faster processing of transactions.</p>
 
-                    <br/>
-
-                    <p class=" m-0">In line with the rapidly diversifying nature of the labor force, companies and their top level executives are feeling both a moral imperative and an urgent business need to pursue their diversity and inclusion strategies with an aim to deliver tangible results. There is an urgent need for better understanding people, a more nuanced understanding of individual needs. Easier said than done! “Birds of a feather flock together”. This old adage truly captures enduring human reflex to seek out others who look and sound like us. This impulse at the organizational level is the single most important and potent barrier to successful D&I outcomes. D&I training along with structured and unstructured measures is the need of the hour to educate and help people gain a broader understanding of “diversity.” Companies with high score have exhibited strong push for women in technology; have promoted cultural empathy; extended support for LGBTQ communities; have unique and diversified employees including deaf and blind; have pushed a liberal mindset; and have empowered women cross all hierarchy.</p>
                 </div>
               </div>
             </div>
 
-          
+
             <div class="card">
               <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Are You Doing Right by Your DEI Strategies</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Top Trends
+                    Shaping Crypto Industry’s Transformation In 2023 and Beyond</button>
                 </h2>
               </div>
               <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">Despite best efforts made with the right intention, companies are unable to achieve DEI and fail to attract top talent owing to inclusivity-related issues in workplaces. Organizations are required to follow certain best practices and initiatives to make people feel safe, valuable and included in the workplace. The following are few of the actionable tactics to achieve DEI.</p>
-                  <br/>
+
                   <ul>
-                    <li>Building the Sense of Belonging - Employees in an organization need a sense of belonging for thriving and contributing their best to the company. The sense of belonging represents a psychological requirement that needs to be effectively met to help employees feel connected with the organization, leading to high level of creativity and engagement in workplaces. Moreover, companies can also achieve the sense of belonging by creating an inclusive culture and striving for diversity</li>
-                    <li>Top-Down & Bottom-Up Approach - While the top-down approach is known to improve compliance, it fails to drive commitment. In order to achieve the desirable change, organizations are required to combine top-down and bottom up approaches. Leaders are required to define the company’s vision, seek accountability, and provide a safe working environment for people. Leadership needs to assess the diversity and inclusion policy for defining the purpose. On the other hand, employees must share individual perspectives through dialogue, get connected and contribute to D&I initiatives for creating the desirable culture. From leaders through to frontline workers, all individuals are required to understand their respective roles in the organizational culture and D&I initiatives.</li>
-<li>	Minimizing Fear - Workplace settings that challenge people’s beliefs make them respond with distrust and fear. While fear is perceived as a strong motivator and productivity enhancer, it leads to narrow perspectives and hinder efforts to make workplaces inclusive. By connecting people through storytelling and shared experiences, organizations can move towards desirable positive changes. In addition to identifying areas for improvement, employers need to spotlight success as well as cerebrate it. These approaches help companies in reducing fear and driving worker commitment to desired diversity and inclusion.</li>
-                
-<li>	Helping Employees Contribute Full Potential - Like the society, the organizational culture is also optimized for training and rewarding people who are fit and align with its specific goal. However, the exclusive focus on a specific set of employees promotes exclusion rather than inclusion. Unfair benefits and salaries to people from specific backgrounds led to unhealthy culture and affect diversity. Organizations need to strive for a culture that helps people in contributing their full potential. The approach requires re-imagination of the corporate culture and beliefs as well as efforts to ensure fairness for workers to make them feel valued and accepted. In addition, equal and fair career advancement and growth opportunities allow organizations to attract and retain the talent.</li>
-<li>	Going Beyond Traditional Hiring Process - While the hiring process helps companies achieve diversity numbers, it doesn’t guarantee the inclusive culture and the worker experience goes beyond the offer letter. In order to nurture and retain the talent, companies need to focus on end-to-end worker experience and create conditions to promote inclusion. As D&I initiatives go beyond the hiring process and cover diverse aspects in routine operations, organizations need to adapt the entire process for scaling inclusive and diverse behaviors. The focus of traditional hiring process on academic background and the job experience hinders diversity. The integration of reliable and valid personality assessments is an effective option to measure motivations, personality traits and skills of a candidate. Companies considering personality tests for the hiring process are more likely to achieve diverse workforces.</li>
-<li>	Inclusive Leadership -The continuous shift of organizations towards diversity and inclusion is creating the need for leaders who can identify exclusionary behaviors and practices for prompt actions. Inclusive leadership represents a crucial skill for organizations that are coordinating diverse teams and enabling employees to achieve peak performance. Inclusive leaders touch different aspects of the diversity and inclusion policy to help companies in attaining their objectives. These leaders set standards and norms for business practices as well as create environments that encourage people to contribute to their full potential. Inclusive leadership optimizes unique and individual views, perspectives and experiences for benefitting all stakeholders.</li>
-<li>	Inclusion Should be a Continuous Process - Inclusion is not limited to a typical training session and represents an ongoing process, requiring people to identify moments that can be used for building new habits depicting inclusion. Putting these habits into action along with providing a supportive environment for healthy conversations can allow companies to achieve real change. Using employees as cohorts for prompting and driving inclusion is a more effective approach in comparison to conventional training sessions. In addition, companies need to encourage inclusive language that addresses both male and female employees to help them feel included and connected. Organizations are also required to focus on regular feedback for listening to employees and their concerns for desirable actions.</li>
+                    <li><strong>Institutional Investors Continue to Pour in Funds into Cryptocurrency Market:</strong>
+                      In the early days of evolution, bitcoin was disregarded by institutions as being a worthless
+                      digital asset that is mostly a preferred currency for criminals. Over the years, however, the
+                      perception has undergone a dramatic change, with Bitcoin now on the verge of institutional
+                      acceptance. This change is mainly attributed to a number of reasons, in particular the rapid
+                      growth of bitcoin compared to other asset class. As a result, bitcoin is becoming part of
+                      portfolio diversification strategies. The sentiment is also improving due to the increase in
+                      involvement by corporates and fund managers. Though the number of individual investors is on the
+                      decline, there has been unprecedented interest among institutional investors. Since trading
+                      volumes are significantly higher in the case of institutional investors compared to many
+                      individual investors, the market remains sustainable despite fewer transactions by trading
+                      partners in digital currencies. </li>
+                    <li><strong>Central Banks Move into Digital Currency Space:</strong> Several central banks across
+                      the world have launched or plan to launch their own Central Bank Digital Currencies (CBDCs) after
+                      assessing all their drawbacks and benefits. The Central Bank Group, consisting of the European
+                      Central Bank, the Bank of Japan, the Swiss National Bank, the Sveriges Riksbank, the Bank of
+                      England and The Bank of Canada, are working in tandem to assess the use of CBDCs, encompassing
+                      technical, economic and functional design choices as well as cross-border interoperability. Unlike
+                      cryptocurrencies, CBDCs would be a digitized form of the currency of a country, designed, backed,
+                      and issued by the country’s financial authorities. China leads in introducing such digital
+                      currency and digital Yuan is currently under the process of trialing. The introduction of CBDCs
+                      (Central Bank Digital Currencies) together with emerging regulations is anticipated to encourage
+                      the central banks to be part of the cryptocurrency game. </li>
+                    <li><strong>Crypto-based DeFi Applications Rise in Prominence:</strong> DeFi (Decentralized
+                      financial) services are anticipated to be the biggest trend in the cryptocurrency world.
+                      Decentralized finance ensures availability of financial goods to all on a decentralized public
+                      blockchain network rather than intermediaries such as brokers and banks. Unlike a brokerage or
+                      bank account, no address proof or government issued ID is required in DeFi. Borrowers, lenders,
+                      sellers and buyers engage with one another via a rigorous software instead of a fintech app
+                      development agency or transaction-facilitating corporation. DeFi platforms and applications are
+                      replacing the conventional financial systems with new and innovative trading methods using digital
+                      currencies. The entire financial system has the potential to be revolutionized through
+                      structuring, borrowing, and lending of derivative products, as well as selling and purchasing of
+                      securities via a decentralized open-source network. Majority of DeFi contracts feature
+                      stablecoins. DeFi is being used in decentralized exchanges acting as peer-to-peer exchanges, loan
+                      contracts wherein interest rates are algorithmically calculated on the basis of demand and supply,
+                      asset management protocols designed for automates robo-advisory, as well as an array of solutions
+                      employed in insurance and finance. DeFi projects built a powerful foundation for the field of
+                      finance recently and DeFi is anticipated to be the major driver for the rapid adoption of
+                      tokenization or digital assets' storage. Additionally, the growth of Ethereum, which is based on
+                      the DeFi protocols, is estimated to drive the demand for DeFi. While DeFi can resolve complex
+                      needs related to digital ID for businesses and also facilitates access to financial performance
+                      track records during transaction banking, there is however lack of critical elements such as
+                      one-to-one exchange with fiat currency as well as interoperability between different blockchains.
+                    </li>
+                    <li><strong>NFTs to Emerge as the Major Crypto Trend in the Future:</strong> Non-fungible tokens
+                      (NFTs) are digital assets that represent items existing in both real and virtual worlds. Usually,
+                      such assets are tracked using a blockchain such as Ethereum. Instead of a centralized platform,
+                      items could be traded on a decentralized exchange through protocols. The art and gaming industries
+                      are witnessing significant growth in the usage of NFTs. The whole NFT concept began started with
+                      digital cat artwork Cryptokitties, and is now globally recognized, with the involvement of many
+                      legacy brands. Over the first few days after the launch, ETH worth more than $1 million was spent
+                      by people on digital feline artwork. With this instant popularity, this app became the first to
+                      create congestion on the Ethereum blockchain, and drew the attention of mainstream media outlets
+                      such as the BBC and Bloomberg. Cryptokitties was the first app to use the ERC721 token standard
+                      that allows development of non-fungible tokens (NFTs.) The combination of NFTs with DeFi takes the
+                      idea further and offers the potential to connect DeFi to many other assets, including the assets
+                      in the real world. </li>
+                    <li><strong>Emergence of Exchange-Traded Products:</strong> Traditional (non-trust) ETPs
+                      (exchange-traded products) are also witnessing significant investment inflows. In countries Europe
+                      and Canada, ETPs are attracting significant investments from parties looking to gain crypto
+                      exposure without having to deal with challenges related to management of assets custody. The
+                      impeding approval for first spot Bitcoin ETF in the US will ensure greater direct exposure to
+                      investors. </li>
+                    <li><strong>The Stablecoin Opportunity:</strong> As digital tokens tied to fiat currencies,
+                      stablecoins hedge against a possible fall in the price valuation of the underlying collateral.
+                      This may be the reason why stablecoins are pegged to be the biggest opportunity in the crypto
+                      market. Investors are investing in stablecoins to safeguard themselves against the general
+                      cryptocurrency market volatility. Stablecoins are likely to register growth owing to two major
+                      factors including long-term volatility of decentralized tokens along with the decline of Tether,
+                      the largest stablecoin in the market. Among the first stablecoins available to mainstream
+                      investors, Tether or USDT has endured many well-known growing pains as the sub-industry expanded.
+                    </li>
+                    <li><strong>Blockchain Set to be the Next big Crypto Trend:</strong> Blockchain refers to a digital
+                      ledger, which is decentralized and could be used to record transactions and data. Among the
+                      primary uses of blockchain are management and storage of digital currencies such as Ethereum and
+                      bitcoin, which are forms of virtual cash that are operated independently of the respective state
+                      governments. Though forecasting the next trend is not easy, the next wave is expected to be in
+                      consumer products, which could make digital currencies increasingly accessible in everyday life.
+                      As digital currencies are used more widely, the number of blockchain wallet users is expected to
+                      increase to 200 million by 2030. The upcoming years would be focused on creating consumer-oriented
+                      crypto products, and crypto education would also emerge as another big area for people to explore.
+                      Currently, mainstream adoption of blockchain and cryptocurrency technologies is in the nascent
+                      stage. </li>
 
-</ul>
 
-                </div>
-              </div>
-            </div>
+                  </ul>
 
-       
-            <div class="card">
-              <div id="headingThree" class="card-header bg-white shadow-sm border-0">
-                <h2 class="mb-0">
-                  <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Trending DEI Trends & Strategies for 2023</button>
-                </h2>
-              </div>
-              <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
-                <div class="card-body p-5 textless">
-                  <p class=" m-0">How things would play out in 2023 and beyond will be largely driven by certain key trends in the area of corporate diversity, in addition to the actions that leaders would take around these trends.</p>
-                  <br/>
-                  
-                  <ul>
-
-<li>	Managing the Evolving Remote Workforce - Even as the pandemic recedes to the endemic stage and businesses are resuming operations with office space open as usual, the remote work model is continuing to co-exist with the in-office set-up. With a certain number employees in the workforce still working remotely, businesses face an uphill task. Considering each of the WFH employee works under a different living condition, the challenges are unique with no single solution. As in case of women employees, they need to balance work and home, and might lack a dedicated space for work from where they can focus on work alone. Businesses need to brainstorm means to bridge such gaps and overcome challenges of this distributed model.</li>
-<li>	Managing the Multigenerational Workforce - The current businesses work with a workforce that is the most diverse of all times. The characteristic feature of this workforce is the co-existence of employees that belong to five different generations. In companies working with all these five generations of people, a typical workforce mix would comprise the silent generation (people born between 1928 and 1945), the baby boomers (born between 1946 and 1964), the generation X (born between 1965 and 1980), the generation Y or millennials (born between 1981 and 96) and the newest of all generation Z (from 1997 and continuing). Individually, people from each of these generations have unique expectations from their work lives, and bring with them different voices, skills and life experiences to their workplace that ultimately shapes a company’s work culture. Such a diverse workforce spanning five generations requires employers, business leaders and human resource managers to be well acquainted with the capabilities and characteristics of each of the generation, and have well framed strategies to make employees of all generations feel inclusive and celebrated for who they are.</li>
-<li>	Purging Unconscious Bias at Workplaces - Unconscious bias, the tendency to form opinions, process information and arrive at decisions on the basis of inherent or unconscious prejudices and biases towards certain groups of people or individuals, impacts the type of relationship an employer or business leader develops with each of its employee. Since this relationship influences the decisions that are made at workplaces, where a truly inclusive workforce comprises of people with varied ethnicity, backgrounds and experiences, it is important that businesses and their leaders have strategies in place that ensure such biases and prejudices are purged or controlled regularly.</li>
-<li>	Embracing Diverse Gender Identity & Expression - The recent years have seen awareness increase about the diverse gender identities and various gender expressions. As organizations the world have on their payroll people with such diverse gender identities, they need to adopt inclusive practices that may include providing gender-neutral restrooms, employee health benefits that support transitioning individuals, and creating a mindful atmosphere where use of inclusive language is encouraged to communicate with transgender or non-binary employees, among others.</li>
-<li>	Preparing for Systemic Change - Over the previous couple of years, there has been a rise in instances of systemic injustices reflective of the flaws that exist globally on institutional level. Appalling crimes against innocent people of color have brought to fore the unjust and racist nature of society that continues to exists even in the most developed nations. Businesses need to incorporate some critical systemic changes that would positively influence both the workplaces and societies at large. They can ensure racial discrimination is kept at bay by introducing policies that stress on safety of people of all races and create positive experiences at workplaces</li>
-<li>	Improved Transparency in Goal - A business with a diverse workforce need not imply a higher level of inclusion and equity. Even when organizations step up efforts to increase their diversity, the same might not translate into greater efforts at inclusivity. In order to become a truly diverse and inclusive organization, businesses would need to set transparent goals and targets and introduce relevant D&I initiatives. These measures would make those leading the organization more accountable, promote honest interactions between employees and their superiors, and foster an environment where employees feel encouraged to share their viewpoint, solutions and/or ideas.</li>
-<li>	The Time to Hire Diversity Professionals Has Come - With workplaces becoming more diverse, companies might require professional help. Diversity professionals are one of the newest categories of experts that organizations are hiring to address their D&I requirements. Diversity professionals come with the vision and mission to create a diverse and inclusive workplace, and handle multiple roles involving human resource and recruitment, as well as leadership responsibilities. They might need to multitask to organize and conduct D&I related educational sessions, introduce novel ideas for improved D&I atmosphere at a workplace, create an inclusive workplace culture, encourage all to use inclusive language, manage workplace discrimination or harassment related complaints, among others. The need for and role of diversity professionals is only expected to grow in the coming years.</li>
-<li>	Supporting Mental Health of Employees - Supporting mental health of employees has emerged as a priority for most organizations in order to ensure that their diverse talent pool continues to perform efficiently for optimal operational performance of a business. Businesses are aware of the toll the global pandemic and its repercussions have taken on the mental wellbeing of employees, and the difficulties their employees are facing in adjusting to the new normal. While some lost their jobs as businesses closed down, others had to adjust to the new work-from-home model, all while living in the fear of contracting coronavirus, which created a stressful environment for most people. By creating a supportive environment, businesses can ensure that metal health of their employees does not get compromised. They may achieve this through simpler means such as by encouraging managers, supervisors and peers to converse and empathize with each other.</li>
-<li>	Avoiding Gestures of Tokenism - Prioritizing diversity and inclusion means much more that simply hiring a woman in a boardroom or team full of men, or making way for one people of color in the workplace. Such a move could simply reflect an attitude of tokenism. Organizations need to be mindful in their approach towards D&I, and incorporate strategies and policies that truly promote diversity and inclusion.</li>
-</ul>
-                
                 </div>
               </div>
             </div>
@@ -249,9 +335,33 @@
         </div>
       </div>
     </div>
-  </section-->
+  </section>
 
-  <!--====  End of Page Title  ====-->
+
+
+
+
+  <!--================================
+   PROGARAM DETAILS
+=================================-->
+
+<section class="section bg-light">
+  <div class="container">
+   <eventcolapse-component></eventcolapse-component>
+  </div>
+
+</section>
+
+
+<!--================================
+=    DOMAIN EXPERTS
+=================================-->
+
+<section class="section pt-4 " id="domain-experts">
+  
+</section>
+
+
 
 
 
@@ -303,27 +413,28 @@
 
 
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-$('#google_translate_element').bind('DOMNodeInserted', function(event) {
-$('.goog-te-menu-value span:first').html('LANGUAGE');
-$('.goog-te-menu-frame.skiptranslate').load(function(){
-    setTimeout(function(){
-    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
-    }, 100);
-});
-});
-});
-</script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+        $('.goog-te-menu-value span:first').html('LANGUAGE');
+        $('.goog-te-menu-frame.skiptranslate').load(function () {
+          setTimeout(function () {
+            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+          }, 100);
+        });
+      });
+    });
+  </script>
 
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
 </body>
 
 </html>

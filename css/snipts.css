@@ -4,7 +4,6 @@
     TABS
 =============*/
 
-
 #tabs ul.nav-tabs{
     width: 100%;
     margin: 0 auto;
@@ -57,3 +56,39 @@
   
 
   
+  /*================================
+        Newplace keeper
+  =================================*/
+
+  .newplacekeeper img{
+     width: 20%;
+     margin: 0px;
+     height: auto;
+     padding: 0px;
+     filter: grayscale(100%);
+     opacity: 0.2;
+  }
+
+
+  .newplacekeeper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 470px;
+    overflow: hidden;
+    position: relative;
+    background: #04489B
+  }
+
+  .newplacekeeper::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(17,99,117,0.9);
+    opacity:0.2;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+  }
+
+    

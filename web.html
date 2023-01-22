@@ -38,7 +38,7 @@
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  
+
 
 </head>
 
@@ -52,195 +52,381 @@
 
   <header-component></header-component>
 
- 
+
+  <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.getJSON("./data/events.json", function (data) {
+        var banner = '';
+        var datagrapic = '';
+        var domain='';
+        var gialink="";
+        console.log(data)
+        $.each(data.eventslist, function (key, value) {
+          if (value.Event == "web") {
+            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
+            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+              if( value.eventdomainlink !== undefined ){
+                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+              }
+     
+          }
+        });
+        $('#pagebanner-block').html(banner);
+        $('#datagraphic-block').html(datagrapic);
+        $('#domain-experts').html(domain);
+        $('#gialinkblock').html(gialink);
+
+      }).fail(function () {
+        document.write("An error has occurred.");
+      }); 
+    }); 
+  </script>
+
   <!--============================
     PAGE BANNERS
 =============================-->
-<section class="pagebanners">
-  <div class="container">
-          <div class="row mx-0" id="pagebanner-block" >
-
-            <script src="https://releases.jquery.com/git/jquery-git.js"></script>
-    <script>
-      $(document).ready(function () {
-              $.getJSON("./data/events.json", function (data) {
-                  var output = '';
-                  console.log(data)
-                  $.each(data.eventslist, function (key, value) {
-                    if(value.Event == "web"){
-                      output += `<employee-card  title=" `+ value.eventtitle +  '"  date= " ' + value.eventdate + ` "> </employee-card>`;  
-                    }
-                   });
-                  $('#pagebanner-block').html(output);d
-              }).fail(function () {
-                  document.write("An error has occurred.");
-              }); 
-          });
-    </script>
-
-         </div>
-      </div>
-</section>
-
-
-
-
-  <!--============================
-    PLACEKEEPTER BANNER
-=============================-->
-
-  <section class="section placekeeper_section page-title">
+  <section class="pagebanners">
     <div class="container">
-      <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block">
-          <img src="./images/evolv/data/Web3.jpg" class="img-fluid border shadow-sm"  />
-        </div>
+      <div class="row mx-0" id="pagebanner-block">
 
       </div>
     </div>
   </section>
 
-  
+  <!--============================
+   DATA GRAPHIC
+=============================-->
+  <section class="section placekeeper_section page-title">
+    <div class="container">
+      <div class="row align-items-center m-0 ">
+        <div class="datagraphic-block" id="datagraphic-block">
+         
+        </div>
+
+        <div class="w-100   text-center" id="gialinkblock">
+         
+       </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
   <!--================================
-=            Page Title            =
+         WHATS TRENDING
 =================================-->
 
-  <!--section class="section">
+  <section class="section">
     <div class="container">
+      <div class="row pb-4 page-title">
+        <div class="col-sm-12 m-auto text-center -3">
+          <!-- Page Title -->
+          <h1>WHAT'S TRENDING</h1>
+
+
+        </div>
+      </div>
+
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
-      
+
           <div id="accordionExample" class="accordion custome-accordion border-0">
 
-          
+
             <div class="card">
               <div id="headingOne" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Diversity, Equity &
-                    Inclusion (DEI). Why You Need a Shift in Mindset & Not Just in Policy</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">3.0: The
+                    Real Revolution for the Internet</button>
                 </h2>
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0">We live in an increasingly complex and interconnected world where
-                    shaped by globalization and technological advancements diversity has become the fabric of modern
-                    society. Companies eager to establish a strong presence in a variety of emerging new markets have
-                    initiated the global gold rush for multicultural markets, diverse employees, and untapped consumer
-                    bases. Success in global markets requires multicultural initiatives and a sustained effort to
-                    integrate distinct demographic and cultural diversity into an inclusive environment that fits into
-                    the broader vision of the company’s growth and advancement. This is opening up rich opportunities
-                    for companies to spearhead growth by leveraging their access to a diverse talent pool. While global
-                    diversity of the labor force is good and beneficial for companies to enhance creativity and drive
-                    innovation, the same also challenges long held traditional business ideas and assumptions. Companies
-                    are being forced to effect major structural reorganizations spanning all key areas of business
-                    operations, marketing, talent recruitment and retention functions.</p>
+                  <p class=" m-0">Despite being in its cradle years, Web 3.0 is exuding immense potential to transform
+                    the Internet space by making the web smarter, more transparent and secure. The concept is
+                    revolutionizing the way people navigate the Internet while paving way for the compelling browsing
+                    experience and efficient human-machine interactions. Web 3.0 comes with intriguing facets and is
+                    still on its development journey. The next version of the Internet is becoming a prudent move for
+                    different types of businesses and customers owing to its amazing benefits and features. Web 3.0 is
+                    likely to make the Internet undergo a notable evolution to considerably minimize the risk of data
+                    leaks and hacking while reducing dependence on centralized repositories. The technology ensures
+                    verifiable data scarcity along with tokenization of digital assets to provide users with full
+                    control and ownership of their data and assets. Web 3.0 is anticipated to become a crucial move for
+                    businesses due to increasing focus of customers on individualized and customized browsing
+                    experienced on the web. In addition, the technology is poised to gain from rising focus of users on
+                    smart, humanized digital search assistants powered by artificial intelligence, blockchain and
+                    semantics. Web 3.0 is poised to pave way for decentralized metaverse, decentralized social media
+                    networks and decentralized finance for benefitting users while providing brands with exciting
+                    opportunities to push interactions and customer reach. The technology is expected to be widely used
+                    for peer-to-peer connectivity to assist machines, businesses and individual users in sharing data
+                    without compromising over data security and privacy. With these compelling merits, Web 3.0 is bound
+                    to emerge as a game-changer for industries and help the Internet in enjoying an exciting journey
+                    ahead. </p>
 
-                  <p class=" m-0">Interestingly, despite the growing levels of diversity and
-                    interconnectedness, there is also growing polarization fueled by identity politics and resurgence of
-                    nationalist ideals. Workplaces tend to mirror the sociocultural dynamics at play in our lives
-                    outside work. At a time like the present, the importance, value and positive impact of DEI in modern
-                    enterprises can no longer be debated or undermined. Even amid rapid globalization and changing
-                    perceptions about diversity, ethnic minorities continue to face discrimination in the labor market
-                    and as the global fight towards a fair and just society heats up, companies are feeling the urgency
-                    to renew their sense of responsibility to offer DEI in the workplace. Major social and political
-                    changes as evidenced by the “Black Lives Matter” protest rallies which erupted around the world,
-                    means companies need to reevaluate how diverse and inclusive their workforce really is. Employers
-                    now have a responsibility to protect employees from harassment and discrimination in the workplace
-                    based on race, gender or color. Diversity in the business environment today goes beyond just gender,
-                    race and ethnicity. It includes employees with diverse religious and political beliefs, education,
-                    socioeconomic backgrounds, sexual orientation, cultures and even disabilities.</p>
                   <br />
 
-                  <p class=" m-0">Even from a business standpoint, the case for diversity in workplace
-                    is overwhelming given its ability to foster innovation, creativity and empathy in ways that
-                    homogeneous environments can never do. As markets evolve to become more competitive than ever before
-                    and the business environment gets tougher amid the crisis, companies need to remain alert, aware,
-                    agile and responsive to remain afloat, profitable and successful. To be successful in a world that
-                    is constantly changing, companies need to be leading the change rather than responding to it.
-                    Companies with more diverse teams and inclusive are better able to lead change than those with a
-                    more homogeneous workforce. A strong organizational culture and robust structural foundation are
-                    critical for achieving agility that comes from internal strength. Diverse companies earn 2.5 times
-                    higher cash flow per employee and inclusive teams are productive by over 35%. High-diversity
-                    environments and all-inclusive culture has clear benefits and advantages. Yet, global DEI
-                    initiatives are particularly challenging to successfully implement and measure. Achieving real
-                    equality and inclusion is a challenging task and over 65% of employees are of the opinion that their
-                    managers do not foster an inclusive environment. Achieving greater diversity in the workplace is
-                    relatively easier as it represents the mix or the make-up of an entity. However, the inclusion piece
-                    of the puzzle is more complex and ensuring the same is immensely tough as it involves integration of
-                    the contributions, presence and perspectives of different groups of people into the environment.
-                    Inclusion is all about making the mix work together as a cohesive whole by respecting, welcoming and
-                    valuing the diversity of every individual’s unique background, experiences, race, ethnicity, sexual
-                    orientation, gender identity, faith, tradition, and most importantly perspectives. Diversity without
-                    inclusion can create a toxic culture and similarly inclusion without diversity can create an
-                    uncreative and infertile environment where a company can stagnant.</p>
+                  <p class=" m-0">The rise of Web 3.0 as the latest iteration of the Internet signals gradual departure
+                    for earlier and existing versions of the web, including Web 1.0 and Web 2.0. Web 1.0 represents the
+                    basic form of the Internet that encompasses web documents, which were interconnected and accessible
+                    to all. Considering the low level of engagement for users, the Web 1.0 is referred to as read-only
+                    web. The need for enhanced interaction paved way for Web 2.0 that presented a read-write version of
+                    the web that swiftly changed Internet usage by allowing users to upload or download files. Web 3.0
+                    is attributed to extensive need for an advanced option that marks transition from front-end features
+                    towards back-end functionality. Web 3.0 enables systems to search, generate, link or exchange
+                    materials, with the AI technology allowing websites to understand meaning of words instead of
+                    considering relevant keywords. Web 3.0 is poised to significantly change the way individuals use the
+                    Internet. The technology is likely to ensure ubiquity of automated routine tasks, AI-powered
+                    searches, scheduled reminders or other aspects. In addition to uplifting the user digital
+                    experience, Web 3.0 is talking security associated with online applications to the next level. While
+                    3D graphics is adding new dimensions, semantic metadata is ensuring the connectedness for
+                    information, enabling all users to access the information. The third iteration of the Internet
+                    interconnects information in a decentralized manner for delivering personalized and faster user
+                    experiences. The platform leverages the blockchain technology for boosting security and privacy. Web
+                    3.0 is marked by inherent characteristics such as openness, decentralization and openness. The
+                    technology relies on semantic web for understanding and interpreting the concept and context of data
+                    to provide users with the most relevant and accurate answer to a search. In addition, Web 3.0
+                    provides people with the opportunity to sell the data to brands and advertisers while maintaining
+                    data privacy and ownership. Web 3.0 is anticipated to allow apps and websites in using data in a
+                    relevant manner for enabling personalized interactions.</p>
+                  <br />
 
 
-                    <br/>
 
-                    <p class=" m-0">In line with the rapidly diversifying nature of the labor force, companies and their top level executives are feeling both a moral imperative and an urgent business need to pursue their diversity and inclusion strategies with an aim to deliver tangible results. There is an urgent need for better understanding people, a more nuanced understanding of individual needs. Easier said than done! “Birds of a feather flock together”. This old adage truly captures enduring human reflex to seek out others who look and sound like us. This impulse at the organizational level is the single most important and potent barrier to successful D&I outcomes. D&I training along with structured and unstructured measures is the need of the hour to educate and help people gain a broader understanding of “diversity.” Companies with high score have exhibited strong push for women in technology; have promoted cultural empathy; extended support for LGBTQ communities; have unique and diversified employees including deaf and blind; have pushed a liberal mindset; and have empowered women cross all hierarchy.</p>
+
+
                 </div>
               </div>
             </div>
 
-          
+
             <div class="card">
               <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Are You Doing Right by Your DEI Strategies</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Elements &
+                    Layers of Web 3.0 Architecture</button>
                 </h2>
               </div>
               <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">Despite best efforts made with the right intention, companies are unable to achieve DEI and fail to attract top talent owing to inclusivity-related issues in workplaces. Organizations are required to follow certain best practices and initiatives to make people feel safe, valuable and included in the workplace. The following are few of the actionable tactics to achieve DEI.</p>
-                  <br/>
-                  <ul>
-                    <li>Building the Sense of Belonging - Employees in an organization need a sense of belonging for thriving and contributing their best to the company. The sense of belonging represents a psychological requirement that needs to be effectively met to help employees feel connected with the organization, leading to high level of creativity and engagement in workplaces. Moreover, companies can also achieve the sense of belonging by creating an inclusive culture and striving for diversity</li>
-                    <li>Top-Down & Bottom-Up Approach - While the top-down approach is known to improve compliance, it fails to drive commitment. In order to achieve the desirable change, organizations are required to combine top-down and bottom up approaches. Leaders are required to define the company’s vision, seek accountability, and provide a safe working environment for people. Leadership needs to assess the diversity and inclusion policy for defining the purpose. On the other hand, employees must share individual perspectives through dialogue, get connected and contribute to D&I initiatives for creating the desirable culture. From leaders through to frontline workers, all individuals are required to understand their respective roles in the organizational culture and D&I initiatives.</li>
-<li>	Minimizing Fear - Workplace settings that challenge people’s beliefs make them respond with distrust and fear. While fear is perceived as a strong motivator and productivity enhancer, it leads to narrow perspectives and hinder efforts to make workplaces inclusive. By connecting people through storytelling and shared experiences, organizations can move towards desirable positive changes. In addition to identifying areas for improvement, employers need to spotlight success as well as cerebrate it. These approaches help companies in reducing fear and driving worker commitment to desired diversity and inclusion.</li>
-                
-<li>	Helping Employees Contribute Full Potential - Like the society, the organizational culture is also optimized for training and rewarding people who are fit and align with its specific goal. However, the exclusive focus on a specific set of employees promotes exclusion rather than inclusion. Unfair benefits and salaries to people from specific backgrounds led to unhealthy culture and affect diversity. Organizations need to strive for a culture that helps people in contributing their full potential. The approach requires re-imagination of the corporate culture and beliefs as well as efforts to ensure fairness for workers to make them feel valued and accepted. In addition, equal and fair career advancement and growth opportunities allow organizations to attract and retain the talent.</li>
-<li>	Going Beyond Traditional Hiring Process - While the hiring process helps companies achieve diversity numbers, it doesn’t guarantee the inclusive culture and the worker experience goes beyond the offer letter. In order to nurture and retain the talent, companies need to focus on end-to-end worker experience and create conditions to promote inclusion. As D&I initiatives go beyond the hiring process and cover diverse aspects in routine operations, organizations need to adapt the entire process for scaling inclusive and diverse behaviors. The focus of traditional hiring process on academic background and the job experience hinders diversity. The integration of reliable and valid personality assessments is an effective option to measure motivations, personality traits and skills of a candidate. Companies considering personality tests for the hiring process are more likely to achieve diverse workforces.</li>
-<li>	Inclusive Leadership -The continuous shift of organizations towards diversity and inclusion is creating the need for leaders who can identify exclusionary behaviors and practices for prompt actions. Inclusive leadership represents a crucial skill for organizations that are coordinating diverse teams and enabling employees to achieve peak performance. Inclusive leaders touch different aspects of the diversity and inclusion policy to help companies in attaining their objectives. These leaders set standards and norms for business practices as well as create environments that encourage people to contribute to their full potential. Inclusive leadership optimizes unique and individual views, perspectives and experiences for benefitting all stakeholders.</li>
-<li>	Inclusion Should be a Continuous Process - Inclusion is not limited to a typical training session and represents an ongoing process, requiring people to identify moments that can be used for building new habits depicting inclusion. Putting these habits into action along with providing a supportive environment for healthy conversations can allow companies to achieve real change. Using employees as cohorts for prompting and driving inclusion is a more effective approach in comparison to conventional training sessions. In addition, companies need to encourage inclusive language that addresses both male and female employees to help them feel included and connected. Organizations are also required to focus on regular feedback for listening to employees and their concerns for desirable actions.</li>
+                  <p class=" m-0">The Web 3.0 architecture is supported by a number of components and layers that go
+                    beyond social, mobile and cloud technologies used by its predecessor Web 2.0. Some of the primary
+                    elements of the new architecture are the Ethereum blockchain, smart contracts, Ethereum Virtual
+                    Machine and front-end. The Ethereum blockchain represents easy to access state machines that are
+                    managed by a peer-to-peer network of nodes. The option allows users to write to the blockchain while
+                    preventing anyone from updating the existing data. Smart contracts are smart programs written by app
+                    developers using high-level languages and running on the Ethereum blockchain. On the other hand,
+                    Ethereum Virtual Machines are intended to execute the specific logic in smart contracts, while the
+                    front-end plays the role of defining the user interface logic. The Web 3.0 architecture relies on
+                    multiple layers, including edge computing, decentralization, AI/ML and blockchain. </p>
+                  <br />
 
-</ul>
+                  <ul>
+                    <li>Edge Computing & Decentralization: The concept of Web 3.0 depends on edge computing that moves
+                      the datacenter out to the edge or even to users. Datacenters are aided by sophisticated computing
+                      resources that are distributed among laptops, smartphones, sensors, appliances and vehicles that
+                      generate and consumer data. Decentralized data networks assist data generators in trading data
+                      while maintaining ownership and without risking privacy and involvement of intermediaries. Data in
+                      Web 3.0 is decentralized to provide users with full control and ownership of their data. In
+                      addition, decentralized data networks allow users to securely log in over the Internet without
+                      having concerns regarding being tracked. </li>
+                    <li>AI & Machine Learning: Advanced algorithms built on AI and machine learning enable actionable
+                      and highly relevant projections and tasks. The involvement of decentralized data structures
+                      offering access to notable data volumes extends the application scope beyond just targeted
+                      advertising to new fields like climate modeling and precision materials. While Web 2.0 holds such
+                      capabilities, it is associated with human intervention that leaves opportunities for malpractices
+                      like rigged ratings and biased product assessments. These limitations indicate the relevance of AI
+                      technology to discriminate genuine from fraudulent cases to ensure availability of accurate data.
+                      The impeding integration of AI with Web 3.0 is anticipated to help online platforms in sifting
+                      through significant volumes of data to enable personalized experiences. </li>
+                    <li>Blockchain: Blockchain represents an integral and foundational component of Web 3.0 due to its
+                      ability to redefine data structures in back-end of the semantic web. The blockchain technology
+                      represents a decentralized state machine intended to deploy smart contracts defining logic of a
+                      dedicated app for Web 3.0. Blockchain for the new version of the Internet plays a crucial part in
+                      eliminating influence of intermediaries while preventing anyone from altering the existing
+                      information. By eliminating the involvement of intermediaries, the decentralized platform reduces
+                      rules and fees for trading of assets. </li>
+
+                  </ul>
 
                 </div>
               </div>
             </div>
 
-       
+
             <div class="card">
               <div id="headingThree" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                     aria-controls="collapseThree"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Trending DEI Trends & Strategies for 2023</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Why Web
+                    3.0 is a Crucial Move for Future</button>
                 </h2>
               </div>
               <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">How things would play out in 2023 and beyond will be largely driven by certain key trends in the area of corporate diversity, in addition to the actions that leaders would take around these trends.</p>
-                  <br/>
-                  
-                  <ul>
+                  <p class=" m-0">Data Privacy: Data privacy and user control over their information is one of the
+                    compelling aspects of Web 3.0. The technology enables individuals to benefit from data encryption
+                    that protects the information against breach attempts. Data encryption associated with Web 3.0 is
+                    nearly impossible to break in any situation and even with sophisticated attack. Rising popularity of
+                    the technology can be attributed to its ability to prevent tech giants such as Apple and Google from
+                    using or controlling personal information of users. </p>
+                  <br />
+                  <p>Data Privacy: Data privacy and user control over their information is one of the compelling aspects
+                    of Web 3.0. The technology enables individuals to benefit from data encryption that protects the
+                    information against breach attempts. Data encryption associated with Web 3.0 is nearly impossible to
+                    break in any situation and even with sophisticated attack. Rising popularity of the technology can
+                    be attributed to its ability to prevent tech giants such as Apple and Google from using or
+                    controlling personal information of users. </p>
+                  <br />
+                  <p>Open Access to Data: Web 3.0 provides users with the flexibility to access data anytime, anywhere
+                    using any device. The platform focuses on boosting data collection along with improving data access
+                    to users by enabling the use of connected devices for accessing the data. The technology is poised
+                    to play an important role in improving interactions such as information flows and seamless payments.
+                    As the blockchain network can be accessed by anyone, users can conveniently create addresses and
+                    interact with network. The feature allows users to easily transfer money or assets anytime and
+                    anywhere. </p>
+                  <br />
+                  <p>Enhanced Transparency & Data Processing: Web 3.0 allows end-users to track data along with
+                    inspecting the platform code, irrespective of the blockchain platform. The availability of
+                    open-source blockchain platforms on the market is favoring open design and development, eliminating
+                    reliance of clients on businesses engaged in developing the platform. Web 3.0 also holds relevance
+                    for knowledge creation and problem-solving tasks. The technology leverages artificial intelligence
+                    for extracting relevant information from large datasets. The Web 3.0 platform also helps users in
+                    conducting demand forecasting for offering personalized services. </p>
+                  <br />
+                  <p>Seamless Services & Single Profile Creation: With decentralized data storage, the platform ensures
+                    seamless access to data to all users while enabling multiple backups to facilitate data access in
+                    the event of server downtime. Web 3.0 prevents government organizations and companies from blocking
+                    a website or service, reducing the chances of denial of distributed services or account suspension.
+                    In addition, the technology eliminates the requirement for users to create different profiles for
+                    different platforms by allowing the use of a single profile. Web 3.0 provides users with exclusive
+                    control over their information, preventing others from accessing the data without user permission.
+                  </p>
 
-<li>	Managing the Evolving Remote Workforce - Even as the pandemic recedes to the endemic stage and businesses are resuming operations with office space open as usual, the remote work model is continuing to co-exist with the in-office set-up. With a certain number employees in the workforce still working remotely, businesses face an uphill task. Considering each of the WFH employee works under a different living condition, the challenges are unique with no single solution. As in case of women employees, they need to balance work and home, and might lack a dedicated space for work from where they can focus on work alone. Businesses need to brainstorm means to bridge such gaps and overcome challenges of this distributed model.</li>
-<li>	Managing the Multigenerational Workforce - The current businesses work with a workforce that is the most diverse of all times. The characteristic feature of this workforce is the co-existence of employees that belong to five different generations. In companies working with all these five generations of people, a typical workforce mix would comprise the silent generation (people born between 1928 and 1945), the baby boomers (born between 1946 and 1964), the generation X (born between 1965 and 1980), the generation Y or millennials (born between 1981 and 96) and the newest of all generation Z (from 1997 and continuing). Individually, people from each of these generations have unique expectations from their work lives, and bring with them different voices, skills and life experiences to their workplace that ultimately shapes a company’s work culture. Such a diverse workforce spanning five generations requires employers, business leaders and human resource managers to be well acquainted with the capabilities and characteristics of each of the generation, and have well framed strategies to make employees of all generations feel inclusive and celebrated for who they are.</li>
-<li>	Purging Unconscious Bias at Workplaces - Unconscious bias, the tendency to form opinions, process information and arrive at decisions on the basis of inherent or unconscious prejudices and biases towards certain groups of people or individuals, impacts the type of relationship an employer or business leader develops with each of its employee. Since this relationship influences the decisions that are made at workplaces, where a truly inclusive workforce comprises of people with varied ethnicity, backgrounds and experiences, it is important that businesses and their leaders have strategies in place that ensure such biases and prejudices are purged or controlled regularly.</li>
-<li>	Embracing Diverse Gender Identity & Expression - The recent years have seen awareness increase about the diverse gender identities and various gender expressions. As organizations the world have on their payroll people with such diverse gender identities, they need to adopt inclusive practices that may include providing gender-neutral restrooms, employee health benefits that support transitioning individuals, and creating a mindful atmosphere where use of inclusive language is encouraged to communicate with transgender or non-binary employees, among others.</li>
-<li>	Preparing for Systemic Change - Over the previous couple of years, there has been a rise in instances of systemic injustices reflective of the flaws that exist globally on institutional level. Appalling crimes against innocent people of color have brought to fore the unjust and racist nature of society that continues to exists even in the most developed nations. Businesses need to incorporate some critical systemic changes that would positively influence both the workplaces and societies at large. They can ensure racial discrimination is kept at bay by introducing policies that stress on safety of people of all races and create positive experiences at workplaces</li>
-<li>	Improved Transparency in Goal - A business with a diverse workforce need not imply a higher level of inclusion and equity. Even when organizations step up efforts to increase their diversity, the same might not translate into greater efforts at inclusivity. In order to become a truly diverse and inclusive organization, businesses would need to set transparent goals and targets and introduce relevant D&I initiatives. These measures would make those leading the organization more accountable, promote honest interactions between employees and their superiors, and foster an environment where employees feel encouraged to share their viewpoint, solutions and/or ideas.</li>
-<li>	The Time to Hire Diversity Professionals Has Come - With workplaces becoming more diverse, companies might require professional help. Diversity professionals are one of the newest categories of experts that organizations are hiring to address their D&I requirements. Diversity professionals come with the vision and mission to create a diverse and inclusive workplace, and handle multiple roles involving human resource and recruitment, as well as leadership responsibilities. They might need to multitask to organize and conduct D&I related educational sessions, introduce novel ideas for improved D&I atmosphere at a workplace, create an inclusive workplace culture, encourage all to use inclusive language, manage workplace discrimination or harassment related complaints, among others. The need for and role of diversity professionals is only expected to grow in the coming years.</li>
-<li>	Supporting Mental Health of Employees - Supporting mental health of employees has emerged as a priority for most organizations in order to ensure that their diverse talent pool continues to perform efficiently for optimal operational performance of a business. Businesses are aware of the toll the global pandemic and its repercussions have taken on the mental wellbeing of employees, and the difficulties their employees are facing in adjusting to the new normal. While some lost their jobs as businesses closed down, others had to adjust to the new work-from-home model, all while living in the fear of contracting coronavirus, which created a stressful environment for most people. By creating a supportive environment, businesses can ensure that metal health of their employees does not get compromised. They may achieve this through simpler means such as by encouraging managers, supervisors and peers to converse and empathize with each other.</li>
-<li>	Avoiding Gestures of Tokenism - Prioritizing diversity and inclusion means much more that simply hiring a woman in a boardroom or team full of men, or making way for one people of color in the workplace. Such a move could simply reflect an attitude of tokenism. Organizations need to be mindful in their approach towards D&I, and incorporate strategies and policies that truly promote diversity and inclusion.</li>
-</ul>
-                
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div id="heading4" class="card-header bg-white shadow-sm border-0">
+                <h2 class="mb-0">
+                  <button type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                    aria-controls="collapse4"
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Top Trends
+                    for 2023</button>
+                </h2>
+              </div>
+              <div id="collapse4" aria-labelledby="heading4" data-parent="#accordionExample" class="collapse">
+                <div class="card-body p-5 textless">
+                  <p>The Web 3.0 domain is displaying an impressive trajectory and poised to be shaped by dynamic trends
+                    with potential to pilot future of the interesting platform. With its compelling features such as
+                    decentralized identity, high data security and expansion of the Internet technology, Web 3.0 is
+                    riding high on remarkable success. The technology is set to be buoyed by rapid digitalization,
+                    rising shift towards 5G/6G technology and proliferation of interconnected devices. The next level of
+                    the Internet is exploiting the blockchain technology for secure transactions along with emerging
+                    technologies like artificial intelligence, machine learning and adaptive software to improve user
+                    experience while enabling exciting business cases. Decentralization is a prominent trend in the new
+                    world that is being exploited for decentralized metaverse, decentralized social networks and
+                    decentralized finance. Web 3.0 is betting heavily on cryptocurrency and non-fungible tokens for
+                    providing people with better control and copyrights. Being a highly dynamic domain, Web 3.0 requires
+                    companies to maintain an eye on continuing and emerging trends with potential to shape the arena in
+                    the future. </p>
+                  <br />
+                  <p>Decentralized Social Networks: One of the amazing aspects associated with the Web 3.0 is the
+                    development of an advanced decentralized social network. In the recent years, the social media
+                    domain has been under high scrutiny owing to player access to consumer information and private data.
+                    Web 3.0 can enable next generation of social networks and social media operating in a decentralized
+                    manner. The decentralized social network is expected to address concerns related to censorship. By
+                    announcing exit for centralized social media platforms, the move is anticipated to provide people
+                    with enhanced control over their information and personal data. Web 3.0 identities and digital
+                    assets are expected to assist people in establishing connection with companies and key influencers.
+                    On the other hand, the Web 3.0 social media is slated to present a comprehensive range of channels
+                    for brands and influencers to connect with customers for enhanced exposure and revenues. In
+                    addition, decentralized social networks are poised to offer monetization systems to creators through
+                    NFTs to ensure fair pricing.</p>
+                  <br />
+                  <p>Decentralized Metaverse: Decentralized virtual environments represent indispensable components of
+                    the future of Web 3.0 and witnessing continuing efforts by companies to lay the foundation. The
+                    Metaverse is gaining popularity as the future of the online world. On the other hand, stakeholders
+                    associated with the Web 3.0 domain are focusing on an advanced platform that is not controlled by
+                    tech players, indicating the significance of decentralized virtual spaces in the Web 3.0 space. The
+                    primary developments related to decentralized metaverse include The Sandbox and Decentraland. Since
+                    the data associated with these digital worlds is stored within the Ethereum blockchain, no one can
+                    influence related activities. Decentralized metaverses replace the hierarchical approach with a flat
+                    structure to allow sharing of benefits. The move allows people to enjoy better control over their
+                    assets, primarily the data and revenues. </p>
+                  <br />
+                  <p>Rise of Utility NFTs: Non-fungible tokens or NFTs are poised to play a crucial role in the Web 3.0
+                    movement and aid creators in associating with users in a more meaningful manner. Non-fungible tokens
+                    represent unique tokens existing on the blockchain and are associated with a unique aspect or asset.
+                    While NFTs have gained notable attention for sale of digital art, they are poised to assume a new
+                    form in the decentralized Web 3.0, dubbed as utility NFTs. These tokens would be used for tokenizing
+                    items, ideas and data in the physical and virtual domains. Utility NFTs for the decentralized Web
+                    3.0 are likely to help users in unlocking and interacting with digital services or products. These
+                    tokens are expected to also represent contracts signed between two parties for acquisition of
+                    specific goods or services. </p>
+                  <br />
+                  <p>Brands-as-a-Service: A cloud-based platform, brands-as-a-service or BaaS is a prominent trend
+                    related to blockchain that allows customers to tap the blockchain technology for creating digital
+                    products. Web 3.0 is enabling brands and organizations to re-imagine existing marketing strategies
+                    for pushing brand awareness as well as strengthening relationships with customers. Cloud-based
+                    platforms and BaaS help players in offering products or services that can be used by customers for
+                    creating digital products. In addition to improving customer interactions, BaaS is anticipated to
+                    allow companies to deliver products and services to provide customers with desired resources and
+                    tools for using the blockchain technology and Web 3.0. </p>
+                  <br />
+                  <p>Impetus to Low-Code/No-Code Apps: The emergence of Web 3.0 is paving way for new strategies that
+                    reduce or eliminate requirement of sophisticated coding software solutions and help people with
+                    limited or no coding experience to create apps in a faster way using drag-and-drop techniques. Web
+                    3.0 is expected to improve existing options available on the market while taking user interface and
+                    experience to the next level. Low-code or no-code software solutions are likely to help startups and
+                    businesses in ensuring enhanced access to advanced technology for scaling up operations or customer
+                    reach.</p>
+                  <br />
+                  <p>Exciting Additions to Interactive 3D: Three-dimensional (3D) designs and users experiences are
+                    exciting components of the Internet and finding increasing incorporations within various aspects
+                    like ongoing directories, computer games and e-commerce to boost the geospatial context. Web 3D
+                    represents a highly interactive 3D technology that can be used through the web browser. Covering
+                    components such as virtual interactions and identities, next-generation 3D interactive web
+                    technology is anticipated to find broader uptake. Interactive 3D is likely to help individuals and
+                    businesses in tapping interactive capabilities and facilitating virtual interactions and identities
+                    on the Web 3.0 platform. </p>
+                  <br />
+                  <p>Sustainable Web 3.0 Space: The Web 3.0 industry is poised to be significantly influenced by the
+                    sustainability wave as the technology involves various aspects that are considered as unsustainable
+                    in nature. Operating on the blockchain is an energy-intensive affair as the blockchain network
+                    consumes substantial amount of energy and holds a notable carbon footprint. The issue can easily
+                    turn off various players from using the technology. These concerns are prompting stakeholders to
+                    focus on new efforts for reducing energy consumption without compromising over blockchain and
+                    related Web 3.0 technologies. In a notable development in this direction, the Ethereum network has
+                    made transition from the proof-of-work towards proof-of-stake algorithm, reducing around 98% of the
+                    energy used by the network. In 2023, more companies are anticipated to engage in sustainability
+                    endeavors for pushing green credentials of the technology. Web 3.0 holds potential to bring together
+                    companies for development of sophisticated solutions to expedite and support efforts regarding
+                    mitigation of climate change. Regenerative Finance is another concept that is likely to encourage
+                    financial incentives for measures intended to support health of the planet.</p>
+                  <br />
+                  <p>Emergence of Web 3.0-Friendly Zones: The disruptive nature of Web 3.0 technology is poised to pave
+                    way for government intervention along with regulations to ensure desired impact on the society,
+                    economy and the environment. Some of the US states are focusing on development and implementation of
+                    new legislation for displaying support to the technology. Web 3.0 players conforming to government
+                    standards and regulations are anticipated to enjoy favorable tax considerations and treatment. Dubai
+                    is making efforts to emerge as cryptocurrency and Web 3.0-friendly zone. In addition, various
+                    countries are announcing programs to attract Web 3.0 players by promoting innovations linked to
+                    emerging technologies such as the metaverse, cloud computing and artificial intelligence that are
+                    closely tied to Web 3.0 development.</p>
+
+
                 </div>
               </div>
             </div>
@@ -249,9 +435,33 @@
         </div>
       </div>
     </div>
-  </section-->
+  </section>
 
-  <!--====  End of Page Title  ====-->
+
+
+
+  
+
+  <!--================================
+   PROGARAM DETAILS
+=================================-->
+
+<section class="section bg-light">
+  <div class="container">
+   <eventcolapse-component></eventcolapse-component>
+  </div>
+
+</section>
+
+
+<!--================================
+=    DOMAIN EXPERTS
+=================================-->
+
+<section class="section pt-4 " id="domain-experts">
+  
+</section>
+
 
 
 
@@ -303,27 +513,28 @@
 
 
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-$('#google_translate_element').bind('DOMNodeInserted', function(event) {
-$('.goog-te-menu-value span:first').html('LANGUAGE');
-$('.goog-te-menu-frame.skiptranslate').load(function(){
-    setTimeout(function(){
-    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
-    }, 100);
-});
-});
-});
-</script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+        $('.goog-te-menu-value span:first').html('LANGUAGE');
+        $('.goog-te-menu-frame.skiptranslate').load(function () {
+          setTimeout(function () {
+            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+          }, 100);
+        });
+      });
+    });
+  </script>
 
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
 </body>
 
 </html>

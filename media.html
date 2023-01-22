@@ -80,40 +80,92 @@
   <!--============================
     PLACEKEEPTER BANNER
 =============================-->
-  <section class="section placekeeper_section theme-11">
+  <!---section class="section placekeeper_section theme-11">
     <div class="container">
       <div class="row align-items-center">
 
       </div>
     </div>
-  </section>
+  </section-->
 
   <!--================================
 =            Page Title            =
 =================================-->
 
-  <section class="section page-title">
-    <div class="container">
+<section class="section  pb-4">
+  <div class="container">
       <div class="row">
-        <div class="col-sm-12 m-auto">
-         
-          <p class="text-left">Are you a journalist and would you like to register and participate in our upcoming events? 
-            Contact our press service at the following address:
-            </p>
-            <br/>
-            <br/>
-          <p class="text-left">
+          <div class="col-md-12 col-xl-10 m-auto text">
 
-            Evolv Global Innovator Synergies<br/> 
-New Delhi, India<br/>
-<a href="mailto::evolv@gmail.com " style="color: blue;">evolv@gmail.com </a>
+             
+          
+              <h1 class="font-display3 main-font-color text-center">Please register yourself to gain access to our events and content. 
 
-          </p>
-        </div>
+              </h1>
+                
+           
+              <div class="row mx-0">
+                <div class="col-xl-9 col-lg-9 col-md-12 col-12 mx-auto p-2 ">
+                <div class="w-100">
+                  <form action="media.html" method="POST" id="formblock">
+                    <div class="row mx-0">
+                      <!-- Name -->
+                      <div class="col-sm-6 mb-3 px-1">
+                        <span class="formmandatory">* </span>
+                        <input class="form-control w-100 border-radius-0 " type="text" placeholder="First Name" required="">
+                      </div>
+                      <!-- Name -->
+                      <div class="col-sm-6 mb-3 px-1">
+                        <span class="formmandatory">* </span>
+                        <input class="form-control w-100 border-radius-0" type="text" placeholder="Last Name" required="">
+                      </div>
+
+
+                       <!-- Email -->
+                       <div class="col-sm-6 mb-3 px-1">
+                        <span class="formmandatory">* </span>
+                        <input class="form-control w-100 border-radius-0" type="text" placeholder=" Position  " required="">
+                      </div>
+                      <!-- subject -->
+                      <div class="col-sm-6 mb-3 px-1">
+                        <span class="formmandatory">* </span>
+                        <input class="form-control w-100 border-radius-0" type="text" placeholder="Company ">
+                      </div>
+
+                      <!-- subject -->
+                      <div class="col-sm-12 mb-3 px-1">
+                        <span class="formmandatory">* </span>
+                        <input class="form-control w-100 border-radius-0" type="text" placeholder="LinkedIn Link ">
+                      </div>
+                      <!-- Email -->
+                      <div class="col-sm-6 mb-3 px-1">
+                        <span class="formmandatory">* </span>
+                        <input class="form-control w-100 border-radius-0" type="email" placeholder=" Email " required="">
+                      </div>
+                      <!-- subject -->
+                      <div class="col-sm-6 mb-3 px-1">
+                        <input class="form-control w-100 border-radius-0" type="number" placeholder="Phone No">
+                      </div>
+                      <p class="text-xl-left text-lg-left ml-2 text-md-left text-sm-left text-center mt-0  mandatory-msg ">Fields marked with <span style="color:red">*</span> are mandatory</p>
+                      <!-- Submit Button -->
+                      <div class="col-12 text-center my-4">
+                        <button class="btn btn-main-md mx-auto py-2 px-2 ">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+
+          </div>
+          </div>
       </div>
-    </div>
-  </section>
+  
+  <br>
+  <br>
 
+
+</section>
   <!--====  End of Page Title  ====-->
 
 
@@ -167,6 +219,15 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 </script>
+
+<script>
+  let form = document.getElementsByTagName("form")[0];
+    form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thank you for Register ");
+    });
+</script>
+
 </body>
 
 </html>

@@ -37,8 +37,10 @@ class HeaderComponent extends HTMLElement {
                       MISSION</a>
                       </li>-->
                    <li><a class="dropdown-item @@leadership" href="leadership.html">LEADERSHIP </a></li>
+                   <li><a class="dropdown-item @@leadership" href="advisorcouncil.html">ADVISORY COUNCIL </a></li>
+                   <!--li><a class="dropdown-item @@leadership" href="javascript:valid(0)">NEXTGEN ADVOCACY </a></li--->
                 </ul>
-             </li>
+             </li>   
 
 
              <!----Insider Tab ---->	 
@@ -72,14 +74,19 @@ class HeaderComponent extends HTMLElement {
                 <a class="nav-link" href="calender.html">CALENDAR</a>
              </li>
 
+             <!----Calender Tab ---->		 
+             <li class="nav-item @@awards ">
+                <a class="nav-link" href="awards.html">AWARDS</a>
+             </li>
+
 
              <!---Award Tab ---->	
-             <li class="nav-item dropdown @@awards ">
+             <!--li class="nav-item dropdown @@awards ">
                 <a class="nav-link dropdown-toggle" href="javascript:void(0)">AWARDS
                 <span><i class="ti-angle-down"></i></span>
                 </a>
-                <!-- Dropdown list -->
-                <!---ul class="dropdown-menu">
+              
+                <ul class="dropdown-menu">
                    <li><a class="dropdown-item @topstartups " href="topstartups.html">TOP STARTUPS </a></li>
                    <li><a class="dropdown-item @@earlystate" href="earlystate.html"> EVOLV EARLY STAGE 1000 </a></li>
                    <li><a class="dropdown-item @@fasttrack" href="fasttrack.html">EVOLV FAST-TRACK 1000 </a></li>
@@ -96,11 +103,15 @@ class HeaderComponent extends HTMLElement {
                    <li><a class="dropdown-item @@evolvx" href="evolvx.html">EVOLV 100 XXX </a></li>
                    
                    
-                   </ul--->
-             </li>
+                   </ul>
+             </li-->
+
+             <li class="nav-item @@membership">
+             <a class="nav-link" href="membership.html">MEMBERSHIP</a>
+            </li>
 
              <!----Membership Tab ---->	
-             <li class="nav-item dropdown @@membership">
+             <!--li class="nav-item dropdown @@membership">
              <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">MEMBERSHIP
              <span><i class="ti-angle-down"></i></span>
              </a>
@@ -115,16 +126,16 @@ class HeaderComponent extends HTMLElement {
                    ECO CIRCLE</a>
                 </li>
              </ul>
-          </li>
+          </li-->
           <!----Login Tab ---->	
           <li class="nav-item @@G20 ">
           <a class="nav-link" href="signin.html">LOGIN</a>
          </li>
 
          <!---Buzz tab---->
-         <li class="nav-item @@G20 ">
+         <!--li class="nav-item @@G20 ">
                 <a class="nav-link" href="#">BUZZ</a>
-                </li>
+                </li-->
 
         
 

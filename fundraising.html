@@ -38,7 +38,7 @@
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  
+
 
 </head>
 
@@ -52,206 +52,421 @@
 
   <header-component></header-component>
 
- 
+
+  <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.getJSON("./data/events.json", function (data) {
+        var banner = '';
+        var datagrapic = '';
+        var domain='';
+        var gialink="";
+        console.log(data)
+        $.each(data.eventslist, function (key, value) {
+          if (value.Event == "fundrasing") {
+            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
+            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+              if( value.eventdomainlink !== undefined ){
+                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+              }
+     
+          }
+        });
+        $('#pagebanner-block').html(banner);
+        $('#datagraphic-block').html(datagrapic);
+        $('#domain-experts').html(domain);
+        $('#gialinkblock').html(gialink);
+
+      }).fail(function () {
+        document.write("An error has occurred.");
+      }); 
+    }); 
+  </script>
+
   <!--============================
     PAGE BANNERS
 =============================-->
-<section class="pagebanners">
-  <div class="container">
-          <div class="row mx-0" id="pagebanner-block" >
-
-            <script src="https://releases.jquery.com/git/jquery-git.js"></script>
-    <script>
-      $(document).ready(function () {
-              $.getJSON("./data/events.json", function (data) {
-                  var output = '';
-                  console.log(data)
-                  $.each(data.eventslist, function (key, value) {
-                    if(value.Event == "fundrasing"){
-                      output += `<employee-card  title=" `+ value.eventtitle +  '"  date= " ' + value.eventdate + ` "> </employee-card>`;  
-                    }
-                   });
-                  $('#pagebanner-block').html(output);d
-              }).fail(function () {
-                  document.write("An error has occurred.");
-              }); 
-          });
-    </script>
-
-         </div>
-      </div>
-</section>
-
-
-
-
-  <!--============================
-    PLACEKEEPTER BANNER
-=============================-->
-
-  <section class="section placekeeper_section page-title">
+  <section class="pagebanners">
     <div class="container">
-      <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block">
-          <img src="./images/evolv/data/Fundraising.jpg" class="img-fluid border shadow-sm"  />
-        </div>
+      <div class="row mx-0" id="pagebanner-block">
 
       </div>
     </div>
   </section>
 
-  
+  <!--============================
+   DATA GRAPHIC
+=============================-->
+  <section class="section placekeeper_section page-title">
+    <div class="container">
+      <div class="row align-items-center m-0 ">
+        <div class="datagraphic-block" id="datagraphic-block">
+         
+        </div>
+
+        <div class="w-100   text-center" id="gialinkblock">
+         
+       </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <!--================================
-=            Page Title            =
+         WHATS TRENDING
 =================================-->
 
-  <!--section class="section">
+  <section class="section">
     <div class="container">
+      <div class="row pb-4 page-title">
+        <div class="col-sm-12 m-auto text-center -3">
+          <!-- Page Title -->
+          <h1>WHAT'S TRENDING</h1>
+
+
+        </div>
+      </div>
+
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
-      
+
           <div id="accordionExample" class="accordion custome-accordion border-0">
 
-          
+
             <div class="card">
               <div id="headingOne" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Diversity, Equity &
-                    Inclusion (DEI). Why You Need a Shift in Mindset & Not Just in Policy</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">What is
+                    Fundraising and How Does It Work?</button>
                 </h2>
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0">We live in an increasingly complex and interconnected world where
-                    shaped by globalization and technological advancements diversity has become the fabric of modern
-                    society. Companies eager to establish a strong presence in a variety of emerging new markets have
-                    initiated the global gold rush for multicultural markets, diverse employees, and untapped consumer
-                    bases. Success in global markets requires multicultural initiatives and a sustained effort to
-                    integrate distinct demographic and cultural diversity into an inclusive environment that fits into
-                    the broader vision of the company’s growth and advancement. This is opening up rich opportunities
-                    for companies to spearhead growth by leveraging their access to a diverse talent pool. While global
-                    diversity of the labor force is good and beneficial for companies to enhance creativity and drive
-                    innovation, the same also challenges long held traditional business ideas and assumptions. Companies
-                    are being forced to effect major structural reorganizations spanning all key areas of business
-                    operations, marketing, talent recruitment and retention functions.</p>
+                  <p class=" m-0">Fundraising is the process of gathering or raising funds, in the form of donations,
+                    from businesses and individuals, for a specific cause. The person or an organization raising funds
+                    is referred to as the fundraiser. Money gathered in such a way was traditionally used for non-profit
+                    organizations but the concept evolved over time and today, fundraising is being employed for
+                    different other causes. The traditional causes behind raising funds were mainly one’s education or
+                    helping the less-privileged. Also, while traditional fundraising happened online, in the current
+                    scenario, it is mostly online. Nonetheless, whether online or offline, raising funds for a cause had
+                    never been easy. However, there are quite a few methods that evolved over time using which, fund
+                    raising now can be accomplished with fewer hindrances. </p>
 
-                  <p class=" m-0">Interestingly, despite the growing levels of diversity and
-                    interconnectedness, there is also growing polarization fueled by identity politics and resurgence of
-                    nationalist ideals. Workplaces tend to mirror the sociocultural dynamics at play in our lives
-                    outside work. At a time like the present, the importance, value and positive impact of DEI in modern
-                    enterprises can no longer be debated or undermined. Even amid rapid globalization and changing
-                    perceptions about diversity, ethnic minorities continue to face discrimination in the labor market
-                    and as the global fight towards a fair and just society heats up, companies are feeling the urgency
-                    to renew their sense of responsibility to offer DEI in the workplace. Major social and political
-                    changes as evidenced by the “Black Lives Matter” protest rallies which erupted around the world,
-                    means companies need to reevaluate how diverse and inclusive their workforce really is. Employers
-                    now have a responsibility to protect employees from harassment and discrimination in the workplace
-                    based on race, gender or color. Diversity in the business environment today goes beyond just gender,
-                    race and ethnicity. It includes employees with diverse religious and political beliefs, education,
-                    socioeconomic backgrounds, sexual orientation, cultures and even disabilities.</p>
+                  <p class=" m-0">The different types of fundraising existing currently include capital campaigns,
+                    corporate support, online fundraising, earned income, grants, membership campaigns and special
+                    events. Capital campaigns constitute the time-bound, limited campaigns, meant for a specific
+                    project. Since they are time-specific, considerable amount of preparation as well as astute
+                    execution of the fundraising plan are necessary. Capital campaigns have so far been ideal for
+                    non-profits. Corporate support constitutes a corporate company’s philanthropic giving to an
+                    organization or to a project. Organizations that benefit from corporate support are mainly the NPOs
+                    and such other non-profits. These organizations approach corporates with their missions. Certain
+                    corporations also have set budgets for philanthropy out of which they donate to these organizations.
+                    A few corporates would also sponsor capital campaigns of NPOs for enhancing their own brand
+                    outreach. The name for such philanthropic giving is ‘Cause Branding’. Online fundraising constitutes
+                    the easiest method of raising funds for causes. A bigger audience than what would be possible when
+                    the campaign would have been offline can be reached through this. There are currently several online
+                    fundraising platforms for non-profits to use for gathering funds for their projects. Earned income
+                    is a form of raising funds through production and sales of goods or services by the organizations in
+                    need of funds. An NPO for instance, could make small goods and sell them and consumers purchasing
+                    those items would contribute to the earned income of that NPO. Profits obtained from such sales are
+                    used for projects. Grants constitute the money given to individuals or organizations for a precise
+                    use or purpose. The individual or organization obtaining the grant must be able to record all data
+                    pertaining to the project, which may be asked for, by the organization or government providing the
+                    grant, sometime in the future. In membership campaigns the fundraiser works towards making people
+                    known about the organizations seeking funds as well as the work they do, for the main purpose of
+                    roping in members. These campaigns improve chances of raking in more funds because most members
+                    become donors eventually. Special events are also sometimes organized for fundraising, for
+                    supporting a cause. This is an efficient method as the fundraising organization would be able to
+                    increase awareness pertaining to their cause and its importance in addition to gathering funds for
+                    that cause. Charity concerts are examples of such special events. Artists share a certain percentage
+                    of the earning from such concerts towards charitable purposes. </p>
                   <br />
 
-                  <p class=" m-0">Even from a business standpoint, the case for diversity in workplace
-                    is overwhelming given its ability to foster innovation, creativity and empathy in ways that
-                    homogeneous environments can never do. As markets evolve to become more competitive than ever before
-                    and the business environment gets tougher amid the crisis, companies need to remain alert, aware,
-                    agile and responsive to remain afloat, profitable and successful. To be successful in a world that
-                    is constantly changing, companies need to be leading the change rather than responding to it.
-                    Companies with more diverse teams and inclusive are better able to lead change than those with a
-                    more homogeneous workforce. A strong organizational culture and robust structural foundation are
-                    critical for achieving agility that comes from internal strength. Diverse companies earn 2.5 times
-                    higher cash flow per employee and inclusive teams are productive by over 35%. High-diversity
-                    environments and all-inclusive culture has clear benefits and advantages. Yet, global DEI
-                    initiatives are particularly challenging to successfully implement and measure. Achieving real
-                    equality and inclusion is a challenging task and over 65% of employees are of the opinion that their
-                    managers do not foster an inclusive environment. Achieving greater diversity in the workplace is
-                    relatively easier as it represents the mix or the make-up of an entity. However, the inclusion piece
-                    of the puzzle is more complex and ensuring the same is immensely tough as it involves integration of
-                    the contributions, presence and perspectives of different groups of people into the environment.
-                    Inclusion is all about making the mix work together as a cohesive whole by respecting, welcoming and
-                    valuing the diversity of every individual’s unique background, experiences, race, ethnicity, sexual
-                    orientation, gender identity, faith, tradition, and most importantly perspectives. Diversity without
-                    inclusion can create a toxic culture and similarly inclusion without diversity can create an
-                    uncreative and infertile environment where a company can stagnant.</p>
+                  <p class=" m-0">Crowdfunding is another efficient way of brining in money for projects but it is
+                    different from fundraising. While fundraising implies seeking financial aid/support for charity and
+                    such other related causes, crowdfunding constitutes the practice followed by budding entrepreneurs
+                    and businesses accumulating money from individuals for funding their business ideas.</p>
 
 
-                    <br/>
 
-                    <p class=" m-0">In line with the rapidly diversifying nature of the labor force, companies and their top level executives are feeling both a moral imperative and an urgent business need to pursue their diversity and inclusion strategies with an aim to deliver tangible results. There is an urgent need for better understanding people, a more nuanced understanding of individual needs. Easier said than done! “Birds of a feather flock together”. This old adage truly captures enduring human reflex to seek out others who look and sound like us. This impulse at the organizational level is the single most important and potent barrier to successful D&I outcomes. D&I training along with structured and unstructured measures is the need of the hour to educate and help people gain a broader understanding of “diversity.” Companies with high score have exhibited strong push for women in technology; have promoted cultural empathy; extended support for LGBTQ communities; have unique and diversified employees including deaf and blind; have pushed a liberal mindset; and have empowered women cross all hierarchy.</p>
                 </div>
               </div>
             </div>
 
-          
+
             <div class="card">
               <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Are You Doing Right by Your DEI Strategies</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Top Trends
+                    to Watch Out For in Fundraising Space!</button>
                 </h2>
               </div>
               <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">Despite best efforts made with the right intention, companies are unable to achieve DEI and fail to attract top talent owing to inclusivity-related issues in workplaces. Organizations are required to follow certain best practices and initiatives to make people feel safe, valuable and included in the workplace. The following are few of the actionable tactics to achieve DEI.</p>
-                  <br/>
-                  <ul>
-                    <li>Building the Sense of Belonging - Employees in an organization need a sense of belonging for thriving and contributing their best to the company. The sense of belonging represents a psychological requirement that needs to be effectively met to help employees feel connected with the organization, leading to high level of creativity and engagement in workplaces. Moreover, companies can also achieve the sense of belonging by creating an inclusive culture and striving for diversity</li>
-                    <li>Top-Down & Bottom-Up Approach - While the top-down approach is known to improve compliance, it fails to drive commitment. In order to achieve the desirable change, organizations are required to combine top-down and bottom up approaches. Leaders are required to define the company’s vision, seek accountability, and provide a safe working environment for people. Leadership needs to assess the diversity and inclusion policy for defining the purpose. On the other hand, employees must share individual perspectives through dialogue, get connected and contribute to D&I initiatives for creating the desirable culture. From leaders through to frontline workers, all individuals are required to understand their respective roles in the organizational culture and D&I initiatives.</li>
-<li>	Minimizing Fear - Workplace settings that challenge people’s beliefs make them respond with distrust and fear. While fear is perceived as a strong motivator and productivity enhancer, it leads to narrow perspectives and hinder efforts to make workplaces inclusive. By connecting people through storytelling and shared experiences, organizations can move towards desirable positive changes. In addition to identifying areas for improvement, employers need to spotlight success as well as cerebrate it. These approaches help companies in reducing fear and driving worker commitment to desired diversity and inclusion.</li>
-                
-<li>	Helping Employees Contribute Full Potential - Like the society, the organizational culture is also optimized for training and rewarding people who are fit and align with its specific goal. However, the exclusive focus on a specific set of employees promotes exclusion rather than inclusion. Unfair benefits and salaries to people from specific backgrounds led to unhealthy culture and affect diversity. Organizations need to strive for a culture that helps people in contributing their full potential. The approach requires re-imagination of the corporate culture and beliefs as well as efforts to ensure fairness for workers to make them feel valued and accepted. In addition, equal and fair career advancement and growth opportunities allow organizations to attract and retain the talent.</li>
-<li>	Going Beyond Traditional Hiring Process - While the hiring process helps companies achieve diversity numbers, it doesn’t guarantee the inclusive culture and the worker experience goes beyond the offer letter. In order to nurture and retain the talent, companies need to focus on end-to-end worker experience and create conditions to promote inclusion. As D&I initiatives go beyond the hiring process and cover diverse aspects in routine operations, organizations need to adapt the entire process for scaling inclusive and diverse behaviors. The focus of traditional hiring process on academic background and the job experience hinders diversity. The integration of reliable and valid personality assessments is an effective option to measure motivations, personality traits and skills of a candidate. Companies considering personality tests for the hiring process are more likely to achieve diverse workforces.</li>
-<li>	Inclusive Leadership -The continuous shift of organizations towards diversity and inclusion is creating the need for leaders who can identify exclusionary behaviors and practices for prompt actions. Inclusive leadership represents a crucial skill for organizations that are coordinating diverse teams and enabling employees to achieve peak performance. Inclusive leaders touch different aspects of the diversity and inclusion policy to help companies in attaining their objectives. These leaders set standards and norms for business practices as well as create environments that encourage people to contribute to their full potential. Inclusive leadership optimizes unique and individual views, perspectives and experiences for benefitting all stakeholders.</li>
-<li>	Inclusion Should be a Continuous Process - Inclusion is not limited to a typical training session and represents an ongoing process, requiring people to identify moments that can be used for building new habits depicting inclusion. Putting these habits into action along with providing a supportive environment for healthy conversations can allow companies to achieve real change. Using employees as cohorts for prompting and driving inclusion is a more effective approach in comparison to conventional training sessions. In addition, companies need to encourage inclusive language that addresses both male and female employees to help them feel included and connected. Organizations are also required to focus on regular feedback for listening to employees and their concerns for desirable actions.</li>
 
-</ul>
+                  <ul>
+
+                    <li><strong> Fundraising in the Metaverse -</strong> Currently, several charities are capitalizing
+                      on the metaverse
+                      fundraising opportunities. These charities are the ones that exhibit higher risk tolerance and
+                      have greater access to tech expertise. They could both be the small organizations with volunteers
+                      or leadership that are tech-savvy and mega-charity organizations with the capability of hiring
+                      highly able development teams. One of the key advantages with metaverse fundraising is that it can
+                      bring together people and communities that care about issues. The internet facilitates this
+                      metaverse fundraising. Often, due to dearth of resources and funding initially, non-profits cannot
+                      afford launching massive promotional campaigns for attracting considerable attention to their
+                      cause. An increasing number of such charitable organizations therefore are starting to recognize
+                      advantages that advanced technologies can offer. AR/VR and such other advanced technologies for
+                      instance, can offer substantial benefits to non-profits. Sometimes, a simple story or a photo
+                      exhibition would not be enough for raising the needed awareness for achieving a fundraising goal.
+                      The problem could be conveyed more efficiently and faster with VR and AR technologies which
+                      provide a more interactive and engaging solution. Such campaigns stand a better chance of raising
+                      needed funds for a cause importantly, in a shorter time duration.</li>
+
+                    <li><strong> AR Apps Increase Effectiveness of Fundraising for Charities & Nonprofits -</strong> AR
+                      apps are
+                      increasing effectiveness of fundraising campaigns for non-profits and charities. The apps are
+                      increasing awareness levels for the projects and engaging more people on deeper emotional levels
+                      to empathize and donate to causes. Using AR apps can also be a cost-effective method as the
+                      non-profits would not be required to invest much in developing and deploying the apps. However,
+                      organizations intending to create a highly effective AR app for charity would be required to
+                      analyze meticulously as to what interaction type could be ideal for their cause. AR apps help
+                      non-profits in building awareness about their causes, in an effective manner. More people would
+                      come to know of the problem which would make resolving it easier. The apps allow charities to
+                      involve more people by covering more ground. When more people become aware then more donations can
+                      be expected. The apps also help charities show the problem at hand form a completely new angle
+                      which helps in getting potential givers deeper into issues. They could have a ‘Donate’ button for
+                      calling people to act instantaneously. Charities can also use AR apps for providing potential
+                      givers with updated information as the app processing is conducted in the real-time. Non-profits
+                      could push updates on-the-go ensuring that users have access to the latest data at all times.</li>
+
+                    <li><strong> Virtual Reality in Charity -</strong>Charities today are seeking newer ways of getting
+                      across their
+                      messages to potential philanthropy givers. Merely making a problem known is not adequate currently
+                      as for making donors empathise with an issue they are required to be shown, and only then they
+                      would be able to better connect with the depths of issues/crisis for which the donations are being
+                      sought. Charity organizations therefore are actively exploring the technology of VR that helps
+                      them place viewers inside the issue/crisis, literally, thus enabling them to achieve the maximum
+                      empathy as well as the intention to help. VR makes such effects possible as it can create an
+                      immersive experience. Viewers can be transported to virtual environments of distant physical
+                      places. VR can recreate disastrous situations for helping viewers focus their attention. VR is
+                      also being used by NPOs to increase awareness about issues in addition to raising funds. NPOs and
+                      charities also use VR for reporting on how the funds have been spent. The organizations can create
+                      film documentaries, photos and report the actions taken with the money accumulated. When givers
+                      are able to see how their donated money is spent, campaigns would have a stronger impact.</li>
+
+                    <li><strong> Blockchain for Charity Fundraising: Behind the Buzzword -</strong> With
+                      well-established digital
+                      currencies charities are now able to engage with newer category of donors. Fundraising platforms
+                      are able to accept cryptocurrencies, which offer charities several benefits. Charities can track &
+                      trace donations bringing in complete transparency. Payments from across the world can be accepted,
+                      eliminating foreign exchange fee. It enables trading in non-geographic currency which would be a
+                      major benefit for charities located in some of the world’s difficult parts. Already, several major
+                      charities started accepting these currencies. Major names like Salvation Army and UNICEF have
+                      registered on platforms like cryptogivingtuesday.org for accepting cryptos like Ethereum and
+                      Bitcoin among others. Charities including the Royal National Lifeboat Institution and Breast
+                      Cancer Support in the UK are also accepting digital currencies. The verifiable transactions trail
+                      of Blockchain makes funds usage highly transparent. Donors would be able to track what they have
+                      donated. There are also platforms now that can use Blockchain for mining the unused computing
+                      capacity of donors and convert it into money for charities. An example is the Give Byte platform.
+                      There is also much research underway for developing new cryptocurrency applications for charities.
+                      BitGive for instance, collaborated with the University of Edinburgh, for development of such
+                      applications. All these indicate the growing interest worldwide in developing blockchain use cases
+                      for charities. Nonetheless, the concept of cryptocurrencies for charities has its own drawbacks
+                      foremost among which is the lack of awareness around the technology. The RNLI was the first
+                      charity to adopt the digital currency, way back in the year 2014, and admitted to facing several
+                      obstacles in accepting donations because of their price volatilities. Such price volatility makes
+                      it hard for charities to create and execute any plans around the currencies’ value. However, the
+                      volatility at the same time can work for the benefit of both charities and the givers. Currency
+                      appreciation for instance, can allow donors to donate the purchased cryptocurrencies at lower
+                      prices, leaving the charities with the appreciating price advantage. Cryptocurrencies and
+                      blockchain may be mysterious to most people even now but the interest in them is growing. In the
+                      years ahead, more individual charities would also come to accept them.</li>
+                    <li><strong> Digital Marketing for Nonprofit Fundraisers -</strong> Digital fundraising implies
+                      building an online
+                      community for raising money. It follows pretty much the same rules as the offline fundraising but
+                      there are no appeal or project style approaches. Similar to how digital marketing works, digital
+                      fundraising is all about attracting the target person, with the most appropriate message, at the
+                      most opportune time. Digital fundraising represents targeting specific people using specific
+                      messages for ultimately personalizing for them, the overall experience of donation for a cause. It
+                      is basically the cycle of attracting and nurturing people and finally converting them into donors.
+                      It is fluid and continuous and not segmented as projects. Digital fundraising comes in different
+                      forms – peer-2-peer fundraising, social sharing of messages and campaigns, online crowdfunding,
+                      special events, and interactive online among others. It is in many ways similar to digital
+                      marketing in that it involves telling stories, leveraging and engaging peer networks with
+                      community, building relations and transmitting to them right messages at the right time.
+                      SEO is the basic concept in digital marketing for organizations. It makes their websites rank high
+                      in the searches for words or phrases connecting to that organization. For charities, a similar SEO
+                      strategy can translate into more donations. It can get more visitors to their website. NPOs must
+                      therefore brainstorm their key phrases and implement SEO practices for improving results. Another
+                      strategy is to use email newsletter. This is an important way of bringing potential donors into
+                      the subsequent stage in digital fundraising, that of nurturing. Personalized emails can be more
+                      effective in acquiring donors. NPOs can reach potential donors for telling them about their
+                      organization through emails. An email newsletter can be sent at regular intervals for building the
+                      audience. Graphic updates can be provided for making known to the receiver about all that is
+                      happening in the NPO including the ongoing campaigns. Receivers must also be able to easily
+                      subscribe. Prompts or pop-ups can be used in key places throughout the newsletter helping them
+                      subscribe.
+                      <br />
+                      <br />
+                      Non-profit fundraisers can also effectively use social media sites. Seeing names of
+                      organizations on the sites would encourage givers to become part of such communities. However,
+                      fundraisers must first decide presence in which sites would make more sense for their
+                      organization. For Instagram for instance, good graphics and images would be necessary. NPOs must
+                      also keep their social media accounts up-to-date and active always. They must be able to respond
+                      immediately to comments. Mixing content can also be an effective strategy. Some of the content can
+                      be for promoting services and programs of the organization while the other content can be for
+                      seeking donations. There must always be a good amount of content that offers something for free,
+                      for followers. It can be in the form of educational information, interesting or fun content about
+                      the organization, ways to become connected with the community or even tricks and tips. Social
+                      media tales evoke the necessary emotion in people about causes and once the donors have become
+                      engaged emotionally, they must be told the subsequent steps reaching up to the actual donation.
+                      Fundraisers must also ensure that their social media pages could be found easily on their websites
+                      and in their newsletters. Social media ads can also be used. Having business pages on social media
+                      sites can be helpful. Non-profit fundraisers are also required to well manage their data using the
+                      best data management systems. The data they capture can help streamline their efforts of
+                      fundraising. Fundraisers would be able to create engagement opportunities that would be
+                      donor-specific. Information like the occupation, average gift amount and frequency of donating
+                      among others can help fundraisers determine aspects such as how to ask and how much to expect.
+                      Data also enables fundraisers to segment donors and prioritize fundraising efforts. <br /> <br />
+
+                      Shifting to social fundraising would also be essential for non-profits going forward.
+                      Advertising was compelled to evolve more rapidly in the recent years with the average span of
+                      human attention dropping to eight seconds, an all-time low. Fundraising efforts are expected to
+                      evolve similarly for building audience. The number of clicks reaching up to the donation must
+                      reduce. They can be no more than five clicks in order to sustain user interest. People today
+                      intend to make donations where they are, which is in the social medial networks. Too arduous a
+                      donation process or the one requiring way too many clicks, fundraisers would risk losing donor
+                      interest. In addition to minimizing donor journey, the social network content in the surrounding
+                      also offers fundraisers the opportunities of educating and influencing people while they are
+                      trying to make a donation. For all these benefits therefore, non-profits are required to shift to
+                      digital-first, social fundraising. However, non-profits generally resist this shift because it
+                      compels them to let go of some amount of control they so far had. They would now be at the mercy
+                      of the ever-changing algorithms of social networks. Non-profits therefore are required to become
+                      comfortable with social fundraising first if they are to see more money for their charity
+                      projects. Furthermore, social media cannot just be used for building online communities but also
+                      to capture recurring donations. It helps in keeping participants engaged through hosting repeat
+                      events for fundraising. It can thus help create more predictable and also consistent revenue
+                      streams. Using capabilities of messaging automation in social media chats can also be impactful in
+                      personalizing interactions. Facebook Messenger and such others can be especially valuable, with
+                      their higher open rates. Recipients typically enjoy the quick intakes and short content bursts
+                      provided. However, notwithstanding the vehicle selected, the messaging must be highly
+                      personalized. Non-profits can thus leverage social media and its inherent powers to the fullest
+                      for enabling friction free giving, repeatability of giving, and also personalization of messages.
+                    </li>
+                    <li><strong> Fundraisers to Target Gen-Zers & Millennials -</strong> Going forward, fundraisers
+                      would target
+                      Gen-Zers in addition to millennials for donations. These next-generation givers would change the
+                      landscape of funds giving for charity and other related purposes. Both generations grew up being
+                      told by adults about how they could make the world a better place to live by giving. Now adults,
+                      this population would show that belief in action. However, these people belonging to these
+                      generations have high regard for their time. Time for them is money. Non-profit fundraisers
+                      therefore must understand the differences between the inspirations for baby boomers and the
+                      millennials and Gen Zers and adopt the most appropriate donor engagement strategies. The
+                      expectations of these new generations are different and fundraisers are required to offer them
+                      multiple ways for becoming engaged. They must be given payment options that include credit and
+                      debit cards and other online options. The website must be eye-catching and mobile friendly.
+                      Younger donors must be given the opportunity to share the fundraiser’s mission with family and
+                      friends. This would expand the donor base for the non-profit. They must also be given volunteering
+                      opportunities which helps build a longer-lasting relationship of an organization with a donor.
+                    </li>
+                    <li><strong> Leveraging Data -</strong> Non-profits would also leverage the increasing amount of
+                      data for
+                      philanthropy. They would use ML and predictive analytics for measuring the extent and impact of
+                      their reach. Technologies would also be used for personalizing giving experience for donors.
+                      Donors’ communication preferences and interests would be taken into consideration and personalized
+                      messages created for developing stronger relationships with the organizations. </li>
+                    <li><strong> Privacy of Donors Becomes Key -</strong> Donor privacy would also be given due
+                      significance in the
+                      years ahead. In 2021, the Mail Privacy Protection Policy was launched by Apple. Prior to this
+                      policy, it was possible for non-profits to collect engagement data pertaining to their email
+                      campaigns through inserting few hidden pixels in the body of the email so that when they are
+                      opened, the pixels would be loaded allowing the host of the mail to see that it was opened. It
+                      also revealed the type of devices used for opening the email and the IP address of the recipient.
+                      The IP address offered the estimated location of the recipient, up to the level of the city. The
+                      new policy of privacy protection however, prevented email marketers from tracking data points.
+                      Non-profits therefore are required to seek alternative metrics for assessing their email campaign
+                      results and they are trying to use click rate, unsubscribe rate and conversion rate among others,
+                      which provide them with a broader overview of their campaigns’ performance. Such policies focused
+                      on increasing donor privacy are compelling non-profits to seek alternative measurement methods.
+                      Non-profits have also been adapting to the practice of cleaning out the unsubscribed and bounced
+                      email addresses, which leaves them with the most engaged audience. </li>
+                    <li><strong> Flexible Giving & Participation Gains Importance -</strong> Another trend that would be
+                      huge over the
+                      coming years would be that of flexible participation and giving. The pandemic brought forth many
+                      changes to the ways people interacted with businesses, especially non-profits. Donors are
+                      currently expecting organizations to provide them options for participating from the comfort and
+                      safety of their homes. Several donors have over the past two years moved online and the trend
+                      would continue. Also, when flexibility is offered, donors could be enticed to donate more. Over
+                      the past two years, the way events for fundraising were held also changed. Events were held mostly
+                      online. However, going forward, non-profits are likely to follow a hybrid fundraising event model
+                      using a blend of in-person and virtual. </li>
+                    <li><strong> Focus on Donor Acquisition & Retention -</strong> Non-profits would also focus more on
+                      donor retention
+                      in addition to donor acquisition, going forward. More than 70 percent of the donors give only
+                      once, to any organization, leaving non-profits with huge losses on their first investments on
+                      acquiring donors. The organizations therefore would focus on strategies for keeping individuals
+                      motivated for repeat and consistent donations. New technologies and tools for fundraising
+                      developed in the recent years are currently making it simpler for non-profits to enhance donor
+                      experiences for improved donor retention. The tools are allowing donors to easily access
+                      information about movement of their donations thus eliminating barriers to make repeat donations
+                      for the organization. It is now possible to share impact reports with donors. These reports
+                      demonstrate the work being carried out by the non-profits. However, non-profits are required to
+                      calculate their giver retention rate, time to time, for understanding effectiveness of strategies
+                      thus far and if any changes are needed for reaching the set goals. Finally, donor retention is
+                      achieved mainly through building strong relationships in which the donors are appreciated for
+                      their generosity. Appreciation increases donor retention rate and sustains success for fundraising
+                      of a non-profit. Non-profit fundraisers would also develop programs for monthly giving for
+                      creating for themselves a sustainable and predictable revenue stream. Younger donors are more
+                      attuned to such monthly giving because such giving can be managed easily and can be more
+                      impactful.</li>
+                  </ul>
+
 
                 </div>
               </div>
             </div>
 
-       
-            <div class="card">
-              <div id="headingThree" class="card-header bg-white shadow-sm border-0">
-                <h2 class="mb-0">
-                  <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Trending DEI Trends & Strategies for 2023</button>
-                </h2>
-              </div>
-              <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
-                <div class="card-body p-5 textless">
-                  <p class=" m-0">How things would play out in 2023 and beyond will be largely driven by certain key trends in the area of corporate diversity, in addition to the actions that leaders would take around these trends.</p>
-                  <br/>
-                  
-                  <ul>
 
-<li>	Managing the Evolving Remote Workforce - Even as the pandemic recedes to the endemic stage and businesses are resuming operations with office space open as usual, the remote work model is continuing to co-exist with the in-office set-up. With a certain number employees in the workforce still working remotely, businesses face an uphill task. Considering each of the WFH employee works under a different living condition, the challenges are unique with no single solution. As in case of women employees, they need to balance work and home, and might lack a dedicated space for work from where they can focus on work alone. Businesses need to brainstorm means to bridge such gaps and overcome challenges of this distributed model.</li>
-<li>	Managing the Multigenerational Workforce - The current businesses work with a workforce that is the most diverse of all times. The characteristic feature of this workforce is the co-existence of employees that belong to five different generations. In companies working with all these five generations of people, a typical workforce mix would comprise the silent generation (people born between 1928 and 1945), the baby boomers (born between 1946 and 1964), the generation X (born between 1965 and 1980), the generation Y or millennials (born between 1981 and 96) and the newest of all generation Z (from 1997 and continuing). Individually, people from each of these generations have unique expectations from their work lives, and bring with them different voices, skills and life experiences to their workplace that ultimately shapes a company’s work culture. Such a diverse workforce spanning five generations requires employers, business leaders and human resource managers to be well acquainted with the capabilities and characteristics of each of the generation, and have well framed strategies to make employees of all generations feel inclusive and celebrated for who they are.</li>
-<li>	Purging Unconscious Bias at Workplaces - Unconscious bias, the tendency to form opinions, process information and arrive at decisions on the basis of inherent or unconscious prejudices and biases towards certain groups of people or individuals, impacts the type of relationship an employer or business leader develops with each of its employee. Since this relationship influences the decisions that are made at workplaces, where a truly inclusive workforce comprises of people with varied ethnicity, backgrounds and experiences, it is important that businesses and their leaders have strategies in place that ensure such biases and prejudices are purged or controlled regularly.</li>
-<li>	Embracing Diverse Gender Identity & Expression - The recent years have seen awareness increase about the diverse gender identities and various gender expressions. As organizations the world have on their payroll people with such diverse gender identities, they need to adopt inclusive practices that may include providing gender-neutral restrooms, employee health benefits that support transitioning individuals, and creating a mindful atmosphere where use of inclusive language is encouraged to communicate with transgender or non-binary employees, among others.</li>
-<li>	Preparing for Systemic Change - Over the previous couple of years, there has been a rise in instances of systemic injustices reflective of the flaws that exist globally on institutional level. Appalling crimes against innocent people of color have brought to fore the unjust and racist nature of society that continues to exists even in the most developed nations. Businesses need to incorporate some critical systemic changes that would positively influence both the workplaces and societies at large. They can ensure racial discrimination is kept at bay by introducing policies that stress on safety of people of all races and create positive experiences at workplaces</li>
-<li>	Improved Transparency in Goal - A business with a diverse workforce need not imply a higher level of inclusion and equity. Even when organizations step up efforts to increase their diversity, the same might not translate into greater efforts at inclusivity. In order to become a truly diverse and inclusive organization, businesses would need to set transparent goals and targets and introduce relevant D&I initiatives. These measures would make those leading the organization more accountable, promote honest interactions between employees and their superiors, and foster an environment where employees feel encouraged to share their viewpoint, solutions and/or ideas.</li>
-<li>	The Time to Hire Diversity Professionals Has Come - With workplaces becoming more diverse, companies might require professional help. Diversity professionals are one of the newest categories of experts that organizations are hiring to address their D&I requirements. Diversity professionals come with the vision and mission to create a diverse and inclusive workplace, and handle multiple roles involving human resource and recruitment, as well as leadership responsibilities. They might need to multitask to organize and conduct D&I related educational sessions, introduce novel ideas for improved D&I atmosphere at a workplace, create an inclusive workplace culture, encourage all to use inclusive language, manage workplace discrimination or harassment related complaints, among others. The need for and role of diversity professionals is only expected to grow in the coming years.</li>
-<li>	Supporting Mental Health of Employees - Supporting mental health of employees has emerged as a priority for most organizations in order to ensure that their diverse talent pool continues to perform efficiently for optimal operational performance of a business. Businesses are aware of the toll the global pandemic and its repercussions have taken on the mental wellbeing of employees, and the difficulties their employees are facing in adjusting to the new normal. While some lost their jobs as businesses closed down, others had to adjust to the new work-from-home model, all while living in the fear of contracting coronavirus, which created a stressful environment for most people. By creating a supportive environment, businesses can ensure that metal health of their employees does not get compromised. They may achieve this through simpler means such as by encouraging managers, supervisors and peers to converse and empathize with each other.</li>
-<li>	Avoiding Gestures of Tokenism - Prioritizing diversity and inclusion means much more that simply hiring a woman in a boardroom or team full of men, or making way for one people of color in the workplace. Such a move could simply reflect an attitude of tokenism. Organizations need to be mindful in their approach towards D&I, and incorporate strategies and policies that truly promote diversity and inclusion.</li>
-</ul>
-                
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>
       </div>
     </div>
-  </section-->
+  </section>
 
-  <!--====  End of Page Title  ====-->
+
+
+
+  
+
+  <!--================================
+   PROGARAM DETAILS
+=================================-->
+
+<section class="section bg-light">
+  <div class="container">
+   <eventcolapse-component></eventcolapse-component>
+  </div>
+
+</section>
+
+
+<!--================================
+=    DOMAIN EXPERTS
+=================================-->
+
+<section class="section pt-4 " id="domain-experts">
+  
+</section>
+
 
 
 
@@ -303,27 +518,28 @@
 
 
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-$('#google_translate_element').bind('DOMNodeInserted', function(event) {
-$('.goog-te-menu-value span:first').html('LANGUAGE');
-$('.goog-te-menu-frame.skiptranslate').load(function(){
-    setTimeout(function(){
-    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
-    }, 100);
-});
-});
-});
-</script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+        $('.goog-te-menu-value span:first').html('LANGUAGE');
+        $('.goog-te-menu-frame.skiptranslate').load(function () {
+          setTimeout(function () {
+            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+          }, 100);
+        });
+      });
+    });
+  </script>
 
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
 </body>
 
 </html>

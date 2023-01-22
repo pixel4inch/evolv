@@ -89,16 +89,31 @@
     PLACEKEEPTER BANNER
 =============================-->
 
-  <section class="section placekeeper_section page-title">
-    <div class="container">
-      <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block">
-          <img src="./images/evolv/data/datagraphic.jpg" class="img-fluid border shadow-sm"  />
-        </div>
-
+<section class="section placekeeper_section page-title">
+  <div class="container">
+    <div class="row align-items-center m-0 ">
+      <div class="datagraphic-block" id="datagraphic-block">
+        <script>
+          $(document).ready(function () {
+                  $.getJSON("./data/events.json", function (data) {
+                      var output = '';
+                      console.log(data)
+                      $.each(data.eventslist, function (key, value) {
+                        if(value.Event == "micromobility"){
+                          output += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/><br/><p class="infolink mt-2">Data Provider:<a href="` + value.eventdatagraphiclink + `" target="_blank" class="linkblue"> StrategyR</a></p>`;
+                        }
+                       });
+                      $('#datagraphic-block').html(output);
+                  }).fail(function () {
+                      document.write("An error has occurred.");
+                  });
+              });
+        </script>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   
   <!--================================

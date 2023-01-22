@@ -52,49 +52,61 @@
 
   <header-component></header-component>
 
- 
+  <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.getJSON("./data/events.json", function (data) {
+        var banner = '';
+        var datagrapic = '';
+        var domain='';
+        var gialink="";
+        console.log(data)
+        $.each(data.eventslist, function (key, value) {
+          if (value.Event == "agritech") {
+            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
+            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+              if( value.eventdomainlink !== undefined ){
+                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+              }
+     
+          }
+        });
+        $('#pagebanner-block').html(banner);
+        $('#datagraphic-block').html(datagrapic);
+        $('#domain-experts').html(domain);
+        $('#gialinkblock').html(gialink);
+
+      }).fail(function () {
+        document.write("An error has occurred.");
+      }); 
+    }); 
+  </script>
+
   <!--============================
     PAGE BANNERS
 =============================-->
-<section class="pagebanners">
-  <div class="container">
-          <div class="row mx-0" id="pagebanner-block" >
+  <section class="pagebanners">
+    <div class="container">
+      <div class="row mx-0" id="pagebanner-block">
 
-            <script src="https://releases.jquery.com/git/jquery-git.js"></script>
-    <script>
-      $(document).ready(function () {
-              $.getJSON("./data/events.json", function (data) {
-                  var output = '';
-                  console.log(data)
-                  $.each(data.eventslist, function (key, value) {
-                    if(value.Event == "agritech"){
-                      output += `<employee-card  title=" `+ value.eventtitle +  '"  date= " ' + value.eventdate + ` "> </employee-card>`;  
-                    }
-                   });
-                  $('#pagebanner-block').html(output);
-              }).fail(function () {
-                  document.write("An error has occurred.");
-              }); 
-          });
-    </script>
-
-         </div>
       </div>
-</section>
-
-
-
+    </div>
+  </section>
 
   <!--============================
-    PLACEKEEPTER BANNER
+   DATA GRAPHIC
 =============================-->
-
   <section class="section placekeeper_section page-title">
     <div class="container">
       <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block">
-          <img src="./images/evolv/data/AgriTech.jpg" class="img-fluid border shadow-sm"  />
+        <div class="datagraphic-block" id="datagraphic-block">
+         
         </div>
+
+        <div class="w-100   text-center" id="gialinkblock">
+         
+       </div>
 
       </div>
     </div>
@@ -222,40 +234,25 @@
 
   <!--====  End of Page Title  ====-->
 
-
-<!--================================
+  <!--================================
    PROGARAM DETAILS
 =================================-->
 
 <section class="section bg-light">
-  <div class="container text-center">
-    <a href="./programsignup.html" class="btn btn-lg shadow my-4 progaram-btn" target="_blank"/> Program Details </a>
- </div>
+  <div class="container">
+   <eventcolapse-component></eventcolapse-component>
+  </div>
 
 </section>
-
 
 
 <!--================================
 =    DOMAIN EXPERTS
 =================================-->
 
-<!--section class="section pb-0">
-  <div class="container">
-    <div class="row pb-4 page-title">
-      <div class="col-sm-12 m-auto text-center -3">
-      
-        <h1>DOMAIN EXPERTS</h1>
-      </div>
-    </div>
-  </div>
-</!--section>
-
-<section-- class="section pt-0 " id="domain-experts">
-  <div class="container">
-        <iframe class="domain-iframe" src="https://www.strategyr.com/evolv/calender_Show_Event_Speakers.asp?SrcType=%EC%26%D0%E779%87%D8%2B%EC%86%B0%C1%81%7Bo%C8&ShowType=%FE%23%D2%EB92%81%CE&EID=%99a%9B%BFc"></iframe>
-  </div>
-</section-->
+<section class="section pt-4 " id="domain-experts">
+  
+</section>
 
   <!--============================
 	           Footer            
