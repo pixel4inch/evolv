@@ -53,15 +53,23 @@
 
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
+
+    
+    
     $(document).ready(function () {
+
+     
+      
+
       $.getJSON("./data/events.json", function (data) {
+        var selURL = window.location.pathname.substr(window.location.pathname.lastIndexOf("/") + 1).replace(".html", "");
         var banner = '';
         var datagrapic = '';
         var domain='';
         var gialink="";
         console.log(data)
         $.each(data.eventslist, function (key, value) {
-          if (value.Event == "ai") {
+          if (value.Event == selURL) {
             banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
             datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
             gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
@@ -118,12 +126,12 @@
          WHATS TRENDING
 =================================-->
 
-  <section class="section">
+<section class="section" id="writeups">
     <div class="container">
-      <div class="row pb-4 page-title">
+      <div class="row pb-4 ">
         <div class="col-sm-12 m-auto text-center -3">
           <!-- Page Title -->
-          <h1>WHAT'S TRENDING</h1>
+          <h1 class="font-display2 text-center">WHAT'S TRENDING</h1>
 
 
         </div>

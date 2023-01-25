@@ -45,7 +45,7 @@
       "eventsubtitle": "Global Virtual Summits",
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
-      "eventdatagraphic": " ./images/evolv/data/Autonomous.jpg",
+      "eventdatagraphic": "./images/evolv/data/Autonomous.jpg",
       "eventdatagraphiclink": "https://www.strategyr.com/market-report-autonomous-vehicles-forecasts-global-industry-analysts-inc.asp",
       "eventdomainlink": "https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%EC%26%C3%E5%3C8%9E%D2%3A%BF%F4%83%C5%85%7Bx%DD%D8%3F&ShowType=%FE%23%D2%EB92%81%CE&EID=%98k&cnt=%95b%85"
     },
@@ -142,8 +142,9 @@
       "eventsubtitle": "Global Virtual Summits",
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
+      "eventdatagraphic": " ./images/evolv/data/womenunicon.jpg", 
       "eventdatagraphiclink": "https://www.strategyr.com/",
-      "eventdomainlink": "https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%EB6%DA%EB%3E2%D3%F1%2A%A8&ShowType=%FE%23%D2%EB92%81%CE&EID=%99e&cnt=%9Fa%85%BF"
+      "eventdomainlink": "https://www.strategyr.com/evolv/Show_Women_Founders_People.asp?GTcountry=&ShowType=%FE%23%D2%EB92%81%CE&InvType=&Start=%9D&E=&SrcType=%EF%BF%BD%20%EFBF%BD%EF%BF%BD7;%EF%BF%BD%EF%BF%BD%1C%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%98b;%EF%BF%BD%EF%BF%BD%20Q%1B&SRCWord=&EncryptSTR="
     },
     {
       "Event": "femalelead",
@@ -153,18 +154,19 @@
       "eventsubtitle": "Global Virtual Summits",
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
+      "eventdatagraphic": " ./images/evolv/data/FemaleLed.jpg",
       "eventdatagraphiclink": "https://www.strategyr.com/",
-      "eventdomainlink": "https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%EB6%DA%EB%3E2%D3%F1%2A%A8&ShowType=%FE%23%D2%EB92%81%CE&EID=%99e&cnt=%9Fa%85%BF"
+       "eventdomainlink": "https://www.strategyr.com/evolv/Show_Women_Led_People.asp?GTcountry=&ShowType=%FE%23%D2%EB92%81%CE&InvType=&Start=%9D&E=&SrcType=%EF%BF%BD%20%EF%BF%BD%EF%BF%BD7;%EF%BF%BD%EF%BF%BD%1C%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%98b;%EF%BF%BD%EF%BF%BD%20Q%1B&SRCWord=&EncryptSTR="
     },
     {
       "Event": "starup",
       "eventmonth": "April",
       "eventyear": 2023,
-      "eventtitle": "STARTUP ECOSYSTEM",
+      "eventtitle": "STARTUP ECOSYSTEMS",
       "eventsubtitle": "Global Virtual Summits",
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
-      
+      "eventdatagraphic": " ./images/evolv/data/Startupcosystem.jpg",
       "eventdatagraphiclink": "https://www.strategyr.com/",
       "eventdomainlink": "https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%FE%27%D6%F8%26%22%83%9D%0A%AF%BB%A6%D9%9Ef%7E%DC%CE&ShowType=%FE%23%D2%EB92%81%CE&EID=%99d&cnt=%9Ag%86%B3"
     },
@@ -176,8 +178,9 @@
       "eventsubtitle": "Global Virtual Summits",
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
-      
-      "eventdatagraphiclink": "https://www.strategyr.com/ecosystemsInsider.asp?ind=INFT&Pageview=Show"
+      "eventdatagraphic": " ./images/evolv/data/TechWizards.jpg",
+      "eventdatagraphiclink": "https://www.strategyr.com/ecosystemsInsider.asp?ind=INFT&Pageview=Show",
+      "eventdomainlink": "https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%F96%D4%E2%05%3E%89%DC%3D%A8%A7&ShowType=%FE%23%D2%EB92%81%CE&EID=%99&cnt=%98a%86%B3"
     },
     {
       "Event": "cloudtech",
@@ -345,7 +348,8 @@
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
       "eventdatagraphic": " ./images/evolv/data/Drones.jpg",
-      "eventdatagraphiclink": "https://www.strategyr.com/ecosystemsInsider.asp?ind=DRON&Pageview=Show"
+      "eventdatagraphiclink": "https://www.strategyr.com/ecosystemsInsider.asp?ind=DRON&Pageview=Show",
+      "eventdomainlink": "https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%E9%21%D8%E47%24&ShowType=%FE%23%D2%EB92%81%CE&EID=%9Cb&cnt=%98%60%82%BF"
     },
     {
       "Event": "gaming",
@@ -493,13 +497,13 @@
       "Event": "foodtech",
       "eventmonth": "TBA",
       "eventyear": 2023,
-      "eventtitle": "FoodTech",
+      "eventtitle": "Food Tech",
       "eventsubtitle": "Global Virtual Summits",
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
       "eventdatagraphic": " ./images/evolv/data/FoodTech.jpg",
       "eventdatagraphiclink": "https://www.strategyr.com/ecosystemsInsider.asp?ind=FOOD&Pageview=Show",
-      "eventdomainlink":"https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%EC4%E3%EF1%3F%D3%95%09%A3%BB%B1%80%B9wx%D9%94&ShowType=%FE%23%D2%EB92%81%CE&EID=%98k%86&cnt=%99e%87%BD"
+      "eventdomainlink":"https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%EC4%E3%EF1%3F%D3%95%09%A3%BB%B1%80%B9wx%D9%94&ShowType=%FE%23%D2%EB92%81%CE&EID=%9Bb%9B%BBge&cnt=%99e%87%BD"
     },
     {
       "Event": "futureofwork",
@@ -516,7 +520,7 @@
       "Event": "govtech",
       "eventmonth": "TBA",
       "eventyear": 2023,
-      "eventtitle": "GovTech",
+      "eventtitle": "Gov Tech",
       "eventsubtitle": "Global Virtual Summits",
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
@@ -677,7 +681,7 @@
       "Event": "madscience",
       "eventmonth": "TBA",
       "eventyear": 2023,
-      "eventtitle": "Mad Science",
+      "eventtitle": "Mad Science ",
       "eventsubtitle": "Global Virtual Summits",
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
@@ -693,7 +697,7 @@
       "eventsubtitle": "Global Virtual Summits",
       "eventtime": "Not Specified",
       "eventlocation": "Not Specified",
-      
+      "eventdatagraphic": " ./images/evolv/data/DeepTechWizards.jpg",
       "eventdatagraphiclink": "https://www.strategyr.com/market-report-deep-learning-forecasts-global-industry-analysts-inc.asp",
       "eventdomainlink": "https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%E96%D2%FA%062%90%D5&ShowType=%FE%23%D2%EB92%81%CE&EID=%9Fa%83&cnt=%9Cf%80%B2"
     },
@@ -707,7 +711,8 @@
       "eventlocation": "Not Specified",
       
       "eventdatagraphiclink": "https://www.strategyr.com/",
-      
+      "eventdatagraphic": " ./images/evolv/data/EuropeanStartupEcosystems.jpg",
+    
 "eventdomainlink": "https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%E8%26%C5%E5%222%92%D3o%9F%A0%B4%D2%99gk%C2&ShowType=%FE%23%D2%EB92%81%CE&EID=%9F%60%84&cnt=%9Be"
     },
     {
@@ -744,7 +749,7 @@
       "eventlocation": "Not Specified",
       "eventdatagraphic": " ./images/evolv/data/IsraeliStartup.jpg",
       "eventdatagraphiclink": "https://www.strategyr.com/",
-      "eventdomainlink": "https://www.strategyr.com/evolv/Show_Event_Speakers.asp?SrcType=%E4+%C5%EB7%3B%9A%9D%1C%B8%B5%A7%D4%98b%3B%FC%DC%2BQ%1B&ShowType=%FE%23%D2%EB92%81%CE&EID=%9F%60%87&cnt=%9Ce%85"
+      "eventdomainlink": "https://www.strategyr.com/evolv/Show_Israeli_Companies_People.asp?GTcountry=%FB6%D9%FE%27%25%96%9D%0C%AD%A4%BC%D4%8C%7E&SRCWord=%F6%12%EA&ShowType=%E4%1D%E1%CF%01%03%BC%EFo%9B%9B%87%EC%A9&InvType=%E4%1D%E1%CF%01%03%BC%EF"
     }
   ]
 }

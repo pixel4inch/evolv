@@ -34,19 +34,19 @@ class FooterComponent extends HTMLElement {
   
 					
 					<li class="list-inline-item">
-						<a href="https://www.linkedin.com/company/evolv-cc/" target="_blank" ><img src="./images/evolv/Social_Icons/LinkedIn.svg" class="img-fluid social-icons"/></a>
+						<a href="https://www.linkedin.com/company/evolv-cc/about/" target="_blank" ><img src="./images/evolv/Social_Icons/LinkedIn.svg" class="img-fluid social-icons"/></a>
 					  </li>
 				  <li class="list-inline-item">
 					<a href="https://www.facebook.com/profile.php?id=100089727336945" target="_blank"><img src="./images/evolv/Social_Icons/Facbook.svg" class="img-fluid social-icons"/></a>
 				  </li>
 				  <li class="list-inline-item">
-					<a href="https://twitter.com/Evolv_2023" target="_blank"><img src="./images/evolv/Social_Icons/Twitter.svg" class="img-fluid social-icons"/></a>
+					<a href="https://twitter.com/Evolv_CII" target="_blank"><img src="./images/evolv/Social_Icons/Twitter.svg" class="img-fluid social-icons"/></a>
 				  </li>
 				  <li class="list-inline-item">
-					<a href="https://www.instagram.com/evolv.cc/" target="_blank"><img src="./images/evolv/Social_Icons/Instagarm.svg" class="img-fluid social-icons"/></a>
+					<a href="https://www.instagram.com/evolv_cii/" target="_blank"><img src="./images/evolv/Social_Icons/Instagarm.svg" class="img-fluid social-icons"/></a>
 				  </li>
 				  <li class="list-inline-item">
-					<a href="https://www.youtube.com" target="_blank"><img src="./images/evolv/Social_Icons/Youtube.svg " class="img-fluid social-icons"/></a>
+					<a href="https://www.youtube.com/@evolv_cii/featured " target="_blank"><img src="./images/evolv/Social_Icons/Youtube.svg " class="img-fluid social-icons"/></a>
 				  </li>
 				</ul>
 			  </div>

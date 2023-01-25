@@ -38,7 +38,7 @@
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  
+
 
 </head>
 
@@ -52,25 +52,25 @@
 
   <header-component></header-component>
 
- 
+
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
     $(document).ready(function () {
       $.getJSON("./data/events.json", function (data) {
         var banner = '';
         var datagrapic = '';
-        var domain='';
-        var gialink="";
+        var domain = '';
+        var gialink = "";
         console.log(data)
         $.each(data.eventslist, function (key, value) {
           if (value.Event == "saas") {
             banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-              if( value.eventdomainlink !== undefined ){
-                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-              }
-     
+            datagrapic += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink += `<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+            if (value.eventdomainlink !== undefined) {
+              domain += `  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+            }
+
           }
         });
         $('#pagebanner-block').html(banner);
@@ -80,7 +80,7 @@
 
       }).fail(function () {
         document.write("An error has occurred.");
-      }); 
+      });
     }); 
   </script>
 
@@ -102,158 +102,188 @@
     <div class="container">
       <div class="row align-items-center m-0 ">
         <div class="datagraphic-block" id="datagraphic-block">
-         
+
         </div>
 
         <div class="w-100   text-center" id="gialinkblock">
-         
-       </div>
+
+        </div>
 
       </div>
     </div>
   </section>
 
-  
+
   <!--================================
 =            Page Title            =
 =================================-->
 
-  <!--section class="section">
+<section class="section" id="writeups">
     <div class="container">
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
-      
+
           <div id="accordionExample" class="accordion custome-accordion border-0">
 
-          
+
             <div class="card">
               <div id="headingOne" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Diversity, Equity &
-                    Inclusion (DEI). Why You Need a Shift in Mindset & Not Just in Policy</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">What
+                    Developments Are Expected to Shape the Future of Software Development & SaaS Industry?</button>
                 </h2>
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0">We live in an increasingly complex and interconnected world where
-                    shaped by globalization and technological advancements diversity has become the fabric of modern
-                    society. Companies eager to establish a strong presence in a variety of emerging new markets have
-                    initiated the global gold rush for multicultural markets, diverse employees, and untapped consumer
-                    bases. Success in global markets requires multicultural initiatives and a sustained effort to
-                    integrate distinct demographic and cultural diversity into an inclusive environment that fits into
-                    the broader vision of the company’s growth and advancement. This is opening up rich opportunities
-                    for companies to spearhead growth by leveraging their access to a diverse talent pool. While global
-                    diversity of the labor force is good and beneficial for companies to enhance creativity and drive
-                    innovation, the same also challenges long held traditional business ideas and assumptions. Companies
-                    are being forced to effect major structural reorganizations spanning all key areas of business
-                    operations, marketing, talent recruitment and retention functions.</p>
+                  <p class=" m-0">Over the years, software development has undergone rapid evolution, supported by a
+                    myriad of advances in software platforms, languages, and development methodologies. One of the major
+                    transitions includes the migration of software from proprietary to open source. While open-source
+                    software might appear anti-capitalist, current software has evolved from being just means of earning
+                    profit to a collective mechanism of achieving technological growth. Currently, a significant number
+                    of software products, ranging from the framework used for controlling Facebook’s appearance to the
+                    operating system powering the Android phones, are being offered as open source. Large organizations,
+                    such as IBM, Google, Microsoft, and Adobe, are actively releasing their inventions as open source
+                    for boosting software development. While this has resulted in a decline in the effort and cost
+                    required in developing new software, this approach has contributed in substantially broadening the
+                    scope of innovation, thereby empowering software development companies in delivering the best
+                    software products to their clients. The global SaaS market is paving way for a robust growth in the
+                    adoption of SaaS products among enterprises in the near future. In recent years, SaaS has gained
+                    significant popularity on back of the hyper-specialization of business as well as the growing needs
+                    of the contemporary work environment. Remote work and location changes have transformed the way
+                    employees communicate with colleagues and customers, resulting in the introduction of a wide range
+                    of new platform and collaboration tools, all of which have been developed on the SaaS model.
+                    Companies have traditionally been investing in on-premise infrastructure for the purpose of availing
+                    the benefits associated with software, such as CRM, automation, and business analytics. However, the
+                    recent advances in cloud technology has facilitated in shifting entire business operations offsite
+                    through the use of SaaS. Companies now have the ability of leveraging a broad array of applications
+                    that enable to swiftly achieve growth without the hassle of incurring high overhead costs. </p>
 
-                  <p class=" m-0">Interestingly, despite the growing levels of diversity and
-                    interconnectedness, there is also growing polarization fueled by identity politics and resurgence of
-                    nationalist ideals. Workplaces tend to mirror the sociocultural dynamics at play in our lives
-                    outside work. At a time like the present, the importance, value and positive impact of DEI in modern
-                    enterprises can no longer be debated or undermined. Even amid rapid globalization and changing
-                    perceptions about diversity, ethnic minorities continue to face discrimination in the labor market
-                    and as the global fight towards a fair and just society heats up, companies are feeling the urgency
-                    to renew their sense of responsibility to offer DEI in the workplace. Major social and political
-                    changes as evidenced by the “Black Lives Matter” protest rallies which erupted around the world,
-                    means companies need to reevaluate how diverse and inclusive their workforce really is. Employers
-                    now have a responsibility to protect employees from harassment and discrimination in the workplace
-                    based on race, gender or color. Diversity in the business environment today goes beyond just gender,
-                    race and ethnicity. It includes employees with diverse religious and political beliefs, education,
-                    socioeconomic backgrounds, sexual orientation, cultures and even disabilities.</p>
+                  <p class=" m-0">Over the past few years, the field of software-as-a-service (SaaS) has been witnessing
+                    rapid expansion with the development of new technologies and exploration of a greater number of use
+                    cases. SaaS systems are currently offering solutions across various segments, ranging from marketing
+                    and sales to video conferencing and live chats. In the coming years, this delivery model is poised
+                    to influence as well as integrate with a new and advanced immersive, collective virtual shared
+                    space, the metaverse. SaaS solutions being cloud-native solutions share the same attribute as
+                    offered by a majority of metaverse providers. It might be too early to imagine the two technology
+                    modes working in tandem with each other as the metaverse is still in early development stages.
+                    However, a close inspection of the key features of the metaverse can make the connection between the
+                    two modes clear. The metaverse offers immersive experiences within virtual environments as well as
+                    activities closely simulating virtually all aspects of human activity. For the purpose of delivering
+                    satisfactory results in providing such experiences, there is a need for the virtual world to have
+                    purpose-built, flexible network with very little latency. SaaS solutions can contribute
+                    significantly in this area. SaaS systems, leveraging advanced analytics and technologies, are
+                    designed for streamlining networks and workflows, speeding up operations, and positively influencing
+                    outcomes. These aspects are particularly vital for metaverse experiences, especially for those
+                    operating within business spaces. The delivery model has the inherent capability of being adopted as
+                    well as reoriented for working within the metaverse. In terms of connectivity, 5G networks,
+                    supported by low latency resources such as edge computing and cloud computing, can offer the
+                    capability of delivering such experiences to end-users on demand. SaaS is anticipated to play an
+                    integral role in unlocking the potential of the metaverse. </p>
                   <br />
 
-                  <p class=" m-0">Even from a business standpoint, the case for diversity in workplace
-                    is overwhelming given its ability to foster innovation, creativity and empathy in ways that
-                    homogeneous environments can never do. As markets evolve to become more competitive than ever before
-                    and the business environment gets tougher amid the crisis, companies need to remain alert, aware,
-                    agile and responsive to remain afloat, profitable and successful. To be successful in a world that
-                    is constantly changing, companies need to be leading the change rather than responding to it.
-                    Companies with more diverse teams and inclusive are better able to lead change than those with a
-                    more homogeneous workforce. A strong organizational culture and robust structural foundation are
-                    critical for achieving agility that comes from internal strength. Diverse companies earn 2.5 times
-                    higher cash flow per employee and inclusive teams are productive by over 35%. High-diversity
-                    environments and all-inclusive culture has clear benefits and advantages. Yet, global DEI
-                    initiatives are particularly challenging to successfully implement and measure. Achieving real
-                    equality and inclusion is a challenging task and over 65% of employees are of the opinion that their
-                    managers do not foster an inclusive environment. Achieving greater diversity in the workplace is
-                    relatively easier as it represents the mix or the make-up of an entity. However, the inclusion piece
-                    of the puzzle is more complex and ensuring the same is immensely tough as it involves integration of
-                    the contributions, presence and perspectives of different groups of people into the environment.
-                    Inclusion is all about making the mix work together as a cohesive whole by respecting, welcoming and
-                    valuing the diversity of every individual’s unique background, experiences, race, ethnicity, sexual
-                    orientation, gender identity, faith, tradition, and most importantly perspectives. Diversity without
-                    inclusion can create a toxic culture and similarly inclusion without diversity can create an
-                    uncreative and infertile environment where a company can stagnant.</p>
+                  <p class=" m-0">Telecom SaaS, backed by 5G connectivity, holds tremendous potential in making
+                    metaverse mainstream among public audiences. Metaverse is being designed to deliver rich experiences
+                    with the aim of achieving greater enjoyment, productivity, and safety without incurring risks,
+                    delays, and expenses generally associated with the physical world. However, for achieving such
+                    experiences, a combination of an extremely high security, extremely high bandwidth, extremely low
+                    lag time, and reliable and ubiquitous connectivity would be required. In addition, the metaverse
+                    would bring sudden spikes in requirements and demands for extreme flexibility for accommodating
+                    production surges, spontaneous crowd gatherings, and large virtual sales events. 5G would play a key
+                    role in the metaverse space for providing the necessary software-driven network with the desired
+                    device density, latency, bandwidth, security, and reliability for supporting the immersive virtual
+                    experiences for both people as well as machines within the metaverse. Service providers have been
+                    actively developing 5G networks across the globe. However, they still need a mechanism for
+                    accommodating the massive spike in demands for reliable and secure connectivity. Telecom SaaS could
+                    offer the ability of enabling rapid and on-demand ramp up required for providing immersive metaverse
+                    experiences, while also preventing the problematic economics of overbuilding networks. Apart from
+                    its capability of provisioning networks, telecom SaaS also offers the benefit of robustness,
+                    allowing operations to continue running even if the technology goes off the grid. This aspect
+                    ensures the level of reliability needed during the implementation of metaverse. Confluence of 5G and
+                    telecom SaaS can benefit brands and enterprises in monetizing various experiences, including
+                    delivering like-like service demonstrations, digitizing education and training, developing
+                    customized in-store experiences, and selling goods. Moreover, traditional SaaS can be channelized by
+                    software developers for building a completely new deployment model, the metaverse-as-a-service. </p>
 
 
-                    <br/>
 
-                    <p class=" m-0">In line with the rapidly diversifying nature of the labor force, companies and their top level executives are feeling both a moral imperative and an urgent business need to pursue their diversity and inclusion strategies with an aim to deliver tangible results. There is an urgent need for better understanding people, a more nuanced understanding of individual needs. Easier said than done! “Birds of a feather flock together”. This old adage truly captures enduring human reflex to seek out others who look and sound like us. This impulse at the organizational level is the single most important and potent barrier to successful D&I outcomes. D&I training along with structured and unstructured measures is the need of the hour to educate and help people gain a broader understanding of “diversity.” Companies with high score have exhibited strong push for women in technology; have promoted cultural empathy; extended support for LGBTQ communities; have unique and diversified employees including deaf and blind; have pushed a liberal mindset; and have empowered women cross all hierarchy.</p>
                 </div>
               </div>
             </div>
 
-          
+
             <div class="card">
               <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Are You Doing Right by Your DEI Strategies</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Key Transformational Changes Happening in Software Development Field</button>
                 </h2>
               </div>
               <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">Despite best efforts made with the right intention, companies are unable to achieve DEI and fail to attract top talent owing to inclusivity-related issues in workplaces. Organizations are required to follow certain best practices and initiatives to make people feel safe, valuable and included in the workplace. The following are few of the actionable tactics to achieve DEI.</p>
-                  <br/>
-                  <ul>
-                    <li>Building the Sense of Belonging - Employees in an organization need a sense of belonging for thriving and contributing their best to the company. The sense of belonging represents a psychological requirement that needs to be effectively met to help employees feel connected with the organization, leading to high level of creativity and engagement in workplaces. Moreover, companies can also achieve the sense of belonging by creating an inclusive culture and striving for diversity</li>
-                    <li>Top-Down & Bottom-Up Approach - While the top-down approach is known to improve compliance, it fails to drive commitment. In order to achieve the desirable change, organizations are required to combine top-down and bottom up approaches. Leaders are required to define the company’s vision, seek accountability, and provide a safe working environment for people. Leadership needs to assess the diversity and inclusion policy for defining the purpose. On the other hand, employees must share individual perspectives through dialogue, get connected and contribute to D&I initiatives for creating the desirable culture. From leaders through to frontline workers, all individuals are required to understand their respective roles in the organizational culture and D&I initiatives.</li>
-<li>	Minimizing Fear - Workplace settings that challenge people’s beliefs make them respond with distrust and fear. While fear is perceived as a strong motivator and productivity enhancer, it leads to narrow perspectives and hinder efforts to make workplaces inclusive. By connecting people through storytelling and shared experiences, organizations can move towards desirable positive changes. In addition to identifying areas for improvement, employers need to spotlight success as well as cerebrate it. These approaches help companies in reducing fear and driving worker commitment to desired diversity and inclusion.</li>
-                
-<li>	Helping Employees Contribute Full Potential - Like the society, the organizational culture is also optimized for training and rewarding people who are fit and align with its specific goal. However, the exclusive focus on a specific set of employees promotes exclusion rather than inclusion. Unfair benefits and salaries to people from specific backgrounds led to unhealthy culture and affect diversity. Organizations need to strive for a culture that helps people in contributing their full potential. The approach requires re-imagination of the corporate culture and beliefs as well as efforts to ensure fairness for workers to make them feel valued and accepted. In addition, equal and fair career advancement and growth opportunities allow organizations to attract and retain the talent.</li>
-<li>	Going Beyond Traditional Hiring Process - While the hiring process helps companies achieve diversity numbers, it doesn’t guarantee the inclusive culture and the worker experience goes beyond the offer letter. In order to nurture and retain the talent, companies need to focus on end-to-end worker experience and create conditions to promote inclusion. As D&I initiatives go beyond the hiring process and cover diverse aspects in routine operations, organizations need to adapt the entire process for scaling inclusive and diverse behaviors. The focus of traditional hiring process on academic background and the job experience hinders diversity. The integration of reliable and valid personality assessments is an effective option to measure motivations, personality traits and skills of a candidate. Companies considering personality tests for the hiring process are more likely to achieve diverse workforces.</li>
-<li>	Inclusive Leadership -The continuous shift of organizations towards diversity and inclusion is creating the need for leaders who can identify exclusionary behaviors and practices for prompt actions. Inclusive leadership represents a crucial skill for organizations that are coordinating diverse teams and enabling employees to achieve peak performance. Inclusive leaders touch different aspects of the diversity and inclusion policy to help companies in attaining their objectives. These leaders set standards and norms for business practices as well as create environments that encourage people to contribute to their full potential. Inclusive leadership optimizes unique and individual views, perspectives and experiences for benefitting all stakeholders.</li>
-<li>	Inclusion Should be a Continuous Process - Inclusion is not limited to a typical training session and represents an ongoing process, requiring people to identify moments that can be used for building new habits depicting inclusion. Putting these habits into action along with providing a supportive environment for healthy conversations can allow companies to achieve real change. Using employees as cohorts for prompting and driving inclusion is a more effective approach in comparison to conventional training sessions. In addition, companies need to encourage inclusive language that addresses both male and female employees to help them feel included and connected. Organizations are also required to focus on regular feedback for listening to employees and their concerns for desirable actions.</li>
+                  
+             <ul>
+              <li><strong>Shift towards Agile Methodology from Waterfall Methodology -</strong> An important change that has occurred in the field of software development over the last few years is the transition from the waterfall model to agile methodology. A majority of the initial software was developed using the waterfall model, a linear and sequential approach to software development. However, in recent years, the new agile methodology has gained traction in software development owing to its benefits in allowing reiterations and fostering greater collaboration among developers. Instead of developing software as a single giant block, modern-day software are being commonly developed incrementally by splitting the development process into several dynamic phases, thus making the entire software development process much more efficient, robust, and adaptable. In the current technological world, there is an intense competition between software development companies, with each exploring the best approaches that can be utilized for creating software solutions for clients. The classical approach has involved creating silos of software developers and engineers tasked with managing software operation. However, over the past few years, software development companies have realized the importance of individuals involved in software development and operations engineers to work together. This has led to the wider popularity and adoption of DevOps in the software development industry. The concept of DevOps enables in bringing various seemingly disparate software development processes together, thereby delivering a wide range of benefits to software development companies, including faster product development and deployment, greater product reliability under varying conditions, greater scalability, and improved security through minimization of application vulnerabilities. </li>
+              <li><strong>Migration towards Cloud from On-premise Servers -</strong>  Another major transformation in software development has been the increased migration of software solutions from on-premise to cloud servers. Earlier, the adoption of internet applications was very limited owing to their high upfront cost of procurement. This changed with the introduction of cloud computing, allowing businesses to rent access to various computing services from a cloud service provider rather than owing and maintaining their own computing infrastructure. Cloud computing facilitates in delivering computing services, including software, databases, storage, servers, intelligence, and analytics, over the internet for providing flexible resources, faster innovation and economies of scale.</li>
+              <li><strong>Transition to Connected APIs from Isolated Models - </strong>Another notable change in the software development space has been the switch from isolated models to connected Application Programming Interfaces (APIs). An API refers to an approach that empowers two disparate systems with the ability of sharing data as well as functionality. APIs hold critical importance in connecting various different software products, thus enabling seamless integration between them. While APIs have been around since 2000, their true potential has been realized only in the last decade. The Google Cloud Vision API is one common example that can be utilized by developers for easily enabling image intelligence into their software products without the requirement of building the AI algorithms. Over the past few years, several APIs have swarmed the marketplace, making the internet an extremely connected environment for the benefit of both software developers as well as end-users.</li>
+              <li><strong>Increasing Adoption of Outsourcing Model - </strong>The other major change in software development has been an increased adoption of the outsourcing model. The global IT and software market is poised to exhibit exponential growth in the coming years. The outsourcing model enables companies in significantly reducing their cost of software development, as well as benefits in creating job opportunities in the provider countries. In addition, this approach enables sharing of skilled human resources across boundaries, thereby creating greater opportunities for boosting innovation as well as unprecedented levels of growth in software development. All these changes have resulted in making the software development process much easier and faster, enabling the development of smarter and more effective software products. Software development plays a pivotal role in the success of a software product, defining whether the product would be technically feasible and economically viable. In the coming years, greater incremental changes in software development processes, practices, and methodologies are expected for the benefit of developers as well as end-users.</li>
 
-</ul>
+
+
+             </ul>
 
                 </div>
               </div>
             </div>
 
-       
+
             <div class="card">
               <div id="headingThree" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                     aria-controls="collapseThree"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Trending DEI Trends & Strategies for 2023</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Key Software Development Trends to Keep an Eye-on in 2023</button>
                 </h2>
               </div>
               <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">How things would play out in 2023 and beyond will be largely driven by certain key trends in the area of corporate diversity, in addition to the actions that leaders would take around these trends.</p>
-                  <br/>
                   
                   <ul>
+                    <li><strong>AI-assisted Coding Tools -</strong> While on one hand, the year 2023 is expected to witness the inception of certain new software development trends, such as AI-assisted coding, the year is also likely to see older trends, such as low-code programming and blockchain app development, cooling off. In addition, the year could also ultimately see cooling down in the job market for software development. For past several years, developers have built various tools to assist writing source code utilizing AI. The past year has witnessed AI-assisted programming taking off in a major way with the introduction of several new AI-assisted coding tools, such as Amazon CodeWhisperer and GitHub Copilot. In 2023, more and more software developers are expected to start adopting and experimenting with AI-assisted coding tools, and occasionally utilizing them for generating comparatively mundane code. AI-assisted coding refers to a feature that utilizes machine learning models to generate code automatically for the benefit of software developers. AI-assisted coding tools can help in increasing the productivity and focus of software developers through faster creation of logic flows. In addition, such tools can offer just-in-time help pointing to a specific reference documentation of other information sources, as well as providing pre-built component suggestions that help in eliminating knowledge gaps and friction. </li>
+                    <li><strong>Blockchain -</strong> Development of blockchain applications, on the other hand, is anticipated to wind down significantly in 2023.	Similarly, the hype surrounding low-code programming is likely to cool off, with more developers recognizing the various limitations associated with low-code tools, including security challenges and the inability of yielding cost-efficient and high-performing applications. Developers earlier faced pressure of refactoring their application code for it to run as microservices within containers. This challenge has now been mostly addressed with most applications requiring refactoring been already refactored. However, developers now face a new challenge of migrating applications to platforms, such as Kubernetes, and making their applications more environment-agnostic. For doing so, developers need to run their applications within containers. These factors are likely to drive the development of several monolithic applications that have the ability of running within containers. Running monolithic applications within containers can offer developers the benefits of reducing the number of external environment dependencies that they need to worry about while deploying the application.</li>
+                    <li><strong>Adoption of Progressive Web Applications - </strong>The year 2023 is also expected to witness greater adoption of progressive web applications. These applications are a type of native web apps delivered through the web by combining the advanced features and functionalities offered by browsers with the advantages of a mobile experience. Such applications can be easily and quickly downloaded by end-users while visiting the website in the browser and installed on their smartphone’s home screen, thereby eliminating the need for them to visit the app store for downloading. Progressive web applications offer the benefits of small size, advanced performance, and features such as offline mode and push notifications. These applications are particularly beneficial for small and new companies, owing to their low cost of creation and maintenance, as well as their ability of providing the combined benefits of the web and mobile. Progressive web applications are likely to experience wider popularity among startups and small businesses in the coming years. Some of the prominent organizations that have already adopted progressive web applications include Starbucks, BMW, Debenhams, and Flipboard. Apart from these trends, the year 2023 is also likely to witness slowing down in hiring of software developers. For past several years, companies have been desperately looking at recruiting coders, and have been paying hefty salaries for hiring and retaining them. However, the prior year has experienced significant economic slowdown that has adversely affected the technology companies, many of which have been opting for massive layoffs in the past few months. In 2023, the job market for software developers is likely to be less enviable as it was in the previous years.</li>
 
-<li>	Managing the Evolving Remote Workforce - Even as the pandemic recedes to the endemic stage and businesses are resuming operations with office space open as usual, the remote work model is continuing to co-exist with the in-office set-up. With a certain number employees in the workforce still working remotely, businesses face an uphill task. Considering each of the WFH employee works under a different living condition, the challenges are unique with no single solution. As in case of women employees, they need to balance work and home, and might lack a dedicated space for work from where they can focus on work alone. Businesses need to brainstorm means to bridge such gaps and overcome challenges of this distributed model.</li>
-<li>	Managing the Multigenerational Workforce - The current businesses work with a workforce that is the most diverse of all times. The characteristic feature of this workforce is the co-existence of employees that belong to five different generations. In companies working with all these five generations of people, a typical workforce mix would comprise the silent generation (people born between 1928 and 1945), the baby boomers (born between 1946 and 1964), the generation X (born between 1965 and 1980), the generation Y or millennials (born between 1981 and 96) and the newest of all generation Z (from 1997 and continuing). Individually, people from each of these generations have unique expectations from their work lives, and bring with them different voices, skills and life experiences to their workplace that ultimately shapes a company’s work culture. Such a diverse workforce spanning five generations requires employers, business leaders and human resource managers to be well acquainted with the capabilities and characteristics of each of the generation, and have well framed strategies to make employees of all generations feel inclusive and celebrated for who they are.</li>
-<li>	Purging Unconscious Bias at Workplaces - Unconscious bias, the tendency to form opinions, process information and arrive at decisions on the basis of inherent or unconscious prejudices and biases towards certain groups of people or individuals, impacts the type of relationship an employer or business leader develops with each of its employee. Since this relationship influences the decisions that are made at workplaces, where a truly inclusive workforce comprises of people with varied ethnicity, backgrounds and experiences, it is important that businesses and their leaders have strategies in place that ensure such biases and prejudices are purged or controlled regularly.</li>
-<li>	Embracing Diverse Gender Identity & Expression - The recent years have seen awareness increase about the diverse gender identities and various gender expressions. As organizations the world have on their payroll people with such diverse gender identities, they need to adopt inclusive practices that may include providing gender-neutral restrooms, employee health benefits that support transitioning individuals, and creating a mindful atmosphere where use of inclusive language is encouraged to communicate with transgender or non-binary employees, among others.</li>
-<li>	Preparing for Systemic Change - Over the previous couple of years, there has been a rise in instances of systemic injustices reflective of the flaws that exist globally on institutional level. Appalling crimes against innocent people of color have brought to fore the unjust and racist nature of society that continues to exists even in the most developed nations. Businesses need to incorporate some critical systemic changes that would positively influence both the workplaces and societies at large. They can ensure racial discrimination is kept at bay by introducing policies that stress on safety of people of all races and create positive experiences at workplaces</li>
-<li>	Improved Transparency in Goal - A business with a diverse workforce need not imply a higher level of inclusion and equity. Even when organizations step up efforts to increase their diversity, the same might not translate into greater efforts at inclusivity. In order to become a truly diverse and inclusive organization, businesses would need to set transparent goals and targets and introduce relevant D&I initiatives. These measures would make those leading the organization more accountable, promote honest interactions between employees and their superiors, and foster an environment where employees feel encouraged to share their viewpoint, solutions and/or ideas.</li>
-<li>	The Time to Hire Diversity Professionals Has Come - With workplaces becoming more diverse, companies might require professional help. Diversity professionals are one of the newest categories of experts that organizations are hiring to address their D&I requirements. Diversity professionals come with the vision and mission to create a diverse and inclusive workplace, and handle multiple roles involving human resource and recruitment, as well as leadership responsibilities. They might need to multitask to organize and conduct D&I related educational sessions, introduce novel ideas for improved D&I atmosphere at a workplace, create an inclusive workplace culture, encourage all to use inclusive language, manage workplace discrimination or harassment related complaints, among others. The need for and role of diversity professionals is only expected to grow in the coming years.</li>
-<li>	Supporting Mental Health of Employees - Supporting mental health of employees has emerged as a priority for most organizations in order to ensure that their diverse talent pool continues to perform efficiently for optimal operational performance of a business. Businesses are aware of the toll the global pandemic and its repercussions have taken on the mental wellbeing of employees, and the difficulties their employees are facing in adjusting to the new normal. While some lost their jobs as businesses closed down, others had to adjust to the new work-from-home model, all while living in the fear of contracting coronavirus, which created a stressful environment for most people. By creating a supportive environment, businesses can ensure that metal health of their employees does not get compromised. They may achieve this through simpler means such as by encouraging managers, supervisors and peers to converse and empathize with each other.</li>
-<li>	Avoiding Gestures of Tokenism - Prioritizing diversity and inclusion means much more that simply hiring a woman in a boardroom or team full of men, or making way for one people of color in the workplace. Such a move could simply reflect an attitude of tokenism. Organizations need to be mindful in their approach towards D&I, and incorporate strategies and policies that truly promote diversity and inclusion.</li>
-</ul>
+                  </ul>
                 
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                <h2 class="mb-0">
+                  <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree"
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Key Trends That Are Likely to Influence the SaaS Industry in 2023</button>
+                </h2>
+              </div>
+              <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+                <div class="card-body p-5 textless">
+                  
+                  <ul>
+                    <li><strong>Proliferation of White-label SAAS Products -</strong> One of the major trends that would drive the SaaS industry in 2023 is the continued proliferation of white-label SaaS products. A white-label SaaS product refers to an unbranded product that a company purchases and rebrands it as its own. White-label SaaS can help businesses in expanding its existing product offerings without incurring any development overhead. The white-label SaaS market has been witnessing significant growth over the last few years, resulting in the development of several different types of white-label SaaS tools and software products. One of the most common white-label SaaS used by various organizations includes email marketing software. This software solution offers users the opportunity of completely controlling their outgoing emails, besides providing them with the ability of scheduling email marketing campaigns, monitoring their statistics, building integrations, and improving customer personalization. 
+                      Another notable example of white-label SaaS includes software development tools for website and app designing and development. These tools can enable users in building websites for their customers using drag-and-drop features. In addition, there are social media management tools that provide customizable dashboards to allow marketers to view and manage activities and interactions as well as post content on various social media accounts from a single location. Another emerging white-label SaaS includes white-label integration software, which provides users the ability of developing and expanding their SaaS products using native integration capabilities.
+                      </li>
+                      <li><strong>Development of Vertical SAAS -</strong> Continuous specialization of business has been paving way for SaaS to become more industry-vertical specific. Organizations now have the option of going for SaaS solutions that have been uniquely designed to address their concerns and requirements. While a large number of vertical SaaS solutions have already been available in the market for past several years, there is still scope for tremendous growth in this segment and the demand for such solutions is likely to increase significantly in the coming years. In addition, micro SaaS apps are being developed for catering to more specific requirements within a particular industry. For instance, there could be a general vertical SaaS solution to cater to the education sector, along with specific micro apps for kindergarten and middle-school education. Vertical SaaS caters to a niche market, thereby offering providers of these products an increased likelihood of lead conversion, as well as the benefits of lower cost of customer acquisition and marketing spending, compliance with industry-specific requirements and standards, and increased customer retention owing to the high level of industry-specific expertise offered by them. </li>
+                      <li><strong>Emergence of Super Apps - </strong>Over the past few years, there has been an emergence of several super apps across various global markets. The demand for super apps is expected to continue increasing substantially in 2023, driven by the rise in the number of smartphone users and rapid growth in internet penetration across the globe. Super apps generally refer to apps that have been developed to help users perform disparate activities. Super apps could help users in shopping for groceries, paying their rent, reviewing work documents, refilling prescriptions, booking a trip, and chatting with businesses, friends, and interest groups using just one app. SaaS is typically offered in a bundled form by integrating distinctive capabilities and delivering them in discrete packages. However, in recent years, the trend is gradually shifting towards offering customers more selective pricing and packaging models through decoupling and unbundling of packages to meet specific requirements of customers. </li>
+                      <li><strong>Observable Data -</strong> Development of a successful SaaS requires good observability across the user journey over various touchpoints and interfaces. Observable data indicates the digitized artifacts that appear when any action is taken by a stakeholder. These observable artifacts are fed back by applied observability in an orchestrated and integrated approach for accelerating organizational decision-making. The prominence of applied observability is expected to rise in the near future, with this approach emerging as one of the most potent sources of enabling data-driven decision-making through strategic planning and execution.</li>
+                  </ul>
+                
+
                 </div>
               </div>
             </div>
@@ -262,7 +292,7 @@
         </div>
       </div>
     </div>
-  </section-->
+  </section>
 
   <!--====  End of Page Title  ====-->
 
@@ -273,21 +303,21 @@
    PROGARAM DETAILS
 =================================-->
 
-<section class="section bg-light">
-  <div class="container">
-   <eventcolapse-component></eventcolapse-component>
-  </div>
+  <section class="section bg-light">
+    <div class="container">
+      <eventcolapse-component></eventcolapse-component>
+    </div>
 
-</section>
+  </section>
 
 
-<!--================================
+  <!--================================
 =    DOMAIN EXPERTS
 =================================-->
 
-<section class="section pt-4 " id="domain-experts">
-  
-</section>
+  <section class="section pt-4 " id="domain-experts">
+
+  </section>
   <!--============================
 	           Footer            
 =============================-->
@@ -336,27 +366,28 @@
 
 
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-$('#google_translate_element').bind('DOMNodeInserted', function(event) {
-$('.goog-te-menu-value span:first').html('LANGUAGE');
-$('.goog-te-menu-frame.skiptranslate').load(function(){
-    setTimeout(function(){
-    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
-    }, 100);
-});
-});
-});
-</script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+        $('.goog-te-menu-value span:first').html('LANGUAGE');
+        $('.goog-te-menu-frame.skiptranslate').load(function () {
+          setTimeout(function () {
+            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+          }, 100);
+        });
+      });
+    });
+  </script>
 
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
 </body>
 
 </html>

@@ -38,7 +38,7 @@
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  
+
 
 </head>
 
@@ -52,25 +52,25 @@
 
   <header-component></header-component>
 
- 
+
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
     $(document).ready(function () {
       $.getJSON("./data/events.json", function (data) {
         var banner = '';
         var datagrapic = '';
-        var domain='';
-        var gialink="";
+        var domain = '';
+        var gialink = "";
         console.log(data)
         $.each(data.eventslist, function (key, value) {
           if (value.Event == "fashion") {
             banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-              if( value.eventdomainlink !== undefined ){
-                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-              }
-     
+            datagrapic += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink += `<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+            if (value.eventdomainlink !== undefined) {
+              domain += `  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+            }
+
           }
         });
         $('#pagebanner-block').html(banner);
@@ -80,7 +80,7 @@
 
       }).fail(function () {
         document.write("An error has occurred.");
-      }); 
+      });
     }); 
   </script>
 
@@ -102,157 +102,125 @@
     <div class="container">
       <div class="row align-items-center m-0 ">
         <div class="datagraphic-block" id="datagraphic-block">
-         
+
         </div>
 
         <div class="w-100   text-center" id="gialinkblock">
-         
-       </div>
+
+        </div>
 
       </div>
     </div>
   </section>
-  
+
   <!--================================
 =            Page Title            =
 =================================-->
 
-  <!--section class="section">
+<section class="section" id="writeups">
     <div class="container">
+
+      <div class="row pb-4 ">
+        <div class="col-sm-12 m-auto text-center -3">
+          <!-- Page Title -->
+          <h1 class="font-display2 ">WHAT'S TRENDING</h1>
+
+
+        </div>
+      </div>
+
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
-      
+
           <div id="accordionExample" class="accordion custome-accordion border-0">
 
-          
+
             <div class="card">
               <div id="headingOne" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Diversity, Equity &
-                    Inclusion (DEI). Why You Need a Shift in Mindset & Not Just in Policy</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Hyper-Real Digital Fashion is Here to Change the Future</button>
                 </h2>
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0">We live in an increasingly complex and interconnected world where
-                    shaped by globalization and technological advancements diversity has become the fabric of modern
-                    society. Companies eager to establish a strong presence in a variety of emerging new markets have
-                    initiated the global gold rush for multicultural markets, diverse employees, and untapped consumer
-                    bases. Success in global markets requires multicultural initiatives and a sustained effort to
-                    integrate distinct demographic and cultural diversity into an inclusive environment that fits into
-                    the broader vision of the company’s growth and advancement. This is opening up rich opportunities
-                    for companies to spearhead growth by leveraging their access to a diverse talent pool. While global
-                    diversity of the labor force is good and beneficial for companies to enhance creativity and drive
-                    innovation, the same also challenges long held traditional business ideas and assumptions. Companies
-                    are being forced to effect major structural reorganizations spanning all key areas of business
-                    operations, marketing, talent recruitment and retention functions.</p>
-
-                  <p class=" m-0">Interestingly, despite the growing levels of diversity and
-                    interconnectedness, there is also growing polarization fueled by identity politics and resurgence of
-                    nationalist ideals. Workplaces tend to mirror the sociocultural dynamics at play in our lives
-                    outside work. At a time like the present, the importance, value and positive impact of DEI in modern
-                    enterprises can no longer be debated or undermined. Even amid rapid globalization and changing
-                    perceptions about diversity, ethnic minorities continue to face discrimination in the labor market
-                    and as the global fight towards a fair and just society heats up, companies are feeling the urgency
-                    to renew their sense of responsibility to offer DEI in the workplace. Major social and political
-                    changes as evidenced by the “Black Lives Matter” protest rallies which erupted around the world,
-                    means companies need to reevaluate how diverse and inclusive their workforce really is. Employers
-                    now have a responsibility to protect employees from harassment and discrimination in the workplace
-                    based on race, gender or color. Diversity in the business environment today goes beyond just gender,
-                    race and ethnicity. It includes employees with diverse religious and political beliefs, education,
-                    socioeconomic backgrounds, sexual orientation, cultures and even disabilities.</p>
+                  <p class=" m-0">Digital fashion is increasingly been viewed as a sustainable substitute for the disposable culture that was largely spread by fast fashion. Thanks to digital fashion garments or clothing can exist exclusively on a metaverse or in a digital area instead of in a physical form. Digital fashion minimizes wastage of any form and enables shoppers to engage in all the ongoing trends and experiment with varied styles and outfits without causing any damage to the environment. The metaverse offers a creative and innovative space that allows individuals to express their exquisite individuality and style in a way that may be implausible to attain in the actual physical world. Digital samples enhance sustainability and reduce lead time by cutting down on the required number of samples for visualizing designs. The technology offers increased flexibility to the designers by enabling them to try innumerable variabilities of innovative materials and styling. Many leading fashion labels and designers such as Balenciaga and Burberry are focusing on digital fashion and developing various novel digital products. </p>
+                  <br/>
+                  <p class=" m-0">The industry is witnessing effervescent activity and energy ranging from showcasing the designers' creations, e-commerce, gaming, and virtual catwalk shows to the metaverse. The latest developments in the technological field is enabling the fashion industry to grow resiliently and is providing designers with various new opportunities to test and trial with designs utilizing specialist software packages such as Clo3D, Unreal Engine, Autodesk Maya, and Adobe Substance Suite.  Clo3D provides a very innate way of designing and comes equipped with a wide array of trims and fabrics that enables designers to try out their designs. Designers can tailorize and design their own trims and fabrics for developing digital samples. The very accurate and realistic 3D clothing makes the task much easier to mend and rebuild the fit of the designs even for drape-sensitive fabrics such as jerseys and lightweight wovens. Clo3D software enables the designers to view and revise their designs from 3D point of view and adds life to the designs with photorealistic animations or renderings. </p>
                   <br />
 
-                  <p class=" m-0">Even from a business standpoint, the case for diversity in workplace
-                    is overwhelming given its ability to foster innovation, creativity and empathy in ways that
-                    homogeneous environments can never do. As markets evolve to become more competitive than ever before
-                    and the business environment gets tougher amid the crisis, companies need to remain alert, aware,
-                    agile and responsive to remain afloat, profitable and successful. To be successful in a world that
-                    is constantly changing, companies need to be leading the change rather than responding to it.
-                    Companies with more diverse teams and inclusive are better able to lead change than those with a
-                    more homogeneous workforce. A strong organizational culture and robust structural foundation are
-                    critical for achieving agility that comes from internal strength. Diverse companies earn 2.5 times
-                    higher cash flow per employee and inclusive teams are productive by over 35%. High-diversity
-                    environments and all-inclusive culture has clear benefits and advantages. Yet, global DEI
-                    initiatives are particularly challenging to successfully implement and measure. Achieving real
-                    equality and inclusion is a challenging task and over 65% of employees are of the opinion that their
-                    managers do not foster an inclusive environment. Achieving greater diversity in the workplace is
-                    relatively easier as it represents the mix or the make-up of an entity. However, the inclusion piece
-                    of the puzzle is more complex and ensuring the same is immensely tough as it involves integration of
-                    the contributions, presence and perspectives of different groups of people into the environment.
-                    Inclusion is all about making the mix work together as a cohesive whole by respecting, welcoming and
-                    valuing the diversity of every individual’s unique background, experiences, race, ethnicity, sexual
-                    orientation, gender identity, faith, tradition, and most importantly perspectives. Diversity without
-                    inclusion can create a toxic culture and similarly inclusion without diversity can create an
-                    uncreative and infertile environment where a company can stagnant.</p>
+                  <p class=" m-0">The rise of virtual models and 3D fashion models has enhanced the design workflow and established new standards for the creation of fashion designs in a much faster and more practical way. 2D-3D creation tools and digital fashion design have been gathering momentum among environmentally conscious designers and fashion labels who aim to minimize the impact on the environment. Developing digital fashion designs in a virtual software environment is the initial step in fashion digitization, and not solely developing digital content for use in fashion presentations on social media with actual garments. 3D digital clothing mainly focuses on reducing all the unwarranted and needless physical samples and waste that is generated because of fittings or cuttings. Rectification of design faults on the move, reducing lead times, and cutting down on production time are some of the advantages of virtual garments. </p>
 
 
-                    <br/>
+                  <br />
 
-                    <p class=" m-0">In line with the rapidly diversifying nature of the labor force, companies and their top level executives are feeling both a moral imperative and an urgent business need to pursue their diversity and inclusion strategies with an aim to deliver tangible results. There is an urgent need for better understanding people, a more nuanced understanding of individual needs. Easier said than done! “Birds of a feather flock together”. This old adage truly captures enduring human reflex to seek out others who look and sound like us. This impulse at the organizational level is the single most important and potent barrier to successful D&I outcomes. D&I training along with structured and unstructured measures is the need of the hour to educate and help people gain a broader understanding of “diversity.” Companies with high score have exhibited strong push for women in technology; have promoted cultural empathy; extended support for LGBTQ communities; have unique and diversified employees including deaf and blind; have pushed a liberal mindset; and have empowered women cross all hierarchy.</p>
+                  <p class=" m-0">Companies are faced with the necessity to develop risk-minimizing policies which can be executed quickly as government regulations, fiscal policies and conflicts rise. Besides, the companies need to evaluate the areas where they function, and reconsider the top-line growth potential while assessing new as well as existing international markets. Consumers are likely to be more indecisive and inconsistent in the years to come, and hence companies are required to take into consideration all the factors that are likely to affect the shopping pattern and behave accordingly. Companies can keep customers engaged despite reduced spending through off-price retailers and rental channels. However, such strategies need to be carefully executed for ensuring that company reputation and brand margins are safeguarded. Brands, on the other hand, are will be required to refurbish their design and merchandising strategies for addressing changing ideas around dress codes and gender lines in fashion. Despite the economic turmoil, fashion labels today are in a very unique position to reexamine the ways their brands manufacture, distribute as well as promote their products. Supply chains are not disrupted by the recent pandemic, enhancing the need to capitalize on quicker and geographically closer production units. Digital channels and direct-to-consumer will continue to be a priority, however, fashion labels need to expand their sales channels for improving market relevance and efficiency. Companies also need to continue to be unique and creative in their marketing efforts for luring customers via bold and exclusive content that stands out in the cluttered digital environment. The future outlook for the fashion industry is fragile and ambiguous. Moving ahead, industry players are required to make appropriate strategic decisions and invest in creativity and agility and succeed whenever the market bounces back. </p>
                 </div>
               </div>
             </div>
 
-          
+
             <div class="card">
               <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Are You Doing Right by Your DEI Strategies</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Fashion Tech Innovation: Exciting New Technologies to Watch Out For</button>
                 </h2>
               </div>
               <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">Despite best efforts made with the right intention, companies are unable to achieve DEI and fail to attract top talent owing to inclusivity-related issues in workplaces. Organizations are required to follow certain best practices and initiatives to make people feel safe, valuable and included in the workplace. The following are few of the actionable tactics to achieve DEI.</p>
-                  <br/>
+                  <p class=" m-0">Many of the top-notch retailers are out of business because of the absence of any uniqueness and novelty. In order to sustain themselves in the market, companies are required to focus on consumer engagement, sustainability, and digital platforms. The use of AI can help in minimizing the shopping challenges for fashion online and AR can add newness and innovative experiences to the physical store by providing customers with engaging ways to shop. Fashion technology in the new era is also eco-friendly helping the fashion industry to minimize its impact on the environment by developing eco-friendly materials, optimizing manufacturing processes to cut down on wastage, and reducing harmful emissions. Some of the innovations in technology have the potential to influence the future of the fashion industry and make it a more eco-friendly, kinder, and ethical industry. Besides, technology, governments need to ensure that the brands are sustainable and ethical, and the consumption habits and actions of the consumers are all crucial for ensuring that the fashion industry has minimal impact on the environment. Growing efficiency on production lines, sensor technology, and robots roaming factory floors are helping fashion labels to monitor stock as and when it gets transported across the world. AI technology on the other hand works as a personal shopping online as well as an in-store assistant for customers. Artificial intelligence is helping brands optimize their production lines, AR is augmenting the customer experience, and VR is developing potential novel revenue-earning opportunities.</p>
+                  <br />
                   <ul>
-                    <li>Building the Sense of Belonging - Employees in an organization need a sense of belonging for thriving and contributing their best to the company. The sense of belonging represents a psychological requirement that needs to be effectively met to help employees feel connected with the organization, leading to high level of creativity and engagement in workplaces. Moreover, companies can also achieve the sense of belonging by creating an inclusive culture and striving for diversity</li>
-                    <li>Top-Down & Bottom-Up Approach - While the top-down approach is known to improve compliance, it fails to drive commitment. In order to achieve the desirable change, organizations are required to combine top-down and bottom up approaches. Leaders are required to define the company’s vision, seek accountability, and provide a safe working environment for people. Leadership needs to assess the diversity and inclusion policy for defining the purpose. On the other hand, employees must share individual perspectives through dialogue, get connected and contribute to D&I initiatives for creating the desirable culture. From leaders through to frontline workers, all individuals are required to understand their respective roles in the organizational culture and D&I initiatives.</li>
-<li>	Minimizing Fear - Workplace settings that challenge people’s beliefs make them respond with distrust and fear. While fear is perceived as a strong motivator and productivity enhancer, it leads to narrow perspectives and hinder efforts to make workplaces inclusive. By connecting people through storytelling and shared experiences, organizations can move towards desirable positive changes. In addition to identifying areas for improvement, employers need to spotlight success as well as cerebrate it. These approaches help companies in reducing fear and driving worker commitment to desired diversity and inclusion.</li>
-                
-<li>	Helping Employees Contribute Full Potential - Like the society, the organizational culture is also optimized for training and rewarding people who are fit and align with its specific goal. However, the exclusive focus on a specific set of employees promotes exclusion rather than inclusion. Unfair benefits and salaries to people from specific backgrounds led to unhealthy culture and affect diversity. Organizations need to strive for a culture that helps people in contributing their full potential. The approach requires re-imagination of the corporate culture and beliefs as well as efforts to ensure fairness for workers to make them feel valued and accepted. In addition, equal and fair career advancement and growth opportunities allow organizations to attract and retain the talent.</li>
-<li>	Going Beyond Traditional Hiring Process - While the hiring process helps companies achieve diversity numbers, it doesn’t guarantee the inclusive culture and the worker experience goes beyond the offer letter. In order to nurture and retain the talent, companies need to focus on end-to-end worker experience and create conditions to promote inclusion. As D&I initiatives go beyond the hiring process and cover diverse aspects in routine operations, organizations need to adapt the entire process for scaling inclusive and diverse behaviors. The focus of traditional hiring process on academic background and the job experience hinders diversity. The integration of reliable and valid personality assessments is an effective option to measure motivations, personality traits and skills of a candidate. Companies considering personality tests for the hiring process are more likely to achieve diverse workforces.</li>
-<li>	Inclusive Leadership -The continuous shift of organizations towards diversity and inclusion is creating the need for leaders who can identify exclusionary behaviors and practices for prompt actions. Inclusive leadership represents a crucial skill for organizations that are coordinating diverse teams and enabling employees to achieve peak performance. Inclusive leaders touch different aspects of the diversity and inclusion policy to help companies in attaining their objectives. These leaders set standards and norms for business practices as well as create environments that encourage people to contribute to their full potential. Inclusive leadership optimizes unique and individual views, perspectives and experiences for benefitting all stakeholders.</li>
-<li>	Inclusion Should be a Continuous Process - Inclusion is not limited to a typical training session and represents an ongoing process, requiring people to identify moments that can be used for building new habits depicting inclusion. Putting these habits into action along with providing a supportive environment for healthy conversations can allow companies to achieve real change. Using employees as cohorts for prompting and driving inclusion is a more effective approach in comparison to conventional training sessions. In addition, companies need to encourage inclusive language that addresses both male and female employees to help them feel included and connected. Organizations are also required to focus on regular feedback for listening to employees and their concerns for desirable actions.</li>
+                    <li><strong>Novel Fabrics and Material Innovation -</strong> Materials are a very crucial part of the fashion and clothing industry. Novel fabrics are undoubtedly the future of the fashion industry and will enable designers to appeal to customers as being sustainable and differentiating from the competition. Non-biodegradable and synthetic fibers are utilized in nearly 72% of the garments that are manufactured today. Novel fabrics enable designers to get innovative and artistic and develop sustainable materials. Developing sustainable fabrics will aid in reducing the production of materials that are developed using non-biodegradable fibers and plastics. Besides, animals can also be saved from being killed as the innovation will enable apparel manufacturers to develop eco-friendly silk, fur, and leather without the need for any animals. Companies such as Modern Meadow are developing products utilizing lab-grown leather without making use of any animal's skin. Similarly, other companies such as EntoGenetics and Bolt Threads are developing highly strong spider silk. Likewise, technology giant, Google, is also developing project Jacquard, which is being developed out of the company’s Advanced Technology and Projects Lab, which is an assortment of conductive threads for weaving touch-responsive textiles such as rugs, tablecloths, clothing, or anything else that is made using fabric.</li>
+                    <li><strong>Innovative Eco-Materials -</strong> The fashion industry is investing largely in closed-loop recycling systems for minimizing wastage. Technological developments are offering several ways for enhancing the sustainability of fashion, from providing eco-friendly dyeing methods to lab-developed sustainable material choices for fashion manufacture. Gucci for instance is trying to explore live-stock free, eco-friendly materials, and Lululemon and Hermès are trying to use mycelium, a material that is developed from fungus, as a substitute for leather. With packing claiming a considerable share of plastic fashion manufacture per year, companies are increasingly offering packing that customers can compost at home, offering rich nutrients back to the earth. </li>
+                    <li><strong>Virtual Influencers Gaining Popularity -</strong> Social media influencers have gained immense popularity in the fashion industry in the last couple of years. Virtual influencers are completely virtual personalities that are developed on social media channels with the main focus of selling clothes and other products.  Many fashion labels make use of these influencers for marketing their products. Some of the benefits of virtual influencers are that the pictures can be taken and products or items can be styled as per the company’s requirements, and the brands do not have to fear about lack of cooperation or damaging behavior from the influencer. However, some consumers find presentations from these influencers very unrealistic, overly curated, and too perfect. Companies are making use of synthetic media in the way of computer-generated characters which can imitate human influencers on the social media platform.  </li>
+                    <li><strong>Virtual Fashion -</strong> Digital-native consumers are purchasing virtual fashion- intangible garments which they can purchase and wear in online or the virtual world. Ralph Lauren, for instance, introduced a virtual store on Roblox, where brands can buy digital garments that are stimulated by real-world designs. </li>
+<li><strong>Live Streaming -</strong> Social media in today’s era is offering innumerable opportunities for fashion labels to establish connections with their probable customers. Sales through social media platforms are likely to boost in the near future, which is expected to be driven by ‘live commerce’ sales where companies sell their products directly to consumers via broadcast events instantly on social media. </li>
+<li><strong>Mobile Commerce and Fashion Applications -</strong> As consumers are spending more and more of their time on tablets and mobile phones, the fashion industry is taking advantage of this and is developing various applications as well as mobile tech. Developing apps makes it very easy for fashion labels to establish connections with customers. Vinted and Depop are some examples of fashion markets where in shoppers can sell or purchase clothes. Clothes renting apps such as On Loan and By Rotation have also been gaining immense popularity in the last few years. </li>
+<li><strong>Rise of 3D Software -</strong> A new generation of fashion labels and fashion designers is growing across the world, which is recreating the conventional ready-to-wear model and making it into eco-friendly, precise, and visually appealing. The new generation of designers is also trying to learn all the new digital skills and deliver the actual change for the fashion supply chain. Today, there is a wide variety available in specialized software for 3D creation, including Marvelous Designer, Optitex, and LO3D programs among others. Digital pattern-making programs such as Lectra or Geber Technology are also available as transversal industry design tools for the furniture, fashion, and automotive sectors. Fashion designers today can develop, alter, change and revise fashion apparel in much lesser time as compared to the conventional methods, produce virtual samples in just hours and work as a team even remotely. Designers can also design garments utilizing virtual fabrics and modify and tailor the finishes and lengths, making fittings for even virtual avatars. For instance, Balmain has recently unveiled a completely virtual showroom, Final Fantasy and Louis Vuitton have partnered for creating digital garments, Carlings has developed a virtual collection that is applied to the customers’ photographs, and The Fabricant, a Dutch-based company develops digital-only apparel and products that are in high demand in virtual gaming platforms. Taking all these developments into consideration, future fashion designers are likely to deal with a very high level of hybridization between the digital world and the actual world and uncover and develop novel ways of converting the design process.</li>
 
-</ul>
+                  </ul>
 
                 </div>
               </div>
             </div>
 
-       
+
             <div class="card">
               <div id="headingThree" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                     aria-controls="collapseThree"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Trending DEI Trends & Strategies for 2023</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Trending Fashion and Design Trends for 2023</button>
                 </h2>
               </div>
               <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">How things would play out in 2023 and beyond will be largely driven by certain key trends in the area of corporate diversity, in addition to the actions that leaders would take around these trends.</p>
-                  <br/>
-                  
-                  <ul>
+                  <p class=" m-0">Some of the biggest trending technologies that are expected to dominate the fashion and design industry in 2023 and beyond include the following:</p>
+                  <br />
 
-<li>	Managing the Evolving Remote Workforce - Even as the pandemic recedes to the endemic stage and businesses are resuming operations with office space open as usual, the remote work model is continuing to co-exist with the in-office set-up. With a certain number employees in the workforce still working remotely, businesses face an uphill task. Considering each of the WFH employee works under a different living condition, the challenges are unique with no single solution. As in case of women employees, they need to balance work and home, and might lack a dedicated space for work from where they can focus on work alone. Businesses need to brainstorm means to bridge such gaps and overcome challenges of this distributed model.</li>
-<li>	Managing the Multigenerational Workforce - The current businesses work with a workforce that is the most diverse of all times. The characteristic feature of this workforce is the co-existence of employees that belong to five different generations. In companies working with all these five generations of people, a typical workforce mix would comprise the silent generation (people born between 1928 and 1945), the baby boomers (born between 1946 and 1964), the generation X (born between 1965 and 1980), the generation Y or millennials (born between 1981 and 96) and the newest of all generation Z (from 1997 and continuing). Individually, people from each of these generations have unique expectations from their work lives, and bring with them different voices, skills and life experiences to their workplace that ultimately shapes a company’s work culture. Such a diverse workforce spanning five generations requires employers, business leaders and human resource managers to be well acquainted with the capabilities and characteristics of each of the generation, and have well framed strategies to make employees of all generations feel inclusive and celebrated for who they are.</li>
-<li>	Purging Unconscious Bias at Workplaces - Unconscious bias, the tendency to form opinions, process information and arrive at decisions on the basis of inherent or unconscious prejudices and biases towards certain groups of people or individuals, impacts the type of relationship an employer or business leader develops with each of its employee. Since this relationship influences the decisions that are made at workplaces, where a truly inclusive workforce comprises of people with varied ethnicity, backgrounds and experiences, it is important that businesses and their leaders have strategies in place that ensure such biases and prejudices are purged or controlled regularly.</li>
-<li>	Embracing Diverse Gender Identity & Expression - The recent years have seen awareness increase about the diverse gender identities and various gender expressions. As organizations the world have on their payroll people with such diverse gender identities, they need to adopt inclusive practices that may include providing gender-neutral restrooms, employee health benefits that support transitioning individuals, and creating a mindful atmosphere where use of inclusive language is encouraged to communicate with transgender or non-binary employees, among others.</li>
-<li>	Preparing for Systemic Change - Over the previous couple of years, there has been a rise in instances of systemic injustices reflective of the flaws that exist globally on institutional level. Appalling crimes against innocent people of color have brought to fore the unjust and racist nature of society that continues to exists even in the most developed nations. Businesses need to incorporate some critical systemic changes that would positively influence both the workplaces and societies at large. They can ensure racial discrimination is kept at bay by introducing policies that stress on safety of people of all races and create positive experiences at workplaces</li>
-<li>	Improved Transparency in Goal - A business with a diverse workforce need not imply a higher level of inclusion and equity. Even when organizations step up efforts to increase their diversity, the same might not translate into greater efforts at inclusivity. In order to become a truly diverse and inclusive organization, businesses would need to set transparent goals and targets and introduce relevant D&I initiatives. These measures would make those leading the organization more accountable, promote honest interactions between employees and their superiors, and foster an environment where employees feel encouraged to share their viewpoint, solutions and/or ideas.</li>
-<li>	The Time to Hire Diversity Professionals Has Come - With workplaces becoming more diverse, companies might require professional help. Diversity professionals are one of the newest categories of experts that organizations are hiring to address their D&I requirements. Diversity professionals come with the vision and mission to create a diverse and inclusive workplace, and handle multiple roles involving human resource and recruitment, as well as leadership responsibilities. They might need to multitask to organize and conduct D&I related educational sessions, introduce novel ideas for improved D&I atmosphere at a workplace, create an inclusive workplace culture, encourage all to use inclusive language, manage workplace discrimination or harassment related complaints, among others. The need for and role of diversity professionals is only expected to grow in the coming years.</li>
-<li>	Supporting Mental Health of Employees - Supporting mental health of employees has emerged as a priority for most organizations in order to ensure that their diverse talent pool continues to perform efficiently for optimal operational performance of a business. Businesses are aware of the toll the global pandemic and its repercussions have taken on the mental wellbeing of employees, and the difficulties their employees are facing in adjusting to the new normal. While some lost their jobs as businesses closed down, others had to adjust to the new work-from-home model, all while living in the fear of contracting coronavirus, which created a stressful environment for most people. By creating a supportive environment, businesses can ensure that metal health of their employees does not get compromised. They may achieve this through simpler means such as by encouraging managers, supervisors and peers to converse and empathize with each other.</li>
-<li>	Avoiding Gestures of Tokenism - Prioritizing diversity and inclusion means much more that simply hiring a woman in a boardroom or team full of men, or making way for one people of color in the workplace. Such a move could simply reflect an attitude of tokenism. Organizations need to be mindful in their approach towards D&I, and incorporate strategies and policies that truly promote diversity and inclusion.</li>
-</ul>
-                
+                  <ul>
+                    <li><strong>Artificial Intelligence (AI) -</strong> Simulating human intelligence by machines or computers is artificial intelligence (AI), which is one of the greatest and key technologies that is being used across various industries and not only fashion. Many of the fashion companies today have been using AI for broad array of applications, such as identifying purchasing patterns, understanding fashion aesthetics, analyzing and forecasting trends and improving customers experiences. Besides, the fashion companies are also utilizing AI for getting information relating to inventory, improve sales, predict future trends and many others. Companies are installing touchscreens and chatbots inside the stores for delivering tailored product advice and enhancing customer experience. AI’s technology consists of various algorithms that can monitor the customers’ journey in order to suggest them appropriate products. Today almost all the fashion brands make use of AI chat technology for augmenting their customers’ experience. For instance touch screens are installed in the retail shops for providing tailored product suggestions to the customers with the help of AI technology. AI can be schooled to identify various aesthetics, including style, color and texture preferences. In addition to customer service technology, supply chain management, and trend prediction are some other areas that offer lucrative business opportunities for AI.  Real-time tracking of inventory stocks is very crucial for companies as this not only makes warehouse operations as well as management efficient but it also saves lot of time. If inventory tracking is integrated AI’s data prediction tools for predicting the trends, then the companies can have major competitive advantage. Conventional ways of trend prognosis consist of observation and collection of data from trend spotters, influencers, and fashion designers. However, with AI technology companies have instant access to all the information that enables them to plan correct styles as well as quantities in time. 
+                      <br/>
+                      <br/>
+                      Intelligence Node, An AI-Driven Search Discovery Platform: Streaming live videos plays a great role in the lives of most of the customers. Ranging from virtual events to fitness, to shopping everything has taken over the after COVID market. Launch of 5G technology enables novel streaming media formats with high-quality and high-definition graphics, and consumers can actually try out the designs prior to purchasing the clothes. Some of the brands such as Gucci and Tommy Hilfiger are providing digital showrooms for gauging the customers tastes and interests. While some other brands such as Taylor Stitch enable the customers to pre-order their digital designs prior to getting manufactured. Similarly, many of the eyewear brands such as Glasses Direct and Firmoo are also enabling the customers to digitally try out their glasses prior to purchasing. All the latest technologies display how AI is the future of fashion industry and is shaping right from predicting trends to how consumers can view and purchase the products.
+
+                    </li>
+
+                    <li><strong>Virtual Reality (VR) -</strong> Virtual Reality (VR) or Augmented Reality (AR) is another popular technology that is making rapid waves in the fashion industry. While VR includes a completely simulated environment, AR on the other hand adds simulations and interactivity in the real-world environment. VR and AR are two exciting technologies for the fashion sector, as they enable to combine the digital and physical worlds of the retail. VR technology is largely used in the fashion industry for enabling the customers to try out the clothes virtually, the technology is also used for developing a VR version of a complete store. </li>
+                    <li><strong>Augmented Reality (AR) -</strong> Augmented reality technology allows to cover digital objects over the real world, where customers can interact instantly. Today, a large percentage of customers intend to shop more with the companies that are incorporated with AR, as this technology offers exciting and engaging experiences to the customers. AR is estimated to be largely used for virtual try-on.  </li>
+                    <li><strong>3D Printing -</strong> 3D printing is a manufacturing process where actual products can be developed from digital designs. The technology allows complicated digital designs to be accurately printed by a machine, thus reducing any kind of wastage of resources and manufacturing faults. The usage of 3D printing also helps in reducing the wastage of textiles, wastage of water, and minimizes contamination of water and air pollution.  3D printing also provides numerous choices to the designer in terms of fabric, creativity, and clothing structure. The technology enables fashion labels to improve their customization and meet sustainability goals. 3D printing, however, is currently being used only to show pieces. But the technology is gaining momentum in the fashion industry, and more and more labels are relying on technology and novelty for becoming more sustainable in the market. </li>
+                    <li><strong>Blockchain -</strong> This is another novel technology that is transforming the way businesses are conducted in the fashion industry. A blockchain is a long-lasting and irreversible database that enables to record the transactions and tracking the assets. Blockchain emerges as an important tool for providing efficiency and transparency in the supply chain, thus allowing all parties to exchange documents and data in a secure way. The technology also provides an exquisite digital ID to every fashion product so that these items can be tracked easily. For instance, Chanel is one of the several labels that is introducing a digital passport that via an exquisite embedded metal plate will approve the authenticity of a product. Some other labels use blockchains for enhancing transparency as consumers are increasingly looking for ethical and sustainable products. </li>
+                    <li><strong>Internet of Things (IoT) - </strong>The IoT consists of all the products which have technology incorporated into them for enabling the products to use internet connectivity. In other words, IoT defines a network of products that are implanted with technology for enabling connection and exchange of information/ data over the internet. Fashion products and items can also fall under this category and have the potential to address to the unique and novel demands of today’s customers. This is one of the budding and stimulating technological trends that is dominating the fashion industry. Players in the fashion industry are striving hard to mirror the realities of the daily lives of customers. From being very comfortable to making use of novel and exciting fabric materials, the fashion industry is trying hard to meet the demands of the modern lifestyle of consumers. Wearable gadgets and apparel technology have made several advancements in the way customers can interact with their surroundings and bodies. Responsive sportswear, smart clothing, multi-functional designs, and wearable spaces have all undergone major transformations over the past few years. Wearability today has a whole new meaning as the consumers ‘real’ lives are increasingly being mixed with virtual ones. Advancements in technology have changed the way businesses are being conducted, IoT allows sharing of data, monitoring security, and inventory management, and increasing productivity and efficiency. IoT technology enables companies to enhance their customer experience, by enabling the customers to actually take the internet as well as data sharing with them on daily basis. IoT can be used in workout clothes for measuring an individual’s heartbeat, and in babies' clothes for identifying the baby's sleep pattern. Besides, IoT products can also offer design advice based on the customers’ actions.  For instance, Fuseprojects` power suits allow the older population suffering from muscle dystrophia to walk, stay active, and stand for long period of time. Some of famous examples of IoT include doorbells, watches, and smart lightbulbs. With the help of this technology, fashion labels can control stock and minimize loss of product during shipping by installing trackers in containers.
+                      <li><strong>Synthetic Media -</strong> As AI develops fashion labels will have innumerable fashion innovations for exploration, and one such avenue is synthetic media. Synthetic media is the content developed utilizing algorithms learned from photos, text, videos, audio, and other text for creating realistic data. Companies will be able to develop content in very little time. </li>
+                      <li><strong>Bio-Packaging -</strong> Online shopping forms a big part of the fashion industry, and a large percentage of the online shopping packing is made using plastics and which is easily thrown away after a single use. Bio packaging, however, can come to the rescue of this issue, as these are manufactured using renewable resources or are biodegradable, or both.</li>
+
+                  </ul>
+>
                 </div>
               </div>
             </div>
@@ -261,98 +229,99 @@
         </div>
       </div>
     </div>
-  </section-->
+    </section-->
 
-  <!--====  End of Page Title  ====-->
-  <!--================================
+    <!--====  End of Page Title  ====-->
+    <!--================================
    PROGARAM DETAILS
 =================================-->
 
-<section class="section bg-light">
-  <div class="container">
-   <eventcolapse-component></eventcolapse-component>
-  </div>
+    <section class="section bg-light">
+      <div class="container">
+        <eventcolapse-component></eventcolapse-component>
+      </div>
 
-</section>
+    </section>
 
 
-<!--================================
+    <!--================================
 =    DOMAIN EXPERTS
 =================================-->
 
-<section class="section pt-4 " id="domain-experts">
-  
-</section>
+    <section class="section pt-4 " id="domain-experts">
+
+    </section>
 
 
 
-  <!--============================
+    <!--============================
 	           Footer            
 =============================-->
 
-  <footer-component></footer-component>
+    <footer-component></footer-component>
 
 
-  <!---============================
+    <!---============================
            ScrollTop        
 =============================--->
 
-  <scrolltop-component></scrolltop-component>
+    <scrolltop-component></scrolltop-component>
 
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+    <script src="plugins/google-map/gmap.js"></script>
 
-  <script src="js/script.js"></script>
-  <script src="./js/submenu_select.js"></script>
-  <script src="./js/jquery.readall.js"></script>
-
-
-  <!---WEB COMPONETNS-->
-  <script src="./webcomponts/headerComponents.js"></script>
-  <script src="./webcomponts/FooterComponent.js"></script>
-  <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
-  <script src="./webcomponts/banner.js"></script>
-
-  <script>
-    $('.textless').readall({
-      showheight: null,
-      showrows: 8
-    });
+    <script src="js/script.js"></script>
+    <script src="./js/submenu_select.js"></script>
+    <script src="./js/jquery.readall.js"></script>
 
 
-  </script>
+    <!---WEB COMPONETNS-->
+    <script src="./webcomponts/headerComponents.js"></script>
+    <script src="./webcomponts/FooterComponent.js"></script>
+    <script src="./webcomponts/ScrollToTop.js"></script>
+    <script src="./webcomponts/dummytext.js"></script>
+    <script src="./webcomponts/banner.js"></script>
+
+    <script>
+      $('.textless').readall({
+        showheight: null,
+        showrows: 8
+      });
 
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-$('#google_translate_element').bind('DOMNodeInserted', function(event) {
-$('.goog-te-menu-value span:first').html('LANGUAGE');
-$('.goog-te-menu-frame.skiptranslate').load(function(){
-    setTimeout(function(){
-    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
-    }, 100);
-});
-});
-});
-</script>
+    </script>
 
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+          $('.goog-te-menu-value span:first').html('LANGUAGE');
+          $('.goog-te-menu-frame.skiptranslate').load(function () {
+            setTimeout(function () {
+              $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+            }, 100);
+          });
+        });
+      });
+    </script>
+
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+      }
+    </script>
 </body>
 
 </html>

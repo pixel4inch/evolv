@@ -24,7 +24,7 @@
       "Title": "AI & ML",
       "Links": "./ai.html",
       "Multi": "Multi",
-      "dg": "dg-active",
+      "dg": "",
       "date": "April 05",
       "icon": "./images/evolv/icons/calender/AI.png"
     },
@@ -64,26 +64,30 @@
       "Title": "AR & VR & XR",
       "Links": "./ar.html",
       "Multi": "",
-      "dg": "dg-active",
+      "dg": "",
       "date": "April 13",
       "icon": "./images/evolv/icons/calender/ar.png"
     },
+ 
     {
-      "Title": "Tech Wizards",
-      "Links": "./techwizards.html",
-      "Multi": "Multi",
+      "Title": "Nanotechnology",
+      "Links": "./nanotechnology.html",
+      "Multi": "",
       "dg": "",
       "date": "April 14",
-      "icon": "./images/evolv/icons/calender/techwidge.png"
+      "icon": "./images/evolv/icons/calender/Nanotechnology.png"
     },
+
+  
     {
-      "Title": "Fundraising in 2023",
-      "Links": "./fundraising.html",
+      "Title": "Drones",
+      "Links": "./drones.html",
       "Multi": "",
       "dg": "",
       "date": "April 17",
-      "icon": "./images/evolv/icons/calender/FundRaising.png"
+      "icon": "./images/evolv/icons/calender/Drones.png"
     },
+ 
     {
       "Title": "Sustainability",
       "Links": "./sustaiability.html",
@@ -91,15 +95,9 @@
       "dg": "",
       "date": "April 18",
       "icon": "./images/evolv/icons/calender/Sustainability.png"
+      
     },
-    {
-      "Title": "Mad Science ",
-      "Links": "./madscience.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "April 19",
-      "icon": "./images/evolv/icons/calender/MadScience.png"
-    },
+
     {
       "Title": "Diversity, Equity & Inclusion (DEI)",
       "Links": "./dei.html",
@@ -108,14 +106,7 @@
       "date": "April 20",
       "icon": "./images/evolv/icons/calender/Diversity.png"
     },
-    {
-      "Title": "Startup Ecosystems ",
-      "Links": "./startup.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "April 21",
-      "icon": "./images/evolv/icons/calender/Ecosystem.png"
-    },
+
     {
       "Title": "AutoTech - Electric Vehicles",
       "Links": "./electricvehicles.html",
@@ -128,13 +119,13 @@
       "Title": "Digital Health",
       "Links": "./digitalhealth.html",
       "Multi": "Multi",
-      "dg": "dg-active",
+      "dg": "",
       "date": "April 25",
       "icon": "./images/evolv/icons/calender/DigitalHealth.png"
     },
     {
       "Title": "DeepTech",
-      "Links": "./deeptecch.html",
+      "Links": "./deeptech.html",
       "Multi": "Multi",
       "dg": "",
       "date": "April 26",
@@ -152,7 +143,7 @@
       "Title": "Gaming",
       "Links": "./gaming.html",
       "Multi": "",
-      "dg": "dg-active",
+      "dg": "",
       "date": "April 28",
       "icon": "./images/evolv/icons/calender/Gaming.png"
     }
@@ -162,7 +153,7 @@
       "Title": "AutoTech - Autonomous Vehicles",
       "Links": "./autonomous.html",
       "Multi": "",
-      "dg": "dg-active",
+      "dg": "",
       "date": "May 02",
       "icon": "./images/evolv/icons/calender/AV.png"
     },
@@ -186,7 +177,7 @@
       "Title": "Cleantech (GreenTech)",
       "Links": "./cleantech.html",
       "Multi": "",
-      "dg": "dg-active",
+      "dg": "",
       "date": "May 05",
       "icon": "./images/evolv/icons/calender/CleanTech.png"
     },
@@ -194,7 +185,7 @@
       "Title": "EdTech",
       "Links": "./edtech.html",
       "Multi": "",
-      "dg": "dg-active",
+      "dg": "",
       "date": "May 08",
       "icon": "./images/evolv/icons/calender/EdTech.png"
     },
@@ -226,18 +217,11 @@
       "Title": "Supply Chain Management",
       "Links": "./supplychain.html",
       "Multi": "",
-      "dg": "dg-active",
+      "dg": "",
       "date": "May 12",
       "icon": "./images/evolv/icons/calender/SupplyChain.png"
     },
-    {
-      "Title": "European Startup Ecosystems",
-      "Links": "./ese.html",
-      "Multi": "",
-      "dg": "",
-      "date": "May 15",
-      "icon": "./images/evolv/icons/calender/Ecosystem.png"
-    },
+   
     {
       "Title": "AgriTech",
       "Links": "./agritech.html",
@@ -266,7 +250,7 @@
       "Title": "Robotics",
       "Links": "./robotics.html",
       "Multi": "",
-      "dg": "dg-active",
+      "dg": "",
       "date": "May 19",
       "icon": "./images/evolv/icons/calender/Robotics.png"
     },
@@ -302,22 +286,7 @@
       "date": "May 25",
       "icon": "./images/evolv/icons/calender/MARTECH.png "
     },
-    {
-      "Title": "CX 360",
-      "Links": "./cx360.html",
-      "Multi": "",
-      "dg": "",
-      "date": "May 29",
-      "icon": "./images/evolv/icons/calender/CX360.png"
-    },
-    {
-      "Title": "GEN Z",
-      "Links": "./gen.html",
-      "Multi": "",
-      "dg": "",
-      "date": "May 30",
-      "icon": "./images/evolv/icons/calender/GenerationZ.png"
-    },
+
     {
       "Title": "Charity",
       "Links": "./charityNGO.html",
@@ -328,29 +297,42 @@
     }
   ],
   "JUNE": [
+
+
     {
-      "Title": "Nanotechnology",
-      "Links": "./nanotechnology.html",
-      "Multi": "",
+      "Title": "Tech Wizards",
+      "Links": "./techwizards.html",
+      "Multi": "Multi",
       "dg": "",
       "date": "June 01",
-      "icon": "./images/evolv/icons/calender/Nanotechnology.png"
+      "icon": "./images/evolv/icons/calender/techwidge.png"
     },
+
+
     {
-      "Title": "Drones",
-      "Links": "./drones.html",
+      "Title": "Fundraising in 2023",
+      "Links": "./fundraising.html",
       "Multi": "",
       "dg": "",
-      "date": "June 02",
-      "icon": "./images/evolv/icons/calender/Drones.png"
+      "date": "June 05 ",
+      "icon": "./images/evolv/icons/calender/FundRaising.png"
     },
+
     {
       "Title": " SaaS",
       "Links": "./saas.html",
       "Multi": "",
       "dg": "",
-      "date": "June 05",
+      "date": "June 09",
       "icon": "./images/evolv/icons/calender/sass.png"
+    },
+    {
+      "Title": " Startup Ecosystems",
+      "Links": "./startup.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "June 06",
+      "icon": "./images/evolv/icons/calender/Ecosystem.png"
     },
     {
       "Title": "Blockchain",
@@ -360,14 +342,16 @@
       "date": "June 07",
       "icon": "./images/evolv/icons/calender/Blockchain.png"
     },
+    
     {
-      "Title": "GovTech",
-      "Links": "./govt.html",
-      "Multi": "",
+      "Title": "Mad Science",
+      "Links": "./madscience.html",
+      "Multi": "Multi",
       "dg": "",
       "date": "June 08",
-      "icon": "./images/evolv/icons/calender/GovTech.png"
+      "icon": "./images/evolv/icons/calender/MadScience.png"
     },
+    
     {
       "Title": "Wellbeing",
       "Links": "./wellbeing.html",
@@ -377,6 +361,14 @@
       "icon": "./images/evolv/icons/calender/Wellbeing.png"
     },
     {
+      "Title": "CX 360",
+      "Links": "./cx360.html",
+      "Multi": "",
+      "dg": "",
+      "date": "June 13",
+      "icon": "./images/evolv/icons/calender/CX360.png"
+    },
+    {
       "Title": "Digital Banks",
       "Links": "./digitalbanks.html",
       "Multi": "",
@@ -384,6 +376,17 @@
       "date": "June 14",
       "icon": "./images/evolv/icons/calender/DigitalBanks.png"
     },
+
+    {
+      "Title": "GEN Z",
+      "Links": "./gen.html",
+      "Multi": "",
+      "dg": "",
+      "date": "June 15",
+      "icon": "./images/evolv/icons/calender/GenerationZ.png"
+    },
+ 
+
     {
       "Title": "Quantum Computing",
       "Links": "./quantumcomputing.html",
@@ -400,8 +403,17 @@
       "date": "June 19",
       "icon": "./images/evolv/icons/calender/SpaceTech.png"
     },
+
     {
-      "Title": "FoodTech",
+      "Title": "Gov Tech",
+      "Links": "./govt.html",
+      "Multi": "",
+      "dg": "",
+      "date": "June 20",
+      "icon": "./images/evolv/icons/calender/GovTech.png"
+    },
+    {
+      "Title": "Food Tech",
       "Links": "./FoodTech.html",
       "Multi": "",
       "dg": "",
@@ -421,7 +433,7 @@
       "Links": "./smartcities.html",
       "Multi": "",
       "dg": "",
-      "date": "June 26",
+      "date": "June 22",
       "icon": "./images/evolv/icons/calender/SmartCities.png"
     },
     {
@@ -439,36 +451,52 @@
       "dg": "",
       "date": "June 29",
       "icon": "./images/evolv/icons/calender/ImapctInvestment.png"
-    },
-    {
-      "Title": "EVOLV™ ANNUAL SUMMIT",
-      "Links": "",
-      "Multi": "",
-      "dg": "",
-      "live": "live",
-      "date": "June 26-30",
-      "icon": "./images/evolv/icons/calender/live.png"
-    },
-    {
-      "Title": "INNOVATOR AWARDS NIGHT",
-      "Links": "",
-      "Multi": "",
-      "dg": "",
-      "live": "live",
-      "date": "June 26-30",
-      "icon": "./images/evolv/icons/calender/live.png"
-    },
-    {
-      "Title": "B20 2023 FAST TRACK",
-      "Links": "",
-      "Multi": "",
-      "dg": "",
-      "live": "live",
-      "date": "June 26-30",
-      "icon": "./images/evolv/icons/calender/live.png"
     }
+
   ],
+
+"JULY":[
+    
+      {
+        "Title": "Fashion & Design",
+        "Links": "./fashiondesign.html",
+        "Multi": "",
+        "dg": "",
+        "date": "July 03",
+        "icon": "./images/evolv/icons/calender/Fashion.png"
+      },
+
+      {
+        "Title": "Hiring & Workforce",
+        "Links": "./HiringWorkforce.html",
+        "Multi": "",
+        "dg": "",
+        "date": "July 05",
+        "icon": "./images/evolv/icons/calender/HiringWorkforce.png"
+      },
+  
+      {
+        "Title": "Internet of Things",
+        "Links": "./InternetThings.html",
+        "Multi": "",
+        "dg": "",
+        "date": "July 10",
+        "icon": "./images/evolv/icons/calender/InternetofThings.png"
+      },
+
+      {
+        "Title": "Power Women Of Tech",
+        "Links": "./powerwomentech.html",
+        "Multi": "",
+        "dg": "",
+        "date": "July 12",
+        "icon": "./images/evolv/icons/calender/Pow.png"
+      }
+    
+],
+
   "AUG": [
+
     {
       "Title": "Mad Science",
       "Links": "./madscience.html",
@@ -477,6 +505,7 @@
       "date": "August 10",
       "icon": "./images/evolv/icons/calender/MadScience.png"
     },
+
     {
       "Title": " Startup Ecosystems",
       "Links": "./startup.html",
@@ -485,6 +514,7 @@
       "date": "August 17",
       "icon": "./images/evolv/icons/calender/Ecosystem.png"
     },
+
     {
       "Title": "Tech Wizards",
       "Links": "./techwizards.html",
@@ -493,6 +523,7 @@
       "date": "August 21",
       "icon": "./images/evolv/icons/calender/techwidge.png"
     },
+   
     {
       "Title": "DeepTech",
       "Links": "./deeptecch.html",
@@ -516,9 +547,14 @@
       "dg": "",
       "date": "August 30",
       "icon": "./images/evolv/icons/calender/ElectricVehicles.png"
-    }
+    } 
+ 
+
+
   ],
+
   "SEP": [
+
     {
       "Title": "Biotech",
       "Links": "./biotech.html",
@@ -531,7 +567,7 @@
       "Title": "Digital Health",
       "Links": "./digitalhealth.html",
       "Multi": "Multi",
-      "dg": "dg-active",
+      "dg": "",
       "date": "September 05",
       "icon": "./images/evolv/icons/calender/DigitalHealth.png"
     },
@@ -547,7 +583,7 @@
       "Title": "AI & ML",
       "Links": "./ai.html",
       "Multi": "Multi",
-      "dg": "dg-active",
+      "dg": "",
       "date": "September 06",
       "icon": "./images/evolv/icons/calender/AI.png"
     },
@@ -558,108 +594,8 @@
       "dg": "",
       "date": "September 07",
       "icon": "./images/evolv/icons/calender/Sustainability.png"
-    },
-    {
-      "Title": "G20 SUMMIT",
-      "Links": "https://www.b20india2023.org/AboutB20",
-      "Multi": "",
-      "dg": "",
-      "live": "live",
-      "date": "September 9 & 10",
-      "icon": "./images/evolv/icons/calender/g20.png"
-    },
-    {
-      "Title": "B20 SUMMIT",
-      "Links": "https://www.b20india2023.org/AboutB20",
-      "Multi": "",
-      "dg": "",
-      "live": "live",
-      "date": "September 9 & 10",
-      "icon": "./images/evolv/icons/calender/b20.png"
     }
-  ],
-  "OCT": [
-    {
-      "Title": "Fashion & Design",
-      "Links": "./fashiondesign.html",
-      "Multi": "",
-      "dg": "",
-      "date": "October 03",
-      "icon": "./images/evolv/icons/calender/Fashion.png"
-    },
-    {
-      "Title": "Hiring & Workforce",
-      "Links": "./HiringWorkforce.html",
-      "Multi": "",
-      "dg": "",
-      "date": "October 05",
-      "icon": "./images/evolv/icons/calender/HiringWorkforce.png"
-    },
-    {
-      "Title": "Internet of Things",
-      "Links": "./InternetThings.html",
-      "Multi": "",
-      "dg": "",
-      "date": "October 09",
-      "icon": "./images/evolv/icons/calender/InternetofThings.png"
-    },
-    {
-      "Title": "Power Women Of Tech",
-      "Links": "./powerwomentech.html",
-      "Multi": "",
-      "dg": "",
-      "date": "October 11",
-      "icon": "./images/evolv/icons/calender/Pow.png"
-    }
-  ],
-  "NOV": [
-    {
-      "Title": "Tech Wizards",
-      "Links": "./techwizards.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "November 02",
-      "icon": "./images/evolv/icons/calender/techwidge.png"
-    },
-    {
-      "Title": "DeepTech",
-      "Links": "./deeptecch.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "November 06",
-      "icon": "./images/evolv/icons/calender/DeepTech.png"
-    },
-    {
-      "Title": "Diversity, Equity & Inclusion (DEI)",
-      "Links": "./dei.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "November 08",
-      "icon": "./images/evolv/icons/calender/Diversity.png"
-    },
-    {
-      "Title": "AutoTech - Electric Vehicles",
-      "Links": "./electricvehicles.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "November 9",
-      "icon": "./images/evolv/icons/calender/ElectricVehicles.png"
-    },
-    {
-      "Title": "Mad Science ",
-      "Links": "./madscience.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "November 13",
-      "icon": "./images/evolv/icons/calender/MadScience.png"
-    },
-    {
-      "Title": " Startup Ecosystems",
-      "Links": "./startup.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "November 14",
-      "icon": "./images/evolv/icons/calender/Ecosystem.png"
-    }
+
   ]
+  
 }

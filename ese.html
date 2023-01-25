@@ -38,16 +38,8 @@
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  <style>
 
-    #datagraphic-block,
-    #gialinkblock{
-      display: none;
-    }
-    
-    </style>
-    
-  
+
 
 </head>
 
@@ -61,25 +53,25 @@
 
   <header-component></header-component>
 
- 
+
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
     $(document).ready(function () {
       $.getJSON("./data/events.json", function (data) {
         var banner = '';
         var datagrapic = '';
-        var domain='';
-        var gialink="";
+        var domain = '';
+        var gialink = "";
         console.log(data)
         $.each(data.eventslist, function (key, value) {
           if (value.Event == "ese") {
             banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-              if( value.eventdomainlink !== undefined ){
-                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-              }
-     
+            datagrapic += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink += `<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+            if (value.eventdomainlink !== undefined) {
+              domain += `  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+            }
+
           }
         });
         $('#pagebanner-block').html(banner);
@@ -89,7 +81,7 @@
 
       }).fail(function () {
         document.write("An error has occurred.");
-      }); 
+      });
     }); 
   </script>
 
@@ -111,261 +103,362 @@
     <div class="container">
       <div class="row align-items-center m-0 ">
         <div class="datagraphic-block" id="datagraphic-block">
-         
+
         </div>
 
         <div class="w-100   text-center" id="gialinkblock">
-         
-       </div>
+
+        </div>
 
       </div>
     </div>
   </section>
 
-  
+
   <!--================================
 =            Page Title            =
 =================================-->
 
-  <!--section class="section">
+<section class="section" id="writeups">
     <div class="container">
+
+
+      <div class="row pb-4 ">
+        <div class="col-sm-12 m-auto text-center -3">
+          <!-- Page Title -->
+          <h1 class="font-display2 ">WHAT'S TRENDING</h1>
+
+
+        </div>
+      </div>
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
-      
+
           <div id="accordionExample" class="accordion custome-accordion border-0">
 
-          
+
             <div class="card">
               <div id="headingOne" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Diversity, Equity &
-                    Inclusion (DEI). Why You Need a Shift in Mindset & Not Just in Policy</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">How Are
+                    European Startups Making Their Mark on the Global Platform?</button>
                 </h2>
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0">We live in an increasingly complex and interconnected world where
-                    shaped by globalization and technological advancements diversity has become the fabric of modern
-                    society. Companies eager to establish a strong presence in a variety of emerging new markets have
-                    initiated the global gold rush for multicultural markets, diverse employees, and untapped consumer
-                    bases. Success in global markets requires multicultural initiatives and a sustained effort to
-                    integrate distinct demographic and cultural diversity into an inclusive environment that fits into
-                    the broader vision of the company’s growth and advancement. This is opening up rich opportunities
-                    for companies to spearhead growth by leveraging their access to a diverse talent pool. While global
-                    diversity of the labor force is good and beneficial for companies to enhance creativity and drive
-                    innovation, the same also challenges long held traditional business ideas and assumptions. Companies
-                    are being forced to effect major structural reorganizations spanning all key areas of business
-                    operations, marketing, talent recruitment and retention functions.</p>
-
-                  <p class=" m-0">Interestingly, despite the growing levels of diversity and
-                    interconnectedness, there is also growing polarization fueled by identity politics and resurgence of
-                    nationalist ideals. Workplaces tend to mirror the sociocultural dynamics at play in our lives
-                    outside work. At a time like the present, the importance, value and positive impact of DEI in modern
-                    enterprises can no longer be debated or undermined. Even amid rapid globalization and changing
-                    perceptions about diversity, ethnic minorities continue to face discrimination in the labor market
-                    and as the global fight towards a fair and just society heats up, companies are feeling the urgency
-                    to renew their sense of responsibility to offer DEI in the workplace. Major social and political
-                    changes as evidenced by the “Black Lives Matter” protest rallies which erupted around the world,
-                    means companies need to reevaluate how diverse and inclusive their workforce really is. Employers
-                    now have a responsibility to protect employees from harassment and discrimination in the workplace
-                    based on race, gender or color. Diversity in the business environment today goes beyond just gender,
-                    race and ethnicity. It includes employees with diverse religious and political beliefs, education,
-                    socioeconomic backgrounds, sexual orientation, cultures and even disabilities.</p>
+                  <p class=" m-0">The startup ecosystem in Europe is extremely diverse and complex. Europe is home to
+                    several thriving startup ecosystems, whether at national level or concentrated in specific areas,
+                    with each ecosystem having its own focus and uniqueness. Countries, such as Sweden, Spain, the
+                    Netherlands, Switzerland, Germany, and the UK, have consistently stood out as the top European as
+                    well as global startup ecosystems. The UK’s startup ecosystem has been continuously growing and is
+                    currently considered to be among the top-three in the world, attributed to the exceptional place
+                    that the capital city London holds for startup development. London’s startup ecosystem has
+                    demonstrated its resilience despite Brexit. The city is also the hub of the European VC industry, as
+                    well as has developed a mature system for supporting young entrepreneurs through government funding.
+                    The UK’s withdrawal from the EU paved way for Germany to emerge as the next major startup ecosystem
+                    and entrepreneurial hub. In comparison to most of the other large cities in Europe, German cities
+                    continue to offer cost-effective living options as well as have been able to attract a robust pool
+                    of global talent. Growing interest in entrepreneurship and startup innovation, favorable government
+                    support, and the country’s strong relationship to several global investment groups have led to the
+                    emergence of several German cities in the top global startup ecosystems.</p>
                   <br />
 
-                  <p class=" m-0">Even from a business standpoint, the case for diversity in workplace
-                    is overwhelming given its ability to foster innovation, creativity and empathy in ways that
-                    homogeneous environments can never do. As markets evolve to become more competitive than ever before
-                    and the business environment gets tougher amid the crisis, companies need to remain alert, aware,
-                    agile and responsive to remain afloat, profitable and successful. To be successful in a world that
-                    is constantly changing, companies need to be leading the change rather than responding to it.
-                    Companies with more diverse teams and inclusive are better able to lead change than those with a
-                    more homogeneous workforce. A strong organizational culture and robust structural foundation are
-                    critical for achieving agility that comes from internal strength. Diverse companies earn 2.5 times
-                    higher cash flow per employee and inclusive teams are productive by over 35%. High-diversity
-                    environments and all-inclusive culture has clear benefits and advantages. Yet, global DEI
-                    initiatives are particularly challenging to successfully implement and measure. Achieving real
-                    equality and inclusion is a challenging task and over 65% of employees are of the opinion that their
-                    managers do not foster an inclusive environment. Achieving greater diversity in the workplace is
-                    relatively easier as it represents the mix or the make-up of an entity. However, the inclusion piece
-                    of the puzzle is more complex and ensuring the same is immensely tough as it involves integration of
-                    the contributions, presence and perspectives of different groups of people into the environment.
-                    Inclusion is all about making the mix work together as a cohesive whole by respecting, welcoming and
-                    valuing the diversity of every individual’s unique background, experiences, race, ethnicity, sexual
-                    orientation, gender identity, faith, tradition, and most importantly perspectives. Diversity without
-                    inclusion can create a toxic culture and similarly inclusion without diversity can create an
-                    uncreative and infertile environment where a company can stagnant.</p>
+                  <p class=" m-0">Some of the best European cities for startup development include London, Moscow,
+                    Berlin, Paris, Amsterdam, Barcelona, and Stockholm. London’s startup ecosystem encompasses
+                    innovators across various sectors, including banking, fintech, ecommerce, and software, boasts
+                    strong connections with the North American markets. The city ranks as the world’s third-leading tech
+                    hub, the second-leading fintech hub, and the fourth-leading edtech hub. In 2021, London emerged as
+                    Europe’s unicorn capital when the total unicorn count in the city scaled to 75. There are various
+                    initiatives that the city of London offers to support tech startups, including the Resilience Fund,
+                    a £1 million challenge fund aimed to incentivize innovators to address key challenging faced by the
+                    city, and the Business Growth Program, which is focused on providing financial support to
+                    early-stage startups with less than 10 employees. London ecosystem provides startups an easy access
+                    to affluent consumers and powerful corporations. In addition, the city offers a large population of
+                    highly-skilled workforce, both domestic talent due to the presence of several prestigious
+                    universities and the international talent that the city attracts owing to its strong global
+                    reputation. In 2021, London attracted tech investment worth more than €11 billion, substantially
+                    surpassing the combined investment in Paris and Berlin. However, the high cost of living and
+                    salaries, along with the lack of affordable coworking spaces and incubators, are some of the major
+                    challenges that startups generally face while operating in London. Some of the notable London-based
+                    startups include Lottie, HumanForest, and Zilch. Lottie offers a free-of-cost digital service to
+                    help retirees and families find the best elderly care homes and retirement living communities in the
+                    country. The company, founded in 2021, has been continuously securing funding that has led its
+                    valuation to reach over €52 million. HumanForest is engaged in delivering a shared electric bike
+                    service in the city of London. In early-2022, the company announced entering into partnership with
+                    food delivery unicorn Deliveroo for boosting affordable and sustainable delivery services across
+                    London. Founded in 2019, the company had raised €1.4 million via a Crowdcube campaign in late-2020.
+                    Zilch is one of the fastest-growing fintechs in Europe offering a unique next-generation payment and
+                    buy now, pay later (BNPL) platform that works directly with consumers. Founded in 2018, Zilch, a
+                    double unicorn, secured an additional US$50 million in funding in mid-2022, taking its total Series
+                    C funding to US$153 million. </p>
+                  <br />
+
+                  <p class=" m-0">In recent years, Berlin has emerged as a major hub for startups both in Germany as
+                    well as Europe, with nearly 22% of all startups in the country being established in the city.
+                    Berlin’s startup ecosystem benefits from the city’s diversity and presence of several universities.
+                    Berlin actively offers support to startups both in the pre-startup and early-stage period. For
+                    instance, Berlin Startup Scholarship, a program financed by the state of Berlin with the support of
+                    the European Social Fund, offers financial support to tech-based startups. In addition, the
+                    investment division of Investitionsbank Berlin has been investing in innovative startups. Some of
+                    the notable Berlin-based startups include Ecoligo GmbH, Grover GmbH, and Zenjob GmbH. Ecoligo is an
+                    impact investment provider that implements solar-as-a-service projects in emerging markets. The
+                    company, founded in 2016, recently secured funding of €10 million from investors. Grover, on the
+                    other hand, is involved in providing an online platform for renting tech products through monthly
+                    subscriptions. The company, founded in 2015, recently received €270 million in funding. Zenjob,
+                    founded in 2015, offers an online staffing platform to help students and workers to find flexible
+                    part-time jobs. The company recently raised €45 million in a growth funding round that would be
+                    utilized to expand its presence across Europe.</p>
 
 
-                    <br/>
+                  <br />
 
-                    <p class=" m-0">In line with the rapidly diversifying nature of the labor force, companies and their top level executives are feeling both a moral imperative and an urgent business need to pursue their diversity and inclusion strategies with an aim to deliver tangible results. There is an urgent need for better understanding people, a more nuanced understanding of individual needs. Easier said than done! “Birds of a feather flock together”. This old adage truly captures enduring human reflex to seek out others who look and sound like us. This impulse at the organizational level is the single most important and potent barrier to successful D&I outcomes. D&I training along with structured and unstructured measures is the need of the hour to educate and help people gain a broader understanding of “diversity.” Companies with high score have exhibited strong push for women in technology; have promoted cultural empathy; extended support for LGBTQ communities; have unique and diversified employees including deaf and blind; have pushed a liberal mindset; and have empowered women cross all hierarchy.</p>
+                  <p class=" m-0">Capital cities have been at the spotlight of startup development in Europe and France
+                    is no exception. Paris ranks among the globally leading startup ecosystems, driven by governmental
+                    support through tax incentives and other initiatives, along with the growing popularity of the
+                    entrepreneurship mindset. The city is home to close to 12,000 startups and the number is
+                    continuously growing with the French government allocating large sums of money in its budget for
+                    supporting startup development. In addition, the government reduced the corporate tax to 25% in
+                    2022, thus making France an attractive destination for both domestic as well as international
+                    startups. Other initiatives, such as a 30% tax credit to tech startups on their initial investment
+                    are also encouraging the growth of the French startup ecosystem. Paris also benefits from the
+                    presence of a renowned engineering university and several top-class business schools, all of which
+                    are contributing in fostering domestic talent as well as innovation. Some of the prominent
+                    Paris-based startups include Upway, Back Market, and Gourmey. Upway, which offers an online
+                    marketplace for second-hand electric bikes, raised funding valued at €23 million in mid-2022 to be
+                    utilized for expanding the company’s presence in the US, the Netherlands, and Germany by end-2022.
+                    Back Market, founded in 2014, offers an online marketplace for refurbished electronic appliances and
+                    devices. In early-2022, the company raised €449 million and established itself as one of the most
+                    valuable startups in France, with a valuation of more than €5 billion. Gourmey, on the other hand,
+                    is engaged in developing lab-grown, non-animal meat. The company, launched in 2019, secured €48
+                    million in Series A funding in late-2022. Amsterdam is another European city with a vibrant startup
+                    ecosystem, comprising several young entrepreneurs and a large number of female founders. Amsterdam
+                    startup ecosystem covers various sectors, ranging from traditional industries to new sectors, such
+                    as green-tech. Moscow also ranks among the top European and global startup ecosystems, primarily
+                    attributed to significant government support, in conjunction with the city’s focus on retention and
+                    scaling via access to a massive domestic market. However, Russia’s geopolitical situation continues
+                    to pose challenges for the startup ecosystem in Moscow, which many startup facing travel and
+                    financial restrictions while planning international expansion.</p>
                 </div>
               </div>
             </div>
 
-          
+
             <div class="card">
               <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Are You Doing Right by Your DEI Strategies</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">EIC Gears
+                    Up to Disburse €1.13 Billion to Tech Startups in 2023, But Is It Enough?</button>
                 </h2>
               </div>
               <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">Despite best efforts made with the right intention, companies are unable to achieve DEI and fail to attract top talent owing to inclusivity-related issues in workplaces. Organizations are required to follow certain best practices and initiatives to make people feel safe, valuable and included in the workplace. The following are few of the actionable tactics to achieve DEI.</p>
-                  <br/>
-                  <ul>
-                    <li>Building the Sense of Belonging - Employees in an organization need a sense of belonging for thriving and contributing their best to the company. The sense of belonging represents a psychological requirement that needs to be effectively met to help employees feel connected with the organization, leading to high level of creativity and engagement in workplaces. Moreover, companies can also achieve the sense of belonging by creating an inclusive culture and striving for diversity</li>
-                    <li>Top-Down & Bottom-Up Approach - While the top-down approach is known to improve compliance, it fails to drive commitment. In order to achieve the desirable change, organizations are required to combine top-down and bottom up approaches. Leaders are required to define the company’s vision, seek accountability, and provide a safe working environment for people. Leadership needs to assess the diversity and inclusion policy for defining the purpose. On the other hand, employees must share individual perspectives through dialogue, get connected and contribute to D&I initiatives for creating the desirable culture. From leaders through to frontline workers, all individuals are required to understand their respective roles in the organizational culture and D&I initiatives.</li>
-<li>	Minimizing Fear - Workplace settings that challenge people’s beliefs make them respond with distrust and fear. While fear is perceived as a strong motivator and productivity enhancer, it leads to narrow perspectives and hinder efforts to make workplaces inclusive. By connecting people through storytelling and shared experiences, organizations can move towards desirable positive changes. In addition to identifying areas for improvement, employers need to spotlight success as well as cerebrate it. These approaches help companies in reducing fear and driving worker commitment to desired diversity and inclusion.</li>
-                
-<li>	Helping Employees Contribute Full Potential - Like the society, the organizational culture is also optimized for training and rewarding people who are fit and align with its specific goal. However, the exclusive focus on a specific set of employees promotes exclusion rather than inclusion. Unfair benefits and salaries to people from specific backgrounds led to unhealthy culture and affect diversity. Organizations need to strive for a culture that helps people in contributing their full potential. The approach requires re-imagination of the corporate culture and beliefs as well as efforts to ensure fairness for workers to make them feel valued and accepted. In addition, equal and fair career advancement and growth opportunities allow organizations to attract and retain the talent.</li>
-<li>	Going Beyond Traditional Hiring Process - While the hiring process helps companies achieve diversity numbers, it doesn’t guarantee the inclusive culture and the worker experience goes beyond the offer letter. In order to nurture and retain the talent, companies need to focus on end-to-end worker experience and create conditions to promote inclusion. As D&I initiatives go beyond the hiring process and cover diverse aspects in routine operations, organizations need to adapt the entire process for scaling inclusive and diverse behaviors. The focus of traditional hiring process on academic background and the job experience hinders diversity. The integration of reliable and valid personality assessments is an effective option to measure motivations, personality traits and skills of a candidate. Companies considering personality tests for the hiring process are more likely to achieve diverse workforces.</li>
-<li>	Inclusive Leadership -The continuous shift of organizations towards diversity and inclusion is creating the need for leaders who can identify exclusionary behaviors and practices for prompt actions. Inclusive leadership represents a crucial skill for organizations that are coordinating diverse teams and enabling employees to achieve peak performance. Inclusive leaders touch different aspects of the diversity and inclusion policy to help companies in attaining their objectives. These leaders set standards and norms for business practices as well as create environments that encourage people to contribute to their full potential. Inclusive leadership optimizes unique and individual views, perspectives and experiences for benefitting all stakeholders.</li>
-<li>	Inclusion Should be a Continuous Process - Inclusion is not limited to a typical training session and represents an ongoing process, requiring people to identify moments that can be used for building new habits depicting inclusion. Putting these habits into action along with providing a supportive environment for healthy conversations can allow companies to achieve real change. Using employees as cohorts for prompting and driving inclusion is a more effective approach in comparison to conventional training sessions. In addition, companies need to encourage inclusive language that addresses both male and female employees to help them feel included and connected. Organizations are also required to focus on regular feedback for listening to employees and their concerns for desirable actions.</li>
-
-</ul>
+                  <p class=" m-0">The European Innovation Council (EIC) recently announced plans to disburse €1.6
+                    billion to innovators and scientists in 2023 with the aim of scaling up breakthrough technologies as
+                    well as creating new markets. Around 70% of the total amount, or €1.13 billion, has been earmarked
+                    for the EIC Accelerator for supporting SMEs and startups towards the development and marketing of
+                    high-impact innovations. Specifically, €525 million has been reserved for startups to develop future
+                    technologies that would contribute to the various strategic objectives of the EU, including the New
+                    European Bauhaus initiative, space tech, resilient agriculture, semiconductor or quantum components,
+                    energy storage, decontamination for pandemic management, and cancer biomarkers. The balance €613
+                    million would be made available for innovations in other areas of technology. The work program of
+                    the EIC for 2023 also focuses on other significant objectives, such as increasing the flow of
+                    innovative talent into deep tech startups, providing enhanced support to women innovators, and
+                    facilitating the collaboration between public and private procurers. The support provided by the EIC
+                    to date has resulted in a portfolio of EIC companies achieving a cumulative valuation of more than
+                    €40 billion, including 112 centaurs and 12 unicorns. In addition, the EIC funding has contributed in
+                    incentivizing more than €10 billion in follow-on investments in its portfolio companies from the
+                    private sector. While at the outset the EIC’s funding of €1.13 billion for tech startups might seem
+                    a significant amount, several experts are of the opinion that it is not enough given the size of the
+                    massive European tech startup ecosystem. It must be noted that private investment in UK deep tech
+                    startups alone touched €8.5 billion in 2021, which allowed for the exponential growth in the sector.
+                    Experts also note that in case the EIC’s funding of €1.13 billion is allocated equally among the
+                    bloc’s 27 members, each country would end up receiving only around €42 million. Industry experts
+                    highlight that Europe is home to a large number of tech companies, has a skilled workforce, and
+                    equipped with the required infrastructure for establishing itself as a tech powerhouse. However,
+                    what is limiting the region in this regard is the lack of adequate financial support. Experts point
+                    out the both the local governments as well as the EU would need to further increase funding in the
+                    emerging tech startups in case the continent intends on competing with the major players in the US
+                    and China.</p>
 
                 </div>
               </div>
             </div>
 
-       
+
             <div class="card">
               <div id="headingThree" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                     aria-controls="collapseThree"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Trending DEI Trends & Strategies for 2023</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Key
+                    Strengths and Challenges of the European Startup Ecosystem</button>
                 </h2>
               </div>
               <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">How things would play out in 2023 and beyond will be largely driven by certain key trends in the area of corporate diversity, in addition to the actions that leaders would take around these trends.</p>
-                  <br/>
-                  
-                  <ul>
+                  <p class=" m-0">The European startup ecosystem has been exhibiting a steady growth over the past few
+                    years, with several European countries ranking among the world’s leading startup ecosystems.
+                    However, the startup scene in Europe is still not at the same level as in other regions across the
+                    globe. The leading European hubs considerably lag behind those in the US in terms of talent,
+                    capital, concentration, and size. One of the key strengths of the European startup ecosystem is that
+                    it is well established offers high attractiveness to a wide range of investors. However, European
+                    startups face the challenge of retaining their talent pool, since the continent’s cultural mindset
+                    values successful exits, particularly in countries such as France. Close working relationships and
+                    ties between various participants in the European ecosystem can play a critical role in fostering
+                    growth and innovation, particularly with government relationships facilitating further connections.
+                    The relative strength of the European startups in the B2B space and the region increasingly
+                    embracing a digital economy would bode well for the European startup ecosystem. Another major
+                    strength for the European startup ecosystem is the region’s stronghold in attracting tech funding.
+                    Investment in European tech startups increased by a staggering 500% during the period 2012-2017 and
+                    touched US$25 billion. London is one of the leading European hubs for fintech startups, and holds
+                    tremendous potential in driving technological developments over the next few years. In addition, a
+                    large number of European countries have begun offering e-visas and flexible residency permits for
+                    attracting entrepreneurs from across the globe. This move is in conjunction with governments
+                    offering flexible regulations for supporting the emerging startups. Moreover, Europe’s English
+                    proficiency has been consistently strong, with the EU as well as the Schengen Area countries
+                    displaying higher levels of English fluency as compared to other countries. High English proficiency
+                    can help startup ecosystems in attracting global talent as well as international investors. Despite
+                    the positive outlook of the European startup ecosystem, it also has certain limitations. One of the
+                    biggest drawbacks of the European startup ecosystem is that it has failed in creating startup
+                    giants, such as Microsoft, Facebook, Amazon, and Google. No startup has come even close to the
+                    authority and scale of the startups emerging from the US. In addition, the startup ecosystem in
+                    Europe has evolved at a slower pace in comparison to the US. While the VC firms in the US were first
+                    established in the 1940s, they came into being in Europe only in the mid-1990s. Another major
+                    limitation for the European startup ecosystem is the lack of government support, with governments in
+                    countries, especially Italy, Greece, and France, imposing excessive and stringent regulations
+                    pertaining to taxation and employment, making it difficult for startups to attract and retain
+                    talent. Moreover, the culture mindset towards entrepreneurship is less prominent in European
+                    countries as compared to the US. </p>
 
-<li>	Managing the Evolving Remote Workforce - Even as the pandemic recedes to the endemic stage and businesses are resuming operations with office space open as usual, the remote work model is continuing to co-exist with the in-office set-up. With a certain number employees in the workforce still working remotely, businesses face an uphill task. Considering each of the WFH employee works under a different living condition, the challenges are unique with no single solution. As in case of women employees, they need to balance work and home, and might lack a dedicated space for work from where they can focus on work alone. Businesses need to brainstorm means to bridge such gaps and overcome challenges of this distributed model.</li>
-<li>	Managing the Multigenerational Workforce - The current businesses work with a workforce that is the most diverse of all times. The characteristic feature of this workforce is the co-existence of employees that belong to five different generations. In companies working with all these five generations of people, a typical workforce mix would comprise the silent generation (people born between 1928 and 1945), the baby boomers (born between 1946 and 1964), the generation X (born between 1965 and 1980), the generation Y or millennials (born between 1981 and 96) and the newest of all generation Z (from 1997 and continuing). Individually, people from each of these generations have unique expectations from their work lives, and bring with them different voices, skills and life experiences to their workplace that ultimately shapes a company’s work culture. Such a diverse workforce spanning five generations requires employers, business leaders and human resource managers to be well acquainted with the capabilities and characteristics of each of the generation, and have well framed strategies to make employees of all generations feel inclusive and celebrated for who they are.</li>
-<li>	Purging Unconscious Bias at Workplaces - Unconscious bias, the tendency to form opinions, process information and arrive at decisions on the basis of inherent or unconscious prejudices and biases towards certain groups of people or individuals, impacts the type of relationship an employer or business leader develops with each of its employee. Since this relationship influences the decisions that are made at workplaces, where a truly inclusive workforce comprises of people with varied ethnicity, backgrounds and experiences, it is important that businesses and their leaders have strategies in place that ensure such biases and prejudices are purged or controlled regularly.</li>
-<li>	Embracing Diverse Gender Identity & Expression - The recent years have seen awareness increase about the diverse gender identities and various gender expressions. As organizations the world have on their payroll people with such diverse gender identities, they need to adopt inclusive practices that may include providing gender-neutral restrooms, employee health benefits that support transitioning individuals, and creating a mindful atmosphere where use of inclusive language is encouraged to communicate with transgender or non-binary employees, among others.</li>
-<li>	Preparing for Systemic Change - Over the previous couple of years, there has been a rise in instances of systemic injustices reflective of the flaws that exist globally on institutional level. Appalling crimes against innocent people of color have brought to fore the unjust and racist nature of society that continues to exists even in the most developed nations. Businesses need to incorporate some critical systemic changes that would positively influence both the workplaces and societies at large. They can ensure racial discrimination is kept at bay by introducing policies that stress on safety of people of all races and create positive experiences at workplaces</li>
-<li>	Improved Transparency in Goal - A business with a diverse workforce need not imply a higher level of inclusion and equity. Even when organizations step up efforts to increase their diversity, the same might not translate into greater efforts at inclusivity. In order to become a truly diverse and inclusive organization, businesses would need to set transparent goals and targets and introduce relevant D&I initiatives. These measures would make those leading the organization more accountable, promote honest interactions between employees and their superiors, and foster an environment where employees feel encouraged to share their viewpoint, solutions and/or ideas.</li>
-<li>	The Time to Hire Diversity Professionals Has Come - With workplaces becoming more diverse, companies might require professional help. Diversity professionals are one of the newest categories of experts that organizations are hiring to address their D&I requirements. Diversity professionals come with the vision and mission to create a diverse and inclusive workplace, and handle multiple roles involving human resource and recruitment, as well as leadership responsibilities. They might need to multitask to organize and conduct D&I related educational sessions, introduce novel ideas for improved D&I atmosphere at a workplace, create an inclusive workplace culture, encourage all to use inclusive language, manage workplace discrimination or harassment related complaints, among others. The need for and role of diversity professionals is only expected to grow in the coming years.</li>
-<li>	Supporting Mental Health of Employees - Supporting mental health of employees has emerged as a priority for most organizations in order to ensure that their diverse talent pool continues to perform efficiently for optimal operational performance of a business. Businesses are aware of the toll the global pandemic and its repercussions have taken on the mental wellbeing of employees, and the difficulties their employees are facing in adjusting to the new normal. While some lost their jobs as businesses closed down, others had to adjust to the new work-from-home model, all while living in the fear of contracting coronavirus, which created a stressful environment for most people. By creating a supportive environment, businesses can ensure that metal health of their employees does not get compromised. They may achieve this through simpler means such as by encouraging managers, supervisors and peers to converse and empathize with each other.</li>
-<li>	Avoiding Gestures of Tokenism - Prioritizing diversity and inclusion means much more that simply hiring a woman in a boardroom or team full of men, or making way for one people of color in the workplace. Such a move could simply reflect an attitude of tokenism. Organizations need to be mindful in their approach towards D&I, and incorporate strategies and policies that truly promote diversity and inclusion.</li>
-</ul>
-                
+
                 </div>
               </div>
             </div>
+
+            <div class="card">
+              <div id="heading4" class="card-header bg-white shadow-sm border-0">
+                <h2 class="mb-0">
+                  <button type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                    aria-controls="collapse4"
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">European Startup Ecosystem is Booming, But Continues to Face Numerous Obstacles</button>
+                </h2>
+              </div>
+              <div id="collapse4" aria-labelledby="heading4" data-parent="#accordionExample" class="collapse">
+                <div class="card-body p-5 textless">
+                  <p class=" m-0">Over the past few years, the European startup ecosystem has witnessed a significant spike not only in terms of the number of unicorns being created, but also the pace at which they are emerging. There were 99 VC-backed unicorns in Europe in 2020, of which 14 were minted in 2019 alone. Some of the prominent startups that earned unicorn status in 2019 include Vinted, a Lithuania-based online marketplace for buying, selling and exchanging used clothing and accessories; Doctolib, a French cloud-based appointment scheduling and patient referral tool; and German neobank N26. However, despite growing at a brisk pace, European startups continue to fall short in accomplishing successful late-stage results in comparison to other regional startup ecosystems. Though Europe’s startup ecosystem is changing quickly, the region is still marred by lesser number of startups, startups raising less money, and lower chances of startups becoming successful in securing Series C funding, going public, or getting acquired. Even though Europe generates 36% of all formally-funded startups, its contribution in the global list of unicorns is only 14%. Adjusted to GDP and population, the number of seed-stage startups generated by Europe is merely 40% of that the US generates. Moreover, European startups have historically been 30% less likely in achieving late-stage successes as compared to their US counterparts. Further, European startups have consistently displayed lower success at progressing through different funding rounds as compared to the startups in countries, such as the US and India. Though startups in Europe are less successful at progressing through funding rounds, they cannot be considered as outright failures. Despite making slow progress in advancing to subsequent funding rounds, European startups are not likely to go out of business more frequently than US startups. European startups are 10% more likely to stall after bagging Series A funding as compared to US startups. This could be because these startups eventually become profitable and start exhibiting growth and hence opt for self-funding. However, this could result in them sacrificing future growth potential. The move could also have a negative effect on venture capitalists, for whom high profitability might not be enough, but achieving late-stage successes through IPOs or large acquisitions might be important for gaining high returns on investment.</p>
+
+
+                </div>
+              </div>
+            </div>
+
+
 
           </div>
         </div>
       </div>
     </div>
-  </section-->
+    </section-->
 
-  <!--====  End of Page Title  ====-->
+    <!--====  End of Page Title  ====-->
 
 
 
-  <!--================================
+    <!--================================
    PROGARAM DETAILS
 =================================-->
 
-<section class="section bg-light">
-  <div class="container">
-   <eventcolapse-component></eventcolapse-component>
-  </div>
+    <section class="section bg-light">
+      <div class="container">
+        <eventcolapse-component></eventcolapse-component>
+      </div>
 
-</section>
+    </section>
 
 
-<!--================================
+    <!--================================
 =    DOMAIN EXPERTS
 =================================-->
 
-<section class="section pt-4 " id="domain-experts">
-  
-</section>
+    <section class="section pt-4 " id="domain-experts">
 
-  <!--============================
+    </section>
+
+    <!--============================
 	           Footer            
 =============================-->
 
-  <footer-component></footer-component>
+    <footer-component></footer-component>
 
 
-  <!---============================
+    <!---============================
            ScrollTop        
 =============================--->
 
-  <scrolltop-component></scrolltop-component>
+    <scrolltop-component></scrolltop-component>
 
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+    <script src="plugins/google-map/gmap.js"></script>
 
-  <script src="js/script.js"></script>
-  <script src="./js/submenu_select.js"></script>
-  <script src="./js/jquery.readall.js"></script>
-
-
-  <!---WEB COMPONETNS-->
-  <script src="./webcomponts/headerComponents.js"></script>
-  <script src="./webcomponts/FooterComponent.js"></script>
-  <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
-  <script src="./webcomponts/banner.js"></script>
-
-  <script>
-    $('.textless').readall({
-      showheight: null,
-      showrows: 8
-    });
+    <script src="js/script.js"></script>
+    <script src="./js/submenu_select.js"></script>
+    <script src="./js/jquery.readall.js"></script>
 
 
-  </script>
+    <!---WEB COMPONETNS-->
+    <script src="./webcomponts/headerComponents.js"></script>
+    <script src="./webcomponts/FooterComponent.js"></script>
+    <script src="./webcomponts/ScrollToTop.js"></script>
+    <script src="./webcomponts/dummytext.js"></script>
+    <script src="./webcomponts/banner.js"></script>
+
+    <script>
+      $('.textless').readall({
+        showheight: null,
+        showrows: 8
+      });
+
+
+    </script>
 
 
 
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-$('#google_translate_element').bind('DOMNodeInserted', function(event) {
-$('.goog-te-menu-value span:first').html('LANGUAGE');
-$('.goog-te-menu-frame.skiptranslate').load(function(){
-    setTimeout(function(){
-    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
-    }, 100);
-});
-});
-});
-</script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+          $('.goog-te-menu-value span:first').html('LANGUAGE');
+          $('.goog-te-menu-frame.skiptranslate').load(function () {
+            setTimeout(function () {
+              $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+            }, 100);
+          });
+        });
+      });
+    </script>
 
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+      }
+    </script>
 </body>
 
 </html>

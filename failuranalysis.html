@@ -59,18 +59,18 @@
       $.getJSON("./data/events.json", function (data) {
         var banner = '';
         var datagrapic = '';
-        var domain='';
-        var gialink="";
+        var domain = '';
+        var gialink = "";
         console.log(data)
         $.each(data.eventslist, function (key, value) {
           if (value.Event == "failure") {
             banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-              if( value.eventdomainlink !== undefined ){
-                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-              }
-     
+            datagrapic += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink += `<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+            if (value.eventdomainlink !== undefined) {
+              domain += `  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+            }
+
           }
         });
         $('#pagebanner-block').html(banner);
@@ -80,7 +80,7 @@
 
       }).fail(function () {
         document.write("An error has occurred.");
-      }); 
+      });
     }); 
   </script>
 
@@ -102,13 +102,11 @@
     <div class="container">
       <div class="row align-items-center m-0 ">
         <div class="datagraphic-block" id="datagraphic-block">
-         
+
         </div>
 
         <div class="w-100   text-center" id="gialinkblock">
-         
-       </div>
-
+        </div>
       </div>
     </div>
   </section>
@@ -118,12 +116,12 @@
          WHATS TRENDING
 =================================-->
 
-  <section class="section">
+<section class="section" id="writeups">
     <div class="container">
-      <div class="row pb-4 page-title">
+      <div class="row pb-4" >
         <div class="col-sm-12 m-auto text-center -3">
           <!-- Page Title -->
-          <h1>WHAT'S TRENDING</h1>
+          <h1 class="font-display2 text-center">WHAT'S TRENDING</h1>
 
 
         </div>
@@ -136,13 +134,13 @@
           <div id="accordionExample" class="accordion custome-accordion border-0">
 
 
-            <div class="card">
+            <div class="card ">
               <div id="headingOne" class="card-header bg-white shadow-sm border-0">
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne"
                     class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Why
-                    Startups Fail?</button>
+                    Startups Fail? How Critical is the Role of Failure Analysis for Startups?</button>
                 </h2>
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
@@ -154,15 +152,16 @@
                     percent of startups are at any time worth investing and just one percent of them are bound to
                     succeed. Nonetheless, unnerved by these statistics, startups continue to emerge constantly in varied
                     industries and sectors and in countries across the world, both with products meant for local
-                    communities and for international consumers. </p>
+                    communities and for international consumers. Analysis of various reasons of failure analysis is thus
+                    vital for startups to avoid failure. </p>
 
                   <br />
 
-                  <p class=" m-0">Following are some of the reasons behind failure of startups: </p>
+                  <p class=" m-0">Following are some of the reasons behind the failure of startups: </p>
                   <br />
 
                   <ul>
-                    <li> Founder Inadequacies: One of the main reasons why startups tend to fall short of what was
+                    <li><strong>Founder Inadequacies:</strong> One of the main reasons why startups tend to fall short of what was
                       expected of them is associated with the founders. Most venture capital investors choose to invest
                       in a startup because of the founder and not the opportunity or the idea. Inadequacies of founders
                       had been one of the major causes behind a venture eventually stumbling. Founders in such cases
@@ -184,41 +183,41 @@
                       team, advisers and also seasoned investors. These stakeholders can provide useful connections and
                       the needed guidance and a venture pursuing the right target opportunity would inevitably attract
                       such stakeholders and their contributions. </li>
-                    <li> False Starts: One more reason why startups fail is false starts. Startups generally introduce
+                    <li><strong> False Starts:</strong> One more reason why startups fail is false starts. Startups generally introduce
                       MVPs and make iterations based on the feedback obtained. By launching MVPs and testing customer
                       response, founders seek to avoid squandering money and time building or marketing a product which
                       does not have target customers. However, startups usually end up wasting their valuable capital
                       and time and engineering efforts in launching such MVPs into the market, because most turn out to
                       be false starts. Such a practice of launching early and often failing fast eventually lead to the
                       startup’s downfall. </li>
-                    <li> Absence of Target Market: Creating something for which there is no market is cited as another
+                    <li><strong> Absence of Target Market:</strong> Creating something for which there is no market is cited as another
                       major reason behind failures of startups. The products they build or the services they create do
                       not have any real-life benefit. Products/services must make life easier for customers, save time
                       and improve their mood, and these are the basic purposes to be kept in mind while creating them.
                       If a product/service is not solving these issues then it carries no real value. It must either
                       improve the existing solution or solve a problem. Founders of startups are required to understand
                       from the beginning, target customers, their lifestyle preferences, interests, values, hobbies,
-                      behaviors etc. </li>
-                    <li> Poor Hiring: Poor hiring could also result in failure for startups. Profitability and healthy
+                      behaviors etc.</li>
+                    <li><strong> Poor Hiring:</strong> Poor hiring could also result in failure for startups. Profitability and healthy
                       operations of a startup are based a great deal on workforce quality. The founder must be able to
                       build a cohesive team for taking their brand on the right path for ultimate success. Hiring poor
                       candidates costs both money and time for the company and additionally there is this cost of firing
                       and rehiring which takes a toll on reputation of the company and its productivity. Bad hires also
                       tend to impact other team members’ performance. Immense focus of all stakeholders, in addition to
                       the founder members, on pushing the startup towards success, is important. </li>
-                    <li> Burnout: Since founders of startups are typically unable to achieve work-life balance they
+                    <li><strong> Burnout:</strong> Since founders of startups are typically unable to achieve work-life balance they
                       tend to burn out easily. Around 5 percent startups fail because of founder burn out. </li>
-                    <li> Overzealous Making Products Complicated: Overzealous entrepreneurs who try to integrate more
+                    <li><strong> Overzealous Making Products Complicated:</strong> Overzealous entrepreneurs who try to integrate more
                       features to their products hoping that it would become more appealing to clients also tend to lead
                       the startup towards failure because often, more features make products complicated and reduce
                       their accessibility to all. Focus therefore must be narrowed down to the most critical functions
                       which would be useful for majority of customers. </li>
-                    <li> Neglected Sales & Marketing: Founders also become so focused on developing the product that
+                    <li><strong>Neglected Sales & Marketing:</strong> Founders also become so focused on developing the product that
                       they neglect sales & marketing, the other most important aspects required for startup success. For
                       most founders, these crucial aspects of business building continue to be a mystery. They depend
                       mostly on the advisors or investors for assistance in this area. Creating an experienced sales
-                      team ensures sustainability for the startup. </li>
-                    <li> Non-compatibility among Founders: Non-compatibility among founders is another reason why
+                      team ensures sustainability for the startup.</li>
+                    <li><strong> Non-compatibility among Founders:</strong> Non-compatibility among founders is another reason why
                       startups generally fail. Starting a company and running it alone is difficult and running it with
                       non-compatible co-founders can be worse. Such situations can lead to several unresolved disputes
                       which can over time compound and wreak havoc on the company resulting in business failure
@@ -230,32 +229,32 @@
                       are more chances of the startup failing. Often, the founder would also have failed to share the
                       vision with the team. Every action taken by the founders reinforces their value in front of the
                       team. </li>
-                    <li> Choosing Wrong Business Model: Choosing the wrong business model is also a major reason for
+                    <li><strong> Choosing Wrong Business Model:</strong> Choosing the wrong business model is also a major reason for
                       failure of startups. A clear business model is necessary before building a product. This has been
                       the reason behind 20% of startup failures in the recent years. The business model outlines the
                       path the company would follow to earn money, the revenue channels, the pricing model etc. When the
                       business model is not viable economically, the startup is bound to fail. </li>
-                    <li> Poor Execution of Product: Poor execution of product can also be cause for failure in many
+                    <li><strong> Poor Execution of Product:</strong> Poor execution of product can also be cause for failure in many
                       cases. Despite an amazing idea and considerable success in raising initial funding many startups
                       fail too soon because their product/service would be poor. This mostly happens when launching
                       product in a capital intensive industry. </li>
-                    <li> Lack of Clear Market Need: A product must also have a clear market need for the startup to
+                    <li><strong> Lack of Clear Market Need:</strong> A product must also have a clear market need for the startup to
                       succeed. The product/service must tackle an issue faced by a large enough market. Startups fail to
                       attract sufficient user pool for their product eventually, and would also tend to loose user base
                       built in the initial months. Popularity of the product/service would decrease because of the
                       inability of the company to retain customers and acquire new ones. Most of the time, such
                       products/services would be ahead of their time, trying to solve issues not yet manifested on a
                       large scale. </li>
-                    <li> Intense Competition: Intense competition can also be the cause behind death of startups. The
+                    <li><strong> Intense Competition:</strong> Intense competition can also be the cause behind death of startups. The
                       food delivery business is an example. Multiple food delivery companies are introduced regularly
                       and are also out of the market too soon mainly because of the competition. Established incumbents
                       offer fierce competition to the new entrants in such markets. </li>
-                    <li> Lack of Compelling Value Proposition: There would not be a compelling value proposition
+                    <li><strong> Lack of Compelling Value Proposition:</strong> There would not be a compelling value proposition
                       causing customers to commit to actually buying the product or sometimes the market timing would be
                       wrong. Startups could be way ahead of the market by several years. Customers may not be ready to
                       accept the solution currently. Only a few companies have the required funding to make them survive
                       the initial years until the market for their products is created. </li>
-                    <li> Failure in Finding Product/Market Fit: Failure in finding the market or product fit is another
+                    <li><strong> Failure in Finding Product/Market Fit:</strong> Failure in finding the market or product fit is another
                       reason why startups generally fail. The first product brought to market by the startup would not
                       meet market need exactly and would need revisions for achieving the right market/ product fit. In
                       worst cases products would be completely off case requiring a total revamp and if such is the case
@@ -266,7 +265,7 @@
                       with surveys involving potential customers, they usually skip this critical step before building
                       their product. Such startups would only obtain customer feedback when the product is out in the
                       market. Incorporating the feedback then would mean loss of several months. </li>
-                    <li> Failure to Find a Scalable Sales Motion: Startups also typically fail to find a scalable and
+                    <li><strong> Failure to Find a Scalable Sales Motion:</strong> Startups also typically fail to find a scalable and
                       repeatable sales motion. If a product has a market/product fit it would start delivering value for
                       the business with customers wanting to purchase it. However, at this stage, the company must be
                       able to find and execute the right way of selling the product. Also called the go-to-market-fit,
@@ -284,11 +283,11 @@
                       on sales & marketing and create a dollar in net new ARR, implying that it would recover the CAC in
                       a year or have a 1 point sales efficiency. An inefficient business on the other hand would take 2
                       years to recover CAC or have 0.5 point sales efficiency. </li>
-                    <li> Weak Management Team: When the management team is weak, making mistakes in several critical
+                    <li><strong> Weak Management Team:</strong> When the management team is weak, making mistakes in several critical
                       areas of conducting the business, such startups also have thin chances of succeeding. Such
                       management’s go-to-market strategies are typically poorly thought out and the execution is also
                       poor leading to multiple issues. </li>
-                    <li> Running Out of Funds: Running out of money too soon is another reason behind failure for
+                    <li><strong> Running Out of Funds: </strong>Running out of money too soon is another reason behind failure for
                       startups. The founding members’ team must have a clear understanding about how much money is left
                       and if it would be sufficient for carrying on before another round of raising cash begins. Startup
                       valuations do not change linearly with time. For increasing valuation, the company would be
@@ -455,21 +454,21 @@
    PROGARAM DETAILS
 =================================-->
 
-<section class="section bg-light">
-  <div class="container">
-   <eventcolapse-component></eventcolapse-component>
-  </div>
+  <section class="section bg-light">
+    <div class="container">
+      <eventcolapse-component></eventcolapse-component>
+    </div>
 
-</section>
+  </section>
 
 
-<!--================================
+  <!--================================
 =    DOMAIN EXPERTS
 =================================-->
 
-<section class="section pt-4 " id="domain-experts">
-  
-</section>
+  <section class="section pt-4 " id="domain-experts">
+
+  </section>
 
 
 

@@ -38,15 +38,8 @@
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
-  <style>
+  
 
-    #datagraphic-block,
-    #gialinkblock{
-      display: none;
-    }
-    
-    </style>
-    
 
 </head>
 
@@ -67,18 +60,18 @@
       $.getJSON("./data/events.json", function (data) {
         var banner = '';
         var datagrapic = '';
-        var domain='';
-        var gialink="";
+        var domain = '';
+        var gialink = "";
         console.log(data)
         $.each(data.eventslist, function (key, value) {
           if (value.Event == "deeptech") {
             banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-              if( value.eventdomainlink !== undefined ){
-                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-              }
-     
+            datagrapic += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink += `<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+            if (value.eventdomainlink !== undefined) {
+              domain += `  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+            }
+
           }
         });
         $('#pagebanner-block').html(banner);
@@ -88,7 +81,7 @@
 
       }).fail(function () {
         document.write("An error has occurred.");
-      }); 
+      });
     }); 
   </script>
 
@@ -110,16 +103,16 @@
     <div class="container">
       <div class="row align-items-center m-0 ">
         <div class="datagraphic-block" id="datagraphic-block">
-         
+
         </div>
 
         <div class="w-100   text-center" id="gialinkblock">
-         
-       </div>
+
+        </div>
 
       </div>
     </div>
-  </section>  
+  </section>
 
 
 
@@ -127,12 +120,12 @@
          WHATS TRENDING
 =================================-->
 
-  <section class="section">
+<section class="section" id="writeups">
     <div class="container">
-      <div class="row pb-4 page-title">
+      <div class="row pb-4 ">
         <div class="col-sm-12 m-auto text-center -3">
           <!-- Page Title -->
-          <h1>WHAT'S TRENDING</h1>
+          <h1 class="font-display2 ">WHAT'S TRENDING</h1>
 
 
         </div>
@@ -150,28 +143,59 @@
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Are You Ready to Catch the Next Big Wave of Innovation?  </button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Are You
+                    Ready to Catch the Next Big Wave of Innovation? </button>
                 </h2>
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0">A significant portion of conversations around startups and entrepreneurship is focused on DeepTech. This investment ecosystem is in the news for both its immense potential to generate higher revenues & ROI and for its need for higher seed and early stage funding. Currently, only a small percentage of technology funds reach this ecosystem. In India, the figure stands at 11.8%. So why is the DeepTech startup ecosystem different from the mainstream technology startup ecosystem? Primarily because their lifecycles and risk profiles are different. DeepTech startups have longer gestation periods, are R&D intensive, capital intensive and are riskier with higher possibilities of failure. Nevertheless, these startups have the potential to transform industries, societies and economies, which is a very important attribute given the backdrop of several urgent and pressing issues facing the world today. Startups that are successful have the potential to earn exponential profits. DeepTech startups use cutting edge technologies like artificial intelligence (AI), robotics, quantum, blockchain, Internet of Things (IoT), drones and augmented reality (AR) to build products and solutions that overthrow current challenges and disrupt the market.  The strength of DeepTech can be highlighted by the last generation of new platform technologies such as PCs, silicon chips, the Internet and mobile technologies, and reflects the potential it has for solving or minimizing some of the major world problems such as climate change, global warming, disease prevention and treatment, enough food for the growing world population and addressing the needs of an aging population. </p>
+                  <p class=" m-0">A significant portion of conversations around startups and entrepreneurship is focused
+                    on DeepTech. This investment ecosystem is in the news for both its immense potential to generate
+                    higher revenues & ROI and for its need for higher seed and early stage funding. Currently, only a
+                    small percentage of technology funds reach this ecosystem. In India, the figure stands at 11.8%. So
+                    why is the DeepTech startup ecosystem different from the mainstream technology startup ecosystem?
+                    Primarily because their lifecycles and risk profiles are different. DeepTech startups have longer
+                    gestation periods, are R&D intensive, capital intensive and are riskier with higher possibilities of
+                    failure. Nevertheless, these startups have the potential to transform industries, societies and
+                    economies, which is a very important attribute given the backdrop of several urgent and pressing
+                    issues facing the world today. Startups that are successful have the potential to earn exponential
+                    profits. DeepTech startups use cutting edge technologies like artificial intelligence (AI),
+                    robotics, quantum, blockchain, Internet of Things (IoT), drones and augmented reality (AR) to build
+                    products and solutions that overthrow current challenges and disrupt the market. The strength of
+                    DeepTech can be highlighted by the last generation of new platform technologies such as PCs, silicon
+                    chips, the Internet and mobile technologies, and reflects the potential it has for solving or
+                    minimizing some of the major world problems such as climate change, global warming, disease
+                    prevention and treatment, enough food for the growing world population and addressing the needs of
+                    an aging population.</p>
                   <br />
 
-                  <p class=" m-0">DeepTech startups are established with a vision to solve seemingly intractable societal or environmental challenges. It is therefore of little surprise why the investment fever in Silicon Valley and other major investment hubs like Shanghai in China is moving towards DeepTech. Truly inventive DeepTech startups will see impressive growth and global investments in this space will quadruple in the coming years. While mainstream tech investments are sensitive to economic climate, DeepTech once established will remain resilient as solutions to pressing issues are always in demand, even more so in a weak economic climate fraught with challenges. A fine example of DeepTech innovation is a startup that can apply AI to forecast natural disasters or use molecular imaging technologies to identify a disease or its predisposition that is beyond the capability of available diagnostic testing methods. Addressing a challenge is the starting point from where DeepTech startups can make a disruptive beginning. So what and where are the current challenges we face today?  </p>
+                  <p class=" m-0">DeepTech startups are established with a vision to solve seemingly intractable
+                    societal or environmental challenges. It is therefore of little surprise why the investment fever in
+                    Silicon Valley and other major investment hubs like Shanghai in China is moving towards DeepTech.
+                    Truly inventive DeepTech startups will see impressive growth and global investments in this space
+                    will quadruple in the coming years. While mainstream tech investments are sensitive to economic
+                    climate, DeepTech once established will remain resilient as solutions to pressing issues are always
+                    in demand, even more so in a weak economic climate fraught with challenges. A fine example of
+                    DeepTech innovation is a startup that can apply AI to forecast natural disasters or use molecular
+                    imaging technologies to identify a disease or its predisposition that is beyond the capability of
+                    available diagnostic testing methods. Addressing a challenge is the starting point from where
+                    DeepTech startups can make a disruptive beginning. So what and where are the current challenges we
+                    face today? </p>
                   <br />
 
                   <ul>
-                     <li>Labor shortages & supply chain issues</li>
-                     <li>Global chip dependency & the fight for quantum supremacy</li>
-                     <li>Need for climate safe technologies  </li>
-                     <li>Good health and well-being  </li>
-                     <li>Sustainable cities and communities</li>
+                    <li>Labor shortages & supply chain issues</li>
+                    <li>Global chip dependency & the fight for quantum supremacy</li>
+                    <li>Need for climate safe technologies </li>
+                    <li>Good health and well-being </li>
+                    <li>Sustainable cities and communities</li>
                   </ul>
 
-                  <br/>
+                  <br />
 
-                  <p class=" m-0">Innovative entrepreneurs seeking to transform the above challenges into opportunities via development of disruptive products and solutions have a strong potential to grow their startups into successful businesses. 
+                  <p class=" m-0">Innovative entrepreneurs seeking to transform the above challenges into opportunities
+                    via development of disruptive products and solutions have a strong potential to grow their startups
+                    into successful businesses.
 
                   </p>
 
@@ -187,45 +211,16 @@
                 <h2 class="mb-0">
                   <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">India
-                    Enters Interesting Phase of the DeepTech Bandwagon</button>
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">India Enters Interesting Phase of the DeepTech Bandwagon</button>
                 </h2>
               </div>
               <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">The Indian DeepTech space is entering an interesting phase given the rapid pace of
-                    industrialization, infrastructure development and the internet economy threatened by the disruptive
-                    changes anticipated in the wake of climate change and rise of metaverse. The domestic DeepTech
-                    ecosystem has garnered a massive 55% growth in the previous decade and runs parallel to the
-                    well-developed European, Chinese, Israeli and the US markets. The bright minds at work in start-ups
-                    and university labs have contributed immensely to the growth of the Indian DeepTech start-up
-                    ecosystem, forcing the country to make commendable inroads in areas including clean energy, cold
-                    chain management, drone delivery and climate action. The Indian DeepTech innovation has truly
-                    generated dynamic sustainability solutions with remarkable outcomes. The country currently can boast
-                    of making headway in CRM, mobile and cloud tools deployment across various industries for
-                    unparalleled connectivity, computing power and storage solutions. However, not being the end-of-road
-                    but rather the beginning of a new era, India needs more DeepTech start-ups for further
-                    digitalization. </p>
+                  <p class=" m-0">The Indian DeepTech space is entering an interesting phase given the rapid pace of industrialization, infrastructure development and the internet economy threatened by the disruptive changes anticipated in the wake of climate change and rise of metaverse. The domestic DeepTech ecosystem has garnered a massive 55% growth in the previous decade and runs parallel to the well-developed European, Chinese, Israeli and the US markets. The bright minds at work in start-ups and university labs have contributed immensely to the growth of the Indian DeepTech start-up ecosystem, forcing the country to make commendable inroads in areas including clean energy, cold chain management, drone delivery and climate action. The Indian DeepTech innovation has truly generated dynamic sustainability solutions with remarkable outcomes. The country currently can boast of making headway in CRM, mobile and cloud tools deployment across various industries for unparalleled connectivity, computing power and storage solutions. However, not being the end-of-road but rather the beginning of a new era, India needs more DeepTech start-ups for further digitalization. </p>
                   <br />
-                  <p class="m-0">Furthering the DeepTech journey would require India to find more capital for
-                    investment, as the greater the access to funding the most remarkable the results. Interestingly, the
-                    investment environment is positive, as Indian investors are more than willing to take risk, defy
-                    perceptions and prove new theories. India also needs stronger policy making, and the Indian
-                    Government is just fulfilling the gap with national initiatives including Make-in-India,
-                    Return-to-India and Atmanirbhar Bharat that are designed to expand and enrich the Indian start-up
-                    ecosystem. The introduction of AI-powered eGovernance platform, the UPI system, and other soon to be
-                    introduced digital investments such as official digital currency of India represent the initiatives
-                    of the Indian Government that showcase Indian social DeepTech applications to transcend the
-                    enterprise applications of the Deep Technologies.</p>
+                  <p class="m-0">Furthering the DeepTech journey would require India to find more capital for investment, as the greater the access to funding the most remarkable the results. Interestingly, the investment environment is positive, as Indian investors are more than willing to take risk, defy perceptions and prove new theories. India also needs stronger policy making, and the Indian Government is just fulfilling the gap with national initiatives including Make-in-India, Return-to-India and Atmanirbhar Bharat that are designed to expand and enrich the Indian start-up ecosystem. The introduction of AI-powered eGovernance platform, the UPI system, and other soon to be introduced digital investments such as official digital currency of India represent the initiatives of the Indian Government that showcase Indian social DeepTech applications to transcend the enterprise applications of the Deep Technologies.</p>
                   <br />
-                  <p class="m-0">The Indian DeepTech future is vibrant given the progress made by DeepTech start-ups and
-                    a new class of entrepreneurs in multiple sectors that has contributed immensely to the organic
-                    growth of the DeepTech ecosystem in India. Further growth would come, as, in their pursuit to hone
-                    niche tech capabilities and broaden their product offering as they pursue digitalization; several
-                    large corporations and enterprises are expected to acquire DeepTech start-ups that hold potential to
-                    solve some of the world’s most complex problems. Some attractive domains in the Indian DeepTech
-                    landscape include cloud-native technologies, quantum computing, cybersecurity mesh and customer data
-                    platforms.</p>
+                  <p class="m-0">The Indian DeepTech future is vibrant given the progress made by DeepTech start-ups and a new class of entrepreneurs in multiple sectors that has contributed immensely to the organic growth of the DeepTech ecosystem in India. Further growth would come, as, in their pursuit to hone niche tech capabilities and broaden their product offering as they pursue digitalization; several large corporations and enterprises are expected to acquire DeepTech start-ups that hold potential to solve some of the world’s most complex problems. Some attractive domains in the Indian DeepTech landscape include cloud-native technologies, quantum computing, cybersecurity mesh and customer data platforms.</p>
 
 
 
@@ -506,7 +501,7 @@
 
                     </li>
 
-                    <li><strong> Inadequate Funding - DeepTech companies tend to have rather higher capital requirement
+                    <li><strong> Inadequate Funding -</strong> DeepTech companies tend to have rather higher capital requirement
                         than other start-ups, making sourcing of investment capital one of the major challenges for Deep
                         Technology commercialization. Since DeepTech involves mechanics and algorithms that are entirely
                         unheard of, and investor knowledge with respect to these technologies and the value they can
@@ -539,7 +534,7 @@
                       biotechnology companies. Asian people with certain origins may oppose use of genes derived from
                       certain animals owing to their religious beliefs.</li>
 
-                    <li></li>
+
 
                   </ul>
 
@@ -557,26 +552,26 @@
 
 
 
-  
+
   <!--================================
    PROGARAM DETAILS
 =================================-->
 
-<section class="section bg-light">
-  <div class="container">
-   <eventcolapse-component></eventcolapse-component>
-  </div>
+  <section class="section bg-light">
+    <div class="container">
+      <eventcolapse-component></eventcolapse-component>
+    </div>
 
-</section>
+  </section>
 
 
-<!--================================
+  <!--================================
 =    DOMAIN EXPERTS
 =================================-->
 
-<section class="section pt-4 " id="domain-experts">
-  
-</section>
+  <section class="section pt-4 " id="domain-experts">
+
+  </section>
 
 
 

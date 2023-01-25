@@ -53,6 +53,37 @@
   <header-component></header-component>
 
 
+  <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.getJSON("./data/events.json", function (data) {
+        var banner = '';
+        var datagrapic = '';
+        var domain='';
+        var gialink="";
+        console.log(data)
+        $.each(data.eventslist, function (key, value) {
+          if (value.Event == "ism") {
+            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
+            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
+            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
+              if( value.eventdomainlink !== undefined ){
+                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
+              }
+     
+          }
+        });
+        $('#pagebanner-block').html(banner);
+        $('#datagraphic-block').html(datagrapic);
+        $('#domain-experts').html(domain);
+        $('#gialinkblock').html(gialink);
+
+      }).fail(function () {
+        document.write("An error has occurred.");
+      }); 
+    }); 
+  </script>
+
   <!--============================
     PAGE BANNERS
 =============================-->
@@ -60,55 +91,23 @@
     <div class="container">
       <div class="row mx-0" id="pagebanner-block">
 
-        <script src="https://releases.jquery.com/git/jquery-git.js"></script>
-        <script>
-          $(document).ready(function () {
-            $.getJSON("./data/events.json", function (data) {
-              var output = '';
-              console.log(data)
-              $.each(data.eventslist, function (key, value) {
-                if (value.Event == "ism") {
-                  output += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-                }
-              });
-              $('#pagebanner-block').html(output);
-            }).fail(function () {
-              document.write("An error has occurred.");
-            });
-          });
-        </script>
-
       </div>
     </div>
   </section>
 
-
-
-
   <!--============================
-    PLACEKEEPTER BANNER
+   DATA GRAPHIC
 =============================-->
   <section class="section placekeeper_section page-title">
     <div class="container">
       <div class="row align-items-center m-0 ">
         <div class="datagraphic-block" id="datagraphic-block">
-          <script>
-            $(document).ready(function () {
-              $.getJSON("./data/events.json", function (data) {
-                var output = '';
-                console.log(data)
-                $.each(data.eventslist, function (key, value) {
-                  if (value.Event == "ism") {
-                    output += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/><br/><p class="infolink mt-2">Data Provider:<a href="` + value.eventdatagraphiclink + `" target="_blank" class="linkblue"> StrategyR</a></p>`;
-                  }
-                });
-                $('#datagraphic-block').html(output);
-              }).fail(function () {
-                document.write("An error has occurred.");
-              });
-            });
-          </script>
+         
         </div>
+
+        <div class="w-100   text-center" id="gialinkblock">
+         
+       </div>
 
       </div>
     </div>
@@ -119,13 +118,12 @@
          WHATS TRENDING
 =================================-->
 
-  <section class="section">
+<section class="section" id="writeups">
     <div class="container">
-      <div class="row pb-4 page-title">
+      <div class="row pb-4">
         <div class="col-sm-12 m-auto text-center -3">
           <!-- Page Title -->
-          <h1>WHAT'S TRENDING</h1>
-
+          <h1 class="font-display2">WHAT'S TRENDING</h1>
 
         </div>
       </div>
@@ -771,39 +769,27 @@
 
 
 
+
+
   <!--================================
-PROGARAM DETAILS
+   PROGARAM DETAILS
 =================================-->
 
-  <section class="section bg-light">
-    <div class="container text-center">
-      <a href="./programsignup.html" class="btn btn-lg shadow my-4 progaram-btn" target="_blank" /> Program Details </a>
-    </div>
+<section class="section bg-light">
+  <div class="container">
+   <eventcolapse-component></eventcolapse-component>
+  </div>
 
-  </section>
+</section>
 
 
-  <!--================================
+<!--================================
 =    DOMAIN EXPERTS
 =================================-->
 
-  <!--section class="section pb-0">
-  <div class="container">
-    <div class="row pb-4 page-title">
-      <div class="col-sm-12 m-auto text-center -3">
-
-        <h1>DOMAIN EXPERTS</h1>
-      </div>
-    </div>
-  </div>
+<section class="section pt-4 " id="domain-experts">
+  
 </section>
-
-<section class="section pt-0 " id="domain-experts">
-  <div class="container">
-    <iframe class="domain-iframe"
-      src="https://www.strategyr.com/evolv/calender_Show_Event_Speakers.asp?SrcType=%EC%21%C3%E34%3E%90%D4%2E%A0%F4%9C%CE%99ww%DD%D4%2B%5D%16%C9nX%19%E4%11%ECu%F2%E6v%3D%F4%E1%F8Q%27%7D%DA&ShowType=%FE%23%D2%EB92%81%CE&EID=%9Fe"></iframe>
-  </div>
-</section-->
 
 
 

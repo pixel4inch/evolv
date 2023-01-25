@@ -57,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-lg-11 m-auto">
-                    <form>
+                    
                         <p class="text-left para-display2">Join our powerful global network of <strong>9000+</strong>
                             corporate members, <strong>11,000+</strong>
                             startups/scale-ups, and <strong>300,000+</strong> affiliate member organizations including
@@ -73,10 +73,60 @@
                         </p>
                         <div class=" w-100 ml-3 pl-1 pb-2 d-flex align-items-center  justify-content-start mt-2">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                style="width: 15px !important;height: 15px !important;margin-top: 9px; margin-right: 10px !important;">
+                                style="width: 15px !important;height: 15px !important;margin-top: 9px; margin-right: 10px !important;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <label class="form-check-labe ml-2 mb-0 mt-2 main-font-color font-weight-bold para-display2"
                                 for="exampleCheck1">Send me details</label>
                         </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="w-100">
+                             <form action="#" method="POST" id="formblock">
+                                 <div class="row mx-0">
+                                     <!-- First Name -->
+                                     <div class="col-sm-6 mb-1 p-1">
+                                         <span class="formmandatory">* </span>
+                                         <input class="form-control main mb-1 " type="text" placeholder="First Name" id="frist_name" name="frist_name" required="">
+                                     </div>
+                                     <!-- Last Name -->
+                                     <div class="col-sm-6 mb-1 p-1">
+                                         <span class="formmandatory">* </span>
+                                         <input class="form-control main mb-1" type="text" placeholder="Last Name" id="last_name" name="last_name" required="">
+                                     </div>
+                                     <!-- Email -->
+                                     <div class="col-sm-6 mb-1 p-1">
+                                         <span class="formmandatory">* </span>
+                                         <input class="form-control main mb-1" type="email" placeholder=" Email  " id="email" name="email" required="">
+                                     </div>
+                                     <!-- Mobile Phone -->
+                                     <div class="col-sm-6 mb-1 p-1">
+                                         
+                                         <input class="form-control main mb-1" type="number" placeholder="Mobile Phone" id="phone" name="phone" required="">
+                                     </div>
+                                     <!--LinkedIn Link-->
+                                     <div class="col-sm-12 mb-1 p-1">
+                                         <span class="formmandatory">* </span>
+                                         <input class="form-control main mb-1" type="text" placeholder="LinkedIn Link" id="lnkedin" name="lnkedin" required="">
+                                     </div>
+                                     <!--LinkedIn Link-->
+                                     <div class="col-sm-12 mb-1 p-1">
+                                         <span class="formmandatory">* </span>
+                                         <input class="form-control main mb-1" type="text" placeholder="Location (Country &amp; City)" id="location" name="location" required="">
+                                     </div>
+                                     <p class="text-left  ml-2 mandatory-msg">Fields marked with <span style="color:red">*</span> are mandatory</p>
+                                   
+                                     <!-- Submit Button -->
+                                     <div class="col-12 text-center">
+                                         <button class="btn btn-main-md mx-auto py-2 px-2 my-4" onclick="SaveData()">Submit</button>
+                                     </div>
+                                     
+                                 </div>
+                             </form>
+                              </div>
+                          </div>
+
+                          <form>
+
+
+                        
 
                         <br />
 
@@ -122,9 +172,57 @@
 
                         <div class=" w-100 ml-3 pl-1 pb-2 d-flex align-items-center  justify-content-start mt-2">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                style="width: 15px !important;height: 15px !important;margin-top: 8px; margin-right: 10px !important;">
+                                style="width: 15px !important;height: 15px !important;margin-top: 9px; margin-right: 10px !important;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <label class="form-check-labe mb-0  ml-2 mt-2 main-font-color para-display2 font-weight-bold"
                                 for="exampleCheck1">Send me details</label>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                           <div class="w-100">
+                            <form action="#" method="POST" id="formblock">
+                                <div class="row mx-0">
+                                    <!-- First Name -->
+                                    <div class="col-sm-6 mb-1 p-1">
+                                        <span class="formmandatory">* </span>
+                                        <input class="form-control main mb-1 " type="text" placeholder="First Name" id="frist_name" name="frist_name" required="">
+                                    </div>
+                                    <!-- Last Name -->
+                                    <div class="col-sm-6 mb-1 p-1">
+                                        <span class="formmandatory">* </span>
+                                        <input class="form-control main mb-1" type="text" placeholder="Last Name" id="last_name" name="last_name" required="">
+                                    </div>
+                                    <!-- Email -->
+                                    <div class="col-sm-6 mb-1 p-1">
+                                        <span class="formmandatory">* </span>
+                                        <input class="form-control main mb-1" type="email" placeholder=" Email  " id="email" name="email" required="">
+                                    </div>
+                                    <!-- Mobile Phone -->
+                                    <div class="col-sm-6 mb-1 p-1">
+                                        
+                                        <input class="form-control main mb-1" type="number" placeholder="Mobile Phone" id="phone" name="phone" required="">
+                                    </div>
+                                    <!--LinkedIn Link-->
+                                    <div class="col-sm-12 mb-1 p-1">
+                                        <span class="formmandatory">* </span>
+                                        <input class="form-control main mb-1" type="text" placeholder="LinkedIn Link" id="lnkedin" name="lnkedin" required="">
+                                    </div>
+                                    <!--LinkedIn Link-->
+                                    <div class="col-sm-12 mb-1 p-1">
+                                        <span class="formmandatory">* </span>
+                                        <input class="form-control main mb-1" type="text" placeholder="Location (Country &amp; City)" id="location" name="location" required="">
+                                    </div>
+                                    <p class="text-left  ml-2 mandatory-msg">Fields marked with <span style="color:red">*</span> are mandatory</p>
+                                  
+                                    <!-- Submit Button -->
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-main-md mx-auto py-2 px-2 my-4" onclick="SaveData()">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                             </div>
+                         </div>
+                        <div>
+
+
                         </div>
                     </form>
                 </div>
@@ -132,7 +230,7 @@
         </div>
     </section>
 
-    <!--====  End of Page Title  ====-->
+    <!--====  End of Page Title  ====-->    
 
 
 
