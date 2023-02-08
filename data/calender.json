@@ -23,7 +23,7 @@
     {
       "EventId":"ai",
       "Title": "AI & ML",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "April 05",
@@ -33,7 +33,7 @@
     {
       "EventId":"edtech",
       "Title": "EdTech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "April 06",
@@ -43,7 +43,7 @@
     {
       "EventId":"femalelead",
       "Title": "Woman Led",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "April 10",
@@ -52,7 +52,7 @@
     {
       "EventId":"ism",
       "Title": "Israeli Startup Magic",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "April 11",
@@ -61,7 +61,7 @@
     {
       "EventId":"telecome5g",
       "Title": "Telecom & 5G",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "April 12",
@@ -70,7 +70,7 @@
     {
       "EventId":"ar",
       "Title": "AR & VR (XR)",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "April 13",
@@ -80,7 +80,7 @@
     {
       "EventId":"nanotech",
       "Title": "Nanotechnology",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "April 14",
@@ -91,7 +91,7 @@
     {
       "EventId":"drones",
       "Title": "Drones",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "April 17",
@@ -102,7 +102,7 @@
     {
       "EventId":"dei",
       "Title": "Diversity, Equity & Inclusion (DEI)",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "April 20",
@@ -112,7 +112,7 @@
     {
       "EventId":"ev",
       "Title": "AutoTech - Electric Vehicles",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "April 24",
@@ -121,7 +121,7 @@
     {
       "EventId":"digitalhealth",
       "Title": "Digital Health",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "April 25",
@@ -130,7 +130,7 @@
     {
       "EventId":"deeptech",
       "Title": "DeepTech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "April 26",
@@ -140,7 +140,7 @@
     {
       "EventId":"scm",
       "Title": "Supply Chain Management",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "April 27",
@@ -154,7 +154,7 @@
     {
       "EventId":"gaming",
       "Title": "Gaming",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "April 28",
@@ -166,7 +166,7 @@
       "EventId":"autonomous",
  
       "Title": "AutoTech - Autonomous Vehicles",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 02",
@@ -176,7 +176,7 @@
       "EventId":"cryptocurrency",
       
       "Title": "Crypto 2025++",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 03",
@@ -185,7 +185,7 @@
     {
       "EventId":"femaleunicon",
       "Title": "Woman Unicorn Founders",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "May 04",
@@ -194,7 +194,7 @@
     {
       "EventId":"cleantech",
       "Title": "Cleantech (GreenTech)",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 05",
@@ -204,7 +204,7 @@
     {
       "EventId":"biotech",
       "Title": "Biotechnologies",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "May 08 ",
@@ -214,7 +214,7 @@
     {
       "EventId":"cloudtech",
       "Title": "Cloud Technologies",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 09",
@@ -223,7 +223,7 @@
     {
       "EventId":"hydrogen",
       "Title": "Green Hydrogen",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 10",
@@ -232,7 +232,7 @@
     {
       "EventId":"cybersecurity",
       "Title": "Cybersecurity",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 11",
@@ -242,7 +242,7 @@
     {
       "EventId":"entertainment",
       "Title": "Music & Digital Entertainment",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 12",
@@ -252,7 +252,7 @@
     {
       "EventId":"agritech",
       "Title": "AgriTech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 16",
@@ -262,7 +262,7 @@
     {
       "EventId":"metaverse",
       "Title": "Metaverse",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 18",
@@ -271,7 +271,7 @@
     {
       "EventId":"robotic",
       "Title": "Robotics",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 19",
@@ -281,7 +281,7 @@
     {
       "EventId":"web",
       "Title": "Web 3.0",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 23",
@@ -290,7 +290,7 @@
     {
       "EventId":"batterytech",
       "Title": "Battery Technologies",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 24",
@@ -299,7 +299,7 @@
     {
       "EventId":"martech",
       "Title": "MarTech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "May 25",
@@ -317,7 +317,7 @@
     {
       "EventId":"saas",
       "Title": " SaaS",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 09",
@@ -326,7 +326,7 @@
     {
       "EventId":"starup",
       "Title": " Startup Ecosystems",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "June 06",
@@ -335,7 +335,7 @@
     {
       "EventId":"blockchain",
       "Title": "Blockchain",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 07",
@@ -347,7 +347,7 @@
     {
       "EventId":"wellbeing",
       "Title": "Wellbeing",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 12",
@@ -356,7 +356,7 @@
     {
       "EventId":"cx360",
       "Title": "CX 360",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 13",
@@ -365,7 +365,7 @@
     {
       "EventId":"digitalbanks",
       "Title": "Digital Banks",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 14",
@@ -377,7 +377,7 @@
     {
       "EventId":"qc",
       "Title": "Quantum Computing",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 16",
@@ -386,7 +386,7 @@
     {
       "EventId":"spacetech",
       "Title": "Space Tech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 19",
@@ -396,7 +396,7 @@
     {
       "EventId":"govtech",
       "Title": "Gov Tech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 20",
@@ -405,7 +405,7 @@
     {
       "EventId":"foodtech",
       "Title": "Food Tech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 21",
@@ -414,7 +414,7 @@
     {
       "EventId":"insurtech",
       "Title": "InsurTech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 23",
@@ -423,7 +423,7 @@
     {
       "EventId":"smartcities",
       "Title": "Smart Cities",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "June 22",
@@ -439,7 +439,7 @@
       {
         "EventId":"fashion",
         "Title": "Fashion & Design",
-        "Links": "./calevents.html",
+        "Links": "./calevents_evolv.html",
         "Multi": "",
         "dg": "",
         "date": "July 03",
@@ -449,7 +449,7 @@
       {
         "EventId":"hiringworkforce",
         "Title": "Hiring & Workforce",
-        "Links": "./calevents.html",
+        "Links": "./calevents_evolv.html",
         "Multi": "",
         "dg": "",
         "date": "July 05",
@@ -460,7 +460,7 @@
       {
         "EventId":"internetofthings",
         "Title": "Internet of Things",
-        "Links": "./calevents.html",
+        "Links": "./calevents_evolv.html",
         "Multi": "",
         "dg": "",
         "date": "July 10",
@@ -478,7 +478,7 @@
     {
       "EventId":"genz",
       "Title": "GEN Z",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "August 07",
@@ -489,7 +489,7 @@
     {
       "EventId":"fundrasing",
       "Title": "Fundraising in 2023",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "August 08 ",
@@ -498,7 +498,7 @@
     {
       "EventId":"futureofwork",
       "Title": "Future of Work",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "August 09",
@@ -508,7 +508,7 @@
     {
       "EventId":"madscience",
       "Title": "Mad Science",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "August 10",
@@ -518,7 +518,7 @@
     {
       "EventId":"impactinvest",
       "Title": "Impact Investment",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "August 14",
@@ -528,7 +528,7 @@
     {
       "EventId":"failure",
       "Title": "Failure Analysis",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "August 15",
@@ -538,7 +538,7 @@
     {
       "EventId":"charity",
       "Title": "Charity",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "August 16",
@@ -548,7 +548,7 @@
     {
       "EventId":"starup",
       "Title": " Startup Ecosystems",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "August 17",
@@ -559,7 +559,7 @@
     {
       "EventId":"techwizards",
       "Title": "Tech Wizards",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "August 21",
@@ -569,7 +569,7 @@
     {
       "EventId":"powertech",
       "Title": "Power Women Of Tech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "August 22",
@@ -578,7 +578,7 @@
     {
       "EventId":"deeptech",
       "Title": "DeepTech",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "August 23",
@@ -587,21 +587,32 @@
     {
       "EventId":"dei",
       "Title": "Diversity, Equity & Inclusion (DEI)",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "August 28",
       "icon": "./images/evolv/icons/calender/Diversity.png"
     },
+    
+    {
+      "EventId":"biotech",
+      "Title": "Biotechnologies",
+      "Links": "./calevents_evolv.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "August 29",
+      "icon": "./images/evolv/icons/calender/Biotech.png"
+    },
     {
       "EventId":"ev",
       "Title": "AutoTech - Electric Vehicles",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "August 30",
       "icon": "./images/evolv/icons/calender/ElectricVehicles.png"
     } 
+
  
 
 
@@ -610,18 +621,9 @@
   "SEP": [
 
     {
-      "EventId":"biotech",
-      "Title": "Biotechnologies",
-      "Links": "./calevents.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "September 01",
-      "icon": "./images/evolv/icons/calender/Biotech.png"
-    },
-    {
       "EventId":"femalelead",
       "Title": "Woman Led",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "September 04",
@@ -631,7 +633,7 @@
     {
       "EventId":"digitalhealth",
       "Title": "Digital Health",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "September 05",
@@ -641,7 +643,7 @@
     {
       "EventId":"ai",
       "Title": "AI & ML",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
       "date": "September 06",
@@ -650,7 +652,7 @@
     {
       "EventId":"mdi",
       "Title": "Medical Device Innovations",
-      "Links": "./calevents.html",
+      "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
       "date": "September 07",

@@ -48,8 +48,7 @@
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
 </head>
-
-<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+<body class="body-wrapper" id="container" data-spy="scroll" data-target=".privacy-nav" onBeforePrint="document.body.style.display='none';" onAfterPrint="document.body.style.display='block';" onContextmenu="return false" onSelectstart="return false" onDragstart="return false"  topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
 
 <!--============================
 =            HEADER           =
@@ -71,7 +70,7 @@
                 <div class="row">
       
                     <h1 class="font-display2 text-center main-font-color  col-lg-11 mt-3 col-md-12 mx-auto " >
-                        Myriad of Programs Driven by Evolv™ Members, Partners, and Supporters
+                        Myriad of Programs Driven by Evolv<sup>TM</sup> Members, Partners, and Supporters
                     </h1>
           
                     <h2 class="font-display1 mt-0 text-center  col-lg-11 col-md-12 mx-auto text-capitalize">Let's <u>Evolve</u> Together!</h2> 
@@ -104,7 +103,7 @@
                                         <div class="timeline-icon"><img src="./images/evolv/icons/calender/live.png">
                                         </div>
                                         <div class="timeline-text">
-                                            <h6 class="d-flex flex-column"><span style="color:black" class="mb-1">EVOLV™ 2023 KICKOFF</span> <span style="color:black">B20 2023 ROADSHOW
+                                            <h6 class="d-flex flex-column"><span style="color:black" class="mb-1">EVOLV<sup>TM</sup> 2023 KICKOFF</span> <span style="color:black">B20 2023 ROADSHOW
                                                     </span> </h6>
                                             <h5>March 27-30, 2023</h5>
                                         </div>
@@ -127,7 +126,7 @@
                                             $.each(data.APRIL, function (key, value) {
                                                 output += `
                                                 <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                         <div class="timeline-icon"><img src="` + value.icon + `"/></div>
                                                         <div class="timeline-text">
                                                             <h6>` + value.Title + `</h6>
@@ -164,7 +163,7 @@
                                                 output += `
                                                 
                                                 <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                         <div class="timeline-icon"><img src="` + value.icon + `"/></div>
                                                         <div class="timeline-text">
                                                             <h6>` + value.Title + `</h6>
@@ -221,7 +220,7 @@
                                                 output += `
                                                 
                                                 <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                         <div class="timeline-icon"><img src="` + value.icon + `"/></div>
                                                         <div class="timeline-text">
                                                             <h6>` + value.Title + `</h6>
@@ -259,7 +258,7 @@
                                                     src="./images/evolv/icons/calender/live.png"></div>
                                             <div class="timeline-text">
                                                 <h6 class="d-flex flex-column"><span style="color:black"
-                                                        class="mb-1">EVOLV™ ANNUAL SUMMIT</span> <span
+                                                        class="mb-1">EVOLV<sup>TM</sup> ANNUAL SUMMIT</span> <span
                                                         style="color:black" class="mb-1">INNOVATOR AWARDS NIGHT</span>
                                                     <!--span style="color:black"></!--span> B20 2023 FAST TRACK</span-->
                                                 </h6>
@@ -288,7 +287,7 @@
                                                 output += `
                                                 
                                                 <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents.html?EventId=` + value.EventId + ` "target="_blank"> <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank"> <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                         <div class="timeline-icon"><img src="` + value.icon + `"/></div>
                                                         <div class="timeline-text">
                                                             <h6>` + value.Title + `</h6>
@@ -331,7 +330,7 @@
                                                 output += `
                                                 
                                                 <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                         <div class="timeline-icon"><img src="` + value.icon + `"/></div>
                                                         <div class="timeline-text">
                                                             <h6>` + value.Title + `</h6>
@@ -370,7 +369,7 @@
                                                 output += `
                                                 
                                                 <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents.html?EventId=` + value.EventId + ` "target="_blank"> <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank"> <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                                         <div class="timeline-icon"><img src="` + value.icon + `"/></div>
                                                         <div class="timeline-text">
                                                             <h6>` + value.Title + `</h6>
