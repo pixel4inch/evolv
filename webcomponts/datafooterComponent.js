@@ -5,6 +5,8 @@ template.innerHTML = `
 
 p{
     color:#000;
+    font-size:13px;
+    line-height:10px;
 
 }
 
@@ -13,9 +15,8 @@ a{
 }
 
 </style>
-
     <div class="col-12">
-                <p class="infolink mt-2">Data Provider:<a href=" " target="_blank" class="linkblue"> StrategyR</a></p>
+                <p class="infolink mt-1">Data Provider:<a href=" " target="_blank" class="linkblue"> StrategyR</a></p>
     </div>
   `;
 

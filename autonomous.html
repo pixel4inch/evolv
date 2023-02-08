@@ -44,91 +44,53 @@
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
-
-
+  <!--============================
+=            HEADER           =
+=============================-->
+  <header-component></header-component>
   <!--============================
 =            HEADER           =
 =============================-->
 
-  <header-component></header-component>
-
-
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
+
     $(document).ready(function () {
       $.getJSON("./data/events.json", function (data) {
-        var banner = '';
-        var datagrapic = '';
-        var domain = '';
-        var gialink = "";
+        var selURL = window.location.pathname.substr(window.location.pathname.lastIndexOf("/") + 1).replace(".html", "");
+
+        var writeuptitle = '';
         console.log(data)
         $.each(data.eventslist, function (key, value) {
-          if (value.Event == "autonomous") {
-            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink += `<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-            if (value.eventdomainlink !== undefined) {
-              domain += `  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-            }
+          if (selURL == value.Event) {
+            writeuptitle += `<h2>` + value.eventtitle + `</h2>`;
+          } else {
 
           }
         });
-        $('#pagebanner-block').html(banner);
-        $('#datagraphic-block').html(datagrapic);
-        $('#domain-experts').html(domain);
-        $('#gialinkblock').html(gialink);
-
+        $('#writeup-title').html(writeuptitle);
       }).fail(function () {
         document.write("An error has occurred.");
       });
     }); 
   </script>
+  <div id="writeup-title">
 
-  <!--============================
-    PAGE BANNERS
-=============================-->
-  <section class="pagebanners">
-    <div class="container">
-      <div class="row mx-0" id="pagebanner-block">
+  </div>
 
-      </div>
-    </div>
-  </section>
+  <div class="body-content">
 
-  <!--============================
-   DATA GRAPHIC
-=============================-->
-  <section class="section placekeeper_section page-title">
-    <div class="container">
-      <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block" id="datagraphic-block">
 
+
+
+    <section class="section" id="writeup">
+      <div class="container">
+        <div class="row pb-3 page-title">
+          <div class="col-sm-12 m-auto text-center -3">
+            <!-- Page Title -->
+            <h1 class="font-display2 main-font-color">WHAT'S TRENDING</h1>
+          </div>
         </div>
-
-        <div class="w-100   text-center" id="gialinkblock">
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!--================================
-=            Page Title            =
-=================================-->
-
-<section class="section" id="writeups">
-    <div class="container">
-
-      <div class="row pb-4 ">
-        <div class="col-sm-12 m-auto text-center -3">
-          <!-- Page Title -->
-          <h1 class="font-display2 text-center">WHAT'S TRENDING</h1>
-
-
-        </div>
-      </div>
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
@@ -190,7 +152,7 @@
                     dynamics affecting growth over the next couple of years.</p>
                   <br />
                   <ul>
-                    <li>Big Data - Increased reliance of AVs on big data would emerge as another prominent trend in the
+                    <li><strong>Big Data -</strong> Increased reliance of AVs on big data would emerge as another prominent trend in the
                       coming years. AVs would come to depend heavily on information received through the radar, sensors
                       and cameras and such an increase in big data would extend use cases for DL algorithms in AVs for
                       making their operation safer. Analysis of the data from in-built sensors in the vehicle is also
@@ -205,7 +167,7 @@
                       responsiveness of AVs thus increasing their autonomy. The company also provides a platform that
                       creates an AV environment’s 3D simulation for facilitating testing and staging with minimal
                       downtime. </li>
-                    <li>Cybersecurity - Cybersecurity advancements are also increasing in number as AVs witness
+                    <li><strong>Cybersecurity -</strong> Cybersecurity advancements are also increasing in number as AVs witness
                       increased mainstream use. As more devices and systems are integrated in vehicles, new
                       vulnerabilities and threats emerge. Cyber attacks on AVs lead to loss of control of the vehicle,
                       collisions, system failures, data thefts and other issues. Startups therefore are working towards
@@ -222,7 +184,7 @@
                       the vehicle development cycle thus reducing chances of failure of its autonomous systems. It also
                       enables complete traceability for the integrated systems, for improved security of the vehicles.
                     </li>
-                    <li> AR/VR Technologies - AR/VR technologies would also come to play significant roles in driving
+                    <li><strong> AR/VR Technologies -</strong> AR/VR technologies would also come to play significant roles in driving
                       mainstream use of AVs. Realistic, virtual scenarios encountered by vehicles are generated by VR
                       for creating a safe environment for AV software testing. AR on the other hand powers HUDs which
                       provide better entertainment and navigation options for drivers and also help them better
@@ -237,7 +199,7 @@
                       cameras, advanced driver assist, LiDAR, smartphones and GPS for creating most engaging visual
                       experiences for drivers. The higher frame rate overlays adapt to driver’s head and eye position,
                       dynamically, reducing off-road time, thus preventing distractions during driving. </li>
-                    <li> Blockchain - Blockchain adoption for self-driving vehicles would also increase in the years
+                    <li><strong> Blockchain -</strong> Blockchain adoption for self-driving vehicles would also increase in the years
                       ahead. The vehicles need processing power for processing large data volumes and the technology of
                       blockchain with its cryptography and distributed ledger attributes, allows for a faster and secure
                       management of such huge loads of data. The network of decentralized ledger enables access to all
@@ -254,7 +216,7 @@
                       driver-less cars is blockchain based and connects the vehicles to a platform where transparent and
                       safe information exchange is possible. Drivers of AVs would be benefitted from such shared data.
                       The platform is thus capable of democratizing vehicular data exchange. </li>
-                    <li> V2X - A key technology as important as sensors in enabling autonomous driving is
+                    <li><strong> V2X -</strong> A key technology as important as sensors in enabling autonomous driving is
                       “communication”. A smart connected, autonomous car in order to be safe must be capable of
                       communicating with other vehicles, pedestrians, devices, infrastructure, grid, and smart homes.
                       And this brings Vehicle-to-Everything (V2X) into the spotlight. Mobilizing the comprehensive
@@ -278,7 +240,7 @@
                       being the integration of C-V2X into Qualcomm® Snapdragon™ Automotive 4G/5G platforms. 5G based
                       C-V2X has also arrived as a powerful unified connectivity fabric to expand applications and
                       performance. </li>
-                    <li> Predictive Capabilities - Predictive capabilities built upon artificial intelligence and
+                    <li><strong> Predictive Capabilities -</strong> Predictive capabilities built upon artificial intelligence and
                       machine learning technologies are delivering a never seen before personalized driving experience.
                       Automobiles are built around algorithms that enable owners to select application preferences such
                       as for their in-car infotainment system. These vehicles can easily be connected to smartphones,
@@ -288,7 +250,7 @@
                       parts while they are still in warranty period. In the event of any malfunction or defect, the
                       automakers can replace the particular part even before the customer sends request, building
                       reputation and goodwill for their after-sales service in the market. </li>
-                    <li>Telematics - Telematics is another advanced automobile functionality bought alive by in-vehicle
+                    <li><strong>Telematics -</strong> Telematics is another advanced automobile functionality bought alive by in-vehicle
                       Wi-Fi powered by 4G LTE that enables long-distance transmission of computerized data. Vehicle
                       owners can remain assured of their vehicle security and safety as they monitor their automobiles,
                       even remotely, using smartphone-enabled dashboards for advanced telematics. External cameras and
@@ -320,7 +282,7 @@
                     dynamics affecting growth over the next couple of years.</p>
                   <br />
                   <ul>
-                    <li>Autonomous Trucks Will See Huge Progress Towards Commercial Deployment - Market conditions are
+                    <li><strong> Trucks Will See Huge Progress Towards Commercial Deployment -</strong> Market conditions are
                       currently right for autonomous trucks to prosper. In countries like the US for instance, the issue
                       of driver shortages makes for a strong case for autonomous trucks. Similar driver problems exist
                       in the Chinese and European markets. Driver population in these countries has been aging, with no
@@ -334,7 +296,7 @@
                       because of the limits on driving times for human drivers. Autonomous trucks would be exempt from
                       such rules and therefore can potentially reduce delivery time by half, for journeys over same
                       distances.</li>
-                    <li>4D Imaging Sensors from Startups to Make it Big - Consumer vehicles today are being shipped
+                    <li><strong>4D Imaging Sensors from Startups to Make it Big -</strong> Consumer vehicles today are being shipped
                       integrated with the next-generation 4D imaging radars that bring in considerably higher
                       performance enhancements when compared to previous generation radars. Some of the new 4D imaging
                       radars feature sixteen times higher resolution. Tier-I suppliers are achieving this by employing
@@ -358,7 +320,7 @@
                       hand, could arrive even sooner as the company’s radar chip is all set to be launched by Magna, a
                       tier-one-supplier, as Icon. Fisker Ocean SUVs would be integrated with Icon 4D imaging sensors.
                     </li>
-                    <li>LiDAR to Emerge as the Game Changing Technology - While 4D imaging radars enable high
+                    <li><strong>LiDAR to Emerge as the Game Changing Technology -</strong> While 4D imaging radars enable high
                       performance autonomous features for vehicles, there is another technology that can emerge as a
                       game changer in the AV industry over the coming years and this is called the technology of LiDAR.
                       For long, this technology had been cost-prohibitive but had ultimately reached the point where
@@ -376,7 +338,7 @@
                       however, the premium vehicle examples but over the coming five to ten years, several lower-priced
                       vehicle models would also be integrated with LiDAR, especially because of the safety benefits the
                       technology offers.</li>
-                    <li>Greater Media Coverage on Robotaxis & Roboshuttles - One of the prominent trends in the global
+                    <li><strong>Greater Media Coverage on Robotaxis & Roboshuttles -</strong> One of the prominent trends in the global
                       AV industry is the commercial autonomous taxi services coming online across several places.
                       Robotaxis for instance, were started in San Francisco by the market leader, Cruise. . Cruise’s
                       fleet has been operating just 30 vehicles, out of its 150 vehicles-strong fleet for which the
@@ -412,103 +374,78 @@
       </div>
     </div>
   </section>
+</div>
 
-  <!--====  End of Page Title  ====-->
-
-
-
-  <!--================================
-   PROGARAM DETAILS
-=================================-->
-
-  <section class="section bg-light">
-    <div class="container">
-      <eventcolapse-component></eventcolapse-component>
-    </div>
-
-  </section>
-
-
-  <!--================================
-=    DOMAIN EXPERTS
-=================================-->
-
-  <section class="section pt-4 " id="domain-experts">
-
-  </section>
-
-
-
-  <!--============================
-	           Footer            
+<!--============================
+           Footer            
 =============================-->
 
-  <footer-component></footer-component>
+<footer-component></footer-component>
 
 
-  <!---============================
-           ScrollTop        
+<!---============================
+       ScrollTop        
 =============================--->
 
-  <scrolltop-component></scrolltop-component>
+<scrolltop-component></scrolltop-component>
 
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
+<!-- JAVASCRIPTS -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+<script src="plugins/google-map/gmap.js"></script>
 
-  <script src="js/script.js"></script>
-  <script src="./js/submenu_select.js"></script>
-  <script src="./js/jquery.readall.js"></script>
-
-
-  <!---WEB COMPONETNS-->
-  <script src="./webcomponts/headerComponents.js"></script>
-  <script src="./webcomponts/FooterComponent.js"></script>
-  <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
-  <script src="./webcomponts/banner.js"></script>
-
-  <script>
-    $('.textless').readall({
-      showheight: null,
-      showrows: 8
-    });
+<script src="js/script.js"></script>
+<script src="./js/submenu_select.js"></script>
+<script src="./js/jquery.readall.js"></script>
 
 
-  </script>
+<!---WEB COMPONETNS-->
+<script src="./webcomponts/headerComponents.js"></script>
+<script src="./webcomponts/FooterComponent.js"></script>
+<script src="./webcomponts/ScrollToTop.js"></script>
+<script src="./webcomponts/dummytext.js"></script>
+<script src="./webcomponts/banner.js"></script>
+
+<script>
+  $('.textless').readall({
+    showheight: null,
+    showrows: 8
+  });
+
+
+</script>
 
 
 
 
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
-        $('.goog-te-menu-value span:first').html('LANGUAGE');
-        $('.goog-te-menu-frame.skiptranslate').load(function () {
-          setTimeout(function () {
-            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
-          }, 100);
-        });
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+      $('.goog-te-menu-value span:first').html('LANGUAGE');
+      $('.goog-te-menu-frame.skiptranslate').load(function () {
+        setTimeout(function () {
+          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+        }, 100);
       });
     });
-  </script>
+  });
+</script>
 
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-    }
-  </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+  }
+</script>
 </body>
 
 </html>

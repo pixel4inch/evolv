@@ -43,9 +43,19 @@ class HeaderComponent extends HTMLElement {
              </li>   
 
 
-             <!----Insider Tab ---->	 
-             <li class="nav-item @@G20 ">
-                <a class="nav-link" href="insider.html">INSIDER</a>
+             <!----PROGRAMS Tab ---->	 
+             <li class="nav-item dropdown @@program ">
+				<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">PROGRAMS
+                <span><i class="ti-angle-down"></i></span>
+                </a>
+                <!--a class="nav-link" href="programs.html">PROGRAMS </a-->
+				<ul class="dropdown-menu">
+                   <li><a class="dropdown-item @innovators " href="programs_innovator_synergies.html">INNOVATOR SYNERGIES</a></li>   
+                   <li><a class="dropdown-item @indianinfluencer" href="programs_sustainability.html">SUSTAINABILITY</a></li>                            
+                   <li><a class="dropdown-item @indianinfluencer" href="programs_Iindian_influencer.html">INDIAN INFLUENCER </a></li>                         
+                   <li><a class="dropdown-item @diversityei" href="programs_dei.html">DIVERSITY EQUITY INCLUSION</a></li>
+
+                </ul>
              </li>
 
 
@@ -108,6 +118,11 @@ class HeaderComponent extends HTMLElement {
 
              <li class="nav-item @@membership">
              <a class="nav-link" href="membership.html">MEMBERSHIP</a>
+            </li>
+
+            <!----Insider Tab ---->	 
+            <li class="nav-item @@G20 ">
+               <a class="nav-link" href="insider.html">INSIDER</a>
             </li>
 
              <!----Membership Tab ---->	

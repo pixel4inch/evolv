@@ -44,91 +44,60 @@
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
-
-
+  <!--============================
+=            HEADER           =
+=============================-->
+  <header-component></header-component>
   <!--============================
 =            HEADER           =
 =============================-->
 
-  <header-component></header-component>
-
-
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
+
     $(document).ready(function () {
       $.getJSON("./data/events.json", function (data) {
-        var banner = '';
-        var datagrapic = '';
-        var domain = '';
-        var gialink = "";
+        var selURL = window.location.pathname.substr(window.location.pathname.lastIndexOf("/") + 1).replace(".html", "");
+
+        var writeuptitle = '';
         console.log(data)
         $.each(data.eventslist, function (key, value) {
-          if (value.Event == "digitalbanks") {
-            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic += `<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink += `<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-            if (value.eventdomainlink !== undefined) {
-              domain += `  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-            }
+          if (selURL == value.Event) {
+            writeuptitle += `<h2>` + value.eventtitle + `</h2>`;
+          } else {
 
           }
         });
-        $('#pagebanner-block').html(banner);
-        $('#datagraphic-block').html(datagrapic);
-        $('#domain-experts').html(domain);
-        $('#gialinkblock').html(gialink);
-
+        $('#writeup-title').html(writeuptitle);
       }).fail(function () {
         document.write("An error has occurred.");
       });
     }); 
   </script>
+  <div id="writeup-title">
 
-  <!--============================
-    PAGE BANNERS
-=============================-->
-  <section class="pagebanners">
-    <div class="container">
-      <div class="row mx-0" id="pagebanner-block">
+  </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!--============================
-   DATA GRAPHIC
-=============================-->
-  <section class="section placekeeper_section page-title">
-    <div class="container">
-      <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block" id="datagraphic-block">
-
-        </div>
-
-        <div class="w-100   text-center" id="gialinkblock">
-
-        </div>
-
-      </div>
-    </div>
-  </section>
+  <div class="body-content">
 
 
-  <!--================================
-=            Page Title            =
+
+
+
+ <!--================================
+        WHATS TRENDING
 =================================-->
 
-<section class="section" id="writeups">
-    <div class="container">
-
-      <div class="row pb-4 ">
-        <div class="col-sm-12 m-auto text-center -3">
-          <!-- Page Title -->
-          <h1 class="font-display2 ">WHAT'S TRENDING</h1>
-
-
-        </div>
+<section class="section" id="writeup">
+  <div class="container">
+    <div class="row pb-3 page-title">
+      <div class="col-sm-12 m-auto text-center -3">
+        <!-- Page Title -->
+        <h1 class="font-display2 main-font-color">WHAT'S TRENDING</h1>
       </div>
+    </div>
+
+      
 
       <div class="row">
 
@@ -147,7 +116,7 @@
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0"The global banking industry is currently undergoing a huge digital disruption, with mobile apps, e-bill payments and online deposits among others becoming commonplace. AI and such other sophisticated technologies have been at the centre of banking digital transformation for some time now. AI automates back-end operations of a bank, including its data processing and administrative tasks. There are also digital-only banks, that evolved recently, and these operate entirely electronically. Called Neobanks, these banks do not depend on a physical location. They are instead powered through digital platforms, which are more appealing to Gen Z and millennial clients. In several countries, especially the developed economies, these neobanks have been accelerating digital transformation of their banking sectors.</p>
+                  <p class=" m-0">The global banking industry is currently undergoing a huge digital disruption, with mobile apps, e-bill payments and online deposits among others becoming commonplace. AI and such other sophisticated technologies have been at the centre of banking digital transformation for some time now. AI automates back-end operations of a bank, including its data processing and administrative tasks. There are also digital-only banks, that evolved recently, and these operate entirely electronically. Called Neobanks, these banks do not depend on a physical location. They are instead powered through digital platforms, which are more appealing to Gen Z and millennial clients. In several countries, especially the developed economies, these neobanks have been accelerating digital transformation of their banking sectors.</p>
                     <br/>
                   <p class=" m-0">Cash is increasingly becoming obsolete as IT makes a revolutionizing entry into the retail banking sector. Personal cheques and hard currency are becoming less popular, while increasing investments in FinTech solutions have pushed up innovations such as PayPal, Square, Apple Pay and cryptocurrencies, thereby boosting the cashless age. Contactless card payments have made even smaller value transactions/payments faster and easier. Other major factors driving the world towards a cashless society include launch of chip and pin payment cards, broadening ecosystem of smartphone payments apps, convergence of finance, banking and telecommunications, and rapid changes in custom, culture and regulations elicited by Internet technologies, strong penetration of Internet enabled smartphones etc. Strong venture capital funding of financial technology start-ups and their commercial innovations are disrupting the status quo held by cash. Stringent regulations and policies and sops such as reduction in value-added tax (VAT) rates on card payments are additionally encouraging the evolution of cashless societies. </p>
                   <br />
@@ -177,16 +146,12 @@
               </div>
               <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                 <div class="card-body p-5 textless">
-                  <p class=" m-0">Despite best efforts made with the right intention, companies are unable to achieve
-                    DEI and fail to attract top talent owing to inclusivity-related issues in workplaces. Organizations
-                    are required to follow certain best practices and initiatives to make people feel safe, valuable and
-                    included in the workplace. The following are few of the actionable tactics to achieve DEI.</p>
-                  <br />
+                 
                 <ul>
                   <li><strong>Digital-First Becomes a Priority:</strong> With customers worldwide demanding more personalized digital banking experiences, banks and FIs are racing towards becoming digital-first organizations. The global banking industry is transforming into an experience oriented industry from being a product-centered one. Customer experience is now a major differentiator for banks and FIs as they constantly strive to retain existing customers and acquire new ones. More hyper-personalized banking services and products are being offered, helped by AI, ML and data analytics among other technologies with the anticipation that higher level personalization can create stronger loyalty.  However, not all banks and FIs have been able to leverage hyper-personalization to the fullest as they lack data as well as the analytic capabilities needed for driving such strategies. Banks therefore are required to first build the critical data analytics infrastructure for success of their digital marketing strategies. 
                     The digital transformation in conventional financial services providers prompted the emergence of many new players offering solutions like peer-to-peer (P2P) lending platforms, digital wealth management tools, and robo-advisors. Such initiatives have gained momentum owing to open banking APIs. Fintech companies have pioneered digital innovation across many areas like payments, money transfers, and lending. Many such startups are now competing with banks in a big way as they widen their customer bases and services. Banks have already joined hands with various fintech firms to fast-track their digital transformation efforts and match steps with startups that are causing a major disruption in the banking industry.
                     </li>
-                    <li><strong>Rise of Open Banking:</strong> Another prominent digital banking trend had been the rise of open banking that enables banks share data and information with other banks and FIs for better serving client needs. Such sharing enables better recommendation to financial management and a faster and customized service. APIs or application programming interfaces that are used for open banking, have already been employed by several pioneering banks globally. Most of them were able to report impressive success stories especially in cross-selling products and services. Furthermore, the huge loads of data that would be accumulated from APIs’ usage and the open banking system would bring forth innovations faster. 
+                    <li style="margin-bottom:20px"><strong>Rise of Open Banking:</strong> Another prominent digital banking trend had been the rise of open banking that enables banks share data and information with other banks and FIs for better serving client needs. Such sharing enables better recommendation to financial management and a faster and customized service. APIs or application programming interfaces that are used for open banking, have already been employed by several pioneering banks globally. Most of them were able to report impressive success stories especially in cross-selling products and services. Furthermore, the huge loads of data that would be accumulated from APIs’ usage and the open banking system would bring forth innovations faster. 
 
                       <br/>
                       <br/>
@@ -224,99 +189,78 @@
       </div>
     </div>
   </section>
+</div>
 
-  <!--====  End of Page Title  ====-->
-
-
-
-  <!--================================
-   PROGARAM DETAILS
-=================================-->
-
-  <section class="section bg-light">
-    <div class="container">
-      <eventcolapse-component></eventcolapse-component>
-    </div>
-
-  </section>
-
-
-  <!--================================
-=    DOMAIN EXPERTS
-=================================-->
-
-  <section class="section pt-4 " id="domain-experts">
-
-  </section>
-
-  <!--============================
-	           Footer            
+<!--============================
+           Footer            
 =============================-->
 
-  <footer-component></footer-component>
+<footer-component></footer-component>
 
 
-  <!---============================
-           ScrollTop        
+<!---============================
+       ScrollTop        
 =============================--->
 
-  <scrolltop-component></scrolltop-component>
+<scrolltop-component></scrolltop-component>
 
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
+<!-- JAVASCRIPTS -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+<script src="plugins/google-map/gmap.js"></script>
 
-  <script src="js/script.js"></script>
-  <script src="./js/submenu_select.js"></script>
-  <script src="./js/jquery.readall.js"></script>
-
-
-  <!---WEB COMPONETNS-->
-  <script src="./webcomponts/headerComponents.js"></script>
-  <script src="./webcomponts/FooterComponent.js"></script>
-  <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
-  <script src="./webcomponts/banner.js"></script>
-
-  <script>
-    $('.textless').readall({
-      showheight: null,
-      showrows: 8
-    });
+<script src="js/script.js"></script>
+<script src="./js/submenu_select.js"></script>
+<script src="./js/jquery.readall.js"></script>
 
 
-  </script>
+<!---WEB COMPONETNS-->
+<script src="./webcomponts/headerComponents.js"></script>
+<script src="./webcomponts/FooterComponent.js"></script>
+<script src="./webcomponts/ScrollToTop.js"></script>
+<script src="./webcomponts/dummytext.js"></script>
+<script src="./webcomponts/banner.js"></script>
+
+<script>
+  $('.textless').readall({
+    showheight: null,
+    showrows: 8
+  });
 
 
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
-        $('.goog-te-menu-value span:first').html('LANGUAGE');
-        $('.goog-te-menu-frame.skiptranslate').load(function () {
-          setTimeout(function () {
-            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
-          }, 100);
-        });
+
+
+
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+      $('.goog-te-menu-value span:first').html('LANGUAGE');
+      $('.goog-te-menu-frame.skiptranslate').load(function () {
+        setTimeout(function () {
+          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+        }, 100);
       });
     });
-  </script>
+  });
+</script>
 
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-    }
-  </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+  }
+</script>
 </body>
 
 </html>

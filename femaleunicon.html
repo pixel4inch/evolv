@@ -39,314 +39,148 @@
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
 
-    
 
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
-
-
+  <!--============================
+=            HEADER           =
+=============================-->
+  <header-component></header-component>
   <!--============================
 =            HEADER           =
 =============================-->
 
-  <header-component></header-component>
-
-
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
+
     $(document).ready(function () {
       $.getJSON("./data/events.json", function (data) {
-        var banner = '';
-        var datagrapic = '';
-        var domain='';
-        var gialink="";
+        var selURL = window.location.pathname.substr(window.location.pathname.lastIndexOf("/") + 1).replace(".html", "");
+
+        var writeuptitle = '';
         console.log(data)
         $.each(data.eventslist, function (key, value) {
-          if (value.Event == "femaleunicon") {
-            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-              if( value.eventdomainlink !== undefined ){
-                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-              }
-     
+          if (selURL == value.Event) {
+            writeuptitle += `<h2>` + value.eventtitle + `</h2>`;
+          } else {
+
           }
         });
-        $('#pagebanner-block').html(banner);
-        $('#datagraphic-block').html(datagrapic);
-        $('#domain-experts').html(domain);
-        $('#gialinkblock').html(gialink);
-
+        $('#writeup-title').html(writeuptitle);
       }).fail(function () {
         document.write("An error has occurred.");
-      }); 
+      });
     }); 
   </script>
+  <div id="writeup-title">
 
-  <!--============================
-    PAGE BANNERS
-=============================-->
-  <section class="pagebanners">
-    <div class="container">
-      <div class="row mx-0" id="pagebanner-block">
+  </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!--============================
-   DATA GRAPHIC
-=============================-->
-  <section class="section placekeeper_section page-title">
-    <div class="container">
-      <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block" id="datagraphic-block">
-         
-        </div>
-
-        <div class="w-100   text-center" id="gialinkblock">
-         
-       </div>
-
-      </div>
-    </div>
-  </section>
+  <div class="body-content">
 
 
-  <!--================================
+
+
+    <!--================================
          WHATS TRENDING
 =================================-->
 
-<section class="section" id="writeups">
-    <div class="container">
-      <div class="row pb-4 page-title">
-        <div class="col-sm-12 m-auto text-center -3">
-          <!-- Page Title -->
-          <h1>WHAT'S TRENDING</h1>
-
-
+    <section class="section" id="writeup">
+      <div class="container">
+        <div class="row pb-3 page-title">
+          <div class="col-sm-12 m-auto text-center -3">
+            <!-- Page Title -->
+            <h1 class="font-display2 main-font-color">WHAT'S TRENDING</h1>
+          </div>
         </div>
-      </div>
 
-      <div class="row">
+        <div class="row">
 
-        <div class="col-lg-12 mx-auto">
+          <div class="col-lg-12 mx-auto">
 
-          <div id="accordionExample" class="accordion custome-accordion border-0">
+            <div id="accordionExample" class="accordion custome-accordion border-0">
 
 
-            <div class="card">
-              <div id="headingOne" class="card-header bg-white shadow-sm border-0">
-                <h2 class="mb-0">
-                  <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                    aria-controls="collapseOne"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Female Unicorn Founders Raise the Bar with Resounding Success</button>
-                </h2>
-              </div>
-              <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
-                <div class="card-body p-5">
-                  <p class=" m-0">Recent years have seen female founded companies grow in numbers, with a higher percentage of them also breaking into the unicorn club. Many start-ups are being co-founded by women, and even funded by women entrepreneurs. Stax, a payments company based in Florida; Globalization Partners, a global employment platform based in Boston; and Insider, a customer engagement service based in Singapore, all have female founder CEOs as their heads. Rising to the top and listed as unicorns are female founded Papaya Global, a human resource and payroll platform based in New York; Market Kurly, a premium food delivery company based in Seoul; and LaunchDarkly, a software feature management platform based in Oakland. Then there are biotechnology companies such as Humacyte, Immunocore and Lyell Immunopharma who have women CEOs. While many of these women-led start-ups and unicorns are private, there has been an increase in numbers of those who went public. Conversely, despite not being valued as unicorn in private financing, many have been valued over US$1 billion as they made their debut in public markets. Examples include Bumble, a dating app; FIGS, an apparel company; a.k.a., an online fashion brand; and Clear, a biometric identity company. Though they are yet to take a larger share of the market pie, the trend is clear that women leaders are here to make heads turn with their innovative business ideas. </p>
+              <div class="card">
+                <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                  <h2 class="mb-0">
+                    <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                      aria-controls="collapseOne"
+                      class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Women Unicorn Founders Raise the Bar with Resounding Success  </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
+                  <div class="card-body p-5">
+                    <p class=" m-0">Recent years have seen women founded companies grow in numbers, with a higher percentage of them also breaking into the unicorn club. Many start-ups are being co-founded by women, and even funded by women entrepreneurs. Stax, a payments company based in Florida; Globalization Partners, a global employment platform based in Boston; and Insider, a customer engagement service based in Singapore, all have women founder CEOs as their heads. Rising to the top and listed as unicorns are women founded Papaya Global, a human resource and payroll platform based in New York; Market Kurly, a premium food delivery company based in Seoul; and LaunchDarkly, a software feature management platform based in Oakland. Then there are biotechnology companies such as Humacyte, Immunocore and Lyell Immunopharma who have women CEOs. While many of these women-led start-ups and unicorns are private, there has been an increase in numbers of those who went public. Conversely, despite not being valued as unicorn in private financing, many have been valued over US$1 billion as they made their debut in public markets. Examples include Bumble, a dating app; FIGS, an apparel company; a.k.a., an online fashion brand; and Clear, a biometric identity company. Though they are yet to take a larger share of the market pie, the trend is clear that women leaders are here to make heads turn with their innovative business ideas. </p>
 
-                  <br />
+                    <br />
+                      <p>Following are some of the top women leaders making waves in the business world:  </p>
 
-                  <p class=" m-0">Even as the number of female founded unicorns has increased over the previous decade, the journey for women entrepreneurs has been and continues to be challenging. They counter several hurdles when launching their companies, including attracting venture capital for investment. White women or women of color, they face similar challenges, which again could be owing to the fact that there are not many female role models to learn from. Without influencers, many dreaming big are simply unable to steer their way to the leadership position. On an optimistic note, some trailblazing female founders who have dared to defy the status quo could show others how they set their goals and achieved them without giving in to setbacks. Their success could serve as guidance for newbies who can learn to maneuver their business to the zenith of success. </p>
-                  <br />
+                   
+                    <ul>
+                      <li><strong>Emily Weiss of Glossier:</strong> Founded by Emily Weiss and valued at US$1.8 billion, Glossier is a unicorn company with presence in the beauty industry. Beginning with “intothegloss.com”, her beauty blog that she started writing in 2010, E. Weiss amassed a massive following in four years, from where she headed to launch her own beauty company ‘Glossier’. She secured $1 million in funding from Forerunner Ventures that helped her launch her company with four products. Without aggressively addressing each aspect of the beauty sector, E. Weiss worked towards developing a core product offering. As she fine-tuned the core offering, she ventured into skincare, makeup, perfume and merchandise to successful gain foothold in various categories. The most interesting element in the success of Glossier is perhaps the blog that connects the company and its target audience. The company makes beauty products for its community, allows them to test its minimum viable product, and knows exactly what they want through the social channel. What makes the Glossier brand unique is positing of user-generated content online, which imparts a more community-driven, personal and authentic appeal.</li>
+                      <li><strong>Melanie Perkins of Canva:</strong> Melanie Perkins holds all the secrets that aspiring women leaders can follow to enter women-led unicorn club. Just as E. Weiss, M. Perkins treaded her way with a humble beginning starting a yearbook design and publishing firm with Cliff Obrecht. M. Perkins, along with C. Obrecht and Cameron Adams founded Canva in 2013 as a full-fledged design platform for creating premium digital designs. The lady worked her way up to the unicorn status by staying focused on finding solution for some real-world problems. She successfully created a seamless user experience for all those facing difficulties in learning the graphic design process, which helped her raise the valuation of her company to US$40 billion. As of 2021, Canva addresses the needs of as many as 60 million monthly users across 190 countries. The founders are committed direct Canva’s revenues to solve some biggest world problems such as poverty. The founders also offer Canva’s premium services for free to non-profit organizations and teachers.</li>
+                      
+                      <li><strong>Tessa Wijaya of Xendit:</strong> Tessa Wijaya’s fintech company Xendit became a unicorn in September 2021. Just as M. Perkins, T. Wijaya worked towards resolving a real-world problem. Her journey began when she successfully landed the job of an analyst in a private equity firm all owing her strong mentality though she had no experience. With time, T. Wijaya gained prominence in the financial industry in Southeast Asia, and in 2015, she founded Xendit with the intention of bringing ride-hailing services and e-commerce closer in the region. By 2015, Xendit had emerged as one of the leading payment platforms in Southeast Asian countries including Indonesia and Philippines. Aspiring women leaders can take heed from T. Wijaya’s leadership traits that made her company become a unicorn. T. Wijaya is a mentor for women in the field of engineering, technology, mathematics and science.</li>
 
-                  <p class=" m-0">Following are some of the top women leaders making waves in the business world: </p>
-                  <br />
-                  <ul>
-                    <li><strong>Emily Weiss of Glossier:</strong> Founded by Emily Weiss and valued at US$1.8 billion,
-                      Glossier is a unicorn company with presence in the beauty industry. Emily Weiss could serve as a
-                      great role model considering the way she established and grew her business. Beginning with
-                      “intothegloss.com”, her beauty blog that she started writing in 2010, E. Weiss amassed a massive
-                      following in four years, from where she headed to launch her own beauty company ‘Glossier’. After
-                      being rejected by 11 venture capital firms, she finally secured $1 million in funding from
-                      Forerunner Ventures that helped her launch her company with four products. Without aggressively
-                      addressing each aspect of the beauty sector, E. Weiss worked towards developing a core product
-                      offering. As she fine-tuned the core offering, she ventured into skincare, makeup, perfume and
-                      merchandise to successful gain foothold in various categories. The most interesting element in the
-                      success of Glossier is perhaps the blog that connects the company and its target audience. The
-                      company truly makes beauty products for its community, allows them to test its minimum viable
-                      product, and knows exactly what they want through the social channel. What makes the Glossier
-                      brand unique is positing of user-generated content online, which imparts a more community-driven,
-                      personal and authentic appeal.</li>
-                    <li><strong>Melanie Perkins of Canva:</strong> Melanie Perkins holds all the secrets that aspiring
-                      women leaders can follow to enter female-led unicorn club. Just as E. Weiss, M. Perkins treaded
-                      her way with a humble beginning starting a yearbook design and publishing firm with Cliff Obrecht.
-                      M. Perkins, along with C. Obrecht and Cameron Adams founded Canva in 2013 as a full-fledged design
-                      platform for creating premium digital designs. The lady worked her way up to the unicorn status by
-                      staying focused on finding solution for some real-world problems. She successfully created a
-                      seamless user experience for all those facing difficulties in learning the graphic design process,
-                      which helped her raise the valuation of her company to US$40 billion. As of 2021, Canva addresses
-                      the needs of as many as 60 million monthly users across 190 countries. M. Perkins could be a role
-                      model for aspiring entrepreneurs to remain resilient in the face of adversities, being rejected
-                      more than 100 times for funding; refining her approach and communication skills to better present
-                      the way in which Canva could innovate the graphic design sector, and solve truly major
-                      world-problems. Indeed, the founders are committed direct Canva’s revenues to solve some biggest
-                      world problems such as poverty. The founders also offer Canva’s premium services for free to
-                      non-profit organizations and teachers.</li>
-                    <li><strong>Tessa Wijaya of Xendit:</strong> Tessa Wijaya’s fintech company Xendit became a unicorn
-                      in September 2021. Just as M. Perkins, T. Wijaya worked towards resolving a real-world problem.
-                      Her journey began when she successfully landed the job of an analyst in a private equity firm all
-                      owing her strong mentality though she had no experience. With time, T. Wijaya gain prominence in
-                      the financial industry in the Southeast Asia, and in 2015, she founded Xendit with the intention
-                      of bringing ride-hailing services and e-commerce closer in the region. By 2015, Xendit had emerged
-                      as one of the leading payment platforms in Southeast Asian countries including Indonesia and
-                      Philippines. Aspiring women leaders can take heed from T. Wijaya’s leadership traits that made her
-                      company become a unicorn. The female leader spent years studying finance after her workhours, seek
-                      opportunities that remain unnoticed by others, and act quickly to change the dynamics of the
-                      market. T. Wijaya can be viewed as a mentor for women in the field of engineering, technology,
-                      mathematics and science.</li>
-                    <li><strong>Lucy Liu of Airwallex:</strong> Lucy Liu is the co-founder of fintech payment platform,
-                      Airwallex, a US$4 billion unicorn, which exceed US$100 million in annual revenues in 2021.
-                      Mirroring other female founders, L. Liu solved a real-world problem when she co-founded Airwallex
-                      in 2016 along with Max Li and Jack Zhang, contributing through her expertise in finance. Airwallex
-                      helps customers overcome the issue of dealing with unreasonable bank fees when they import goods
-                      from overseas markets. L. Liu serves as an example for women desiring to found their own
-                      companies, as she resonates with understanding one’s strengths, working as a team and
-                      acknowledging the contribution of all team members in leading the company to success.</li>
-                    <li><strong>Sarah Leary of Nextdoor:</strong> Sarah Leary is a co-founder of Nextdoor, valued at
-                      US$4.3 billion. Nextdoor is an app designed to connect people in the neighborhood. Just as E.
-                      Weiss, S. Leary built her consumer-centric business by nurturing a powerful community of users.
-                      The idea to start Nextdoor germinated when S. Leary and her business partner Nirav Tolia,
-                      recognized the absence of a platform where people could connect with their neighbors. They made
-                      physical visits to neighborhoods to understand the type of solution they need to develop.
-                      Nextdoor, as of 2021, connects as many as 10 million users across 116,000 neighborhoods throughout
-                      the neighborhood. S. Leary is a fine role model for many a women entrepreneurs or aspiring women
-                      who can learn the importance of testing out-of-the-box, yet simple ideas that could really nurture
-                      a unicorn. Testing is important to understand what can or cannot work without spending too much
-                      money. The female founder also believes in investing in other entrepreneurs at every given
-                      opportunity, which made her handover her position of Vice President of Global Marketing and
-                      Operations to another potential aspirant. S. Leary is also a venture partner in Unusual Ventures
-                      where she offers the same opportunities to entrepreneurs that she received when securing funds for
-                      her businesses.</li>
-                  </ul>
+
+                      <li><strong>Lucy Liu of Airwallex:</strong> Lucy Liu is the co-founder of fintech payment platform, Airwallex, a US$4 billion unicorn, which exceed US$100 million in annual revenues in 2021. Mirroring other female founders, L. Liu solved a real-world problem when she co-founded Airwallex in 2016 along with Max Li and Jack Zhang, contributing through her expertise in finance. Airwallex helps customers overcome the issue of dealing with unreasonable bank fees when they import goods from overseas markets. L. Liu serves as an example for women desiring to found their own companies, as she resonates with understanding one’s strengths, working as a team and acknowledging the contribution of all team members in leading the company to success.</li>
+
+                      <li><strong>Sarah Leary of Nextdoor:</strong> Sarah Leary is a co-founder of Nextdoor, valued at US$4.3 billion. Nextdoor is an app designed to connect people in the neighborhood. Just as E. Weiss, S. Leary built her consumer-centric business by nurturing a powerful community of users. The idea to start Nextdoor germinated when S. Leary and her business partner Nirav Tolia, recognized the absence of a platform where people could connect with their neighbors. They made physical visits to neighborhoods to understand the type of solution they need to develop. Nextdoor, as of 2021, connects as many as 10 million users across 116,000 neighborhoods throughout the neighborhood. S. Leary is a fine role model for many a women entrepreneurs or aspiring women who can learn the importance of testing out-of-the-box, yet simple ideas that could really nurture a unicorn. Testing is important to understand what can or cannot work without spending too much money. The female founder also believes in investing in other entrepreneurs at every given opportunity, which made her handover her position of Vice President of Global Marketing and Operations to another potential aspirant. S. Leary is also a venture partner in Unusual Ventures where she offers the same opportunities to entrepreneurs that she received when securing funds for her businesses.</li>
+
+                    </ul>
 
 
 
+                  </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="card">
-              <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
-                <h2 class="mb-0">
-                  <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo"
-                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Indian
-                    Startups Thrive, But Where are Female Founders!</button>
-                </h2>
-              </div>
-              <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
-                <div class="card-body p-5 textless">
-                  <p class=" m-0">India has emerged as a global hotbed of startups, next only to the US and the UK. As
-                    many as 100 Indian startups have already joined the unicorn club. But something that draws attention
-                    is the lack of women representation in majority as founders of these startups. A mere 15% of Indian
-                    unicorns can boast of having at least one women founder. Many women entrepreneurs face rejection
-                    when seeking venture capital. Why? One of the biggest drawbacks is the Indian society, generally
-                    called the pipeline issue, where women are subjected to limitations since early childhood. There are
-                    societal restrictions over her movement out of home and mingling with people. Then there is lack
-                    financial independence in many societies. Despite growing literary rates and more women graduating
-                    in India, they are expected to seek employment that does not disturb family life. This type of
-                    environment is less conducive for women to thrive as entrepreneurs, as they are required to network
-                    with people to find co-founders, venture capital, discuss plans and seek mentorship and advice.
-                    Indian female founders are subjected to many biases and prejudices when they seek venture capital
-                    for their business, and work against the very absence of professional networks much need for
-                    connecting with others. Addressing the issues at the ecosystem level could produce positive
-                    outcomes.</p>
-                  <br />
-                  <p class="m-0">Indian corporate landscape just does not need female founders, but also female
-                    investors. An ecosystem with more women participation can dramatically reduce biases and biased
-                    questions that female entrepreneurs face in present times. At the other end, the entire business
-                    community needs to be sensitized to make everyone realize the biases do exist and they need to be
-                    addressed by adopting a more objective screening process. Presently, very few Indian unicorn
-                    companies have at least one female founder, including Acko Insurance, BYJU’S, Hasura, Lead School,
-                    Livspace, Mamaearth, Mobikwik, Nykaa, OfBusiness, Pristyn Care, Rivigo, The Good Glamm Group and
-                    Zenoti. The 100th Indian unicorn, Open has two women founders Deena Jacob and Mabel Chacko of Open.
-                    Many of the female founder unicorns operate in the e-commerce industry. Nykaa’s founder Falguni
-                    Nayar, became the wealthiest Indian women entrepreneur when her beauty ecommerce platform went
-                    public in 2022. She also represents the first Indian women to head a publicly listed startup, and
-                    since is being widely seen as an inspiration and role model for aspiring women entrepreneurs in
-                    India.</p>
-                  <p class="m-0">Albeit slow, the business milieu is changing for Indian female founders. Women
-                    participation at entrepreneurship level is growing since over a decade, and has accelerated in the
-                    previous couple of years. Backed by studies that indicate gender diversity to enhance productivity
-                    and contribute to growth of companies, Indian women entrepreneurs can drive the economic growth
-                    further. The role of the Government of India cannot be undermined, as it has undertaken various
-                    initiatives to encourage women entrepreneurship. Niti Aayog’s Women Entrepreneurship Platform, Stree
-                    Shakti Scheme, Mahila Udyam Nidhi Scheme and Pradhan Mantri Mudra Yojana are all government
-                    sponsored schemes formed to support female business leaders. While many negatives come to fore when
-                    the Indian society and mindset is taken into view to be largely responsible for lesser women
-                    entrepreneurs in the country, something that often is overlooked is the strong family support fabric
-                    that Indian homes provide to an aspiring woman.</p>
-                  <p class="m-0">Already, there are few female founders when taken as a whole= and their proportion
-                    narrows down further when it comes to technology. Key reasons could be less of hands-on experience
-                    necessary for coding, and lesser self-confidence due to perception of technology being tougher to
-                    understand. The industry demands longer working hours, frequent travelling and most importantly
-                    networking. Self-doubt causes more damage than external factors to brilliant female minds. With hard
-                    work and by building self-confidence and nurturing ambition, women can deliver as technology leaders
-                    as well.</p>
-                  <p class="m-0">Increased women participation in technology events could raise more female technology
-                    leaders. Successful women founders can leverage the various platforms to help other women
-                    entrepreneurs attain success that could create more female leaders and founders in the tech space.
-                    They can also leverage programs initiated by corporates or governments such as the Indian
-                    government. A case in point is the Women Entrepreneurship Platform introduced by the Government of
-                    India under NITI Aayog to promote existing and aspiring women entrepreneurs in the country. Then,
-                    there are a few Angels/ funds who are consciously working to provide equal opportunities to women to
-                    found companies.</p>
+              <div class="card">
+                <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                  <h2 class="mb-0">
+                    <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo"
+                      class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Women Continue to Make Presence in the Indian Startups Ecosystem</button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                  <div class="card-body p-5 textless">
+                    <p class=" m-0">India has emerged as a global hotbed of startups, next only to the US and the UK. As many as 100 Indian startups have already joined the unicorn club. About 15% of Indian unicorns can boast of having at least one women founder. </p>
 
+                    <br />
+                    <p class="m-0">Some of the Indian unicorn companies with at least one female founder include Acko Insurance, BYJU’S, Hasura, Lead School, Livspace, Mamaearth, Mobikwik, Nykaa, OfBusiness, Pristyn Care, Rivigo, The Good Glamm Group and Zenoti. The 100th Indian unicorn, Open has two women founders Deena Jacob and Mabel Chacko of Open. Many of the women founder unicorns operate in the e-commerce industry. Nykaa’s founder Falguni Nayar became the wealthiest Indian women entrepreneur when her beauty ecommerce platform went public in 2022. She also represents the first Indian women to head a publicly listed startup, and since is being widely seen as an inspiration and role model for aspiring women entrepreneurs in India.</p>
+
+                    <p class="m-0">Women participation at entrepreneurship level has been growing over the decade, and has accelerated in the previous couple of years. The Government of India has undertaken various initiatives to encourage women entrepreneurship. Niti Aayog’s Women Entrepreneurship Platform, Stree Shakti Scheme, Mahila Udyam Nidhi Scheme and Pradhan Mantri Mudra Yojana are all government sponsored schemes formed to support women business leaders. Women entrepreneurs can also leverage programs initiated by corporates or governments such as the Indian government. A case in point is the Women Entrepreneurship Platform introduced by the Government of India under NITI Aayog to promote existing and aspiring women entrepreneurs in the country. Then, there are a few Angels/ funds who are consciously working to provide equal opportunities to women to found companies.</p>
+                   
+
+                  </div>
                 </div>
               </div>
+
+
+
+
             </div>
-
-
-
-
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-
-
-  
-  <!--================================
-   PROGARAM DETAILS
-=================================-->
-
-<section class="section bg-light">
-  <div class="container">
-   <eventcolapse-component></eventcolapse-component>
   </div>
 
-</section>
-
-
-<!--================================
-=    DOMAIN EXPERTS
-=================================-->
-
-<section class="section pt-4 " id="domain-experts">
-  
-</section>
-
-
-
-
   <!--============================
-	           Footer            
+           Footer            
 =============================-->
 
   <footer-component></footer-component>
 
 
   <!---============================
-           ScrollTop        
+       ScrollTop        
 =============================--->
 
   <scrolltop-component></scrolltop-component>
@@ -382,6 +216,7 @@
 
 
   </script>
+
 
 
 

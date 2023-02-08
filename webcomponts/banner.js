@@ -10,6 +10,8 @@ template.innerHTML = `
     line-height: 52px !important;
     margin-bottom: 8px;
     text-transform: uppercase;
+    text-aling:center;
+    width:100%
 }
 
 h4{
@@ -32,9 +34,9 @@ h4{
 
 </style>
 
-    <div class="col-12">
+    <div class="col-12 w-100">
         <div class=" title">
-            <h1> </h1>
+            <h1 class="tx> </h1>
             <!--h4>Global Virtual Summits</h4-->
         </div>
         <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -144,30 +146,30 @@ class EventCollapseComponent extends HTMLElement {
               <a class="my-2 equal-button btn d-block btn-sm shadow   p-3  mx-3 main-bg-color text-white  recommeded_export" target="_blank" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"  aria-controls="collapseExample" > SPONSOR ROI </a>
               <a class="my-2 equal-button btn d-block btn-sm shadow   p-3  mx-3 main-bg-color text-white  recommeded_export" target="_blank" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"  aria-controls="collapseExample" >
               RECOMMEND AN EXPERT </a>
-
-              <a class="my-2 equal-button btn d-block btn-sm shadow   p-3  mx-3 main-bg-color text-white  recommeded_export" target="_blank" data-toggle="collapse" href="#collapseExample0" role="button" aria-expanded="false"  aria-controls="collapseExample0" >
+              <a class="my-2 equal-button btn d-block btn-sm shadow   p-3  mx-3 main-bg-color text-white  recommeded_export" target="_blank" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"  aria-controls="collapseExample"
               WHAT’S TRENDING </a>
           </div>
   <!---->
-  <div class=" w-100 mx-0 mt-3">
-    
-    <!---RECOMMEND AN ENXPORT--->
-    <div class="collapse  mt-0 " id="collapseExample"  data-parent="#collapseblock">  
+      <div class=" w-100 mx-0 mt-3">
+        
+        <!---RECOMMEND AN ENXPORT--->
+        <div class="collapse  mt-0 " id="collapseExample"  data-parent="#collapseblock">  
 
-        <iframe src="https://www.evolv.cc/Add_Recommend.asp" class="recommend-frame"></iframe>
-    </div>
+            <iframe src="https://www.evolv.cc/Add_Recommend.asp" class="recommend-frame"></iframe>
+        </div>
 
-    <!---SPONSER--->
-    <div class="collapse  mt-0  " id="collapseExample2"  data-parent="#collapseblock">  
-        <iframe src="https://www.evolv.cc/Add_sponsors.asp" class="sponsors-frame"></iframe>
-    </div>
+        <!---SPONSER--->
+        <div class="collapse  mt-0  " id="collapseExample2"  data-parent="#collapseblock">  
+            <iframe src="https://www.evolv.cc/Add_sponsors.asp" class="sponsors-frame"></iframe>
+        </div>
 
-    <!---PRGOARM DETAILS--->
-    <div class="collapse  mt-0  " id="collapseExample3"  data-parent="#collapseblock">  
-        <iframe src="https://www.evolv.cc/Add_Program_Details.asp" class="programdetial-frame"></iframe>
-    </div>
+        <!---PRGOARM DETAILS--->
+        <div class="collapse  mt-0  " id="collapseExample3"  data-parent="#collapseblock">  
+            <iframe src="https://www.evolv.cc/Add_Program_Details.asp" class="programdetial-frame"></iframe>
+        </div>
 
-      </div>
+        </div>
+        </div>
       
       `;
 

@@ -13,21 +13,78 @@ body {
     min-height:100vh;
 }
 
+
+ body {
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     }
+
 .body-content{
     flex:1;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/*==========---
+    program-buttons
+===========*/
+
+.program-buttons{
+    font-size: 18px !important;
+    width: 215px;
+    margin-bottom: 10px !important;
+}
+
+.program-buttons.influencer{
+    background: #E82329 !important;
+}
+
+.program-buttons.influencer:hover{
+    background: #F94E53 !important;
+}
+
 /*==============
     EQUAL BUTTON
 ==============*/
+
+#domain-experts .equal-button{
+    background: #E82329 !important;
+}
+
+#domain-experts .equal-button:hover{
+    background: #F94E53 !important;
+}
+
 .equal-button{
-    width: 220px;
+    width: 195px;
     font-size: 15px;
     font-weight: bold;
 }
 
+
+
 @media (max-width: 1200px) {
     .equal-button{
-        width: 200px;
+        width: 183px;
         font-size: 14px;
         font-weight: bold;
     }
@@ -36,10 +93,18 @@ body {
 
 @media (max-width: 991px) {
     .equal-button{
-        width: 220px;
+        width: 200px;
         font-size: 15px;
         font-weight: bold;
     }
+
+    #domain-experts {
+        width: 100%;
+        text-align: center;
+    display: flex;
+    justify-content: center;    
+    }
+    
 
 }
 
@@ -50,6 +115,11 @@ body {
         font-weight: bold;
         padding: 11px !important;
     }
+
+}
+
+.equal-button[aria-expanded="true"]{
+    background:#1071e7;
 
 }
 
@@ -64,13 +134,13 @@ TITLES AND COLORS
 /*----TEXT---*/
 
 .font-display1{
-    font-size: 35px;
+    font-size: 28px;
    
     font-weight:600;
 }
 
 .font-display2{
-    font-size: 25px;
+    font-size: 24px;
     font-weight:600;
 }
 
@@ -148,8 +218,6 @@ button.main-bg-color {
 }
 
 
-
-
 .section-title p {
     width: 50%;
     margin: 0 auto;
@@ -170,6 +238,14 @@ ul.lower-roman {
     font-size: 29px;
     font-weight: bold;
     color: #000 margin-top: 20px;
+
+}
+
+
+#pagebanner-block {
+    display: flex;
+    justify-content: center;
+    margin-top: -17px
 }
 
 
@@ -279,7 +355,7 @@ hr.divider {
 =================*/
 
 .brandImg {
-    width: 150px;
+    width: 175px;
     height: auto;
     margin-top: 5px;
 }
@@ -449,6 +525,7 @@ image placekeeper
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-bottom: 0px !important;
 }
 
 /*.placekeeper_section::before {
@@ -953,7 +1030,8 @@ image placekeeper
     
 }
 
-.hero_section::before{
+.hero_section::before,
+.hero_section.profile:before{
     content: "";
     position: absolute;
     width: 100%;
@@ -977,6 +1055,23 @@ image placekeeper
    
 }
 
+.hero_section.profile{
+    height:auto
+}
+.hero_section.profile .container{
+    z-index: 999;
+}
+
+.hero_section.profile p {
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 0px;
+    line-height: 100px;
+    margin: 0;
+    color: #ff9921;
+    text-align: center;
+    line-height: normal;
+}
 
 
 
@@ -1569,6 +1664,35 @@ image placekeeper
         LAUNGAGE SETTING
 ===============================*/
 
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span{
+
+text-transform: uppercase;
+visibility: hidden;
+position: relative;
+}
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed::before{
+    content: 'Language';
+    position: absolute;
+    color: #000;
+    left: 0px;
+    top: 1px;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    font-size: 12px;
+    margin-left: 7px;
+    }
+    #google_translate_element{
+        width: 90px;
+        overflow: hidden;
+    }
+
+
+
+
 .ct-language__dropdown {
     width: 150px !important;
     max-height: 500;
@@ -2055,8 +2179,10 @@ GOOGLE TRANSALTOR STYLING
 #domain-experts iframe {
     border: none;
     width: 100%;
-    height: 1320px;
+    height: 1165px;
 }
+
+
 
 /*==============================
         PROGARAM BUTTON
@@ -2073,6 +2199,8 @@ GOOGLE TRANSALTOR STYLING
     color: #fff;
     background: #053978;
 }
+
+.influencer
 
 .clsmandatory {
     position: absolute !important;
@@ -2112,13 +2240,12 @@ GOOGLE TRANSALTOR STYLING
     padding: 3px;
 }
 
-
-
 @media (max-width:767px) {
     .volunteer-iframe {
         height: 970px;
     }
 }
+
 
 .contact-iframe {
     width: 100%;
@@ -2128,25 +2255,31 @@ GOOGLE TRANSALTOR STYLING
 }
 
 
+.writeups-frame{
+    width: 100%;
+    border:none;
+    height:350px;
+    padding:px;
+}
+
 
 .recommend-frame,
 .sponsors-frame,
 .programdetial-frame{
-    
-
     width:100%;
-  
     border:0px;
     
 }
+
 
 .recommend-frame{
     height:700px;
 }
 
+
 .programdetial-frame,
 .sponsors-frame{
-    height: 500px;
+    height: 430px;
 }
 
 
@@ -2310,14 +2443,266 @@ width: 25px;
     Writeupds block
 =======================*/
 
-#writeups{
+#accordionExample{
+    position: relative;
+}
+#accordionExample .card{
+   
+    overflow:visible !important;
+    margin:10px 0px;
+    border: none;
+
+}
+
+#accordionExample .card .card-header {
+    padding: 5px !important;
+}
+
+#accordionExample .card .card-header h2{
+    line-height: normal;
+}
+
+#accordionExample .card .card-header h2 button{
+    font-size: 16px;
+    font-weight: 600 !important;
+    color: #000 !important;
+  
+}
+
+#accordionExample::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #ededed;
+    top: 0px;
+    left: -10px;
+}
+
+#accordionExample .card::before{
+    content: "";
+    position: absolute;
+    width:10px;
+    height:10px;
+    border-radius: 100%;
+    background: #04489b;
+    top: 25px;
+    left: -14px;
+    z-index: 9;
+
+}
+
+#accordionExample .card .card-body{
+    padding: 10px 20px !important
+}
+
+#accordionExample .card .card-body br{
     display: none;
 }
 
-/*=====================
-    Writeupds block
-=======================*/
+#accordionExample .card .card-body p{
+    margin-bottom: 10px !important;
+    text-align: justify;
+    
+}
+
+#writeup-title {
+    position: relative;
+    
+    padding: 15px  10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(333.56deg, #23033c -57.5%, var(--maincolor) 87.13%);
+    text-align: center;
+    
+
+}
+
+#writeup-title h2{
+    width: 100%;
+    color:#fff;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform:uppercase;
+}
 
 section.section.bg-light{
-    padding: 25px !important;
+    padding: 0px 25px !important;
 }
+
+
+/*=======================
+     signin form
+========================*/
+
+
+#domain-list-table {
+    position: relative;
+    border-collapse: collapse; 
+    width: 100%;
+    overflow: scroll;
+  }
+
+
+
+ #domain-list-table  thead tr {
+    position: sticky;
+    top: -1; /* Don't forget this, required for the stickiness */
+    z-index: 99999;
+  }
+
+
+.domain-table-block{
+    height: 350px;
+    overflow-y: scroll;
+}
+
+
+
+.domain-table-block::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  
+.domain-table-block::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  
+.domain-table-block::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  
+.domain-table-block::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.domain-search{
+    position: relative;
+}
+  .domain-search::before{
+    content: '\f0da';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-family: FontAwesome;
+    color: #900;
+    margin-left: -11px;
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  /*==================
+    PROGRAM PAGE
+  ===================*/
+
+  #program-list-block .accordion{
+    margin: 40px 0;
+  }
+  
+  #program-list-block .accordion .item {
+      border: none;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      background: none;
+      position: relative;
+  }
+  
+  #program-list-block .t-p{
+    color: rgb(193 206 216);
+    padding: 40px 30px 0px 30px;
+  }
+  
+  #program-list-block .accordion .item .item-header h2 button.btn.btn-link {
+    background: #ffffff;
+    color: #000;
+    border-radius: 0px;
+ 
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2.5;
+    text-decoration: none;
+  }
+
+  #program-list-block .accordion .item .item-header h2 button.btn.btn-link:focus{
+    border: none;
+    outline: none;
+  }
+  
+  #program-list-block .accordion .item .item-header {
+      border-bottom: none;
+      background: transparent;
+      padding: 0px;
+      margin: 2px;
+  }
+  
+
+  #program-list-block .accordion .item .item-header h2 button {
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display: block;
+      width: 100%;
+      text-align: left;
+  }
+  
+    #program-list-block .accordion .item .item-header h2 i {
+      float: right;
+      font-size: 25px;
+      color: #fff;
+      background-color: var(--maincolor);
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+  }
+  
+  
+  #program-list-block button.btn.btn-link.collapsed i {
+      transform: rotate(0deg);
+  }
+  
+  
+  #program-list-block button.btn.btn-link i {
+      transform: rotate(180deg);
+      transition: 0.5s;
+  }
+  
+
+  #program-list-block #accordionExample{
+    position: relative;
+  }
+
+  #program-list-block #accordionExample::before{
+    
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        background-color: #ebebeb;
+        top: 0px;
+        left: -20px;
+
+  }
+  #program-list-block #accordionExample .item::before{
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: var(--maincolor);
+    content: "";
+    top: 35px;
+    left: -25px;
+    z-index: 5;
+    margin-top: -5.5px;
+  }

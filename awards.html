@@ -55,29 +55,37 @@
   <header-component></header-component>
   <!--============================
     PLACEKEEPTER BANNER
-=============================-->
-<div class="body-content">
+=============================-->    
 
-  <section class="section">
+<section class="section placekeeper_section">
+  <div class="container">
+    <div class="row align-items-center">
+
+    </div>
+  </div>
+</section>
+
+
+  <section class="section page-title">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-10 m-auto">
 
-          <h1 class="font-display1 text-center main-font-color">AWARDS & RECOGNITIONS</h1>
-          <br />
+          <h1 class="font-display1 text-center main-font-color">AWARDS &amp; RECOGNITIONS</h1>
+          <br>
           <p class="font-weight-bold para-display4" style="line-height: 25px;">Innovator company and Influencer recognitions are a major part of
             Evolv™. We adopt a transparent and unbiased methodology that is independent of sponsorships or any other
             special motivations. Consistent with best practices we never charge a fee to participate or get recognition.
           </p>
-          <br />
+          <br>
           <p class="font-weight-bold para-display4" style="line-height: 25px;">Applications for Innovator Awards and nomination forms for
-            influencer recognition will open on February 1, 2023. Please revisit to participate. </p>
+            influencer recognition will open on February 10, 2023. Please revisit to participate. </p>
 
         </div>
       </div>
     </div>
   </section>
-</div>
+
   <!--====  End of Page Title  ====-->
 
   <!--============================
@@ -109,28 +117,27 @@
   <script src="js/script.js"></script>
   <script src="./js/submenu_select.js"></script>
 
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
-        $('.goog-te-menu-value span:first').html('LANGUAGE');
-        $('.goog-te-menu-frame.skiptranslate').load(function () {
-          setTimeout(function () {
-            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
-          }, 100);
-        });
-      });
-    });
-  </script>
+<script type="text/javascript">
+    $(document).ready(function(){
+$('#google_translate_element').bind('DOMNodeInserted', function(event) {
+$('.goog-te-menu-value span:first').html('LANGUAGE');
+$('.goog-te-menu-frame.skiptranslate').load(function(){
+    setTimeout(function(){
+    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
+    }, 100);
+});
+});
+});
+</script>
 
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-    }
-  </script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
 </body>
 
 

@@ -18,7 +18,7 @@ class FooterComponent extends HTMLElement {
 						<li class="nav-item"><a href="media.html" class="nav-link">MEDIA</a></li>
 						<li class="nav-item"><a href="privacy.html" class="nav-link">PRIVACY POLICY</a></li>
 						<li class="nav-item"><a href="serviceagreements.html" class="nav-link">SERVICE AGREEMENT</a></li>	
-						<li class="nav-item"><a href="javascript:void(0)" class="nav-link">PARTNERS</a></li>	
+						<li class="nav-item"><a href="partners.html" class="nav-link">PARTNERS</a></li>	
 						
 						<li class="nav-item"><a href="CONTACTUS.html" class="nav-link">CONTACT</a></li>			
 					  </ul>

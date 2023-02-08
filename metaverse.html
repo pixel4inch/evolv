@@ -44,93 +44,100 @@
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
-
-
+  <!--============================
+=            HEADER           =
+=============================-->
+  <header-component></header-component>
   <!--============================
 =            HEADER           =
 =============================-->
 
-  <header-component></header-component>
-
-
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
+
     $(document).ready(function () {
       $.getJSON("./data/events.json", function (data) {
-        var banner = '';
-        var datagrapic = '';
-        var domain='';
-        var gialink="";
+        var selURL = window.location.pathname.substr(window.location.pathname.lastIndexOf("/") + 1).replace(".html", "");
+
+        var writeuptitle = '';
         console.log(data)
         $.each(data.eventslist, function (key, value) {
-          if (value.Event == "metaverse") {
-            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-              if( value.eventdomainlink !== undefined ){
-                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-              }
-     
+          if (selURL == value.Event) {
+            writeuptitle += `<h2>` + value.eventtitle + `</h2>`;
+          } else {
+
           }
         });
-        $('#pagebanner-block').html(banner);
-        $('#datagraphic-block').html(datagrapic);
-        $('#domain-experts').html(domain);
-        $('#gialinkblock').html(gialink);
-
+        $('#writeup-title').html(writeuptitle);
       }).fail(function () {
         document.write("An error has occurred.");
-      }); 
+      });
     }); 
   </script>
+  <div id="writeup-title">
 
-  <!--============================
-    PAGE BANNERS
-=============================-->
-  <section class="pagebanners">
-    <div class="container">
-      <div class="row mx-0" id="pagebanner-block">
+  </div>
 
-      </div>
-    </div>
-  </section>
+  <div class="body-content"><!DOCTYPE html>
 
-  <!--============================
-   DATA GRAPHIC
-=============================-->
-  <section class="section placekeeper_section page-title">
-    <div class="container">
-      <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block" id="datagraphic-block">
-         
-        </div>
+<html lang="en">
 
-        <div class="w-100   text-center" id="gialinkblock">
-         
-       </div>
+<head>
 
-      </div>
-    </div>
-  </section>
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Evolv</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Evolv">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Evolv ">
+  <meta name="generator" content="Evolv">
+
+  <!-- theme meta -->
+  <meta name="theme-name" content="Evolv" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="..plugins/themify-icons/themify-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+
+  <!-- CUSTOM CSS -->
+  <link href="../css/style.css"" rel="stylesheet" />
+  <link href="../css/custome.css" rel="stylesheet" />
+  <link href="../plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
+  <link href="../css/jquery.readall.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+
 
 
   <!--================================
-=            Page Title            =
+         WHATS TRENDING
 =================================-->
-
-<section class="section" id="writeups">
-    <div class="container">
-
-
-
-      <div class="row pb-4 page-title">
-        <div class="col-sm-12 m-auto text-center -3">
-          <!-- Page Title -->
-          <h1>WHAT'S TRENDING</h1>
-          
-          
-        </div>
+<section class="section" id="writeup">
+  <div class="container">
+    <div class="row pb-3 page-title">
+      <div class="col-sm-12 m-auto text-center -3">
+        <!-- Page Title -->
+        <h1 class="font-display2 main-font-color">WHAT'S TRENDING</h1>
       </div>
+    </div>
+
+
+
+     
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
@@ -228,103 +235,78 @@
     </div>
   </section>
 
-  <!--====  End of Page Title  ====-->
+</div>
 
-
-
-
- 
-  <!--================================
-   PROGARAM DETAILS
-=================================-->
-
-<section class="section bg-light">
-  <div class="container">
-   <eventcolapse-component></eventcolapse-component>
-  </div>
-
-</section>
-
-
-<!--================================
-=    DOMAIN EXPERTS
-=================================-->
-
-<section class="section pt-4 " id="domain-experts">
-  
-</section>
-
-
-
-  <!--============================
-	           Footer            
+<!--============================
+           Footer            
 =============================-->
 
-  <footer-component></footer-component>
+<footer-component></footer-component>
 
 
-  <!---============================
-           ScrollTop        
+<!---============================
+       ScrollTop        
 =============================--->
 
-  <scrolltop-component></scrolltop-component>
+<scrolltop-component></scrolltop-component>
 
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
+<!-- JAVASCRIPTS -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+<script src="plugins/google-map/gmap.js"></script>
 
-  <script src="js/script.js"></script>
-  <script src="./js/submenu_select.js"></script>
-  <script src="./js/jquery.readall.js"></script>
-
-
-  <!---WEB COMPONETNS-->
-  <script src="./webcomponts/headerComponents.js"></script>
-  <script src="./webcomponts/FooterComponent.js"></script>
-  <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
-  <script src="./webcomponts/banner.js"></script>
-
-  <script>
-    $('.textless').readall({
-      showheight: null,
-      showrows: 8
-    });
+<script src="js/script.js"></script>
+<script src="./js/submenu_select.js"></script>
+<script src="./js/jquery.readall.js"></script>
 
 
-  </script>
+<!---WEB COMPONETNS-->
+<script src="./webcomponts/headerComponents.js"></script>
+<script src="./webcomponts/FooterComponent.js"></script>
+<script src="./webcomponts/ScrollToTop.js"></script>
+<script src="./webcomponts/dummytext.js"></script>
+<script src="./webcomponts/banner.js"></script>
+
+<script>
+  $('.textless').readall({
+    showheight: null,
+    showrows: 8
+  });
+
+
+</script>
 
 
 
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
-        $('.goog-te-menu-value span:first').html('LANGUAGE');
-        $('.goog-te-menu-frame.skiptranslate').load(function () {
-          setTimeout(function () {
-            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
-          }, 100);
-        });
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+      $('.goog-te-menu-value span:first').html('LANGUAGE');
+      $('.goog-te-menu-frame.skiptranslate').load(function () {
+        setTimeout(function () {
+          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+        }, 100);
       });
     });
-  </script>
+  });
+</script>
 
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-    }
-  </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+  }
+</script>
 </body>
 
 </html>

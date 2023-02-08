@@ -39,104 +39,55 @@
   <link href="css/jquery.readall.css" rel="stylesheet" />
 
 
+
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
-
-
+  <!--============================
+=            HEADER           =
+=============================-->
+  <header-component></header-component>
   <!--============================
 =            HEADER           =
 =============================-->
 
-  <header-component></header-component>
-
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
 
-    
-    
     $(document).ready(function () {
-
-     
-      
-
       $.getJSON("./data/events.json", function (data) {
         var selURL = window.location.pathname.substr(window.location.pathname.lastIndexOf("/") + 1).replace(".html", "");
-        var banner = '';
-        var datagrapic = '';
-        var domain='';
-        var gialink="";
+
+        var writeuptitle = '';
         console.log(data)
         $.each(data.eventslist, function (key, value) {
-          if (value.Event == selURL) {
-            banner += `<employee-card  title=" ` + value.eventtitle + '"  date= " ' + value.eventdate + ` "> </employee-card>`;
-            datagrapic +=`<img src="` + value.eventdatagraphic + `" class="img-fluid border shadow-sm"/>`;
-            gialink +=`<dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
-              if( value.eventdomainlink !== undefined ){
-                domain +=`  <div class="w-100"> <iframe class="domain-iframe"  src="` + value.eventdomainlink + `"></iframe> </div>`
-              }
-     
+          if (selURL == value.Event) {
+            writeuptitle += `<h2>` + value.eventtitle + `</h2>`;
+          } else {
+
           }
         });
-        $('#pagebanner-block').html(banner);
-        $('#datagraphic-block').html(datagrapic);
-        $('#domain-experts').html(domain);
-        $('#gialinkblock').html(gialink);
-
+        $('#writeup-title').html(writeuptitle);
       }).fail(function () {
         document.write("An error has occurred.");
-      }); 
+      });
     }); 
   </script>
+  <div id="writeup-title">
 
-  <!--============================
-    PAGE BANNERS
-=============================-->
-  <section class="pagebanners">
+  </div>
+
+  <div class="body-content">
+
+<section class="section" id="writeup">
     <div class="container">
-      <div class="row mx-0" id="pagebanner-block">
-
-      </div>
-    </div>
-  </section>
-
-  <!--============================
-    PLACEKEEPTER BANNER
-=============================-->
-  <section class="section placekeeper_section page-title">
-    <div class="container">
-      <div class="row align-items-center m-0 ">
-        <div class="datagraphic-block" id="datagraphic-block">
-         
-        </div>
-
-        <div class="w-100   text-center" id="gialinkblock">
-         
-       </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!--================================
-         WHATS TRENDING
-=================================-->
-
-<section class="section" id="writeups">
-    <div class="container">
-      <div class="row pb-4 ">
+      <div class="row pb-3 page-title">
         <div class="col-sm-12 m-auto text-center -3">
           <!-- Page Title -->
-          <h1 class="font-display2 text-center">WHAT'S TRENDING</h1>
-
-
+          <h1 class="font-display2 main-font-color">WHAT'S TRENDING</h1>
         </div>
       </div>
-
       <div class="row">
 
         <div class="col-lg-12 mx-auto">
@@ -154,14 +105,13 @@
               </div>
               <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
                 <div class="card-body p-5">
-                  <p class=" m-0"The rapid increase in spending on AI reflects the growing interest in the technology among various stakeholders. Despite concerns over loss of control and job losses, AI remains a high potential technology with significant applications in different end-use industries. The pandemic played a crucial role in expediting digitalization while prompting companies to invest in data-related projects. The crisis pushed adoption of AI and data analytics, with an increasing number of companies focusing on these technologies due to their compelling benefits. In particular, developing economies across the world are rapidly shifting towards smart technologies as a means to enhance efficiency of their business activities, which also contribute to an increase in overall profitability. Such a shift towards novel and smart technologies provides significant growth opportunity for AI.</p>
+                  
+                  <p class=" m-0">The rapid increase in spending on AI reflects the growing interest in the technology among various stakeholders. Despite concerns over loss of control and job losses, AI remains a high potential technology with significant applications in different end-use industries. The pandemic played a crucial role in expediting digitalization while prompting companies to invest in data-related projects. The crisis pushed adoption of AI and data analytics, with an increasing number of companies focusing on these technologies due to their compelling benefits. In particular, developing economies across the world are rapidly shifting towards smart technologies as a means to enhance efficiency of their business activities, which also contribute to an increase in overall profitability. Such a shift towards novel and smart technologies provides significant growth opportunity for AI.</p>
 
                   <p class=" m-0">Also benefiting AI is the escalating demand for speech-to-speech translation and smart conversational virtual assistants. AI is also being increasingly used in the development and launch of autonomous vehicles and for business process automation, specifically in developed economies. Also driving demand for AI solutions is the growing use of speech recognition systems and intelligent customer assistance bots in rapidly expanding e-commerce sector. Consequently, the ability of AI technologies to ease the operation of various business processes and contain overall costs is leading to a surge in demand for AI in end-use industries. Increasing number of IT organizations are using AI, while others are expediting implementation of the technology. AI is enabling businesses to efficiently communicate with clients through virtual assistants, securely manage networks and automate workflows. Data analytics and AI are enabling companies to deliver new products and associated services to address consumer demand. These technologies are driving innovations and allowing players in diverse industry verticals to come up with new offerings. Advances in the autonomous vehicle segment such as long-range radar, cameras, and LIDAR leverage AI to provide actionable insights.  </p>
                   <br />
 
                   <p class=" m-0">AI tools and techniques specially designed for the field of robotics play a vital role in enabling robots to become more advanced and efficient in accomplishing tasks. In Agriculture, organizations are using automation and robotics to help farmers find more efficient ways to protect their crops from weeds. Besides robots, companies have started leveraging deep learning and computer vision algorithms to process data that are captured with the help of drones or software-based technology in monitoring the health of the soil and crops likewise. Over the past few years, AI has become an integral part of the gaming industry. In the banking industry, there is growing pressure to automate and reduce costs. The implementation of AI in the banking sector plays an important role in reducing costs, boosting revenues and uncovering new and untapped opportunities. The technology is anticipated to gain from increasing consumer preference for mobile and online banking. A large number of people are likely to reduce branch visits in the post-pandemic phase. Despite existing budgetary constraints, the trend is poised to prompt various banks to increase AI capabilities. The adoption of AI is bound to be propelled further by the need for regulatory clarity and compliance. Regulators and central banks are making efforts to facilitate safe adoption as well as making companies understand the effect of existing policy frameworks, which are poised to benefit AI.</p>
-
-
 
                 </div>
               </div>
@@ -348,99 +298,80 @@
         </div>
       </div>
     </div>
-  </section>
+</section>
+</div>
 
-  <!--====  End of Page Title  ====-->
-
-
-  <!--================================
-   PROGARAM DETAILS
-=================================-->
-
-  <section class="section bg-light">
-    <div class="container">
-     <eventcolapse-component></eventcolapse-component>
-    </div>
-
-  </section>
-
-
-  <!--================================
-=    DOMAIN EXPERTS
-=================================-->
-
-  <section class="section pt-4 " id="domain-experts">
-    
-  </section>
-
-
-
-
-  
-  <!--============================
-	           Footer            
+<!--============================
+           Footer            
 =============================-->
 
-  <footer-component></footer-component>
+<footer-component></footer-component>
 
-  <!---============================
-           ScrollTop        
+
+<!---============================
+       ScrollTop        
 =============================--->
 
-  <scrolltop-component></scrolltop-component>
+<scrolltop-component></scrolltop-component>
 
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
+<!-- JAVASCRIPTS -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+<script src="plugins/google-map/gmap.js"></script>
 
-  <script src="js/script.js"></script>
-  <script src="./js/submenu_select.js"></script>
-  <script src="./js/jquery.readall.js"></script>
-
-
-  <!---WEB COMPONETNS-->
-  <script src="./webcomponts/headerComponents.js"></script>
-  <script src="./webcomponts/FooterComponent.js"></script>
-  <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
-  <script src="./webcomponts/banner.js"></script>
-  <script src="./webcomponts/eventcollapse.js"></script>
-  <script src="./webcomponts/dgcomponent.js"></script>
-  <script src="./webcomponts/datafooterComponent.js"></script>
+<script src="js/script.js"></script>
+<script src="./js/submenu_select.js"></script>
+<script src="./js/jquery.readall.js"></script>
 
 
+<!---WEB COMPONETNS-->
+<script src="./webcomponts/headerComponents.js"></script>
+<script src="./webcomponts/FooterComponent.js"></script>
+<script src="./webcomponts/ScrollToTop.js"></script>
+<script src="./webcomponts/dummytext.js"></script>
+<script src="./webcomponts/banner.js"></script>
 
-  <script src="./js/multi-animated-counter.js"></script>
+<script>
+  $('.textless').readall({
+    showheight: null,
+    showrows: 8
+  });
 
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
-        $('.goog-te-menu-value span:first').html('LANGUAGE');
-        $('.goog-te-menu-frame.skiptranslate').load(function () {
-          setTimeout(function () {
-            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
-          }, 100);
-        });
+</script>
+
+
+
+
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+      $('.goog-te-menu-value span:first').html('LANGUAGE');
+      $('.goog-te-menu-frame.skiptranslate').load(function () {
+        setTimeout(function () {
+          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+        }, 100);
       });
     });
-  </script>
+  });
+</script>
 
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-    }
-  </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+  }
+</script>
 </body>
+
 
 </html>

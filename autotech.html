@@ -7,7 +7,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Auto Tech</title>
+  <title>Evolv</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
@@ -29,22 +29,16 @@
   <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="plugins/aos/aos.css" />
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/custome.css" rel="stylesheet" />
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
-  <link href="css/jquery.readall.css" rel="stylesheet"/>
+  <link href="css/jquery.readall.css" rel="stylesheet" />
 
 
-  <!---WEB COMPONETNS-->
-  <script src="./webcomponts/headerComponents.js"></script>
-  <script src="./webcomponts/FooterComponent.js"></script>
-  <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
 
 </head>
 
@@ -55,23 +49,49 @@
 =============================-->
   <header-component></header-component>
   <!--============================
-    PLACEKEEPTER BANNER
-=============================-->    
+=            HEADER           =
+=============================-->
 
-<section class="section placekeeper_section theme-3">
-  <div class="container">
-    <div class="row align-items-center">
+  <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+  <script>
 
-    </div>
+    $(document).ready(function () {
+      $.getJSON("./data/events.json", function (data) {
+        var selURL = window.location.pathname.substr(window.location.pathname.lastIndexOf("/") + 1).replace(".html", "");
+
+        var writeuptitle = '';
+        console.log(data)
+        $.each(data.eventslist, function (key, value) {
+          if (selURL == value.Event) {
+            writeuptitle += `<h2>` + value.eventtitle + `</h2>`;
+          } else {
+
+          }
+        });
+        $('#writeup-title').html(writeuptitle);
+      }).fail(function () {
+        document.write("An error has occurred.");
+      });
+    }); 
+  </script>
+  <div id="writeup-title">
+
   </div>
-</section>
+
+  <div class="body-content">
 
   <!--================================
 =            Page Title            =
 =================================-->
 
-  <section class="section page-title">
-    <div class="container">
+<section class="section" id="writeup">
+  <div class="container">
+    <div class="row pb-3 page-title">
+      <div class="col-sm-12 m-auto text-center -3">
+        <!-- Page Title -->
+        <h1 class="font-display2 main-font-color">WHAT'S TRENDING</h1>
+      </div>
+    </div>
       <div class="row">
         <div class="col-sm-12 m-auto">
 
@@ -114,72 +134,78 @@
     </div>
   </section>
 
-  <!--====  End of Page Title  ====-->
+</div>
 
-  <!--============================
-	           Footer            
+<!--============================
+           Footer            
 =============================-->
-  <footer-component></footer-component>
+
+<footer-component></footer-component>
 
 
-  <!---============================
-           ScrollTop        
+<!---============================
+       ScrollTop        
 =============================--->
 
-  <scrolltop-component></scrolltop-component>
+<scrolltop-component></scrolltop-component>
+
+<!-- JAVASCRIPTS -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<script src="js/script.js"></script>
+<script src="./js/submenu_select.js"></script>
+<script src="./js/jquery.readall.js"></script>
+
+
+<!---WEB COMPONETNS-->
+<script src="./webcomponts/headerComponents.js"></script>
+<script src="./webcomponts/FooterComponent.js"></script>
+<script src="./webcomponts/ScrollToTop.js"></script>
+<script src="./webcomponts/dummytext.js"></script>
+<script src="./webcomponts/banner.js"></script>
+
+<script>
+  $('.textless').readall({
+    showheight: null,
+    showrows: 8
+  });
+
+
+</script>
 
 
 
 
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script src="js/script.js"></script>
-  <script src="./js/submenu_select.js"></script>
-  <script src="./js/jquery.readall.js"></script>
-
-  <script>
-     $('.textless').readall({
-      showheight: null,
-      showrows: 8
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+      $('.goog-te-menu-value span:first').html('LANGUAGE');
+      $('.goog-te-menu-frame.skiptranslate').load(function () {
+        setTimeout(function () {
+          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+        }, 100);
       });
-  </script>
-
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-$('#google_translate_element').bind('DOMNodeInserted', function(event) {
-$('.goog-te-menu-value span:first').html('LANGUAGE');
-$('.goog-te-menu-frame.skiptranslate').load(function(){
-    setTimeout(function(){
-    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');    
-    }, 100);
-});
-});
-});
+    });
+  });
 </script>
 
 
 <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+  }
 </script>
-
-
 </body>
-
-
-
 
 </html>
