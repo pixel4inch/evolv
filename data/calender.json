@@ -1,43 +1,27 @@
 {
-  "MAR": [
+
+  "APRIL": [
+
     {
-      "Title": "EVOLV™ KICKOFF",
-      "Links": "java",
+      "eventtype":"liveevent",
+      "Title": "Evolv™ 2023 KICKOFF",
+      "Title2": "B20 2023 ROADSHOW",
+      "Links": "/evolvkickoff.html",
       "Multi": "",
       "dg": "",
-      "date": "March 27-31",
+      "date": "April 04-06, 2023, Silicon Valley, California.",
       "live": "live",
       "icon": "./images/evolv/icons/calender/live.png"
     },
     {
-      "Title": "B20 SILICON VALLEY ROADSHOW",
-      "Links": "",
-      "Multi": "",
-      "dg": "",
-      "date": "March 27-31",
-      "live": "live",
-      "icon": "./images/evolv/icons/calender/live.png"
-    }
-  ],
-  "APRIL": [
-    {
+      "eventtype":"",
       "EventId":"ai",
       "Title": "AI & ML",
       "Links": "./calevents_evolv.html",
       "Multi": "Multi",
       "dg": "",
-      "date": "April 05",
+      "date": "April 07",
       "icon": "./images/evolv/icons/calender/AI.png"
-    },
-    
-    {
-      "EventId":"edtech",
-      "Title": "EdTech",
-      "Links": "./calevents_evolv.html",
-      "Multi": "",
-      "dg": "",
-      "date": "April 06",
-      "icon": "./images/evolv/icons/calender/EdTech.png"
     },
 
     {
@@ -98,6 +82,16 @@
       "icon": "./images/evolv/icons/calender/Drones.png"
     },
  
+    {
+      "EventId":"edtech",
+      "Title": "EdTech",
+      "Links": "./calevents_evolv.html",
+      "Multi": "",
+      "dg": "",
+      "date": "April 18",
+      "icon": "./images/evolv/icons/calender/EdTech.png"
+    },
+
 
     {
       "EventId":"dei",
@@ -149,8 +143,6 @@
 
 
 
-
-
     {
       "EventId":"gaming",
       "Title": "Gaming",
@@ -164,7 +156,6 @@
   "MAY": [
     {
       "EventId":"autonomous",
- 
       "Title": "AutoTech - Autonomous Vehicles",
       "Links": "./calevents_evolv.html",
       "Multi": "",
@@ -284,7 +275,7 @@
       "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
-      "date": "May 23",
+      "date": "May 15",
       "icon": "./images/evolv/icons/calender/Web3.png"
     },
     {
@@ -293,8 +284,19 @@
       "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
-      "date": "May 24",
+      "date": "May 17",
       "icon": "./images/evolv/icons/calender/BT.png"
+    },
+    {
+      "eventtype":"liveevent",
+      "Title": "Evolv™ 2023 WORLD INNOVATOR SUMMIT",
+      "Title2": "",
+      "Links": "",
+      "Multi": "",
+      "dg": "",
+      "date": "May 22-25, 2023, New Delhi, India.",
+      "live": "live",
+      "icon": "./images/evolv/icons/calender/live.png"
     },
     {
       "EventId":"martech",
@@ -302,17 +304,33 @@
       "Links": "./calevents_evolv.html",
       "Multi": "",
       "dg": "",
-      "date": "May 25",
+      "date": "May 29",
       "icon": "./images/evolv/icons/calender/MARTECH.png "
     }
+    
 
  
   ],
   "JUNE": [
 
-
-
-
+{
+      "EventId":"starup",
+      "Title": " Startup Ecosystems",
+      "Links": "./calevents_evolv.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "June 06",
+      "icon": "./images/evolv/icons/calender/Ecosystem.png"
+    },
+	      {
+      "EventId":"blockchain",
+      "Title": "Blockchain",
+      "Links": "./calevents_evolv.html",
+      "Multi": "",
+      "dg": "",
+      "date": "June 07",
+      "icon": "./images/evolv/icons/calender/Blockchain.png"
+    },
 
     {
       "EventId":"saas",
@@ -323,24 +341,8 @@
       "date": "June 09",
       "icon": "./images/evolv/icons/calender/sass.png"
     },
-    {
-      "EventId":"starup",
-      "Title": " Startup Ecosystems",
-      "Links": "./calevents_evolv.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "June 06",
-      "icon": "./images/evolv/icons/calender/Ecosystem.png"
-    },
-    {
-      "EventId":"blockchain",
-      "Title": "Blockchain",
-      "Links": "./calevents_evolv.html",
-      "Multi": "",
-      "dg": "",
-      "date": "June 07",
-      "icon": "./images/evolv/icons/calender/Blockchain.png"
-    },
+    
+
     
     
     
@@ -411,6 +413,15 @@
       "date": "June 21",
       "icon": "./images/evolv/icons/calender/FoodTech.png"
     },
+	     {
+      "EventId":"smartcities",
+      "Title": "Smart Cities",
+      "Links": "./calevents_evolv.html",
+      "Multi": "",
+      "dg": "",
+      "date": "June 22",
+      "icon": "./images/evolv/icons/calender/SmartCities.png"
+    },
     {
       "EventId":"insurtech",
       "Title": "InsurTech",
@@ -421,20 +432,25 @@
       "icon": "./images/evolv/icons/calender/InsureTech.png"
     },
     {
-      "EventId":"smartcities",
-      "Title": "Smart Cities",
-      "Links": "./calevents_evolv.html",
+      "eventtype":"liveevent",
+      "Title": "Evolv™ ANNUAL SUMMIT ",
+      "Title2": "& INNOVATOR AWARDS NIGHT",
+      "Links": "",
       "Multi": "",
       "dg": "",
-      "date": "June 22",
-      "icon": "./images/evolv/icons/calender/SmartCities.png"
+      "date": "June 27-30, 2023, Silicon Valley, California.",
+      "live": "live",
+      "icon": "./images/evolv/icons/calender/live.png"
     }
+ 
 
  
 
   ],
 
 "JULY":[
+
+
     
       {
         "EventId":"fashion",
@@ -472,7 +488,15 @@
 ],
 
   "AUG": [
-
+    {
+      "EventId":"deeptech",
+      "Title": "DeepTech",
+      "Links": "./calevents_evolv.html",
+      "Multi": "Multi",
+      "dg": "",
+      "date": "August 02",
+      "icon": "./images/evolv/icons/calender/DeepTech.png"
+    },
 
 
     {
@@ -575,14 +599,18 @@
       "date": "August 22",
       "icon": "./images/evolv/icons/calender/Pow.png"
     },
+   
+    
     {
-      "EventId":"deeptech",
-      "Title": "DeepTech",
-      "Links": "./calevents_evolv.html",
-      "Multi": "Multi",
+      "eventtype":"liveevent",
+      "Title": "B20 2023 B2B SUMMIT",
+      "Title2": "",
+      "Links": "",
+      "Multi": "",
       "dg": "",
-      "date": "August 23",
-      "icon": "./images/evolv/icons/calender/DeepTech.png"
+      "date": "August 23-27, 2023, New Delhi, India.",
+      "live": "live",
+      "icon": "./images/evolv/icons/calender/b20.png"
     },
     {
       "EventId":"dei",
@@ -611,7 +639,7 @@
       "dg": "",
       "date": "August 30",
       "icon": "./images/evolv/icons/calender/ElectricVehicles.png"
-    } 
+    }
 
  
 

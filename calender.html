@@ -70,7 +70,7 @@
                 <div class="row">
       
                     <h1 class="font-display2 text-center main-font-color  col-lg-11 mt-3 col-md-12 mx-auto " >
-                        Myriad of Programs Driven by Evolv<sup>TM</sup> Members, Partners, and Supporters
+                        Myriad of Programs Driven by Evolv™ Members, Partners, and Supporters
                     </h1>
           
                     <h2 class="font-display1 mt-0 text-center  col-lg-11 col-md-12 mx-auto text-capitalize">Let's <u>Evolve</u> Together!</h2> 
@@ -87,36 +87,17 @@
                     <div class="apland-timeline-area">
 
 
-                        <!-- Single Timeline Content-->
-                        <div class="single-timeline-area">
-                            <div class="timeline-date wow fadeInLeft w-100" data-wow-delay="0.1s"
-                                style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                                <p>MARCH 2023</p>
-                            </div>
-                            <!---INPERSON EVENT -->
-                            <div class="row mx-0" id="mar">
-                                <div
-                                    class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
-                                    <div class="single-timeline-content inpersonal d-flex wow fadeInLeft"
-                                        data-wow-delay="0.3s"
-                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                        <div class="timeline-icon"><img src="./images/evolv/icons/calender/live.png">
-                                        </div>
-                                        <div class="timeline-text">
-                                            <h6 class="d-flex flex-column"><span style="color:black" class="mb-1">EVOLV<sup>TM</sup> 2023 KICKOFF</span> <span style="color:black">B20 2023 ROADSHOW
-                                                    </span> </h6>
-                                            <h5>March 27-30, 2023</h5>
-                                        </div>
-                                    </div>
-                                    </a> </div>
-                            </div>
-                        </div>
+                        
+                      
                         <!-- Single Timeline Content-->
                         <div class="single-timeline-area">
                             <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
                                 style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
                                 <p>APRIL 2023</p>
                             </div>
+                            <!--div class="row " id="mar">
+                               
+                            </div-->
                             <div class="row pb-4" id="april">
                                 <script>
                                     $(document).ready(function () {
@@ -124,16 +105,40 @@
                                             var output = '';
                                             console.log(data)
                                             $.each(data.APRIL, function (key, value) {
-                                                output += `
-                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
-                                                        <div class="timeline-text">
-                                                            <h6>` + value.Title + `</h6>
-                                                            <h5>` + value.date + `</h5>
-                                                        </div>
-                                                    </div>
-                                               </a> </div> `;
+
+                                                if (value.eventtype !== "liveevent") {
+                                                            output += `
+                                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
+                                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                                        <div class="timeline-text">
+                                                                            <h6>` + value.Title + `</h6>
+                                                                            <h5>` + value.date + `</h5>
+                                                                        </div>
+                                                                    </div>
+                                                            </a> </div> `;
+                                                    } else{
+
+                                                        output += `
+                                                                            <div
+                                                            class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
+                                                             <a href="/evolvkickoff.html" target="_blank" class="w-100">  
+                                                            <div class="single-timeline-content inpersonal d-flex wow fadeInLeft"
+                                                                data-wow-delay="0.3s"
+                                                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                <div class="timeline-icon"><img src="` + value.icon  +`">
+                                                                </div>
+                                                                <div class="timeline-text">
+                                                                    <h6 class="d-flex flex-column"><span style="color:black" class="mb-1">`+  value.Title + `</span> <span style="color:black">` + value.Title2 + `
+                                                                            </span> </h6>
+                                                                    <h5>` + value.date +`</h5>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        </div> `
+
+                                                    }
+                                       
                                             });
                                             $('#april').html(output);
                                         }).fail(function () {
@@ -154,23 +159,46 @@
                             <div class="row pb-4" id="may">
 
                                 <script>
-
                                     $(document).ready(function () {
                                         $.getJSON("./data/calender.json", function (data) {
                                             var output = '';
                                             console.log(data)
                                             $.each(data.MAY, function (key, value) {
-                                                output += `
-                                                
-                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
-                                                        <div class="timeline-text">
-                                                            <h6>` + value.Title + `</h6>
-                                                            <h5>` + value.date + `</h5>
-                                                        </div>
-                                                    </div>
-                                               </a> </div> `;
+
+                                                if (value.eventtype !== "liveevent") {
+                                                            output += `
+                                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
+                                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                                        <div class="timeline-text">
+                                                                            <h6>` + value.Title + `</h6>
+                                                                            <h5>` + value.date + `</h5>
+                                                                        </div>
+                                                                    </div>
+                                                            </a> </div> `;
+                                                    } else{
+
+                                                        output += `
+                                                                                <div
+                                                            class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
+                                                            <a href="/worldinnovator.html" target="_blank" class="w-100"> 
+                                                            <div class="single-timeline-content inpersonal d-flex wow fadeInLeft"
+                                                                data-wow-delay="0.3s"
+                                                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                <div class="timeline-icon"><img src="` + value.icon  +`">
+                                                                </div>
+                                                                <div class="timeline-text">
+                                                                    <h6 class="d-flex flex-column"><span style="color:black" class="mb-1">`+  value.Title + `</span> <span style="color:black">` + value.Title2 + `
+                                                                            </span> </h6>
+                                                                    <h5>` + value.date +`</h5>
+                                                                </div>
+                                                            </div>
+                                                            </a>
+                                                        
+                                                        </div> `
+
+                                                    }
+                                       
                                             });
                                             $('#may').html(output);
                                         }).fail(function () {
@@ -181,26 +209,10 @@
 
 
 
+                             
                             </div>
-                              <!---INPERSON EVENT-->
-                              <div class="row" >
-                                <div
-                                    class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
-                                    <a href="javascript:valid(0) ">
-                                        <div class="single-timeline-content inpersonal d-flex wow align-items-start fadeInLeft"
-                                            data-wow-delay="0.3s"
-                                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                            <div class="timeline-icon d-flex  flex-column"><img src="./images/evolv/icons/calender/live.png"/>
-                                            </div>
-                                            <div class="timeline-text">
-                                                <h6 class="d-flex flex-column"><span style="color:black"
-                                                        class="mb-1">WORLD INNOVATOR SUMMIT </span>  </h6>
-                                                <h5 class="mb-0 mt-2">May 22, 23, 24, & 25, 2023</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                           
+                           
                         </div>
 
                         <div class="single-timeline-area">
@@ -217,17 +229,41 @@
                                             var output = '';
                                             console.log(data)
                                             $.each(data.JUNE, function (key, value) {
-                                                output += `
-                                                
-                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
-                                                        <div class="timeline-text">
-                                                            <h6>` + value.Title + `</h6>
-                                                            <h5>` + value.date + `</h5>
-                                                        </div>
-                                                    </div>
-                                               </a> </div> `;
+
+                                                if (value.eventtype !== "liveevent") {
+                                                            output += `
+                                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
+                                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                                        <div class="timeline-text">
+                                                                            <h6>` + value.Title + `</h6>
+                                                                            <h5>` + value.date + `</h5>
+                                                                        </div>
+                                                                    </div>
+                                                            </a> </div> `;
+                                                    } else{
+
+                                                        output += `
+                                                                                <div
+                                                            class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
+                                                            <a href="/annualsummit.html" target="_blank" class="w-100"> 
+                                                            <div class="single-timeline-content inpersonal d-flex wow fadeInLeft"
+                                                                data-wow-delay="0.3s"
+                                                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                <div class="timeline-icon"><img src="` + value.icon  +`">
+                                                                </div>
+                                                                <div class="timeline-text">
+                                                                    <h6 class="d-flex flex-column"><span style="color:black" class="mb-1">`+  value.Title + `</span> <span style="color:black">` + value.Title2 + `
+                                                                            </span> </h6>
+                                                                    <h5>` + value.date +`</h5>
+                                                                </div>
+                                                            </div>
+                                                            </a>
+                                                        
+                                                        </div> `
+
+                                                    }
+                                       
                                             });
                                             $('#june').html(output);
                                         }).fail(function () {
@@ -245,29 +281,7 @@
 
 
 
-                            <!---inperson event-->
-                            <div class="row " >
-
-                                <div
-                                    class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
-                                    <a href="javascript:valid(0) " >
-                                        <div class="single-timeline-content inpersonal d-flex wow fadeInLeft"
-                                            data-wow-delay="0.3s"
-                                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                            <div class="timeline-icon"><img
-                                                    src="./images/evolv/icons/calender/live.png"></div>
-                                            <div class="timeline-text">
-                                                <h6 class="d-flex flex-column"><span style="color:black"
-                                                        class="mb-1">EVOLV<sup>TM</sup> ANNUAL SUMMIT</span> <span
-                                                        style="color:black" class="mb-1">INNOVATOR AWARDS NIGHT</span>
-                                                    <!--span style="color:black"></!--span> B20 2023 FAST TRACK</span-->
-                                                </h6>
-                                                <h5>June 27-30, 2023</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                       
 
                         </div>
                         <div class="single-timeline-area">
@@ -275,7 +289,7 @@
                                 style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
                                 <p>JULY 2023 </p>
                             </div>
-                            <div class="row pb-4" id="OCT">
+                            <div class="row pb-4" id="July">
 
 
                                 <script>
@@ -284,19 +298,43 @@
                                             var output = '';
                                             console.log(data)
                                             $.each(data.JULY, function (key, value) {
-                                                output += `
-                                                
-                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank"> <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
-                                                        <div class="timeline-text">
-                                                            <h6>` + value.Title + `</h6>
-                                                            <h5>` + value.date + `</h5>
-                                                        </div>
-                                                    </div>
-                                               </a> </div> `;
+
+                                                if (value.eventtype !== "liveevent") {
+                                                            output += `
+                                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
+                                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                                        <div class="timeline-text">
+                                                                            <h6>` + value.Title + `</h6>
+                                                                            <h5>` + value.date + `</h5>
+                                                                        </div>
+                                                                    </div>
+                                                            </a> </div> `;
+                                                    } else{
+
+                                                        output += `
+                                                                                <div
+                                                            class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
+                                                            <a href="/b2bsummit.html" target="_blank" class="w-100"> 
+                                                            <div class="single-timeline-content inpersonal d-flex wow fadeInLeft"
+                                                                data-wow-delay="0.3s"
+                                                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                <div class="timeline-icon"><img src="` + value.icon  +`">
+                                                                </div>
+                                                                <div class="timeline-text">
+                                                                    <h6 class="d-flex flex-column"><span style="color:black" class="mb-1">`+  value.Title + `</span> <span style="color:black">` + value.Title2 + `
+                                                                            </span> </h6>
+                                                                    <h5>` + value.date +`</h5>
+                                                                </div>
+                                                            </div>
+                                                            </a>
+                                                        
+                                                        </div> `
+
+                                                    }
+                                       
                                             });
-                                            $('#OCT').html(output);
+                                            $('#July').html(output);
                                         }).fail(function () {
                                             document.write("An error has occurred.");
                                         });
@@ -318,7 +356,7 @@
                                 style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
                                 <p>AUGUST 2023</p>
                             </div>
-                            <div class="row pb-4" id="aug">
+                            <div class="row pb-2" id="aug">
 
 
                                 <script>
@@ -327,17 +365,41 @@
                                             var output = '';
                                             console.log(data)
                                             $.each(data.AUG, function (key, value) {
-                                                output += `
-                                                
-                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
-                                                        <div class="timeline-text">
-                                                            <h6>` + value.Title + `</h6>
-                                                            <h5>` + value.date + `</h5>
-                                                        </div>
-                                                    </div>
-                                               </a> </div> `;
+
+                                                if (value.eventtype !== "liveevent") {
+                                                            output += `
+                                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
+                                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                                        <div class="timeline-text">
+                                                                            <h6>` + value.Title + `</h6>
+                                                                            <h5>` + value.date + `</h5>
+                                                                        </div>
+                                                                    </div>
+                                                            </a> </div> `;
+                                                    } else{
+
+                                                        output += `
+                                                                                <div
+                                                            class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
+                                                            <a href="/b2bsummit.html" target="_blank" class="w-100"> 
+                                                            <div class="single-timeline-content inpersonal d-flex wow fadeInLeft"
+                                                                data-wow-delay="0.3s"
+                                                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                <div class="timeline-icon"><img src="` + value.icon  +`">
+                                                                </div>
+                                                                <div class="timeline-text">
+                                                                    <h6 class="d-flex flex-column"><span style="color:black" class="mb-1">`+  value.Title + `</span> <span style="color:black">` + value.Title2 + `
+                                                                            </span> </h6>
+                                                                    <h5>` + value.date +`</h5>
+                                                                </div>
+                                                            </div>
+                                                            </a>    
+                                                        
+                                                        </div> `
+
+                                                    }
+                                       
                                             });
                                             $('#aug').html(output);
                                         }).fail(function () {
@@ -347,6 +409,8 @@
                                 </script>
 
                             </div>
+
+                          
                         </div>
 
 
@@ -366,17 +430,40 @@
                                             var output = '';
                                             console.log(data)
                                             $.each(data.SEP, function (key, value) {
-                                                output += `
-                                                
-                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
-                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank"> <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
-                                                        <div class="timeline-text">
-                                                            <h6>` + value.Title + `</h6>
-                                                            <h5>` + value.date + `</h5>
-                                                        </div>
-                                                    </div>
-                                               </a> </div> `;
+
+                                                if (value.eventtype !== "liveevent") {
+                                                            output += `
+                                                                <a href="javascript:valid(0)">
+                                                                <div class="  col-12 col-md-6 col-lg-4 px-1 calender-lables`+ ` ` + value.Multi + ` ` + value.dg + ` ` + value.live + `">
+                                                                    <a href="./calevents_evolv.html?EventId=` + value.EventId + ` "target="_blank">  <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                        <div class="timeline-icon"><img src="` + value.icon + `"/></div>
+                                                                        <div class="timeline-text">
+                                                                            <h6>` + value.Title + `</h6>
+                                                                            <h5>` + value.date + `</h5>
+                                                                        </div>
+                                                                    </div>
+                                                            </a> </div> `;
+                                                    } else{
+
+                                                        output += `
+                                                                                <div
+                                                            class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
+                                                            <div class="single-timeline-content inpersonal d-flex wow fadeInLeft"
+                                                                data-wow-delay="0.3s"
+                                                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                                <div class="timeline-icon"><img src="` + value.icon  +`">
+                                                                </div>
+                                                                <div class="timeline-text">
+                                                                    <h6 class="d-flex flex-column"><span style="color:black" class="mb-1">`+  value.Title + `</span> <span style="color:black">` + value.Title2 + `
+                                                                            </span> </h6>
+                                                                    <h5>` + value.date +`</h5>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                        </div> </a>`
+
+                                                    }
+                                       
                                             });
                                             $('#sep').html(output);
                                         }).fail(function () {
@@ -387,27 +474,7 @@
 
                             </div>
                             <!---INPERSON EVENT-->
-                            <!---div class="row" >
-                                <div
-                                    class="  col-12 col-md-6 col-lg-5 col-xl-4  px-1 calender-lables   inpersonalevent-block   ">
-                                    <a href="javascript:valid(0) " >
-                                        <div class="single-timeline-content inpersonal d-flex wow align-items-start fadeInLeft"
-                                            data-wow-delay="0.3s"
-                                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                            <div class="timeline-icon d-flex  flex-column"><img src="./images/evolv/icons/calender/b20.png" class="mt-3"> 
-                                               
-                                            </div>
-                                            <div class="timeline-text">
-                                                <h6 class="d-flex flex-column"><span style="color:black"
-                                                        class="mb-1">B20 2023 B2B SUMMIT </span> <span style="color:black"
-                                                        class="mb-1">@ G20 2023 SUMMIT </span> </h6>
-                                                <h5 class="mb-0 mt-0">September 6-8 B20 SUMMIT</h5>
-                                                <h5 class="mt-1">September 9 & 10 G20 SUMMIT</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div--->
+                          
                         </div>
 
 
