@@ -115,18 +115,52 @@
 		</div>
 	</div>
 </section>
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="./js/iframe_Auto_hight/jquery.browser.js"></script>
+<script src="./js/iframe_Auto_hight/jquery-iframe-auto-height.js"></script>
+<script>
+    $(document).ready(function () {
+      var counter = 0;
 
+      // static iframe
+      $('#iframe-loader').iframeAutoHeight();
+      // click handling
+      $("#load-static-large-link").click(function () {
+        $("#iframe-loader").attr("src", "./large.html");
+      });
+
+      // dynamic handling
+      $("#load-dynamic-medium-link").load(function () {
+        var id = "iframe-medium-" + counter;
+        $("<iframe />", {
+          src: "./medium.html",
+          id: id,
+          frameborder: 0,
+          "class": "photo"
+        }).appendTo("#iframe-container");
+
+        $('#' + id).iframeAutoHeight({heightOffset: 40});
+        counter++;
+      });
+
+      $("#remove-dynamic-iframe-link").click(function () {
+        $("#iframe-container iframe").remove();
+      });
+    });
+  </script>
 
 <section class="contact-form section mt-2">
 	<div class="container">
 		<div class="row mx-0">
 			<div class="col-xl-8 col-lg-9 col-md-12 col-12 mx-auto p-2">
-				<iframe src="https://www.strategyr.com/evolv/Add_Contact.asp" class="contact-iframe" ></iframe>
+				<iframe  id="iframe-loader" src="https://www.strategyr.com/evolv/Add_Contact.asp"  ></iframe>
 			</div>
 		</div>
 	</div>
 </section>
 
+
+   
 
 
     <!--============================
@@ -148,6 +182,8 @@
     <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
     <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
     <script src="plugins/aos/aos.js"></script>
+
+
     <!-- google map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
     <script src="plugins/google-map/gmap.js"></script>
@@ -156,6 +192,9 @@
     <script src="./js/submenu_select.js"></script>
 
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  
+
 
 <script type="text/javascript">
     $(document).ready(function(){
