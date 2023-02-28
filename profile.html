@@ -7,7 +7,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Evolv</title>
+  <title>PROFILE - Evolv.cc</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
@@ -30,70 +30,78 @@
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="plugins/aos/aos.css" />
 
-
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/custome.css" rel="stylesheet" />
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
-
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <!---WEB COMPONETNS-->
   <script src="./webcomponts/headerComponents.js"></script>
   <script src="./webcomponts/FooterComponent.js"></script>
   <script src="./webcomponts/ScrollToTop.js"></script>
-  <script src="./webcomponts/dummytext.js"></script>
-
+  <script src="./webcomponts/dummytext.js"></script>  
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
-
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
-
 
   <!--============================
 =            HEADER           =
 =============================-->
-<header-component></header-component>
+  <header-component></header-component>
 
   <!--============================
     PLACEKEEPTER BANNER
-=============================-->    
+=============================-->
 
-<section class="section placekeeper_section theme-1">
+  <!--section class="section placekeeper_section theme-1">
   <div class="container">
     <div class="row align-items-center">
 
     </div>
   </div>
-</section>
+</section-->
 
   <!--================================
 =            Page Title            =
 =================================-->
 
-  <section class="section page-title">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 m-auto">
-          <!-- Page Title -->
-          <h1>PROFILE</h1>
-          <!-- Page Description -->
-          <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-            the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-            type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-            leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-            the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-            software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-      </div>
+<div class="body-content">
+
+  <section class="section hero_section profile">
+    
+    <div id="map" style="z-index:0"></div>
+  <div class="container">
+   
+    <div style="z-index:99999">
+      <h1 >Evolv™ is a Silicon Valley based program of the Confederation of Indian Industry (CII), the non-profit
+        powerhouse with 1200+ employees, 62 offices,10 centers of excellence,9000 corporate members, 11,000+
+        startups/scale-ups, and 300,000+  affiliated entities worldwide. </h1>
+      <br />
+      <p class="text-left para-display4" style="line-height:30px;">Evolv™ aspires to be the global facilitator
+        for innovators and their startups by connecting them to investors, big enterprise, and government through a
+        myriad of events and engagements. Evolv™ provides the right platform for multidimensional business &
+        technology partnerships, thereby presenting the perfect global playbook. CII's strategic objective is to
+        build a strong nexus for the world's most innovative startups that will become tomorrow's drivers for
+        technological leadership, economic growth, and long-term nation building.</p>
+        <br/>
+
+      <p class="text-left para-display4" style="line-height:30px;">As the official Secretariat for 2023 <a href="https://www.b20india2023.org/"
+          class="linkblue" target="_blank"><font color="#ff9921">B20 Summit</font></a> and multiple programs it offers, this is a perfect
+        opportunity for innovators, investors, big enterprises, and governments to get engaged.</p>
     </div>
+  </div>
   </section>
 
-  
+
+
+
+
+ 
+
+</div>
+
+
 
 
 
@@ -104,7 +112,7 @@
 =            Footer            =
 =============================-->
 
-<footer-component></footer-component>
+  <footer-component></footer-component>
 
 
   <scrolltop-component> </scrolltop-component>
@@ -123,6 +131,107 @@
 
   <script src="js/script.js"></script>
   <script src="./js/submenu_select.js"></script>
+
+  <script src="./plugins/jsvectormap-master/dist/js/jsvectormap.js"></script>
+	<script src="./plugins/jsvectormap-master/dist/maps/world-merc.js"></script>
+
+
+	<script>
+
+
+		var markers = [
+			{ name: "Australia (16941)", coords: [-33.42004148, 151.3000048] },
+			{ name: "Austria (645)", coords: [47.51669707, 9.766701588] },
+			{ name: "Belgium (3552)", coords: [50.44599911, 3.939003561] },
+			{ name: "Brazil (4980)", coords: [-5.809995505, -46.14998438] },
+			{ name: "Canada (32098)", coords: [50.15002545, -96.88332178] },
+			{ name: "China (2094)", coords: [39.83003522, 97.72999304] },
+			{ name: "Denmark (2551)", coords: [55.70900103, 9.534996498] },
+			{ name: "France (5383)", coords: [45.89997479, 6.116670287] },
+			{ name: "Germany (6330)", coords: [49.98247246, 8.273219156] },
+			{ name: "India (11646)", coords: [15.491997, 73.81800065] },
+			{ name: "Israel (2427)", coords: [31.91670012, 34.86670252] },
+			{ name: "Italy (2122)", coords: [40.64200213, 15.7989965] },
+			{ name: "Mexico (1523)", coords: [19.400000, -98.988892] },
+			{ name: "Singapore (2314)", coords: [1.290270, 103.851959] },
+			{ name: "South Korea (1138)", coords: [35.549999, 129.316666] },
+			{ name: "Spain (2603)", coords: [43.016666, -7.550000] },
+			{ name: "Sweden (5935)", coords: [58.283489, 12.285821] },
+			{ name: "Switzerland (1925)", coords: [47.500954, 8.729869] },
+			{ name: "Taiwan (450)", coords: [23.991074, 121.611198] },
+			{ name: "United States (437553)", coords: [44.500000, -89.500000] },
+			{ name: "United Kingdom (50255)", coords: [52.192001, -2.220000] },
+			{ name: "South Africa (50255)", coords: [	-8.195246, 25.034088] }
+
+		];
+
+		var jvm = new jsVectorMap({
+			map: "world_merc",
+			selector: "#map",
+			// zoomButtons: true,
+
+			regionStyle: {
+				initial: { fill: '#5075BB' }
+			},
+
+			labels: {
+				markers: {
+					render: (marker) => marker.name
+				}
+			},
+
+			markersSelectable: true,
+			selectedMarkers: markers.map((marker, index) => {
+				var name = marker.name;
+
+				if (name === "Russia" || name === "Brazil") {
+					return index;
+				}
+			}),
+			markers: markers,
+			markerStyle: {
+				initial: { fill: "#0d75be" },
+				selected: { fill: "#0d75be" }
+			},
+			markerLabelStyle: {
+				initial: {
+					fontFamily: "Roboto",
+					fontWeight: 400,
+					fontSize: 0,
+					fontColor: '#fff',
+				}
+			}
+		});
+
+		/*
+		window.addEventListener('resize', () => {
+		  jvm.updateSize()
+		})
+		*/
+	</script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+        $('.goog-te-menu-value span:first').html('LANGUAGE');
+        $('.goog-te-menu-frame.skiptranslate').load(function () {
+          setTimeout(function () {
+            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+          }, 100);
+        });
+      });
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
 </body>
 
 </html>

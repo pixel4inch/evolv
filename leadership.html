@@ -49,49 +49,97 @@
   <!--============================
 =            HEADER           =
 =============================-->
-<header-component></header-component>
+  <header-component></header-component>
 
-<!--============================
+  <!--============================
     PLACEKEEPTER BANNER
-=============================-->    
+=============================-->
 
-<section class="section placekeeper_section theme-1">
-  <div class="container">
-    <div class="row align-items-center">
+  <!--section class="section placekeeper_section theme-1">
+    <div class="container">
+      <div class="row align-items-center">
 
+      </div>
     </div>
-  </div>
-</section>
+  </section-->
 
   <!--================================
 =            Page Title            =
 =================================-->
+<div class="body-content">
 
-  <section class="section page-title">
+  <section class="design-team section pt-0 mt-5">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 m-auto">
-          <!-- Page Title -->
-          <h1>LEADERSHIP </h1>
-          <!-- Page Description -->
-          <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-            the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-            type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-            leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-            the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-            software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
-         
-
-
+  <div class="row">
+    <h3 class=" mb-0 text-center w-100 main-font-color font-display1">CO-CHAIRS</h3>
+   
+  </div>
+  <hr class="divider mt-0 pb-3" style="margin-top:0px !important">
+  
+      <div class="row ">
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <!-- Team -->
+  <div class="team-sm">
+    <!-- Team Member Image -->
+    <div class="image">
+      <a href="https://www.linkedin.com/in/ramreddyk" target="_blank"><img class="w-100 shadow border" src="./images/evolv/leader-ship/img_01.jpg" alt="member-image"></a>
+      <!-- Social Contacts -->
+      <div class="social-links">
+        <ul class="list-inline">
+          <!--li class="list-inline-item"><a href="javascript:valid(0)"><i class="ti-linkedin"></i></a></!--li>
+          <li class="list-inline-item"><a href="javascript:valid(0)"><i class="ti-facebook"></i></a></li>
+          <li-- class="list-inline-item"><a href="javascript:valid(0)"><i class="ti-twitter"></i></a></li-->
+          
+          
+        </ul>
+      </div>
+    </div>
+    <!-- Name -->
+    <a href="https://www.linkedin.com/in/ramreddyk" target="_blank"><h3 class="text-center font-weight-bold main-color_font">Ram K Reddy</h3></a>
+    <!-- Position 
+    <cite class="text-center w-100 d-block mt-1">CEO, Venture Partner </cite>
+    <cite class="text-center w-100 d-block">  Global Industry Analysts, Inc., (GIA)</cite>-->
+  
+    <!-- Description -->
+    
+  </div>
         </div>
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <!-- Team -->
+  <div class="team-sm">
+    <!-- Team Member Image -->
+    <div class="image">
+      <a href="https://in.linkedin.com/in/rajan-navani" target="_blank"><img class="w-100 shadow border" src="./images/evolv/leader-ship/img_02.jpg" alt="member-image"></a>
+      <!-- Social Contacts -->
+      <div class="social-links">
+        <ul class="list-inline">
+          <!--li class="list-inline-item"><a href="javascript:valid(0)"><i class="ti-linkedin"></i></a></!--li>
+          <li class="list-inline-item"><a href="javascript:valid(0)"><i class="ti-facebook"></i></a></li>
+          <li-- class="list-inline-item"><a href="javascript:valid(0)"><i class="ti-twitter"></i></a></li-->
+          
+          
+        </ul>
+      </div>
+    </div>
+    <!-- Name -->
+    <a href="https://in.linkedin.com/in/rajan-navani" target="_blank"><h3 class="text-center font-weight-bold main-color_font">Rajan Navani</h3></a>
+    <!-- Position 
+    <cite class="text-center w-100 d-block mt-1">Vice Chairman & Managing Director</cite>
+    <cite class="text-center w-100 d-block">Jetline Group of Companies</cite>-->
+    <!-- Description -->
+    
+  </div>
+        </div>
+      
       </div>
     </div>
   </section>
+
+
+
+</div>
+
+
 
   <!--====  End of Page Title  ====-->
 
@@ -124,6 +172,29 @@
 
   <script src="js/script.js"></script>
   <script src="./js/submenu_select.js"></script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+        $('.goog-te-menu-value span:first').html('LANGUAGE');
+        $('.goog-te-menu-frame.skiptranslate').load(function () {
+          setTimeout(function () {
+            $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+          }, 100);
+        });
+      });
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
 </body>
 
 </html>

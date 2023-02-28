@@ -4,126 +4,243 @@
 
 <head>
 
-    <!-- Basic Page Needs
+  <!-- Basic Page Needs
   ================================================== -->
-    <meta charset="utf-8">
-    <title>Evolv</title>
+  <meta charset="utf-8">
+  <title>Evolv</title>
 
-    <!-- Mobile Specific Metas
+  <!-- Mobile Specific Metas
   ================================================== -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Evolv">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="author" content="Evolv ">
-    <meta name="generator" content="Evolv">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Evolv">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Evolv ">
+  <meta name="generator" content="Evolv">
 
-    <!-- theme meta -->
-    <meta name="theme-name" content="Evolv" />
+  <!-- theme meta -->
+  <meta name="theme-name" content="Evolv" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <!-- PLUGINS CSS STYLE -->
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
-    <link rel="stylesheet" href="plugins/slick/slick.css" />
-    <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
-    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="plugins/aos/aos.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
+  <link rel="stylesheet" href="plugins/slick/slick.css" />
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="plugins/aos/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
 
-    <!-- CUSTOM CSS -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/custome.css" rel="stylesheet" />
-    <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/custome.css" rel="stylesheet" />
+  <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
+  <link href="css/jquery.readall.css" rel="stylesheet" />
 
-    <!---WEB COMPONETNS-->
-    <script src="./webcomponts/headerComponents.js"></script>
-    <script src="./webcomponts/FooterComponent.js"></script>
-    <script src="./webcomponts/ScrollToTop.js"></script>
-    <script src="./webcomponts/dummytext.js"></script>
+
 
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
-
-    <!--============================
+  <!--============================
 =            HEADER           =
 =============================-->
-<header-component></header-component>
+  <header-component></header-component>
+  <!--============================
+=            HEADER           =
+=============================-->
 
-<!--============================
-    PLACEKEEPTER BANNER
-=============================-->    
+  <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+  <script>
 
-<section class="section placekeeper_section theme-4">
-    <div class="container">
-      <div class="row align-items-center">
+    $(document).ready(function () {
+      $.getJSON("./data/events.json", function (data) {
+        var selURL = window.location.pathname.substr(window.location.pathname.lastIndexOf("/") + 1).replace(".html", "");
 
+        var writeuptitle = '';
+        console.log(data)
+        $.each(data.eventslist, function (key, value) {
+          if (selURL == value.Event) {
+            writeuptitle += `<h2>` + value.eventtitle + `</h2>`;
+          } else {
+
+          }
+        });
+        $('#writeup-title').html(writeuptitle);
+      }).fail(function () {
+        document.write("An error has occurred.");
+      });
+    }); 
+  </script>
+  <div id="writeup-title">
+
+  </div>
+
+  <div class="body-content">
+    <section class="section" id="writeup">
+      <div class="container">
+        <div class="row pb-3 page-title">
+          <div class="col-sm-12 m-auto text-center -3">
+          
+            <h1 class="font-display2 main-font-color">WHAT'S TRENDING</h1>
+          </div>
+        </div>
+      <div class="row">
+
+        <div class="col-lg-12 mx-auto">
+      
+          <div id="accordionExample" class="accordion custome-accordion border-0">
+
+          
+            <div class="card">
+              <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                <h2 class="mb-0">
+                  <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne"
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">What Does the Future Hold For Insurtech?</button>
+                </h2>
+              </div>
+              <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse ">
+                <div class="card-body p-5">
+                    <p>Insurtech or insurance technology firms have captured the industry in the recent past, affecting all aspects of the insurance domain. These technology enterprises have been on a swift growth path and have benefitted from robust funding. Digital transformation has affected the insurance industry but it is expected to be tough to procure tech funding because of macroeconomic elements and the venture capital capacity. Economic turbulence and high inflation will deeply impact insurtech. Mere profit-making with no regard for outcomes and excess growth for fund procurement is not expected to sustain in this domain. The global insurtech market is anticipated to gather a notable momentum owing to increasing digitization, rising adoption of Internet of Things (IoT) technology, and transition of insurance companies from product-based towards consumer-centric strategies. </p>
+                    <p>The COVID-19 pandemic has disrupted every global sector, including the insurance industry. Although the pandemic has brought out several inefficiencies in the sector, it has also prompted the carriers to develop innovative digital investment solutions. Insurance technology, in short Insurtech, plays a vital role in the digital innovation of the insurance sector.  The rapid progress exhibited by insurtechs is posing challenges for traditional insurance companies that lag behind in terms of digitalization and adoption of advanced technologies. While investments in insurtechs are increasing consistently, majority of the leading insurance companies suffer from low penetration of digital technology. These insurance players are struggling to keep pace with various insurtech startups, with some of them gaining support from major technology companies like Amazon, Alibaba and Alphabet. A large number of insurance companies have been struggling with integration of legacy systems for the past several years, resulting in inefficient operations. Despite spending higher on IT in comparison to other industries, major insurers continue to lag behind regarding technological efficiency. These companies have been able to maintain their competitive positions on the basis of their resources and financial muscle. However, the ongoing digital transformation indicates the pressing need for these companies to embrace digital technologies and deal with high level of inefficiency. The problem was further amplified by the pandemic that triggered changes to workplace rules by accentuating the need for teleworking. The scenario requires insurance players to focus on business continuity plans and occupational risk assessment. Investments into digital insurance platforms are expected to help companies in delivering omni-channel experience to customers and improving communication with customers for better gains, operational productivity and customer experience. </p>
+                    <p>The next breed of insurtech firms is expected to focus on robust underwriting and not mere expansion. Large demand flows and limited supplies are a consequence of reliance on conventional questionnaire processes for underwriting and suboptimal risk calculation. This creates issues like market pullback, losses and underpricing. The insurtech landscape will keep maturing and concentrating on gap filling and profitability between the needs of customers and current capacities. It is expected that the insurtech domain will continue to refine itself and mature while concentrating on gap removal between capacities and consumer needs along with profitability. The insurtech 2.0 industry approach will use technology and data to correctly analyze and quantify risks and actively perform risk mitigation for policy owners. Risks must be assessed from the world perspective in the cyber domain. It is possible to gain a detailed understanding of cyber risks by using data from different sources like auto scans of different enterprises, claims and data gathered from inside firewalls procured from alliances with vendors of cyber security. Insurtechs need to conduct risk assessment from a world perspective and use the independent model while captive models lose their market interest. </p>
+                  </div>
+              </div>
+            </div>
+
+          
+            <div class="card">
+              <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                <h2 class="mb-0">
+                  <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo"
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Technological Developments to Transform Insurance Landscape</button>
+                </h2>
+              </div>
+              <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                <div class="card-body p-5 textless">
+                  <p>The pandemic triggered a significant increase in digital agendas across different industries and insurance is not an exception. About 95% of top management perceived the role of the pandemic as a digital catalyst that has the potential to spearhead digitized operations and result in updated business models. Many insurance firms are incorporating the Internet of Things (IoT), artificial intelligence and machine learning, and open application programming interfaces that aim at offering a seamless consumer interaction flow. </p>
+                  <ul>
+                    <li><strong>Embedded Insurance -</strong> Embedded insurance is live grouping and insurance sales when consumers buy services and products at the point of sale. The insurance can be like a warranty or there can be the requirement to pay minimum fees apart from the transaction expenses. The embedded insurance is created simply and inexpensively by the insurance workflow and this also offers insurers access to underutilized markets. For example, rural India demonstrates robust demand for life insurance but conventionally it has been tough to sell these services. Embedded insurance workflows allow insurers to cater to the unexplored market by offering services like hospices, credit life insurance and personal accident insurance using microfinance and avoiding traditional banks which are an expensive option. Embedded technology is changing consumer insurance buying partners and building robust interaction frameworks. It is simple for customers to procure warranty goods and insurance using purchase cycles. For instance, the use of embedded technology enables online cab services to offer ride insurance for nominal amounts while conducting the booking. The insurance and warranty of the goods can be given while buying appliances protected against theft. The travel aggregators can perform travel insurance embedding for luggage loss, trip delays and cancellation. Insurance has the highest scope of being brought when offered at the correct time or as part of a product bundle. Consequently, several eCommerce websites bundle several insurance variants with products to enable simple usage and convenience. This strategy will play a major function in the exploitation of the protection gap creating sustained growth of the embedded insurance market. For the successful execution of this concept, the correct balance between efficiency and speed of business operations along with compliance and consumer protection must be procured.</li>
+                    <li><strong>Blockchain Technology – </strong>Offering a single source point of truth enables friction in business processes to be lowered. The usage of solutions like smart contracts can enable and automate the DLT network. Data reconciliation is made simpler and accuracy is enhanced while time spent in digging data is reduced creating transparency, gains of efficiency and lowered cost in the value chain. This leads to better customer experiences, higher consumer retention and improved communication between the consumer and the insurer. The lowered expense and inefficiency of the value chain can lead to lower premiums. The finance and claims functions inside insurance are high-value regions where blockchain can have considerable advantages in the context of processes requiring ongoing reconciliation. Electronic transactions and paper check money exchanges between two enterprises can be totally automated. Currently, insurers are using a triggered smart contract with blockchain. Currently, several insurers are implementing smart contracts besides blockchains that are triggered when some defined conditions are satisfied. Establishing an insurance contract that pays out under these situations lets the insurer process transactions with zero human intervention and optimized customer service. Blockchain can assist in delivering on the digital scope that insurers must satisfy. The blockchain enables basic concepts like streamlined subrogation and implementing shared loss transcripts to get data-driven knowledge on future consumers for sophisticated pricing. The assistance of efficient payment between third parties and insurers in the claims process and streamlining complicated manual processes are two other benefits. The insurance industry’s perception of blockchain is also changing. A major change is that insurers are looking beyond the DLT as a discrete enterprise technique. Alternatively the realization of DLT‘s correct role as a catalyst for business ecosystem transformations. DLT is expected to evolve into a transformational technique in the near future. The principal technologies of the digital age are SMAC (social, mobile, analytics and cloud) and they signify the upcoming wave of digital techniques in the form of DARQ (DLT, artificial intelligence, extended reality and quantum computing. Although these are at separate maturity levels, these technologies will define the future digital age. The SMAC allows fresh collaboration and connectivity levels between insurance firms and individual people and DLT-DARQ potentially revamp the whole ecosystem and value chain. The business networks will be expanded by distributed ledgers that safely connect industry players with ease and good scale. Insurance firms can partner with other firms to reap the benefits of DLT and offer platforms that are symbiotic for all members of the value chain. Blockchain functions in the insurance domain create driving efficiency by simplification of processes and lowering claims processing time frames besides fraud avoidance and KYC. </li>
+                    <li><strong>Artificial Intelligence & Machine Learning for Underwriting -</strong> With the progress of machine learning and the infusion of AI into underwriting, fraud prevention capacities and human error prevention have been prioritized. Insurance underwriters have focused in applicant-generated data to prioritize client insurance risk assessment. The natural language understanding component of machine learning allows insurers to analyze data pools like social media posts, reviews and SEC filings while relevant data is extracted and the future risk of the insurance carrier analyzed. Precise risk assessment translates into apt premiums. In the industry where the biggest variation amongst insurance firms is prices and not products, a specific exposure model can make a large impact. Conventionally the industry offers some basic products like the standard liability policy and this creates undifferentiated products like a Laundromat and a bakery with similar policies. The increase in data consumption will bring in higher customization and customers will only pay for the coverage they require. Insurance firms treat fraud as a major concern and artificial intelligence is a major weapon against it as they identify errors that escape human notice. The insurance industry has a complex distribution chain with many middlemen looking at data between the carriers and the insured creating manual work loopholes and human error. The application of AI is lowering time and error numbers as data is passed between different sources. Logging inside portals and uploading PDFs lets insurers lower data entry and refilling volumes while enhancing accuracy.  As a domain, insurance typically changes resistance although the need for good customer service is important.  Customers often shift from firms with sub-optimal customer services and this is why many insurance firms have chatbots. The AI tools resolve many consumer queries without human intervention and are available round the clock thereby resolving queries faster. While humans will be necessary for complex issues, AI chatbots can handle the daily query flows. Insurers process claims and assist consumers in covering them but claim assessment is a complex process. Agents need to review many policies and look through each detail to understand the customer’s actual payout. The ML tools can swiftly understand the factors in the claim and understand the costs involved. The human insurer can analyze AI data and settle claims and this offers benefits to customers as well as insurers.</li>
+                  </ul>
+                
+
+                </div>
+              </div>
+            </div>
+
+       
+            <div class="card">
+              <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                <h2 class="mb-0">
+                  <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree"
+                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Top Insurtech Trends Paving the Way Towards Insurance 2.0</button>
+                </h2>
+              </div>
+              <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+                <div class="card-body p-5 textless">
+                  <p>Conventionally insurers depended on proxy information for risk assessment but the implementation of Telematics and IoT is offering insurers leverage to live data that is completely actionable for risk pricing, underwriting and mitigation. IoT technologies are popularizing the usage-based insurance concept. Telematics is generally implemented to calculate many indicators important for underwriters. Data sharing is acceptable for consumers if it leads to optimized product experience, price and product. The interactive policy framework is where the enterprise takes in extra information and uses it for premium adjustment and discount offerings making progress. Intense analysis of policyholder traits and curated risk data enables insurers to modify insurance offers to the needs of customers.</p>
+                  <ul>
+                    <li>IoT monitoring enables the identification of risky behavior and action in live time frames. Technology-driven loss aversion can become a critical factor in the insurance product. Insurers are more prone to become active managers of risk rather than passive risk takers.</li>
+                    <li>Insurers possess huge data volumes that can be exploited well with AI-based techniques that are created to act on the data. Manual processes are losing out to automation as it shapes customer experiences through increased efficiency. Insurers still lose a lot of funds from the premium on manual claim management. The self-service strategy where images and videos are offered by First Notice of Loss through digital portals and then data is pushed through AI-driven review for instant payout is the future.</li>
+                    <li>AI is being increasingly incorporated into the insurance industry. Although it may take ages to develop a fully competent computer underwriter, the use of AI is enhancing human power at this point. The adoption is currently in basic ways but is projected to have a transformational effect. Enterprises that want to boost their competitiveness are testing AI applications and looking for ways to infuse technology into their workflows.</li>
+                    <li>Self-service platforms driven by AI are becoming the standard for policy renewal, claim management and customer onboarding.</li>
+                    <li>Younger consumers are attracted to novel insurance solutions are offered in a smooth digital-first method. Firms like Lemonade are outpacing competitors on customer experience parameters and capturing market share even in challenging markets.</li>
+                    <li>Insurers are highly focused in reducing costs by gains of efficiency. Business process management and Robotic Process Automation are enhancing the operations methods of insurers by lowering overheads. The digital innovation era with legacy processes that were impeding innovation are leaving insurers in a fix. Enterprises dealing with a lot of paperwork find this very convenient.</li>
+                    <li>Telematics techniques and IoT are creating great volumes of vulnerable and individual information and this is increasing the criticality of data management. The organic security of the distributed ledger lets the data be safely stored and accessed. New clients can be issued quotations and taken on board faster and the claim processing workflow can be accelerated. The possible savings achieved with applied disbursed ledger technology can assist in data management in insurance.</li>
+                    <li>Emergence of no-code platforms is altering the workflow of fresh digital applications and products. Ascend, Outsystem, Mendix and Uniface have no code platforms that focus on successful usage cases in intelligent business applications. The no-code / low-code platforms were created to offer exclusive compliance, security needs and risk management of financial organizations. The creation of front-end consumer experiences is highly augmented allowing insurance enterprises to capture the swift, consumer-centric times.</li>
+                  </ul>
+                  
+              
+                
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+</div>
 
-
-
-    <!--================================
-=            Page Title            =
-=================================-->
-
-    <section class="section page-title">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 m-auto">
-                    <!-- Page Title -->
-                    <h1>INSURTECH</h1>
-                    <!-- Page Description -->
-                    <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                        leap into
-                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                        the release of
-                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                        software like
-                        Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--====  End of Page Title  ====-->
-
-
-    <!--============================
-	           Footer            
+<!--============================
+           Footer            
 =============================-->
 
 <footer-component></footer-component>
 
 
-    <!---============================
-           ScrollTop        
+<!---============================
+       ScrollTop        
 =============================--->
 
-    <scrolltop-component></scrolltop-component>
+<scrolltop-component></scrolltop-component>
 
-    <!-- JAVASCRIPTS -->
-    <script src="plugins/jquery/jquery.min.js"></script>
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-    <script src="plugins/aos/aos.js"></script>
-    <!-- google map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-    <script src="plugins/google-map/gmap.js"></script>
+<!-- JAVASCRIPTS -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+<script src="plugins/google-map/gmap.js"></script>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+<script src="./js/submenu_select.js"></script>
+<script src="./js/jquery.readall.js"></script>
 
-    <script src="./js/submenu_select.js"></script>
+
+<!---WEB COMPONETNS-->
+<script src="./webcomponts/headerComponents.js"></script>
+<script src="./webcomponts/FooterComponent.js"></script>
+<script src="./webcomponts/ScrollToTop.js"></script>
+<script src="./webcomponts/dummytext.js"></script>
+<script src="./webcomponts/banner.js"></script>
+
+<script>
+  $('.textless').readall({
+    showheight: null,
+    showrows: 8
+  });
+
+
+</script>
+
+
+
+
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+      $('.goog-te-menu-value span:first').html('LANGUAGE');
+      $('.goog-te-menu-frame.skiptranslate').load(function () {
+        setTimeout(function () {
+          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('LANGUAGE');
+        }, 100);
+      });
+    });
+  });
+</script>
+
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+  }
+</script>
 </body>
 
 </html>

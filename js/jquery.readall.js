@@ -1,6 +1,6 @@
 /*
  * jQuery.ReadAll ia a jQuery plugin to shrink large blocks of content and place a read more button below.
- * Created by Anders Fjällström - anders@morriz.net - http://www.morriz.net
+ * Created by Anders Fjï¿½llstrï¿½m - anders@morriz.net - http://www.morriz.net
  * For documentation see https://github.com/morriznet/jquery.readall
  * Released under MIT license
  * version 1.1
@@ -34,6 +34,8 @@
             var onResize = function (event) {
                 // on resize check if readall is needed
                 var _button = $this.parent().find('button.' + settings.btnClassShowmore.replace(/\s+/g, '.') + ', button.' + settings.btnClassShowless.replace(/\s+/g, '.'));
+                
+               
                 if (fullheight() > settings.showheight + $(_button).outerHeight()) {
                     if (!$(_button).is(':visible') || event == null) {
                         $this.css({ 'height': settings.showheight + 'px', 'max-height': settings.showheight + 'px' });
