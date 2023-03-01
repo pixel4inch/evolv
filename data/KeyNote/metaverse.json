@@ -1,0 +1,58 @@
+{
+    "intro": [
+        {
+            "Session_id": 1,
+            "VerticalCode": "metaverse",
+            "VerticalName": "METAVERSE",
+            "EventDate": "May 18, 2023",
+            "EventDescription": ""
+        }
+    ],
+    "keydata": [
+        {
+            "Session_id": 1,
+            "VerticalCode": "metaverse",
+            "SpeakerName": "Neal Stephenson ",
+            "speakerTitle": "New York Times No.1 Bestseller Speculative Fiction Author of 'Snow Crash' & Coiner of the Phrase 'Metaverse'",
+            "Speaker_Details": "A famed speculative fiction author, Neal Stephenson is renowned for coining the term ‘Metaverse’. A No.1 New York Times Bestselling author, Neal first introduced the idea of a Metaverse in his novel Snow Crash. Describing an urban environment developed along a 100m wide road, Neal’s Metaverse was controlled by avatars of many different forms and accessed via virtual reality displays and goggles. Majorly ahead of his time, Neal introduced a revolutionary concept that has recently become a reality with the development of virtual reality technology such as VR headsets. ",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/NealStephenson.jpg",
+            "Session_Name": "SESSION 1",
+            "Title": "AR, VR, XR: The Most Important Elements of Metaverse Enabling Immersive Experiences ",
+            "Description": "VR, AR and MR are the most notable technologies with the potential to provide immersive experiences in the metaverse. How are these technologies providing immersive experiences in the metaverse?"
+        },
+        {
+            "Session_id": 2,
+            "VerticalCode": "metaverse",
+            "SpeakerName": "Jane McGonigal",
+            "speakerTitle": "World-Renowned Game Designer & Inventor of Superbetter",
+            "Speaker_Details": "A world-renowned game designer, Jane McGonigal is a leading expert at the forefront of alternate reality gaming. Famed as the Co-Founder of SuperBetter, a game that helps users to tackle real-life health issues, from depression and anxiety to traumatic brain injury and chronic pain, Jane’s revolutionary and clinically validated game has impacted hundreds of users. Now also a two-time New York Times Bestseller with her books Reality Is Broken: Why Games Make Us Better and How They Can Change the World and SuperBetter: The Power of Living Gamefully, Jane is also booked as a Metaverse speaker to explain the concept of entering an alternative reality.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/JaneMcGonigal.jpg",
+            "Session_Name": "SESSION 2",
+            "Title": ": Environmental Implications of Metaverse - Can Metaverse Contribute to Sustainability?",
+            "Description": "Metaverse’s role in replacing physical goods with digital ones reduced need for travel, thus reducing carbon emissions. However, metaverse relies on VR/AR technology and data centers that can have adverse impact on the environment. How can metaverse be utilized to overcome behavioral barriers to environmental action?"
+        },
+        {
+            "Session_id": 3,
+            "VerticalCode": "metaverse",
+            "SpeakerName": "Philip Rosedale",
+            "speakerTitle": "Co-Founder of High Fidelity, Inventor of Second Life, Co-Founder of Coffee & Power",
+            "Speaker_Details": "Philip Rosedale is a prolific tech entrepreneur having created FreeVue, founded Linden Lab, co-founded LoveMachine, released Coffee & Power and co-founded High Fidelity. An early pioneer in the virtual world, Philip has observed the evolution in digital technology and is now at the forefront of next-generation meta technology as the CEO of High Fidelity. An expert in building virtual platforms, Philip can share his experiences building ground-breaking virtual worlds, with millions of global users.  ",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/PhilipRosedale.jpg",
+            "Session_Name": "SESSION 3",
+            "Title": "Open and Safe Metaverse: How to Ensure Metaverse’s Positive Impact on Society?",
+            "Description": "Metaverse is currently in a critical developmental stage. The lack of deterministic impact of the technology for the society implies that metaverse can also be misused. How to ensure that metaverse remains open, accessible and safe and is leverage to maximize the positive impact on society?"
+        },
+        {
+            "Session_id": 4,
+            "VerticalCode": "metaverse",
+            "SpeakerName": "Phil Spencer",
+            "speakerTitle": "Microsoft's Executive Vice President of Gaming",
+            "Speaker_Details": "Phil Spencer is the Executive Vice President of Gaming at Microsoft. He is known for having a progressive approach to gaming and being the driving force behind the Xbox One’s success. At the forefront of the development of gaming for Microsoft, Phil has devoted over twenty years of his career to ensuring the user experience is of the highest priority and quality. Mainly working in the Xbox division, as the former Head of Xbox, Phil has influenced and championed many of the company’s projects such as the release of the first adaptive controller for players with reduced mobility.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/PhilSpencer.jpg",
+            "Session_Name": "SESSION 3",
+            "Title": "NFTs Will Be Vital for Accessing and Experiencing Metaverse",
+            "Description": "Non fungible tokens (NFTs) and Metaverse have been garnering significant interest, but have also raised several questions. Given that NFTs are not interchangeable and unique, they are considered ideal for representation of items like art, land or collectibles in the virtual world. With NFTs offering numerous benefits over conventional representation methods, how will NFTs become critical to access and experience metaverse?"
+        }
+       
+    ]
+}

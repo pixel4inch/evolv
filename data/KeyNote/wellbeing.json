@@ -1,0 +1,58 @@
+{
+    "intro": [
+        {
+            "Session_id": 1,
+            "VerticalCode": "wellbeing",
+            "VerticalName": "WELLBEING ",
+            "EventDate": "June 14, 2023",
+            "EventDescription": ""
+        }
+    ],
+    "keydata": [
+        {
+            "Session_id": 1,
+            "VerticalCode": "wellbeing",
+            "SpeakerName": "Christie Pearce Rampone ",
+            "speakerTitle": "US Soccer Icon - 5x Women’s World Cup Player, 2x Women’s World Cup Winner, 4x US Olympian, 3x Gold Medalist ",
+            "Speaker_Details": "Christie Patricia Pearce is an American former professional soccer player and captain of the US national team. Pearce is a three-time Olympic gold medalist, and also a two-time world champion in FIFA Women's World Cup. Pearce co-authored Be All In: Raising Kids for Success in Sports and Life, sharing practical, real world advice on how to handle the pressures felt by youth athletes, parents, and coaches today, and provide kids with their best shot at reaching their goals and dreams.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/ChristiePearceRampone.jpg",
+            "Session_Name": "SESSION 1",
+            "Title": "Connected Health and Fitness Leading to Wellness ",
+            "Description": "In the booming wellness market consumers keep spending more and more on products to improve their fitness, health, nutrition, sleep, appearance and mindfulness. Consumers these days are increasingly asking for wellness-related services and not just products. There is a trade-off between some bit of privacy and data in order to get a personalized solution for health and wellness. But the question is, is it safe?"
+        },
+        {
+            "Session_id": 2,
+            "VerticalCode": "wellbeing",
+            "SpeakerName": "Marc Randolph",
+            "speakerTitle": "Entrepreneur Speaker, Netflix Cofounder, National Bestselling Author, Executive Mentor and Angel Investor",
+            "Speaker_Details": "Marc Randolph is a veteran Silicon Valley entrepreneur, advisor, and investor, whose career as an entrepreneur spans four decades. In addition to being the co-founder and first CEO of Netflix, Marc has founded or co-founded six other successful startups, mentored hundreds of early-stage entrepreneurs, and as an investor has helped seed dozens of successful tech ventures (and just as many unsuccessful ones). He is host of the top-10 Apple podcast That Will Never Work, where he works directly with entrepreneurs to provide 1-on-1 mentoring. He lives in Santa Cruz, California.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/MarcRandolph.jpg",
+            "Session_Name": "SESSION 2",
+            "Title": ": Demographic Aspects of Wellbeing  ",
+            "Description": "Complete wellbeing has been a long-standing concern globally. There has been a growing interest in the wellbeing of people and the role of demographic factors. The social determinants of health and wellbeing, including economic status and demographic factors are correlated with the impact of mental health disorders. There are studies which suggest that certain health conditions affect some communities more than the others."
+        },
+        {
+            "Session_id": 3,
+            "VerticalCode": "wellbeing",
+            "SpeakerName": "Andrew Weil M.D.",
+            "speakerTitle": "Celebrity Doctor",
+            "Speaker_Details": "Andrew Weil founded the Arizona Center for Integrative Medicine at the University of Arizona College of Medicine in Tucson, Arizona, where he served as its director. Andrew is the founder of True Food Kitchen, a restaurant chain serving meals on the premise that food should make you feel better. There are currently 32 restaurants in the chain. Of his books, several have appeared on various bestseller lists, both as hardbacks and as paperbacks.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/AndrewWeil.jpg",
+            "Session_Name": "SESSION 3",
+            "Title": "Human Health Dynamics in the Age of Digitalization",
+            "Description": "Digital technologies are capable of improving health in several ways. Electronic health records support various phases of clinical trials to provide large-scale observational data leading to research findings during the current pandemic. However, digital transformations have both direct and indirect health consequences. There is a need for fundamental as well as revolutionary realignment in order to achieve health benefits for everyone with digital transformations."
+        },
+        {
+            "Session_id": 4,
+            "VerticalCode": "wellbeing",
+            "SpeakerName": "Suneel Gupta",
+            "speakerTitle": "Expert, Connecting Well-Being and Performance; Healthcare Entrepreneur; Bestselling Author; Visiting Scholar, Harvard Medical School",
+            "Speaker_Details": "As the founding CEO of RISE, a breakthrough wellness company, Suneel Gupta helped thousands of people build better habits for life and work. Now as a bestselling author and Harvard Medical School visiting scholar, Suneel has taken his mission one step further – helping organizations reach sustainable peak performance by bolstering their people’s emotional resilience. ",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/SuneelGupta.jpg",
+            "Session_Name": "SESSION 3",
+            "Title": "Wellbeing in Times of Remote and Hybrid Working",
+            "Description": "Boundaries between work and non-work are blurred when location for both are same. It has surfaced during the current pandemic that people have struggled to maintain a balance between their personal and professional lives. Home became associated with one’s work role, making it harder to unplug and leave the office. Hence in spite of the challenges, wellbeing must be prioritized regardless of the location of work"
+        }
+       
+    ]
+}
