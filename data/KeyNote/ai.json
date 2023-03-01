@@ -1,93 +1,47 @@
 {
-    "keynotelist": [
+    "intro": [
         {
-            "Vertical": "ai",
-            "Title": "AI & ML",
-            "Date": 2023,
-            "Description": "As the hype around AI has accelerated, vendors have been scrambling to promote how their products and services use AI. Often what they refer to as AI is simply one component of AI, such as machine learning. AI requires a foundation of specialized hardware and software for writing and training machine learning algorithms. No one programming language is synonymous with AI, but a few, including Python, R and Java, are popular. ",
-            "Keynote":[
-               
-                        {
-                            "key":"KETNOTE1",
-                            "keytitle":"Chris Gledhill",
-                            "keyDesignation":"Independent FinTech Advisor, Futurist, Writer &amp; Speaker",
-                            "keyDescription":"Chris Gledhill is generally recognized to be the world’s top ranking authority on Fintech. Chris was at the head of the Lloyds Banking Group innovation labs. He followed this by co-founding and working as CEO of the UK Challenger Bank Secco. Chris boasts a high-tech and corporate career history and speaks with expertise and eloquence on a vast range of so-called 'disruptive technologies'. These include AI, API, Big Data, Biometrics, Blockchain, CryptoCurrencies, Deep Learning, Mobiles, Virtual Reality, and Wearables.",
-                            "section":[
-                                {
-                                    "section": "SESSION 1",
-                                    "sectionTitle":"How Will Climate Risk Regulations Impact Banking Sector? ",
-                                    "sectionDescription":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?",
-                                    "sectionList":[
-                                                    {
-                                                     "sectionlist":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?"
-                                                    },
-                                                    {
-                                                        "sectionlist":"Get insights into how climate risk regulations will impact the banking sector"
-                                                    },
-                                                    {
-                                                    "sectionlist":"Learn how bankers can be incentivized to create and implement climate risk related policies and reports"
-                                                    }
-                                                  ]
-
-                                }
-                            ]
-
-                        },
-
-                        {
-                            "key":"KETNOTE2",
-                            "keytitle":"Jason Bates",
-                            "keyDesignation":"Independent FinTech Advisor, Futurist, Writer &amp; Speaker",
-                            "keyDescription":"Chris Gledhill is generally recognized to be the world’s top ranking authority on Fintech. Chris was at the head of the Lloyds Banking Group innovation labs. He followed this by co-founding and working as CEO of the UK Challenger Bank Secco. Chris boasts a high-tech and corporate career history and speaks with expertise and eloquence on a vast range of so-called 'disruptive technologies'. These include AI, API, Big Data, Biometrics, Blockchain, CryptoCurrencies, Deep Learning, Mobiles, Virtual Reality, and Wearables.",
-                            "section":[
-                                {
-                                    "section": "SESSION 2",
-                                    "sectionTitle":"How Will Climate Risk Regulations Impact Banking Sector? ",
-                                    "sectionDescription":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?",
-                                    "sectionList":[
-                                                    {
-                                                     "sectionlist":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?"
-                                                    },
-                                                    {
-                                                        "sectionlist":"Get insights into how climate risk regulations will impact the banking sector"
-                                                    },
-                                                    {
-                                                    "sectionlist":"Learn how bankers can be incentivized to create and implement climate risk related policies and reports"
-                                                    }
-                                                  ]
-
-                                }
-                            ]
-
-                        },
-                        {
-                            "key":"KETNOTE3",
-                            "keytitle":"Chris Skinner",
-                            "keyDesignation":"Independent FinTech Advisor, Futurist, Writer &amp; Speaker",
-                            "keyDescription":"Chris Gledhill is generally recognized to be the world’s top ranking authority on Fintech. Chris was at the head of the Lloyds Banking Group innovation labs. He followed this by co-founding and working as CEO of the UK Challenger Bank Secco. Chris boasts a high-tech and corporate career history and speaks with expertise and eloquence on a vast range of so-called 'disruptive technologies'. These include AI, API, Big Data, Biometrics, Blockchain, CryptoCurrencies, Deep Learning, Mobiles, Virtual Reality, and Wearables.",
-                            "section":[
-                                {
-                                    "section": "SESSION 2",
-                                    "sectionTitle":"How Will Climate Risk Regulations Impact Banking Sector? ",
-                                    "sectionDescription":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?",
-                                    "sectionList":[
-                                                    {
-                                                     "sectionlist":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?"
-                                                    },
-                                                    {
-                                                        "sectionlist":"Get insights into how climate risk regulations will impact the banking sector"
-                                                    },
-                                                    {
-                                                    "sectionlist":"Learn how bankers can be incentivized to create and implement climate risk related policies and reports"
-                                                    }
-                                                  ]
-
-                                }
-                            ]
-
-                        }
-
-                      ]
+            "Session_id": 1,
+            "VerticalCode": "ai",
+            "VerticalName": "AI & ML",
+            "EventDate": "April 7, 2023",
+            "EventDescription": ""
         }
+    ],
+    "keydata": [
+        {
+            "Session_id": 1,
+            "VerticalCode": "ai",
+            "SpeakerName": "Sophie Hackford ",
+            "speakerTitle": "A Futurist, Business Builder & Speaker ",
+            "Speaker_Details": "Sophie is well known for launching and running WIRED magazine’s consulting business which brings entrepreneurs building the future into boardrooms. She spent two years in Silicon Valley working at Singularity University, a group based at a NASA research park tasked with understanding and harnessing exponential technologies.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/SophieHackford.jpg",
+            "Session_Name": "SESSION 1",
+            "Title": "Exploring the What, Why & Who of AI in Enterprise ",
+            "Description": "AI is playing an ever important role in business. But how effectively are companies implementing this technology across both products and processes?"
+        },
+        {
+            "Session_id": 2,
+            "VerticalCode": "ai",
+            "SpeakerName": "Jeremy White",
+            "speakerTitle": "Senior Innovation Editor for WIRED",
+            "Speaker_Details": "Jeremy White talks extensively on artificial intelligence, machine learning and how they can be implemented in various forms by businesses all around the world in order to gain competitive advantage. Jeremy has spoken and delivered lectures at C-suite level on this subject to brands including Google, BMW, Deloitte, HSBC, Johnson & Johnson, Barclays and among others. ",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/JeremyWhite.jpg",
+            "Session_Name": "SESSION 2",
+            "Title": "What’s Next for AI. Recent Advancements & Innovations ",
+            "Description": "After decades of slow burn, AI is now a raging fire with developments taking place at a rapid pace. Innovation has been and continues to be the fuel for this fire.  "
+        },
+        {
+            "Session_id": 3,
+            "VerticalCode": "ai",
+            "SpeakerName": "Mark Stevenson",
+            "speakerTitle": "Author of “We Do Things Differently” and “An Optimist’s Tour of the Future”",
+            "Speaker_Details": "Mark Stevenson is one of the world’s most respected thought leaders on cutting edge technologies such as artificial intelligence and robotics. He presents case studies on the use of new technologies in various fields such as farming, sustainable energy and health.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/MarkStevenson.jpg",
+            "Session_Name": "SESSION 3",
+            "Title": "Understanding & Building Ethics in AI ",
+            "Description": "We are beginning to learn that AI scales not just solutions and capabilities but also risks. AI ethics is now a business necessity and is no longer just an academic curiosity. Ethical decisions are needed to guide research, development and use of AI. Researchers and companies alike need a clear plan to deal with ethical quandaries."
+        }
+       
     ]
 }
