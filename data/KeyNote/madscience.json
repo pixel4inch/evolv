@@ -1,0 +1,58 @@
+{
+    "intro": [
+        {
+            "Session_id": 1,
+            "VerticalCode": "madscience",
+            "VerticalName": "MAD SCIENCE ",
+            "EventDate": "August 10, 2023",
+            "EventDescription": ""
+        }
+    ],
+    "keydata": [
+        {
+            "Session_id": 1,
+            "VerticalCode": "madscience",
+            "SpeakerName": "Amy Webb ",
+            "speakerTitle": "CEO and Founder, Future Today Institute ",
+            "Speaker_Details": "Amy Webb advises CXOs of the world’s most-admired companies, three-star admirals and generals, and the senior leadership of central banks and intergovernmental organizations. Founder of the Future Today Institute, a leading foresight and strategy firm that helps leaders and their organizations prepare for complex futures, Amy pioneered a data-driven, technology-led foresight methodology that is now used within hundreds of organizations. Forbes called Amy “one of the five women changing the world.” She was honored as one of the BBC’s 100 Women of 2020 and is ranked on the Thinkers50 list of the 50 most influential management thinkers globally.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/AmyWebb.jpg",
+            "Session_Name": "SESSION 1",
+            "Title": "Innovation Through Forward Inventions ",
+            "Description": "The world is heading towards convergence of different technologies to develop solutions that can serve specific requirements and bring more value to the investment. Developments geared towards making solutions more robust and capable of performing in difficult conditions and scenarios will especially find robust demand in coming years. A new breed of technology solutions will emerge in the immediate future, which will amalgamate businesses, government, and institutions with technology."
+        },
+        {   
+            "Session_id": 2,
+            "VerticalCode": "madscience",
+            "SpeakerName": "Dr. Vanessa Shannon",
+            "speakerTitle": "Director of Mental Performance for the Cincinnati Reds",
+            "Speaker_Details": "Vanessa Shannon has been the Director of Mental Performance for the University of Louisville Athletic Department and Norton Sports Health since October 2015. Prior to Louisville, Dr. Shannon spent time at IMG Academy, was an Assistant Professor of Sport and Exercise Psychology at West Virginia University, and served as the Department Chair of Exercise and Sport Sciences at Tennessee Wesleyan University. Dr. Shannon holds a PhD in Kinesiology, Recreation, and Sports Studies with a specialization in Sport Psychology and concentration in Counseling (University of Tennessee) a MS in Kinesiology with an emphasis in Exercise Psychology (Kansas State University) and BAs in Health and Human Performance and Psychology from Rice University. ",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/VanessaShannon.jpg",
+            "Session_Name": "SESSION 2",
+            "Title": ": Fun Inventions in Consumer Electronics   ",
+            "Description": "Effervescent developments in next generation technology space have resulted in the successful development of weird but smart home gadgets and useful consumer electronics devices. Miniaturization of electronic devices and components, technologies such as 3D printing, robotics, virtual reality, Artificial intelligence and lean towards light weight and energy efficient electronic systems continue to drive development of some of the interesting consumer electronics inventions."
+        },
+        {
+            "Session_id": 3,
+            "VerticalCode": "madscience",
+            "SpeakerName": "DR. JAMES CANTON PH.D",
+            "speakerTitle": "Futurist, Author and Visionary Business Advisor",
+            "Speaker_Details": "Dr. James Canton is a renowned global futurist, social scientist, author, and visionary business advisor. As a former Apple Computer executive and high tech entrepreneur, he has been insightfully forecasting the key trends and technologies that have shaped our world. Dr. Canton is CEO and Chairman of the Institute for Global Futures, a leading think tank he founded in 1990 that advises business and government . Dr. Canton advises the Global Fortune 1000 on trends in innovation, financial services, health care, population, life sciences, energy, security, workforce, climate change and globalization. From a broad range of industries, clients include: IBM, Tata, Intel, Philips, General Electric, Hewlett Packard, Boeing, FedEx, and Proctor & Gamble.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/JAMESCANTON.jpg",
+            "Session_Name": "SESSION 3",
+            "Title": ": Strangest Robotic Inventions that will Make You Think the Future is Now",
+            "Description": "Once limited to science fiction, and gradually transcending to industrial applications, robots have evolved to play an increasingly important role in every sector led by the convergence of robotics with cognitive science, artificial intelligence (AI), and information technology. The ample opportunities for implementation of robotics in everyday life is leading researchers to focus on developing robots for use in unconventional environments. There is yet still a need for significant advancements in the fields of computer vision, automated reasoning, motion planning, and language processing, to transform the concept of a personal robot into a commercial reality."
+        },
+        {
+            "Session_id": 4,
+            "VerticalCode": "madscience",
+            "SpeakerName": "Peter Stone",
+            "speakerTitle": "Computer Science Professor at UT Austin",
+            "Speaker_Details": "Peter Stone is an American computer scientist who is the David Bruton Jr. Centennial Professor of Computer Science at the University of Texas at Austin. He is also an Alfred P. Sloan Research Fellow, Guggenheim Fellow, AAAI Fellow, and Fulbright Scholar.",
+            "Speaker_image": "./images/evolv/speaker/event_speakers/PeterStone.jpg",
+            "Session_Name": "SESSION 3",
+            "Title": "Mad Science in Future Warfare",
+            "Description": "While existing devices are offering advanced functions for new capabilities, there is a significant scope for improvement. Augmented intelligence is becoming a critical part of modern warfare as militaries around the world increasingly seek to integrate AI innovations into their arsenals in order to gain a strategic edge over their adversaries and improve their warfighting advantages"
+        }
+       
+    ]
+}
