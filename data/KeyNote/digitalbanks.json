@@ -1,0 +1,92 @@
+{
+    "keynotelist": [
+        {
+            "Vertical": "digitalbanks",
+            "Title": "Digital Banks",
+            "Date": 2023,
+            "Description": "The purpose for a Global Strategy on Digital Health is to promote healthy lives and wellbeing for everyone, everywhere, at all ages. To deliver its potential, national or regional Digital Health initiatives must be guided by a robust Strategy that integrates financial, organizational, human and technological resources. ",
+            "Keynote":[
+                        {
+                            "key":"KETNOTE1",
+                            "keytitle":"Chris Gledhill",
+                            "keyDesignation":"Independent FinTech Advisor, Futurist, Writer &amp; Speaker",
+                            "keyDescription":"Chris Gledhill is generally recognized to be the world’s top ranking authority on Fintech. Chris was at the head of the Lloyds Banking Group innovation labs. He followed this by co-founding and working as CEO of the UK Challenger Bank Secco. Chris boasts a high-tech and corporate career history and speaks with expertise and eloquence on a vast range of so-called 'disruptive technologies'. These include AI, API, Big Data, Biometrics, Blockchain, CryptoCurrencies, Deep Learning, Mobiles, Virtual Reality, and Wearables.",
+                            "section":[
+                                {
+                                    "section": "SESSION 1",
+                                    "sectionTitle":"How Will Climate Risk Regulations Impact Banking Sector? ",
+                                    "sectionDescription":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?",
+                                    "sectionList":[
+                                                    {
+                                                     "sectionlist":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?"
+                                                    },
+                                                    {
+                                                        "sectionlist":"Get insights into how climate risk regulations will impact the banking sector"
+                                                    },
+                                                    {
+                                                    "sectionlist":"Learn how bankers can be incentivized to create and implement climate risk related policies and reports"
+                                                    }
+                                                  ]
+
+                                }
+                            ]
+
+                        },
+
+                        {
+                            "key":"KETNOTE2",
+                            "keytitle":"Jason Bates",
+                            "keyDesignation":"Independent FinTech Advisor, Futurist, Writer &amp; Speaker",
+                            "keyDescription":"Chris Gledhill is generally recognized to be the world’s top ranking authority on Fintech. Chris was at the head of the Lloyds Banking Group innovation labs. He followed this by co-founding and working as CEO of the UK Challenger Bank Secco. Chris boasts a high-tech and corporate career history and speaks with expertise and eloquence on a vast range of so-called 'disruptive technologies'. These include AI, API, Big Data, Biometrics, Blockchain, CryptoCurrencies, Deep Learning, Mobiles, Virtual Reality, and Wearables.",
+                            "section":[
+                                {
+                                    "section": "SESSION 2",
+                                    "sectionTitle":"How Will Climate Risk Regulations Impact Banking Sector? ",
+                                    "sectionDescription":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?",
+                                    "sectionList":[
+                                                    {
+                                                     "sectionlist":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?"
+                                                    },
+                                                    {
+                                                        "sectionlist":"Get insights into how climate risk regulations will impact the banking sector"
+                                                    },
+                                                    {
+                                                    "sectionlist":"Learn how bankers can be incentivized to create and implement climate risk related policies and reports"
+                                                    }
+                                                  ]
+
+                                }
+                            ]
+
+                        },
+                        {
+                            "key":"KETNOTE3",
+                            "keytitle":"Chris Skinner",
+                            "keyDesignation":"Independent FinTech Advisor, Futurist, Writer &amp; Speaker",
+                            "keyDescription":"Chris Gledhill is generally recognized to be the world’s top ranking authority on Fintech. Chris was at the head of the Lloyds Banking Group innovation labs. He followed this by co-founding and working as CEO of the UK Challenger Bank Secco. Chris boasts a high-tech and corporate career history and speaks with expertise and eloquence on a vast range of so-called 'disruptive technologies'. These include AI, API, Big Data, Biometrics, Blockchain, CryptoCurrencies, Deep Learning, Mobiles, Virtual Reality, and Wearables.",
+                            "section":[
+                                {
+                                    "section": "SESSION 2",
+                                    "sectionTitle":"How Will Climate Risk Regulations Impact Banking Sector? ",
+                                    "sectionDescription":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?",
+                                    "sectionList":[
+                                                    {
+                                                     "sectionlist":"The banking industry is expected to witness implementation of Climate Risk regulations. How are banking institutions preparing for impending climate-related regulations?"
+                                                    },
+                                                    {
+                                                        "sectionlist":"Get insights into how climate risk regulations will impact the banking sector"
+                                                    },
+                                                    {
+                                                    "sectionlist":"Learn how bankers can be incentivized to create and implement climate risk related policies and reports"
+                                                    }
+                                                  ]
+
+                                }
+                            ]
+
+                        }
+
+                      ]
+        }
+    ]
+}

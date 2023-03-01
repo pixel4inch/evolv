@@ -37,10 +37,10 @@
   <link href="css/custome.css" rel="stylesheet" />
   <link href="./plugins/jsvectormap-master/dist/css/jsvectormap.css" rel="stylesheet" />
   <link href="css/jquery.readall.css" rel="stylesheet" />
-  
 
 
-     <!---WEB COMPONETNS-->
+
+  <!---WEB COMPONETNS-->
   <script src="./webcomponts/headerComponents.js"></script>
   <script src="./webcomponts/FooterComponent.js"></script>
   <script src="./webcomponts/ScrollToTop.js"></script>
@@ -51,7 +51,10 @@
   <script src="./webcomponts/datafooterComponent.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 
-<body class="body-wrapper" id="container" data-spy="scroll" data-target=".privacy-nav" onBeforePrint="document.body.style.display='none';" onAfterPrint="document.body.style.display='block';" onContextmenu="return false" onSelectstart="return false" onDragstart="return false"  topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
+<body class="body-wrapper" id="container" data-spy="scroll" data-target=".privacy-nav"
+  onBeforePrint="document.body.style.display='none';" onAfterPrint="document.body.style.display='block';"
+  onContextmenu="return false" onSelectstart="return false" onDragstart="return false" topmargin="0" leftmargin="0"
+  rightmargin="0" bottommargin="0">
 
 
 
@@ -64,10 +67,7 @@
   <script src="https://releases.jquery.com/git/jquery-git.js"></script>
   <script>
 
-
-
     $(document).ready(function () {
-
       $.getJSON("./data/events.json", function (data) {
         // var selURL = window.location.pathname.substr(window.location.pathname.lastIndexOf("/") + 1).replace(".html", "");
         //  alert("URL:"+selURL)
@@ -76,10 +76,10 @@
         var banner = '';
         var datagrapic = '';
         var domain = '';
-		var url_domain = '';
+        var url_domain = '';
         var gialink = "";
-        var writeups="";
-        var popupdatagraphic="";
+        var writeups = "";
+        var popupdatagraphic = "";
         console.log(data)
         $.each(data.eventslist, function (key, value) {
           if (value.Event == eventid) {
@@ -89,17 +89,17 @@
             gialink += `  <dgfooter-card glink=" ` + value.eventdatagraphiclink + `  "></dgfooter-card>`
             if (value.eventdomainlink !== undefined) {
               domain += ` 	<a href="#domain-experts" class="my-2 equal-button btn d-block btn-sm shadow     mx-1 bg-danger text-white  " target="_blank" data-toggle="collapse" role="button" aria-expanded="false"  aria-controls="collapseExample" > INFLUENCERS </a>`
-			        url_domain += `<iframe src="` + value.eventdomainlink + `" class="programdetial-frame"></iframe>`
+              url_domain += `<iframe src="` + value.eventdomainlink + `" class="programdetial-frame"></iframe>`
             };
             writeups += `<a href="` + value.writeupslink + `" class="my-2 equal-button btn d-block btn-sm shadow    mx-1  text-white  " target="_blank">WHAT'S TRENDING</a>`;
-            
+
 
           }
         });
         $('#pagebanner-block').html(banner);
         $('#datagraphic-block').html(datagrapic);
-       
-	    	$('#domain-experts_btn').html(domain);
+
+        $('#domain-experts_btn').html(domain);
         $('#domain-experts').html(url_domain);
         $('#gialinkblock').html(gialink);
         $('#witeupsblock').html(writeups);
@@ -118,7 +118,7 @@
     <div class="container">
       <div class="row mx-0" id="pagebanner-block">
       </div>
-   </div>
+    </div>
   </section>
 
   <!--============================
@@ -127,12 +127,12 @@
   <section class="section placekeeper_section page-title pt-3">
     <div class="container">
       <div class="row align-items-center m-0 ">
-        <div class="col-lg-9 col-md-12 col-12 mx-auto">       
-        <div class="datagraphic-block" id="datagraphic-block">
+        <div class="col-lg-9 col-md-12 col-12 mx-auto">
+          <div class="datagraphic-block" id="datagraphic-block">
+          </div>
+          <div class="w-100   text-center" id="gialinkblock">
+          </div>
         </div>
-        <div class="w-100   text-center" id="gialinkblock">
-        </div>
-      </div>
       </div>
     </div>
   </section>
@@ -142,53 +142,312 @@
 =================================-->
 
   <section class="section  mb-5">
-    
-      <div class="row">
-        <div id="collapseblock" class="w-100">
-			
-			      <div class=" w-100 mx-0 mt-3">
-              <div class="container">   
-				<!---RECOMMEND AN EXPERT--->
-                  <div class="collapse  mt-0 border-top border-bottom " id="collapseExample"  data-parent="#collapseblock">     
-                    <iframe src="https://www.evolv.cc/Add_Recommend.asp" class="recommend-frame"></iframe>
-                  </div>    
-                  <!---SPONSOR--->
-                  <div class="collapse  mt-0 border-top border-bottom " id="collapseExample2"  data-parent="#collapseblock">  
-                    <iframe src="https://www.evolv.cc/Add_sponsors.asp" class="sponsors-frame"></iframe>
-                  </div>    
-                  <!---PROGRAM DETAILS--->
-                  <div class="collapse  mt-0 border-top border-bottom " id="collapseExample3"  data-parent="#collapseblock">  
-                    <iframe src="https://www.evolv.cc/Add_Program_Details.asp" class="programdetial-frame"></iframe>
-                  </div>			
-                  <!---INFLUENCER DETAILS--->
-                  <div class="collapse  mt-0 border-top border-bottom " id="domain-experts"  data-parent="#collapseblock">                  
-                  </div>    
-                  
-            </div> 
-            </div>
-			
-			
-            <div class="bg-light py-2">
-            <div class="container">     
-              <div class="d-flex justify-content-center align-items-center flex-wrap flex-coloum flex-lg-row my-2 w-100  ">
-                <a href="#collapseExample3" class="my-2 equal-button btn d-block btn-sm shadow     mx-1  text-white  " target="_blank" data-toggle="collapse"  role="button" aria-expanded="false"  aria-controls="collapseExample" /> Program Details </a>
-                <a href="#collapseExample2" class="my-2 equal-button btn d-block btn-sm shadow     mx-1  text-white  " target="_blank" data-toggle="collapse"  role="button" aria-expanded="false"  aria-controls="collapseExample" > SPONSOR @ EVOLV<sup>TM</sup> </a>
-        
-                <div id="domain-experts_btn">
 
-                </div>            
-                <a href="#collapseExample" class="my-2 equal-button btn d-block btn-sm shadow    mx-1  text-white  " target="_blank" data-toggle="collapse" role="button" aria-expanded="false"  aria-controls="collapseExample" >
-                  RECOMMEND AN EXPERT </a>
-                  <div id="witeupsblock">
-                  </div>
-                  <!--a class="my-2 equal-button btn d-block btn-sm shadow   px-2  py-3 mx-1  text-white  " target="_blank" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"  aria-controls="collapseExample" >
-                    WHAT?S TRENDING </a-->
+
+
+    <div class="row">
+      <div id="collapseblock" class="w-100">
+        <div class="bg-light py-2">
+          <div class="container">
+            <div  class="d-flex justify-content-center align-items-center flex-wrap flex-coloum flex-lg-row my-2 w-100  ">
+              <a href="#collapseExample3" class="my-2 equal-button btn d-block btn-sm shadow     mx-1  text-white  "
+              target="_blank" data-toggle="collapse" role="button" aria-expanded="false"
+              aria-controls="collapseExample" /> Program Details </a>
+
+
+              <a href="#collapseExample2" class="my-2 equal-button btn d-block btn-sm shadow     mx-1  text-white  "
+                target="_blank" data-toggle="collapse" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                SPONSOR @ EVOLV<sup>TM</sup> </a>
+
+              <div id="domain-experts_btn">
+
               </div>
-		        </div>
+              <a href="#collapseExample" class="my-2 equal-button btn d-block btn-sm shadow    mx-1  text-white  "
+                target="_blank" data-toggle="collapse" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                RECOMMEND AN EXPERT </a>
+              <div id="witeupsblock">
+              </div>
+              <!--a class="my-2 equal-button btn d-block btn-sm shadow   px-2  py-3 mx-1  text-white  " target="_blank" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"  aria-controls="collapseExample" >
+                        WHAT?S TRENDING </a-->
+            </div>
           </div>
+        </div>
+
+
+        <div class=" w-100 mx-0 mt-3">
+          <div class="container">
+            <!---RECOMMEND AN EXPERT--->
+            <div class="collapse show mt-0 " id="collapseExample3" data-parent="#collapseblock">
+
+
+
+
+              <div id="keyinfo">
+
+              </div>
+
+              <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+              <script>
+                $(document).ready(function () {
+                
+                  var eventid = GetParameterValues("EventId");
+                  $.getJSON(`./data/KeyNote/` + eventid + `.json`, function (data) {
+                    // alert("Event:"+ eventid);
+                    var keyinfoBlock = '';
+                    $.each(data.intro, function (key, value) {
+                      if (value.VerticalCode == eventid) {
+                        //keynot title block
+                        keyinfoBlock += `
+                        <div class="border-bottom  p-3">
+                            <div class="row m-3">
+                                <div class="col-lg-1 col-md-2 col-2 ">
+                                <h5 class="font-weight-bold">Title:</h5>
+                            </div>
+                            <div class="col-lg-11 col-md-10 col-10">
+                                <h5>` + value.VerticalName + `</h5>
+                                </div>
+                            </div>
+                            <div class="row m-3">
+                                <div class="col-lg-1 col-md-2 col-2">
+                                <h5 class="font-weight-bold">Date:</h5>
+                            </div>
+                            <div class="col-lg-11 col-md-10 col-10">
+                                <h5 >` + value.EventDate + `</h5>
+                                </div>
+                            </div>
+                            <div class="row m-3">
+                                <div class="col-1 d-none">
+                            </div>
+                            <!---
+                            <div class="col-12">
+                                <p >` + value.EventDescription + `</p>
+                                </div>
+                                --->
+                            </div>
+
+                        </div>
+                        `;
+                      }
+                    });
+                    $('#keyinfo').html(keyinfoBlock);
+                  }).fail(function () {
+                    document.write("An error has occurred.");
+                  });
+                }); 
+              </script>
+
+              <!---TABS LIST--->
+              <ul id="myTab1" role="tablist"
+                class=" py-2 border-0  my-2 nav nav-tabs nav-pills with-arrow flex-column flex-sm-row text-center">
+
+
+              </ul>
+
+              <div id="myTab1Content" class="tab-content">
+
+
+              </div>
+
+
+
+
+              <script>
+                $(document).ready(function () {
+                  var eventid = GetParameterValues("EventId");
+                  $.getJSON(`./data/KeyNote/` + eventid + `.json`, function (data) {
+                   
+                    // alert("Event:"+ eventid);
+                    var keynotebuttons = '';
+                    var keycontent = "";
+
+                    $.each(data.keydata, function (key, value) {
+
+                      if (value.VerticalCode == eventid) {
+
+                        // TOP KEYS
+                        if (value.Session_id == "1") {
+                          keynotebuttons += `
+                          <li class="nav-item flex-sm-fill">
+                             <a id="`+ value.Session_id +`-tab" data-toggle="tab" href="#key` + value.Session_id + ` " role="tab"
+                                 aria-controls="home1" aria-selected="true" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border active">
+                                 KEYNOTE - `  + value.Session_id + `</a>
+                           </li>
+                        `;
+
+                        } else {
+                          keynotebuttons += `
+                          <li class="nav-item flex-sm-fill">
+                             <a id="`+ value.Session_id +`-tab" data-toggle="tab" href="#key` + value.Session_id + `" role="tab"
+                                 aria-controls="home1" aria-selected="true" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border ">
+                                 KEYNOTE - `  + value.Session_id + `</a>
+                           </li>
+                        `;
+                        }
+
+                      }
+
+                      // KEY CONTENT
+                      if (value.Session_id == "1") {
+                        keycontent += `
+                            
+                              <div id="key` + value.Session_id + `" role="tabpanel" aria-labelledby="home-tab" class="tab-pane border-0 fade px-4 pt-3  show active">
+                              <div class="row mx-0 ">
+                                <div class="col-lg-2 col-md-3 col-sm-6 col-6 mx-auto mb-2">
+                                  <img src="`+ value.Speaker_image  +`" class="shadow border mt-3 img-fluid ">
+                                </div>
+
+                                <div class="col-lg-10 col-md-9 col-sm-12 col-12 mx-auto mt-3">
+                                  <h4 class="font-display2 main-font-color">`+  value.SpeakerName +`Chris Gledhill</h4>
+                                  <h5>` + value.SpeakerName + `</h5>
+                                  <p class="mt-3"> ` + value.Speaker_Details + ` </p>
+
+
+                                </div>
+
+                                <div class="w-100 border-top mt-3 pt-3">
+                                  <div class="light-bg py-2">
+                                    <h5 class="font-weight-bold">` + value.Session_Name + `</h5>
+                                  </div>
+
+                                  <h4 class="font-display3 main-font-color mt-1">` + value.Title + `</h4>
+                                  <p class="mt-2">` + value.Description + `</p>
+
+                                  <!--<p class="mt-3">This session will help attendees </p>--->
+                                  
+
+
+                                  </ul>
+                                </div>
+
+
+
+
+                              </div>
+
+
+                              </div>
+                            
+                            
+                            `;
+                      } else {
+
+                        keycontent += `
+                            <div id="key` + value.Session_id + `" role="tabpanel" aria-labelledby="home-tab" class="tab-pane border-0 fade px-4 pt-3 ">
+
+                              <div class="row mx-0 ">
+                                <div class="col-lg-2 col-md-3 col-sm-6 col-6 mx-auto mb-2">
+                                  <img src="`+ value.Speaker_image  +`" class="shadow border mt-3 img-fluid ">
+                                </div>
+
+                                <div class="col-lg-10 col-md-9 col-sm-12 col-12 mx-auto mt-3">
+                                  <h4 class="font-display2 main-font-color">`+  value.SpeakerName +`Chris Gledhill</h4>
+                                  <h5>` + value.SpeakerName + `</h5>
+                                  <p class="mt-3"> ` + value.Speaker_Details + ` </p>
+
+
+                                </div>
+
+                                <div class="w-100 border-top mt-3 pt-3">
+                                  <div class="light-bg py-2">
+                                    <h5 class="font-weight-bold">` + value.Session_Name + `</h5>
+                                  </div>
+
+                                  <h4 class="font-display3 main-font-color mt-1">` + value.Title + `</h4>
+                                  <p class="mt-2">` + value.Description + `</p>
+
+                                  <!--<p class="mt-3">This session will help attendees </p>--->
+                                  
+
+
+                                  </ul>
+                                </div>
+
+
+
+
+                              </div>
+
+
+                              </div>
+                            
+                            
+                            `
+
+
+
+
+                      }
+
+
+
+
+
+                    });
+                    $('#myTab1').html(keynotebuttons);
+
+                    $('#myTab1Content').html(keycontent);
+
+
+                  }).fail(function () {
+                    document.write("An error has occurred.");
+                  });
+                }); 
+              </script>
+
+
+
+
+            </div>
+            <!---SPONSOR--->
+            <div class="collapse  mt-0 border-top border-bottom " id="collapseExample2" data-parent="#collapseblock">
+              <iframe src="https://www.evolv.cc/Add_sponsors.asp" class="sponsors-frame"></iframe>
+            </div>
+            <!---PROGRAM DETAILS--->
+            <!---PROGRAM DETAILS--->
+            <div class="collapse show  mt-0 border-top border-bottom " id="collapseExample"
+              data-parent="#collapseblock">
+              <!--iframe src="https://www.evolv.cc/Add_Program_Details.asp" class="programdetial-frame"></iframe--->
+
+            </div>
           </div>
+
+
+        </div>
+
+
+
+
+        <div class="px-4 pb-2 bg-white rounded">
+          <!-- Bordered tabs-->
+
+
+
+
+
+       
+
+
+
+
+
+         
+
+
+
+        <!---INFLUENCER DETAILS--->
+        <div class="collapse  mt-0 border-top border-bottom " id="domain-experts" data-parent="#collapseblock">
+        </div>
+
       </div>
-  
+    </div>
+
+
+
+    </div>
+    </div>
+
   </section>
 
   <!--================================
@@ -200,7 +459,7 @@
   </section--->
 
 
-  
+
 
 
 
@@ -232,7 +491,7 @@
   <script src="js/script.js"></script>
   <script src="./js/submenu_select.js"></script>
   <script src="./js/jquery.readall.js"></script>
-  
+
 
   <script src="./js/multi-animated-counter.js"></script>
 
@@ -258,18 +517,19 @@
       new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,es,zh-CN,de,ja,nl,fr,it,pt,ar,ko,sv,zh-TW", layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
     }
   </script>
-  
- 
 
-<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" id="exampleModal">
-  <div class="modal-dialog modal-dialog-centered modal-xl ">
-    <div class="modal-content">
-      <div id="popupdatagraphic">
 
+
+  <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true" id="exampleModal">
+    <div class="modal-dialog modal-dialog-centered modal-xl ">
+      <div class="modal-content">
+        <div id="popupdatagraphic">
+
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 

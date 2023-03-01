@@ -1,0 +1,63 @@
+{
+"intro":[
+    {
+        "Session_id": 0,
+        "VerticalCode": "agritech",
+        "VerticalName": "AGRITECH",
+        "EventDate": "03/01/2023",
+        "EventDescription": "The purpose for a Global Strategy on Digital Health is to promote healthy lives and wellbeing for everyone, everywhere, at all ages. To deliver its potential, national or regional Digital Health initiatives must be guided by a robust Strategy that integrates financial, organizational, human and technological resources."
+    }
+],
+
+
+
+"keydata":[
+ {
+  "Session_id": 1,
+  "VerticalCode": "agritech",
+  "SpeakerName": "Sean O'Connor",
+  "speakerTitle": "Managing Director ",
+  "Speaker_Details": "Sean is the Managing Director for Conexus Venture Capital Inc. &amp; Emmertech. Conexus Venture Capital’s first fund, CVC Fund #1, is a 2019 vintage $32M fund focused on prairie based startups. Emmertech is a new $60M early stage Canadian agtech fund. Prior to Conexus, Sean was on the leadership team of a Canadian fintech, Grow Technologies Inc. (acquired by ATB). He graduated with a degree in Finance and International Business from McGill University.",
+  "Speaker_image": "www.stategyr.com/images/image1.jpg",
+  "Session_Name": "SESSION 1",
+  "Title": "Re-Invention of the Food System. How Do We Achieve Scale &amp; Acceleration?",
+  "Description": "Recent shocks to the food system caused by the pandemic, war and climate change has underlined the dire need to re-invent agriculture, supply chain systems, food security and food quality. How effective have we been at integrating digital technology into the farm production system? Are governments and regulators playing their role in promoting use of technologies that have a positive impact on the quality?"
+  
+ },
+
+ {
+  "Session_id": 2,
+  "VerticalCode": "agritech",
+  "SpeakerName": "Amy Wu",
+  "speakerTitle": "Founder &amp; Chief Content Director",
+  "Speaker_Details": "Amy is the Creator &amp; Chief Content Director of From Farms to Incubators, a multimedia platform that uses documentary, video, photography and the written word to tell the stories of women leaders and innovators in agtech. It has a mission of highlighting women in food, farming, and farmtech, especially women of color. From Farms to Incubators includes an award-winning documentary short that has been screened at SXSW, and a best-selling book “From Farms to Incubators: Women Revolutionizing How Our Food Is Grown” that was released in May 2021.",
+  "Speaker_image": "www.stategyr.com/images/image1.jpg",
+  "Session_Name": "SESSION 2",
+  "Title": "Incentivizing Regenerative Agriculture. Are Farmers Put at the Center of Climate Action?",
+  "Description": "The regenerative agriculture movement is fairly new and has long way to go before it can be adopted as an alternative to current conventional, large-scale agriculture. There remains a lot of inadequacies in the framework and standards supporting this concept.\n\nThis session will help you \n•\tUnderstand the pros and cons of regenerative agriculture\n•\tChange your perspectives around business models and practices to follow.\n•\tIdentify what’s needed to fully de-risk barriers to implementation. \n•\tGain insights into the framework and standards needed to ensure that the concept meets climate, nature and societal goals and achieve expected outcomes. "
+ },
+ {
+  "Session_id": 3,
+  "VerticalCode": "agritech",
+ 
+  "SpeakerName": "Julia Niiro",
+  "speakerTitle": "Founder &amp; CEO",
+  "Speaker_Details": "Julia Niiro is the founder &amp; CEO of MilkRun, a weekly service delivering locally farmed food directly to consumers through an online marketplace. Recognized for solving two key problems of the local food movement: distribution and low pay, Niiro’s two-year-old business grew 15x in 2020 as she and her team helped farmers shift to eCommerce during the COVID-19 pandemic. Niiro is a Y Combinator, TechStars Accelerator Alum and TEDx speaker and has been recognized for her innovation and resilience, landing on Inc. Magazine’s list of Top 100 Female Founders and Forbes Next 1000 list.",
+  "Speaker_image": "www.stategyr.com/images/image1.jpg",
+  "Session_Name": "SESSION 3",
+  "Title": "Incentivizing Regenerative Agriculture. Are Farmers Put at the Center of Climate Action?",
+  "Description": "The regenerative agriculture movement is fairly new and has long way to go before it can be adopted as an alternative to current conventional, large-scale agriculture. There remains a lot of inadequacies in the framework and standards supporting this concept.\n\nThis session will help you \n•\tUnderstand the pros and cons of regenerative agriculture\n•\tChange your perspectives around business models and practices to follow.\n•\tIdentify what’s needed to fully de-risk barriers to implementation. \n•\tGain insights into the framework and standards needed to ensure that the concept meets climate, nature and societal goals and achieve expected outcomes. "
+ },
+ {
+  "Session_id": 4,
+  "VerticalCode": "agritech",
+  "SpeakerName": "Robert Williams",
+  "speakerTitle": "Director Agrifood",
+  "Speaker_Details": "Robert Williams is a director at Artesian, the most active early-stage venture capital fund in Australia which now manages +$300m USD. Artesian is a global alternative investment management firm with staff in NY, London, Singapore, Shanghai, Jakarta, Sydney, Adelaide and Melbourne. Prior to joining Artesian, Robert most recently worked as a manager within the agricultural investment team at Macquarie Infrastructure and Real Assets, a division within the asset management arm of the Macquarie Group.",
+  "Speaker_image": "www.stategyr.com/images/image1.jpg",
+  "Session_Name": "SESSION 4",
+  "Title": "Incentivizing Regenerative Agriculture. Are Farmers Put at the Center of Climate Action?",
+  "Description": "The regenerative agriculture movement is fairly new and has long way to go before it can be adopted as an alternative to current conventional, large-scale agriculture. There remains a lot of inadequacies in the framework and standards supporting this concept.\n\nThis session will help you \n•\tUnderstand the pros and cons of regenerative agriculture\n•\tChange your perspectives around business models and practices to follow.\n•\tIdentify what’s needed to fully de-risk barriers to implementation. \n•\tGain insights into the framework and standards needed to ensure that the concept meets climate, nature and societal goals and achieve expected outcomes. "
+ }
+]
+}
