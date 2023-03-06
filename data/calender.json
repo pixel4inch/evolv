@@ -1,18 +1,24 @@
 {
-
-  "APRIL": [
+	
+	"MAR": [
 
     {
       "eventtype":"liveevent",
       "Title": "Evolv™ 2023 KICKOFF",
       "Title2": "B20 2023 ROADSHOW",
-      "Links": "/evolvkickoff.html",
+      
       "Multi": "",
       "dg": "",
-      "date": "April 04-06, 2023, Silicon Valley, California.",
+      "date": "March 29, Silicon Valley, California. <br/><font style=color:red;>INVITE ONLY</font>",
       "live": "live",
       "icon": "./images/evolv/icons/calender/live.png"
-    },
+    }
+],
+	
+
+  "APRIL": [
+
+  
     {
       "eventtype":"",
       "EventId":"ai",
@@ -91,18 +97,6 @@
       "date": "April 18",
       "icon": "./images/evolv/icons/calender/EdTech.png"
     },
-
-
-    {
-      "EventId":"dei",
-      "Title": "Diversity, Equity & Inclusion (DEI)",
-      "Links": "./calevents_evolv.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "April 20",
-      "icon": "./images/evolv/icons/calender/Diversity.png"
-    },
-
     {
       "EventId":"ev",
       "Title": "AutoTech - Electric Vehicles",
@@ -294,7 +288,7 @@
       "Links": "",
       "Multi": "",
       "dg": "",
-      "date": "May 22-25, 2023, New Delhi, India.",
+      "date": "May 22-25, New Delhi, India.",
       "live": "live",
       "icon": "./images/evolv/icons/calender/live.png"
     },
@@ -341,11 +335,7 @@
       "date": "June 09",
       "icon": "./images/evolv/icons/calender/sass.png"
     },
-    
-
-    
-    
-    
+  
     {
       "EventId":"wellbeing",
       "Title": "Wellbeing",
@@ -438,7 +428,7 @@
       "Links": "",
       "Multi": "",
       "dg": "",
-      "date": "June 27-30, 2023, Silicon Valley, California.",
+      "date": "June 27-30, Silicon Valley, California.",
       "live": "live",
       "icon": "./images/evolv/icons/calender/live.png"
     }
@@ -605,21 +595,12 @@
       "eventtype":"liveevent",
       "Title": "B20 2023 B2B SUMMIT",
       "Title2": "",
-      "Links": "",
+      
       "Multi": "",
       "dg": "",
-      "date": "August 23-27, 2023, New Delhi, India.",
+      "date": "August 23-27, New Delhi, India.",
       "live": "live",
       "icon": "./images/evolv/icons/calender/b20.png"
-    },
-    {
-      "EventId":"dei",
-      "Title": "Diversity, Equity & Inclusion (DEI)",
-      "Links": "./calevents_evolv.html",
-      "Multi": "Multi",
-      "dg": "",
-      "date": "August 28",
-      "icon": "./images/evolv/icons/calender/Diversity.png"
     },
     
     {
@@ -677,6 +658,7 @@
       "date": "September 06",
       "icon": "./images/evolv/icons/calender/AI.png"
     },
+
     {
       "EventId":"mdi",
       "Title": "Medical Device Innovations",

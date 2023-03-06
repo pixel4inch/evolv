@@ -8,6 +8,7 @@
             "EventDescription": ""
         }
     ],
+
     "keydata": [
         {
             "Session_id": 1,
@@ -53,6 +54,5 @@
             "Title": "Mad Science in Future Warfare",
             "Description": "While existing devices are offering advanced functions for new capabilities, there is a significant scope for improvement. Augmented intelligence is becoming a critical part of modern warfare as militaries around the world increasingly seek to integrate AI innovations into their arsenals in order to gain a strategic edge over their adversaries and improve their warfighting advantages"
         }
-       
     ]
 }

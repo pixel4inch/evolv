@@ -1,0 +1,150 @@
+    {
+        "intro": [
+            {
+                "Session_id": 1,
+                "VerticalCode": "web",
+                "VerticalName": "Web 3.0",
+                "EventDate": "August 10, 2023",
+                "EventDescription": ""
+            }
+        ],
+
+        "keydata": [
+            {
+                "Session_id": 1,
+                "VerticalCode": "web",
+                "SpeakerName": "Leonard Brody ",
+                "speakerTitle": "Award Winning Techno-Economist, Entrepreneur, Venture Capitalist, and Innovation Expert",
+                "Speaker_Details": "Regarded as one of the “top 30 management thinkers in the world” and “a controversial leader of the new world order,” Leonard Brody is an award-winning techno-economist, entrepreneur, venture capitalist, and two-time Emmy-nominated media visionary. He has played a key role in raising hundreds of millions of dollars in capital for startup companies, been through one of the largest IPOs in history, and has been involved in the founding and successful exit of numerous companies to date. Brody is the co-founder and executive chairman of Caravan, a joint venture with the Los Angeles-based Creative Artists Agency (CAA), where he oversees the building of new ventures for some of the most well-known celebrities and political leaders in the world, including Carrie Underwood, Tom Hanks, and Joe Biden. He is also one of the proud owners of the professional soccer team Coventry City in England.",
+                "Speaker_image": "./images/evolv/speaker/event_speakers/AmyWebb.jpg",
+                "Session_Name": "SESSION 1",
+                "Title": "Web 3.0: The Technological Revolution of the Internet",
+                "Description": "Despite being in its cradle years, Web 3.0 is exuding immense potential to transform the Internet space by making the web smarter, more transparent and secure. The concept is revolutionizing the way people navigate the Internet while paving way for the compelling browsing experience and efficient human-machine interactions. Web 3.0 comes with intriguing facets and is still on its development journey.",
+                "attendees":[
+                            {
+                                "list":" Explore detailed insight into convergence of technologies underpinning Web 3.0 experiences"
+                            },
+
+                            {
+                                "list":"Track core components of decentralised web and discover latest developments happening around"
+                            },
+
+                            {
+                                "list":"Gain insights into how the technology is poised to gain from rising focus of users on smart, humanized digital search assistants powered by AI, blockchain and semantics"
+                            },
+
+                            {
+                                "list":" Understand how the technology enables individuals to benefit from data encryption that protects information against breach attempts"
+                            },
+
+                            {
+                                "list":"Learn how the technology can be leveraged by rapid digitalization, rising shift towards 5G/6G technology and proliferation of interconnected devices"
+                            }
+
+
+                ]
+            },
+            {   
+                "Session_id": 2,
+                "VerticalCode": "web",
+                "SpeakerName": "KATE MATSUDAIRA",
+                "speakerTitle": "Vice President of Splunk; former Director of Engineering at Google; and former Software Engineer at Microsoft",
+                "Speaker_Details": "Kate specializes in large-scale websites, web services and cloud computing. Having worked as a Software Engineer for Microsoft and a Senior Manager of Software Development, Software Platforms and Web Services for Amazon, Kate is now removing the barriers between data and action. Having spent a career working in all things data, technology and engineering, Kate now shares her thoughts on moving to Web 3.0 and more immersive internet experiences. ",
+                "Speaker_image": "./images/evolv/speaker/event_speakers/VanessaShannon.jpg",
+                "Session_Name": "SESSION 2",
+                "Title": "Fun Inventions in Consumer Electronics   ",
+                "Description": "Effervescent developments in next generation technology space have resulted in the successful development of weird but smart home gadgets and useful consumer electronics devices. Miniaturization of electronic devices and components, technologies such as 3D printing, robotics, virtual reality, Artificial intelligence and lean towards light weight and energy efficient electronic systems continue to drive development of some of the interesting consumer electronics inventions.",
+                "attendees":[
+                    {
+                        "list":"Understand how the rise of Web 3.0 as the latest iteration of the Internet signals gradual departure for earlier and existing versions of the web, including Web 1.0 and Web 2.0"
+                    },
+
+                    {
+                        "list":"Get an opportunity to see what you may have missed understanding Web 1.0 that is referred to as read-only web and Web 2.0 that presented a read-write version of the web"
+                    },
+
+                    {
+                        "list":"Hear from the experts how Web 3.0 is poised to significantly change the way individuals use the Internet"
+                    },
+
+                    {
+                        "list":"Understand how the technology enables individuals to benefit from data encryption that protects information against breach attempts"
+                    },
+
+                    {
+                        "list":"Develop a clear vision of the current state of Web 3.0 that enables systems to search, generate, link or exchange materials, with AI allowing websites to understand meaning of words instead of considering relevant keywords"
+                    }
+
+                ]
+        
+        
+            },
+            {
+                "Session_id": 3,
+                "VerticalCode": "web",
+                "SpeakerName": "Linda Bernard",
+                "speakerTitle": "Digital Disruption Strategist; former IBM Chief Innovation Officer; and Watson Co-Lead",
+                "Speaker_Details": "Linda is a serial high-tech entrepreneur and one of the pioneers of IoT and the emerging hyperconnected world. She discusses the benefit of adopting emerging technologies in today’s consumer driven, “Know Me” economy. Linda is currently a Senior Advisor to McKinsey & Company Worldwide. Previously, she was Chief Innovation Officer at IBM where she helped IBM’s Fortune 100 clients effectively transform and disrupt their businesses, then moved on to hold executive positions in AI, Blockchain, and crypto-currency companies.",
+                "Speaker_image": "./images/evolv/speaker/event_speakers/JAMESCANTON.jpg",
+                "Session_Name": "SESSION 3",
+                "Title": ": Strangest Robotic Inventions that will Make You Think the Future is Now",
+                "Description": "Once limited to science fiction, and gradually transcending to industrial applications, robots have evolved to play an increasingly important role in every sector led by the convergence of robotics with cognitive science, artificial intelligence (AI), and information technology. The ample opportunities for implementation of robotics in everyday life is leading researchers to focus on developing robots for use in unconventional environments. There is yet still a need for significant advancements in the fields of computer vision, automated reasoning, motion planning, and language processing, to transform the concept of a personal robot into a commercial reality.",
+                "attendees":[
+                    {
+                        "list":"Develop a clear vision of the current state of development of an advanced decentralized social network"
+                    },
+
+                    {
+                        "list":"Learn how non-fungible tokens or NFTs are poised to play a crucial role"
+                    },
+
+                    {
+                        "list":"Explore the broader concepts of BaaS that allows companies to deliver products and services to provide customers with desired resources and tools for using the blockchain technology and Web 3.0"
+                    },
+
+                    {
+                        "list":"Explore the broader concepts of Web 3D that represents a highly interactive 3D technology that can be used through the web browser"
+                    },
+
+                    {
+                        "list":"Fully appreciate how the Web 3.0 industry is poised to be significantly influenced by the sustainability wave"
+                    }
+
+                ]
+            },
+            {
+                "Session_id": 4,
+                "VerticalCode": "web",
+                "SpeakerName": "Joel Comm",
+                "speakerTitle": "Internet pioneer; NYT Best-selling author; Keynote Speaker; Social Media Strategist",
+                "Speaker_Details": "Joel is the New York Times best-selling author of 15 books, including The AdSense Code, Stories from the World’s Most Successful Entrepreneurs and Twitter Power 3.0.  After selling a games site to Yahoo!, he created one of the first top-selling iPhone apps and is a pioneer in social media marketing. Having worked with Microsoft, Twitter, Alibaba and being invited to speak at Harvard, Joel’s presentations are memorable and effective. With Joel’s publishing track record, he has assisted many peers in their publishing efforts.",
+                "Speaker_image": "./images/evolv/speaker/event_speakers/PeterStone.jpg",
+                "Session_Name": "SESSION 3",
+                "Title": "Mad Science in Future Warfare",
+                "Description": "While existing devices are offering advanced functions for new capabilities, there is a significant scope for improvement. Augmented intelligence is becoming a critical part of modern warfare as militaries around the world increasingly seek to integrate AI innovations into their arsenals in order to gain a strategic edge over their adversaries and improve their warfighting advantages",
+                "attendees":[
+                    {
+                        "list":"Gain insights into how decentralized social network addresses concerns related to censorship"
+                    },
+
+                    {
+                        "list":"Understand the ways decentralized social networks offer monetization systems to creators through NFTs to ensure fair pricing"
+                    },
+
+                    {
+                        "list":"Learn how stakeholders associated with Web 3.0 domain focus on advanced platform not controlled by tech players "
+                    },
+
+                    {
+                        "list":"Learn how decentralized metaverse replaces hierarchical approach with flat structure to allow sharing of benefits"
+                    },
+
+                    {
+                        "list":"Fully appreciate how Web3.0 allows people to enjoy better control over their assets, primarily the data and revenues"
+                    }
+
+                ]
+        
+            }
+        ]
+    }
