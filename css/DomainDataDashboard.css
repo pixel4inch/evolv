@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+.shadow-1{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.shadow-2{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+}
+
+/*=======================
+    DOMAINDATA DASHBOARD
+=======================*/
+
+#DomainDataDashboard{
+ padding: 20px;
+ background-color: #f5f6f7;
+ border-radius: 15px;
+}
+
+.DomainDataDashboard-Title h1 {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1.7px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dataAssetsCard{
+    padding:25px 10px;
+    border-radius:10px 10px 2px 2px;
+    background-color: #fff;
+    width: 98%;
+    margin: 0 auto;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px, rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+	position:relative
+	
+    
+}
+
+.dataAssetsCard:before{
+	content: "";
+    width: calc(100% - 65%);
+    height: 3px;
+    background: #ff9921;
+    position: absolute;
+    bottom: 0px;
+    right: calc(100% - 67%);
+    border-radius: 3px 3px 0px 0px;
+		
+	
+}
+
+
+.datachartCard{
+
+    padding:25px 10px;
+    border-radius:10px 10px 2px 2px;
+    background-color: #fff;
+    width: 98%;
+    margin: 0 auto;
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+
+	position:relative
+
+}
+
+.dataAssetsCard h2{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    height: 30px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center
+}
+    
+
+}
+
+.DataValueBlock{
+    height: calc(100% - 60px);
+    margin: 14px 0px;
+} 
+
+.DataValueBlock h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    color:var(--maincolor);
+	margin-bottom:0px;
+	
+}
+
+
+.domain-icon {
+	width:35px;
+	height:auto;
+	margin:0 auto;
+	margin-top:10px;
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+	background:#fff;
+	border-radius:100%;
+	padding:2px;
+		
+}
+
+
+@media (max-width: 667px) {
+	
+	.dataAssetsCard {
+	  padding: 10px 10px;	
+	}
+	
+	.dataAssetsCard h2 {
+      font-size: 15px;
+		height: auto;
+	}
+ .DataValueBlock h3 {
+    font-size: 25px;
+}
+}
+
+
+@media (max-width: 480px) {
+	
+	.dataAssetsCard {
+	  padding: 10px 10px;	
+	}
+	
+	.dataAssetsCard h2 {
+      font-size: 14px;
+		height: auto;
+	}
+ .DataValueBlock h3 {
+    font-size: 20px;
+}
+}
+
+/*===============================
+    GRAPHS STYLES
+================================*/
+
+.apexcharts-legend{
+    display: none !important;
+}
+
+.apexcharts-series path {
+    fill-opacity: 0.9 !important;
+    height: 30px;
+    margin-bottom: 10px !important;
+    stroke-width: 5px;
+    stroke-linecap:round;
+    border-radius: 50px !important;
+
+}
+
+.apexcharts-menu-icon{
+    display: none;
+}
+
+text:nth-child(2){
+    display: none !important;
+}
