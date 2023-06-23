@@ -436,8 +436,8 @@ button:focus,
   text-transform: uppercase;
   font-weight: 600;
   color: #000;
-  padding-left: 7px;
-  padding-right:7px;
+  padding-left: 5px;
+  padding-right:5px;
   line-height: 50px;
 }
 
@@ -1388,7 +1388,7 @@ hr {
   margin-bottom: 25px;
 }
 
-.team-sm.ADVISORY .image {
+.team-sm .image {
   position: relative;
   overflow: hidden;
   margin-bottom: 9px;
@@ -1399,7 +1399,7 @@ hr {
 
 
 @media (max-width: 1200px) {
-  .team-sm.ADVISORY .image {
+  .team-sm .image {
     width: 250px;
   }
 }
@@ -1413,7 +1413,7 @@ hr {
 .team-sm h4.designation{
   font-size: 17px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .team-sm h4.company{
@@ -1466,8 +1466,8 @@ hr {
   transform: translate3d(0, 0, 0);
 }
 
-.team-sm.ADVISORY h3 {
-  margin-bottom: 10px;
+.team-sm h3 {
+  margin-bottom: 8px;
 }
 
 

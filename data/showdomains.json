@@ -1,56 +1,30 @@
-{
-	"MAY": [
-
-
-		{
-			"eventtype": "liveevent",
-			"Title": "CII Annual Session",
-			"Title2": "",
-			"Links": "javascript:void(0)",
-			"Multi": "",
-			"dg": "",
-			"date": "May 23-24, 2023",
-			"live": "live",
-			"icon": "./images/evolv/icons/calender/live.png"
-		},
-
-
-		{
-			"eventtype": "liveevent",
-			"Title": "Evolv™ NextTech",
-			"Title2": "",
-			"Links": "./nexttech.html",
-			"Multi": "",
-			"dg": "",
-			"date": "August 24, 2023",
-			"live": "live",
-
-			"icon": "./images/evolv/icons/calender/live.png"
-		},
-
-		{
-			"eventtype": "liveevent",
-			"Title": "Evolv™ @ B20 Summit",
-			"Title2": "",
-			"Links": "javascript:void(0)",
-			"Multi": "",
-			"dg": "",
-			"date": "August 25-27, 2023",
-			"live": "live",
-			"icon": "./images/evolv/icons/calender/live.png"
-		},
-		{
-			"EventId": "agritech",
-			"Title": "AgriTech",
+ [
+		
+		{	"alphapatic":"B",
+			"EventId": "batterytech",
+			"Title": "Battery Technologies",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
-			"date": "June 19",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/AgriTech.png"
+			"date": "June 22",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/BT.png"
 		},
+		
 		{
-			"eventtype": "",
+			"alphapatic":"A",
+			"EventId": "ar",
+			"Title": "AR & VR (XR)",
+			"Links": "./calevents_evolv.html",
+			"Multi": "",
+			"dg": "",
+			"date": "May 08",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/ar.png"
+		},
+
+		{
+			"alphapatic":"A",
 			"EventId": "ai",
 			"Title": "AI & ML",
 			"Links": "./calevents_evolv.html",
@@ -61,18 +35,9 @@
 			"icon": "./images/evolv/icons/calender/AI.png"
 		},
 		{
-			"EventId": "ar",
-			"Title": "AR & VR (XR)",
-			"Links": "./calevents_evolv.html",
-			"Multi": "",
-			"dg": "",
-			"date": "May 08",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/ar.png"
-		},
-		{
+			"alphapatic":"A",
 			"EventId": "autonomous",
-			"Title": "AutoTech - Autonomous Vehicles",
+			"Title": "Autonomous Vehicles",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
@@ -80,28 +45,33 @@
 			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/AV.png"
 		},
-		{
-			"EventId": "ev",
-			"Title": "AutoTech - Electric Vehicles",
-			"Links": "./calevents_evolv.html",
-			"Multi": "",
-			"dg": "",
-			"date": "May 12",
-			"domaingraphic": "yes",
-			"icon": "./images/evolv/icons/calender/ElectricVehicles.png"
-		},
 
 		{
-			"EventId": "batterytech",
-			"Title": "Battery Technologies",
+			"alphapatic":"A",
+			"EventId": "agritech",
+			"Title": "AgriTech",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
-			"date": "June 22",
+			"date": "June 19",
 			"domaingraphic": "yes",
-			"icon": "./images/evolv/icons/calender/BT.png"
+			"icon": "./images/evolv/icons/calender/AgriTech.png"
+		},
+		
+		
+		{
+			"alphapatic":"B",
+			"EventId": "biometrics",
+			"Title": "Biometrics",
+			"Links": "./calevents_evolv.html",
+			"Multi": "",
+			"dg": "",
+			"date": "May 08",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/angel.png"
 		},
 		{
+			"alphapatic":"B",
 			"EventId": "biotech",
 			"Title": "Biotechnologies",
 			"Links": "./calevents_evolv.html",
@@ -112,6 +82,7 @@
 			"icon": "./images/evolv/icons/calender/Biotech.png"
 		},
 		{
+			"alphapatic":"B",
 			"EventId": "blockchain",
 			"Title": "Blockchain",
 			"Links": "./calevents_evolv.html",
@@ -122,10 +93,8 @@
 			"icon": "./images/evolv/icons/calender/Blockchain.png"
 		},
 
-
-
-
 		{
+			"alphapatic":"C",
 			"EventId": "cleantech",
 			"Title": "Cleantech (GreenTech)",
 			"Links": "./calevents_evolv.html",
@@ -136,6 +105,7 @@
 			"icon": "./images/evolv/icons/calender/CleanTech.png"
 		},
 		{
+			"alphapatic":"C",
 			"EventId": "cloudtech",
 			"Title": "Cloud Technologies",
 			"Links": "./calevents_evolv.html",
@@ -146,144 +116,112 @@
 			"icon": "./images/evolv/icons/calender/CloudTech.png"
 		},
 		{
+			"alphapatic":"C",
 			"EventId": "cryptocurrency",
 			"Title": "Crypto 2025++",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "June 05",
-			"domaingraphic": "no",
+		"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Cryptocurrency.png"
 		},
+		
 		{
-			"EventId": "cx360",
-			"Title": "CX 360",
-			"Links": "./calevents_evolv.html",
-			"Multi": "",
-			"dg": "",
-			"date": "July 12",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/CX360.png"
-		},
-		{
+			"alphapatic":"C",
 			"EventId": "cybersecurity",
 			"Title": "Cybersecurity",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "June 13",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Cybersecurity.png"
 		},
 
 		{
+			"alphapatic":"D",
 			"EventId": "digitalhealth",
 			"Title": "Digital Health",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "May 15",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/DigitalHealth.png"
 		},
-
+		
 		{
-			"EventId": "dei",
-			"Title": "Diversity, Equity & Inclusion (DEI)",
-			"Links": "./calevents.html",
-			"Multi": "",
-			"dg": "",
-			"date": "August 28",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/Diversity.png"
-		},
-
-
-
-
-		{
+			"alphapatic":"D",
 			"EventId": "drones",
 			"Title": "Drones",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "May 10",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Drones.png"
 		},
 		{
+			"alphapatic":"E",
 			"EventId": "edtech",
 			"Title": "EdTech",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "May 11",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/EdTech.png"
 		},
-
-
-
-
 		{
-			"EventId": "failure",
-			"Title": "Failure Analysis",
-			"Links": "./calevents.html",
+			"alphapatic":"E",
+			"EventId": "ev",
+			"Title": "Electric Vehicles (EV)",
+			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
-			"date": "May 22",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/FailureAnalysis.png"
+			"date": "May 12",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/ElectricVehicles.png"
 		},
 
 		{
+			"alphapatic":"F",
 			"EventId": "fashion",
 			"Title": "Fashion & Design",
 			"Links": "./calevents.html",
 			"Multi": "",
 			"dg": "",
 			"date": "July 03",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Fashion.png"
 		},
-
+		{
+			"alphapatic":"F",
+			"EventId": "fintech",
+			"Title": "Fintech",
+			"Links": "./calevents_evolv.html",
+			"Multi": "",
+			"dg": "",
+			"date": "May 08",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/csr.png"
+		},
 
 		{
+			"alphapatic":"F",
 			"EventId": "foodtech",
 			"Title": "Food Tech",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "July 24",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/FoodTech.png"
 		},
 
 		{
-			"EventId": "fundrasing",
-			"Title": "Fundraising in 2023",
-			"Links": "./calevents.html",
-			"Multi": "",
-			"dg": "",
-			"date": "June 05 ",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/FundRaising.png"
-		},
-
-		{
-			"EventId": "futureofwork",
-			"Title": "Future of Work",
-			"Links": "./calevents.html",
-			"Multi": "",
-			"dg": "",
-			"date": "June 28",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/FutureofWork.png"
-		},
-
-
-
-		{
+			"alphapatic":"G",
 			"EventId": "gaming",
 			"Title": "Gaming",
 			"Links": "./calevents_evolv.html",
@@ -293,293 +231,238 @@
 			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Gaming.png"
 		},
-
 		{
-			"EventId": "genz",
-			"Title": "GEN Z",
-			"Links": "./calevents.html",
+			"alphapatic":"G",
+			"EventId": "Geospatial",
+			"Title": "Geospatial",
+			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
-			"date": "June 15",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/GenerationZ.png"
+			"date": "May 08",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/Geospatial.png"
 		},
+		
 		{
+			"alphapatic":"G",
 			"EventId": "govtech",
 			"Title": "Gov Tech",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "July 20",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/GovTech.png"
 		},
 
 		{
-			"EventId": "hydrogen",
+			"alphapatic":"G",
+			"EventId": "hydrogen",	
 			"Title": "Green Hydrogen",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "June 12",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Hydrogen.png"
 		},
 
 		{
-			"EventId": "hiringworkforce",
-			"Title": "Hiring & Workforce",
-			"Links": "./calevents.html",
-			"Multi": "",
-			"dg": "",
-			"date": "July 05",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/HiringWorkforce.png"
-		},
-
-
-		{
-			"EventId": "impactinvest",
-			"Title": "Impact Investment",
-			"Links": "./calevents.html",
-			"Multi": "",
-			"dg": "",
-			"date": "June 29",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/ImapctInvestment.png"
-		},
-
-
-		{
+			"alphapatic":"I",
 			"EventId": "insurtech",
 			"Title": "InsurTech",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "July 27",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/InsureTech.png"
 		},
 		{
+			"alphapatic":"I",
 			"EventId": "internetofthings",
 			"Title": "Internet of Things",
 			"Links": "./calevents.html",
 			"Multi": "",
 			"dg": "",
 			"date": "July 10",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/InternetofThings.png"
 		},
 
-
 		{
-			"EventId": "ism",
-			"Title": "Israeli Startup Magic",
-			"Links": "./calevents_evolv.html",
-			"Multi": "",
-			"dg": "",
-			"date": "May 04",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/startupmagic.png"
-		},
-
-		{
-			"EventId": "madscience",
-			"Title": "Mad Science",
-			"Links": "./calevents.html",
-			"Multi": "",
-			"dg": "",
-			"date": "August 10",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/MadScience.png"
-		},
-		{
+			"alphapatic":"M",
 			"EventId": "martech",
 			"Title": "MarTech",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "June 15",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/MARTECH.png "
 		},
+		
 		{
-			"EventId": "mdi",
-			"Title": "Medical Device Innovations",
-			"Links": "./calevents.html",
+			"alphapatic":"M",
+			"EventId": "medtech",
+			"Title": "Medtech",
+			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
-			"date": "May 17",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/MedicalDeviceInnovation.png"
+			"date": "May 08",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/medtech.png"
 		},
-
+		
 		{
+			"alphapatic":"M",
 			"EventId": "metaverse",
 			"Title": "Metaverse",
 			"Links": "./calevents.html",
 			"Multi": "",
 			"dg": "",
 			"date": "May 18",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Metaverse.png"
+		},
+		
+		{
+			"alphapatic":"M",
+			"EventId": "micromobility",
+			"Title": "Micromobility",
+			"Links": "./calevents_evolv.html",
+			"Multi": "",
+			"dg": "",
+			"date": "May 08",
+		"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/micromobility.png"
 		},
 
 		{
+			"alphapatic":"M",
 			"EventId": "entertainment",
 			"Title": "Music & Digital Entertainment",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "June 14",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Entertainment.png"
 		},
 		{
+			"alphapatic":"n",
 			"EventId": "nanotech",
 			"Title": "Nanotechnology",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "May 09",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Nanotechnology.png"
 		},
-
-
+		
 		{
-			"EventId": "powertech",
-			"Title": "Power Women Of Tech",
-			"Links": "./calevents.html",
+			"alphapatic":"P",
+			"EventId": "pharmaceuticals",
+			"Title": "Pharmaceuticals",
+			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
-			"date": "July 12",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/Pow.png"
+			"date": "May 08",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/pharmaceuticals.png"
 		},
+
 		{
+			"alphapatic":"Q",
 			"EventId": "qc",
 			"Title": "Quantum Computing",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "July 17",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Quantum.png"
 		},
 		{
+			"alphapatic":"R",
 			"EventId": "robotic",
 			"Title": "Robotics",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "June 20",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/Robotics.png"
 		},
 		{
+			"alphapatic":"S",
 			"EventId": "saas",
-			"Title": " SaaS",
+			"Title": "SaaS",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "July 10",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/sass.png"
 		},
 		{
+			"alphapatic":"S",
+			"EventId": "semiconductors",
+			"Title": "Semiconductors",
+			"Links": "./calevents_evolv.html",
+			"Multi": "",
+			"dg": "",
+			"date": "May 08",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/semiconductors.png"
+		},
+		{
+			"alphapatic":"S",
 			"EventId": "smartcities",
 			"Title": "Smart Cities",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "July 25",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/SmartCities.png"
 		},
-		{
-			"EventId": "spacetech",
-			"Title": "Space Tech",
-			"Links": "./calevents_evolv.html",
-			"Multi": "",
-			"dg": "",
-			"date": "July 19",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/SpaceTech.png"
-		},
+		
 
 		{
+			"alphapatic":"S",
 			"EventId": "scm",
 			"Title": "Supply Chain Management",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "May 17",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/SupplyChain.png"
 		},
 
 		{
-			"EventId": "sustainability",
-			"Title": "Sustainability",
-			"Links": "./calevents_evolv.html",
-			"Multi": "",
-			"dg": "",
-			"date": "May 17",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/Sustainability.svg"
-		},
-
-
-		{
+			"alphapatic":"T",
 			"EventId": "telecome5g",
 			"Title": "Telecom & 5G",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
 			"date": "May 05",
-			"domaingraphic": "no",
+			"domaingraphic": "yes",
 			"icon": "./images/evolv/icons/calender/5G.png"
 		},
 		{
-			"EventId": "web",
-			"Title": "Web 3.0",
+			"alphapatic":"S",
+			"EventId": "spacetech",
+			"Title": "Space Tech",
 			"Links": "./calevents_evolv.html",
 			"Multi": "",
 			"dg": "",
-			"date": "June 21",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/Web3.png"
-		},
-		{
-			"EventId": "wellbeing",
-			"Title": "Wellbeing",
-			"Links": "./calevents_evolv.html",
-			"Multi": "",
-			"dg": "",
-			"date": "July 11",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/Wellbeing.png"
-		},
-		{
-			"EventId": "femalelead",
-			"Title": "Woman Led",
-			"Links": "./calevents_evolv.html",
-			"Multi": "",
-			"dg": "",
-			"date": "May 03",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/FemaleLed.png"
-		},
-		{
-			"EventId": "femaleunicon",
-			"Title": "Woman Unicorn Founders",
-			"Links": "./calevents_evolv.html",
-			"Multi": "",
-			"dg": "",
-			"date": "June 06",
-			"domaingraphic": "no",
-			"icon": "./images/evolv/icons/calender/FemaleUnicornFounders.png"
+			"date": "July 19",
+			"domaingraphic": "yes",
+			"icon": "./images/evolv/icons/calender/SpaceTech.png"
 		}
+		
 	]
-}

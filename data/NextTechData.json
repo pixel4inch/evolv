@@ -1,0 +1,114 @@
+{
+    "NextTechInfo": [
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/C_Banerjee.jpg",
+            "name": "Chandrajit Banerjee"
+        },
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/Rajan_Navani.jpg",
+            "name": "Rajan Navani"
+        },
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/Ramkreddy.jpg",
+            "name": "Ram K Reddy"
+        },
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/Sujith_Haridas.jpg",
+            "name": "Sujith Haridas"
+        },
+		 {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/G_Gauba.jpg",
+            "name": "Gary Gauba "
+        },   
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/Ravi_Puli.jpg",
+            "name": "Ravi Puli"
+        },        
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/AnandKuchibhotla.jpg",
+            "name": "Anand Kuchibhotla"
+        },
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/Prakaash_Kedia.jpg",
+            "name": "Prakash Kedia, Ph.D"
+        },
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/aneesa.jpg",
+            "name": "Aneesa Afreen"
+        },
+		
+		 {
+            "type": "Executive Committee",
+            "image": "./images/evolv/leader-ship/Sumant_Mandal.jpg",
+            "name": "Sumant Mandal"
+        },
+		
+		 {
+            "type": "Executive Committee",
+            "image": "./images/evolv/leader-ship/Chandar_Pattabhiram.jpg",
+            "name": "Chandar Pattabhiram"
+        },
+		
+		 {
+            "type": "Executive Committee",
+            "image": "./images/evolv/leader-ship/Suja_Chandrasekharan.jpg",
+            "name": "Suja Chandrasekharan"
+        },
+		 {
+            "type": "Executive Committee",
+            "image": "./images/evolv/leader-ship/Rashmi_Kumar.jpg",
+            "name": "Rashmi Kumar"
+        },
+		
+		 {
+            "type": "Executive Committee",
+            "image": "./images/evolv/leader-ship/garima_kapoor.jpg",
+            "name": "Garima Kapoor"
+        },
+		 {
+            "type": "Executive Committee",
+            "image": "./images/evolv/leader-ship/Preeti_Rathi.jpg",
+            "name": "Preeti Rathi"
+        },
+			 {
+            "type": "Executive Committee",
+            "image": "./images/evolv/leader-ship/Padmaja.jpg",
+            "name": "Padmaja Dasari"
+        },
+			 {
+            "type": "Executive Committee",
+            "image": "./images/evolv/leader-ship/Sudha_Mahajan.jpg",
+            "name": "Sudha Mahajan"
+        },
+		
+		
+		
+		
+		
+		
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/Anika_Muddu.jpg",
+            "name": "Anika Muddu"
+        },
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/D_Rodricks.jpg",
+            "name": "Darren Rodricks"
+        },
+        {
+            "type": "Executive Committee",
+            "image": "./images/evolv/NextTech/Ria_Saroya.jpg",
+            "name": "Ria Saroya"
+        }
+    ]
+}
