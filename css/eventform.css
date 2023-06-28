@@ -10,6 +10,7 @@
     width: 800px;
     padding: 25px 25px 10px 25px;
     font-family: Poppins;
+    overflow: hidden;
 }
 
 #page-wrapper p,
@@ -23,8 +24,10 @@
 }
 
 #page-wrapper p {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 22px;
 }
+
 
 /*====PAGE HADER=====*/
 
@@ -39,7 +42,7 @@
 }
 
 .page-header .brandImg {
-    width: 122px;
+    width: 140px;
     height: auto;
 
 }
@@ -73,6 +76,23 @@
 
 .page-header .form-title .speakerinvite p:nth-child(3) {
     letter-spacing: 0.1px;
+}
+
+.horizontal-row{
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    margin-bottom:10px !important;
+    margin-top: 10px !important;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+}
+
+.horizontal-row:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
 }
 
 /*--- PAGE CONTENT ----*/
@@ -136,10 +156,17 @@
 
 /*---  PLEASE NOTE ----*/
 .number-block {
-    width: 12px;
+    width: 3%;
+    text-align: left;
+    
+
 }
 
 
+.text-block .text-left {
+    width: 96%
+
+}
 /*=========================
          TABLE
 ==========================*/
@@ -158,7 +185,7 @@
     height: 15px;
     display: block;
     margin: 0 auto;
-    margin-top: 12px;
+    margin-top: 2px;
 }
 
 .check {
@@ -259,3 +286,113 @@
     height: 25px;
 
 }
+
+
+/*====================================
+     NEW DOCUMENTS FOR AUGUST 2023
+=====================================*/
+
+/*  INNOVATOR */ 
+.document-title.sponsor h1{
+    font-size: 22px;
+}
+.document-title.sponsor .tagline li{
+    font-size: 18px;
+    color: var(--maincolor);
+    font-weight: 500;
+    padding: 0px;
+}
+
+.document-title.sponsor .tagline{
+    margin-left: -6px !important;
+}
+
+
+
+
+/*  INNOVATOR */ 
+.document-title.innovator h1{
+    font-size: 21px;
+}
+.document-title.innovator .tagline li{
+    font-size: 18.5px;
+    color: var(--maincolor);
+    font-weight: 500;
+    padding: 0px;
+}
+
+.document-title.innovator .tagline{
+    margin-left: -4px !important;
+}
+
+
+/*  CORPORATE */
+.document-title.corporate h1{
+    font-size: 21px;
+}
+
+.document-title.corporate .tagline li{
+    font-size: 18.5px;
+    color: var(--maincolor);
+    font-weight: 500;
+    padding: 0px;
+}
+
+
+
+
+/*  COMMON */
+
+
+.document-title .tagline{
+    list-style: none;
+    padding: 0px;
+   
+}
+
+
+
+.document-title .tagline li:before {
+    content: '\f0a3';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    font-family: FontAwesome;
+    color: var(--maincolor);
+    margin-left: -16px;
+    font-size: 10px;
+    margin-top: 1px;
+}
+  .tasks-section.corporate h3{
+    font-size: 18px !important;
+  }
+
+  span.bulitted-list{
+    display: block !important;
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+
+  span.bulitted-list:before {
+    content: '\f101';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    font-family: FontAwesome;
+    color: var(--maincolor);
+    margin-left: -18px;
+    font-size: 14px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+span.subtitle{
+    font-size: 16px;
+    color: var(--maincolor);
+}
+
+.terms-list{
+    margin-bottom: 15px !important
+}
+
+
